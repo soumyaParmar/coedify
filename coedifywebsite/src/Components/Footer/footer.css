@@ -1,0 +1,131 @@
+.footer {
+  margin: 10px 4% 10px 4%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__main {
+  background-color: #f6f9fc;
+}
+.footer__description,
+.footer__explore,
+.footer__quicklinks,
+.footer__getintouch {
+  width: 23%;
+  display: flex;
+  height: 250px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.description__logo,
+.footer__explore h3,
+.footer__quicklinks h3,
+.footer__getintouch h3 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.description__logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin-right: 250px;
+}
+
+.description__links svg {
+  border-radius: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+h3 {
+  position: relative;
+}
+h3::after {
+  content: "";
+  position: absolute;
+  left: 35px;
+  bottom: 0;
+  height: 3px;
+  background: #f6f9fc;
+  width: 5px;
+}
+h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55px;
+  height: 3px;
+  background-color: #045de9;
+}
+.footer__explore ul,
+.footer__quicklinks ul,
+.footer__getintouch ul {
+  list-style: none;
+}
+.footer__explore ul li,
+.footer__quicklinks ul li,
+.footer__getintouch ul li {
+  margin-top: 10px;
+  position: relative;
+  color: #353535;
+  cursor: pointer;
+}
+
+.footer__getintouch ul li {
+  display: flex;
+  align-items: center;
+  color: #353535;
+}
+.footer__getintouch ul li svg {
+  border-radius: 50px;
+  margin-right: 12px;
+}
+.footer__copyright {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__explore ul li span::before,
+.footer__quicklinks ul li span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateX(-100%);
+  background-color: #045de9;
+  border-radius: 50px;
+  width: 10px;
+  height: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease;
+}
+.footer__explore ul li span:hover:before,
+.footer__quicklinks ul li span:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+.footer__quicklinks ul li:hover,
+.footer__explore ul li:hover {
+  transform: translateX(4%);
+  color: #045de9;
+  transition: all 0.6s ease;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__description,
+  .footer__explore,
+  .footer__quicklinks,
+  .footer__getintouch {
+    margin: 10px 2% 10px 2%;
+    width: 96%;
+  }
+}
