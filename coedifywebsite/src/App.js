@@ -4,6 +4,7 @@ import Service from "./Components/Services/Services";
 import About from "./Components/About us/About";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter } from "react-router-dom";
+import Contact from "./Components/Contactus/Contact";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <Service />
         <About />
+        <Contact />
         <Footer />
       </BrowserRouter>
     </div>
