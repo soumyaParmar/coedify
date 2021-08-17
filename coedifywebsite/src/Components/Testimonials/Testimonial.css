@@ -1,0 +1,16 @@
+.testimonial {
+  padding: 40px;
+  margin: 50px 4% 50px 4%;
+  width: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.test {
+  background-color: #03045e;
+  color: white;
+}
+.carousel {
+  display: flex;
+}

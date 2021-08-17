@@ -5,6 +5,7 @@ import About from "./Components/About us/About";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter } from "react-router-dom";
 import Contact from "./Components/Contactus/Contact";
+import Testimonial from "./Components/Testimonials/Testimonial"
 import "./App.css";
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
         <Service />
         <About />
         <Contact />
-        <Footer />
+        <Testimonial/>  
       </BrowserRouter>
+        <Footer />
     </div>
   );
 }

@@ -13,7 +13,7 @@ svg {
   border-color: rgba(0, 0, 0, 0.1);
   font-size: 50px;
   border: none;
-  background: #eee !important;
+  background: #eee ;
   padding: 10px;
   border-radius: 0;
 }

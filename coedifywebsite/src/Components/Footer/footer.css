@@ -38,10 +38,10 @@
   margin-left: 10px;
   cursor: pointer;
 }
-h3 {
+.footer__explore h3,.footer__quicklinks h3,.footer__getintouch h3 {
   position: relative;
 }
-h3::after {
+.footer__explore h3::after,.footer__quicklinks h3::after,.footer__getintouch h3::after {
   content: "";
   position: absolute;
   left: 35px;
@@ -50,7 +50,7 @@ h3::after {
   background: #f6f9fc;
   width: 5px;
 }
-h3::before {
+.footer__explore h3::before,.footer__quicklinks h3::before,.footer__getintouch h3::before {
   content: "";
   position: absolute;
   left: 0;
