@@ -6,7 +6,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 99;
+  z-index: 99; 
 }
 svg {
   color: rgba(0, 0, 0, 0.55);
@@ -20,6 +20,11 @@ svg {
 .menu-icon {
   display: none;
   font-size: 20px;
+}
+.Dropdown-arrow,.is-open {
+  right: -2px;
+  border-color: blue;
+  border-color: blue transparent transparent;
 }
 .logo {
   height: 60px;
@@ -51,10 +56,11 @@ svg {
   transition: 1s all ease;
 }
 
-.menu-list li a {
+.menu-list li a,.Dropdown-control {
   color: #18181b;
   text-transform: capitalize;
   position: relative;
+  border: none;
   font-size: 17px;
   text-decoration: none;
   font-weight: 600;
@@ -88,7 +94,7 @@ svg {
 .menu-list li:last-child a:hover:before {
   width: 100%;
 }
-.menu-list li a::after {
+.menu-list li a::after,.Dropdown-control::after {
   content: "";
   height: 2px;
   background: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
@@ -101,7 +107,7 @@ svg {
   left: 10px;
   right: 0;
 }
-.menu-list li a:hover::after {
+.menu-list li a:hover::after,.Dropdown-control:hover::after {
   opacity: 1;
   transform: scaleX(0.8);
 }

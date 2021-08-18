@@ -20,7 +20,7 @@ export const MenuList = [
     url: "/portfolio",
   },
   {
-    title: "Blog",
+    title: "Technology",
     url: "/blog",
   },
   {

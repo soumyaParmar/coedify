@@ -2,25 +2,22 @@ import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Dropdown from "react-dropdown";
+import 'react-dropdown/style.css';
 import { NavLink } from "react-router-dom";
-import { MenuList } from "./MenuList";
 import "./navbar.css";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
-  const menuList = MenuList.map(({ url, title }, index) => {
-    return (
-      <li key={index}>
-        <NavLink exact to={url} activeClassName="active">
-          {title}
-        </NavLink>
-      </li>
-    );
-  });
+ 
 
   const handleClick = () => {
     setClicked(!clicked);
   };
+  const options = [
+    'ReactJs', 'Angular', 'Flutter'
+  ];
+  
 
   return (
     <nav>
@@ -30,7 +27,49 @@ const Navbar = () => {
       <div className="menu-icon" onClick={handleClick}>
         {clicked ? <ImCross /> : <GiHamburgerMenu />}
       </div>
-      <ul className={clicked ? "menu-list" : "menu-list close"}>{menuList}</ul>
+      <ul className={clicked ? "menu-list" : "menu-list close"}>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+            Services
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+            About us
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+            Portfolio
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+            Testimonial
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+         
+          <Dropdown options={options} value="Technology" placeholder="Select an option"/>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+            Contact Us
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+          Lets Begin
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };

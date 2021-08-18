@@ -7,17 +7,19 @@ import { BrowserRouter } from "react-router-dom";
 import Contact from "./Components/Contactus/Contact";
 import Testimonial from "./Components/Testimonials/Testimonial"
 import "./App.css";
+import Technology from "./Components/Technology/Technology";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter> 
         <Navbar />
-        <Home />
+        {/* <Home />
         <Service />
         <About />
         <Contact />
-        <Testimonial/>  
+        <Testimonial/>   */}
+     <Technology/>  
       </BrowserRouter>
         <Footer />
     </div>

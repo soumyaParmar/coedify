@@ -1,0 +1,160 @@
+.tech{
+    margin: 100px 10%;
+}
+.tech__title,.tech__para,.tech__btn{
+    margin: 20px 0;
+}
+.tech__title{
+    font-size: 45px;
+    font-weight: 600;
+}
+.tech__para{
+    font-size: 20px;
+    font-weight: 400;
+}
+.tech__btn,.get__estimation{
+    position: relative;
+  display: block;
+  font-size: 20px;
+  cursor:pointer;
+  font-family: "montserrat";
+  width: 250px;
+  text-decoration: none;
+  border: 2px solid #045de9;
+  padding: 11px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.tech__btn:hover,.get__estimation:hover{
+    color: white;
+    background-color: navy;
+}
+.tech__btn::before{
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #045de9;
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.tech__btn::before{
+    width:0%;
+    height: 100%;
+}
+.tech__btn:hover::before{
+    width: 100%;
+}
+.tech__2{
+    background-color: #03045e;
+    color: white;
+    margin-top: 150px;
+    padding: 20px;
+}
+.tech__heading{
+  margin: 50px 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tech__details{
+    margin: 10px 5% ;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.whyChoose{
+    margin: 100px 10%;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+}
+.keyPoints{
+    display: flex;
+    margin-top: 30px;
+}
+.key__card{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 250px;
+    width: 350px;
+    cursor: pointer;
+    border: 1px solid #023E8A;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px -4px rgba(28,29,30,1);
+}
+.key__card:hover{
+    color: white;
+    background-color: #023E8A;
+}
+.key__card ul{
+    margin: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.key__card ul li{
+    margin-bottom: 10px;
+}
+.hire{
+    margin: 100px 10%;
+}
+.hire h1,.hire p{
+    text-align: center;
+}
+.hire h1{
+    font-size: 42px;
+    font-weight: 700;
+}
+.start__project{
+    background-color:#ADE8F4;
+    color: navy;
+    text-align: center;
+    padding: 10px;
+}
+.start__project h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.get__estimation{
+    
+    margin:25px auto;
+}
+.hire span{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #03045E;
+    margin: 2px;
+    letter-spacing: 1px;
+    color: white;
+}
+.hire p{
+    margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+    .tech__title,.tech__para,.tech__heading,.whyChoose h1{
+        text-align: center;
+    }
+    .tech__btn{
+        text-align: center;
+        margin: auto;
+    }
+    .keyPoints{
+        flex-direction: column;
+    }
+    .key__card{
+        margin-bottom: 50px;
+    }
+}
