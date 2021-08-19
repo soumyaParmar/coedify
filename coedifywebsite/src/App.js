@@ -1,27 +1,29 @@
 import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
-import Service from "./Components/Services/Services";
-import About from "./Components/About us/About";
 import Footer from "./Components/Footer/Footer";
-import { BrowserRouter } from "react-router-dom";
-import Contact from "./Components/Contactus/Contact";
-import Testimonial from "./Components/Testimonials/Testimonial"
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
+import ScrollToTop from "./Components/ScrollToTop";
 import Technology from "./Components/Technology/Technology";
+import Home from "./pages/Home";
+import Contact from "./pages/Contactus/Contact";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter> 
+      <BrowserRouter>
         <Navbar />
-        {/* <Home />
-        <Service />
-        <About />
-        <Contact />
-        <Testimonial/>   */}
-     <Technology/>  
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/Technology" component={Technology}/>
+            
+          <Route exact path="/contactus" component={Contact}/>
+           
+        </Switch>
       </BrowserRouter>
-        <Footer />
+      <ScrollToTop />
+      <Footer />
     </div>
   );
 }

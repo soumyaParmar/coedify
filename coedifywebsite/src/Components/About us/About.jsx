@@ -3,7 +3,7 @@ import "./About.css";
 function About() {
   return (
     <>
-      <div className="about">
+      <div className="about" id="aboutUs">
         <div className="about__left">
           <img
             src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8d29ya3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"

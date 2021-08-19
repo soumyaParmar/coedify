@@ -2,24 +2,28 @@ import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Dropdown from "react-dropdown";
-import 'react-dropdown/style.css';
-import { NavLink } from "react-router-dom";
+// import Dropdown from "react-dropdown";  
+import "react-dropdown/style.css";
+import {  NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./navbar.css";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
- 
 
   const handleClick = () => {
     setClicked(!clicked);
   };
-  const options = [
-    'ReactJs', 'Angular', 'Flutter'
-  ];
-  
 
   return (
+    <>
+    <div className="banner">
+      Checkout our Mentorship program
+      <button class="register">
+           <a href="https://www.coedify.com/" target="_"> <span>Learn More</span></a>
+          </button>
+    
+    </div>
     <nav>
       <div className="logo">
         <img src={logo} alt="logo" />
@@ -34,43 +38,38 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/" activeClassName="active">
-            Services
-          </NavLink>
-        </li>
-        <li>
-          <NavLink exact to="/" activeClassName="active">
+          <Link exact to="aboutUs" smooth={true} activeClassName="active">
             About us
+          </Link>
+        </li>
+        <li>
+          <Link exact to="service" smooth={true} activeClassName="active">
+            Services
+          </Link>
+        </li>
+       
+        <li>
+          <NavLink exact to="/" activeClassName="active">
+            Hire From Us
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/" activeClassName="active">
-            Portfolio
-          </NavLink>
-        </li>
-        <li>
-          <NavLink exact to="/" activeClassName="active">
+          <Link exact to="testimonial" smooth={true} activeClassName="active">
             Testimonial
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink exact to="/" activeClassName="active">
-         
-          <Dropdown options={options} value="Technology" placeholder="Select an option"/>
-          </NavLink>
+            <NavLink exact to="technology"activeClass="active">Technology</NavLink>
         </li>
         <li>
-          <NavLink exact to="/" activeClassName="active">
+          <NavLink exact to="/contactus" activeClassName="active">
             Contact Us
           </NavLink>
         </li>
-        <li>
-          <NavLink exact to="/" activeClassName="active">
-          Lets Begin
-          </NavLink>
-        </li>
+        
       </ul>
     </nav>
+    </>
   );
 };
 

@@ -12,7 +12,21 @@
     font-size: 20px;
     font-weight: 400;
 }
-.tech__btn,.get__estimation{
+.tech__btn{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    cursor:pointer;
+    font-family: "montserrat";
+    width: 130px;
+    text-decoration: none;
+    border: 2px solid #045de9;
+    padding: 11px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.get__estimation{
     position: relative;
   display: block;
   font-size: 20px;
@@ -143,6 +157,38 @@
 .hire p{
     margin-top: 30px;
 }
+.whyTech{
+    margin: 100px 10%;
+    display: flex;
+    width: 80%;
+}
+.whyTech__left{
+    width: 40%;
+}
+.whyTech__left h1{
+    margin-top: 30px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.whyTech__left li{
+    margin-top: 30px;
+}
+.whyTech__left p{
+    margin-top: 20px;
+}
+.whyTech__left ul{
+    list-style-type: disclosure-closed;
+}
+.whyTech__right{
+    margin: auto;
+    width: 40%;
+}
+.whyTech__right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 @media screen and (max-width: 600px) {
     .tech__title,.tech__para,.tech__heading,.whyChoose h1{
         text-align: center;
@@ -156,5 +202,16 @@
     }
     .key__card{
         margin-bottom: 50px;
+    }
+    .whyTech{
+        flex-direction: column;
+    }
+    .whyTech__left{
+        width: 100%;
+        text-align: center;
+    }
+    .whyTech__right{
+        margin-top: 60px;
+        width: 100%;
     }
 }

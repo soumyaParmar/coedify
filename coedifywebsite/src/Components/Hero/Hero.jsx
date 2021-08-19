@@ -1,6 +1,6 @@
 import React from "react";
-import "./home.css";
-function Home() {
+import "./hero.css";
+function Hero() {
   return (
     <section className="hero">
       <section className="hero__left">
@@ -25,4 +25,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Hero;

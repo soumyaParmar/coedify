@@ -1,0 +1,23 @@
+.scroll-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.scroll-to-top svg{
+    border-radius: 100%;
+    color: black;
+    animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes scrollTop {
+    from{
+       transform: translateY(2px) ;
+    }
+    to{
+       transform: translateY(-1px);
+    }
+    
+}

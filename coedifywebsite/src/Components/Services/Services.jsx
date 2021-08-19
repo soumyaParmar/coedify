@@ -10,7 +10,7 @@ function Services() {
   });
   return (
     <>
-      <div className="services">
+      <div className="services" id="service">
         <h1>Our Services</h1>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

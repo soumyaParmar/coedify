@@ -4,7 +4,7 @@ import "./Contact.css";
 function Contact() {
   return (
     <>
-      <div className="contact">
+      <div className="contact" id="contactus">
         <h1>Get in Touch</h1>
         <div className="contact__form">
           <form action="POST">
