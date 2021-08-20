@@ -8,6 +8,19 @@ nav {
   justify-content: space-between;
   z-index: 99; 
 }
+
+.alert-warning{
+  background-color: #48CAE4;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 a{
   text-decoration: none;
   color: white;
@@ -16,12 +29,9 @@ Link{
   cursor: pointer;
 }
 .banner{
-  font-family: 'Saira', sans-serif;
-  background-color: #48CAE4;
+
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   color: white;
   text-align: center;
   padding: 5px;
@@ -29,10 +39,11 @@ Link{
 }
 .register {
   cursor: pointer;
-  width: 150px;
+  width: 165px;
   background-color: #6632cd;
   font-size: 20px;
   font-weight: bold;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   padding: 5px;
   margin-left: 25px;
   margin: 10px;
@@ -148,43 +159,35 @@ p{
   opacity: 1;
   transform: scaleX(0.8);
 }
-button {
-  border-radius: 4px;
-  background-color: #5ca1e1;
-  border: none;
-  color: #fff;
-  text-align: center;
-  font-size: 32px;
-  padding: 16px;
-  width: 220px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 36px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-}
 
-button {
+.register {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-button:after {
+.register::after {
   content: "»";
   position: absolute;
   opacity: 0;
-  top: 10px;
+  top: 5px;
   right: -20px;
   transition: 0.5s;
 }
+.btn-close{
+  font-size: 25px;
+}
 
-button:hover {
+.register:hover {
   padding-right: 24px;
   padding-left: 8px;
 }
+.register span{
+  color: white;
+}
 
-button:hover:after {
+.register:hover:after {
   opacity: 1;
   right: 10px;
 }
@@ -238,7 +241,7 @@ button:hover:after {
     left: 120px;
     right: 100px;
   }
-  .banner{
+  .alert-warning{
     flex-direction: column;
   }
 }

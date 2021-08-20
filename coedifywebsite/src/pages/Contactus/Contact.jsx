@@ -1,10 +1,42 @@
 import React from "react";
-// import { Map } from "google-maps-react";
+import {AiOutlineMail} from "react-icons/ai"
+import {BiPhoneCall} from "react-icons/bi"
+import {GoLocation} from "react-icons/go"
 import "./Contact.css";
 function Contact() {
   return (
     <>
+    {/* backgroundImageHere */}
       <div className="contact" id="contactus">
+      <div className="contactDetails">
+      <div className="contactCard">
+        <div className="CCicon">
+          <AiOutlineMail/>
+        </div>
+        <div className="CCInfo">
+          <h3>Mail Here</h3>
+          <span>coedify@gmail.com</span>
+        </div>
+      </div>
+      <div className="contactCard">
+        <div className="CCicon">
+          <GoLocation/>
+        </div>
+        <div className="CCInfo">
+          <h3>Visit Here</h3>
+          <span>C-89 , Third Floor Sector-2 , Noida , 201301 Uttar Pradesh</span>
+        </div>
+      </div>
+      <div className="contactCard">
+        <div className="CCicon">
+          <BiPhoneCall/>
+        </div>
+        <div className="CCInfo">
+          <h3>Call Here</h3>
+          <span>+91 9258433304</span>
+        </div>
+      </div>  
+      </div>
         <h1>Get in Touch</h1>
         <div className="contact__form">
           <form action="POST">
@@ -32,23 +64,7 @@ function Contact() {
           </form>
         </div>
       </div>
-      <div className="details">
-        <div className="details__left">
-          <div className="details__card">
-            <h1>Contact Address:</h1>
-            <p>
-              The IT industry offers a sea of options, from platforms,
-              programming languages, methodologies, technologies, tools, and
-              more.
-            </p>
-            <span>(312) 895-9800</span>
-            <span>hello.me@ozen.com</span>
-            <span>121 St, Melbourne VIC 3000, Australia</span>
-            <div className="socialmedia"></div>
-          </div>
-        </div>
-        <div className="details__right">{/* <Map google={google} /> */}</div>
-      </div>
+      
     </>
   );
 }

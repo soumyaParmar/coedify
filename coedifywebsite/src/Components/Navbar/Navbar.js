@@ -2,29 +2,27 @@ import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import Dropdown from "react-dropdown";  
 import "react-dropdown/style.css";
 import {  NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./navbar.css";
-
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
-
   const handleClick = () => {
     setClicked(!clicked);
   };
-
   return (
     <>
-    <div className="banner">
+    <div className="alert alert-warning alert-dismissible fade show" role="alert">
+    
       Checkout our Mentorship program
-      <button class="register">
+      <button className="register">
            <a href="https://www.coedify.com/" target="_"> <span>Learn More</span></a>
           </button>
-    
-    </div>
-    <nav>
+   
+  <span type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></span>
+</div>
+    <nav> 
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
