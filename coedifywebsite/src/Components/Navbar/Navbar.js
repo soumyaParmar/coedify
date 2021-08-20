@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
+  const handleClick = () => { 
     setClicked(!clicked);
   };
   return (

@@ -12,11 +12,12 @@ nav {
 .alert-warning{
   background-color: #48CAE4;
   font-weight: bold;
+  letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-align: center;
   padding: 5px;
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,15 +39,15 @@ Link{
   font-size: 30px;
 }
 .register {
+  margin-right: 50px;
   cursor: pointer;
-  width: 165px;
+  width: 180px;
   background-color: #6632cd;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   padding: 5px;
   margin-left: 25px;
-  margin: 10px;
   color: white;
   border-radius: 10px;
   letter-spacing: 1px;
@@ -176,7 +177,9 @@ p{
   transition: 0.5s;
 }
 .btn-close{
-  font-size: 25px;
+  font-size: 20px;
+  position: absolute;
+  top:-4px;
 }
 
 .register:hover {
@@ -242,6 +245,9 @@ p{
     right: 100px;
   }
   .alert-warning{
-    flex-direction: column;
+    font-size: 15px;
+  } 
+  .register{
+    letter-spacing: normal;
   }
 }
