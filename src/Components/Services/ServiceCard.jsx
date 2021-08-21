@@ -9,7 +9,7 @@ function ServiceCard({ url, title, description }) {
         </div>
         <div className="card__title">
           <span>{title}</span>
-        </div>
+        </div> 
         <div className="card__description">
           <p>{description}</p>
         </div>

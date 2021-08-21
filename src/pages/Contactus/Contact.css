@@ -6,10 +6,14 @@
   align-items: center;
   flex-direction: column;
 }
-.background{
-  background-size: cover;
-  height: 100px;
+.bgImg img{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+  object-fit: contain;
+  z-index: -1;
 }
+
 .contactDetails{
   display: flex;
     justify-content: space-evenly;

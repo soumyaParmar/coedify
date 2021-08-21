@@ -7,7 +7,7 @@
 h1,h2,h3,h4,h5{
   font-family: 'Open Sans', sans-serif;
 }
-p,span,ul,li{
+p,span,ul,button,li{
   font-family: 'Saira', sans-serif;
 }
 .App {

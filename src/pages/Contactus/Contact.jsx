@@ -7,11 +7,11 @@ function Contact() {
   return (
     <>
     {/* backgroundImage :---STYLING IS LEFT */}
+    {/* <div className="title">
+      <h1>Contact Us</h1></div> */}
     <div className="bgImg">
-    <div className="title">
-      <h1>Contact Us</h1></div>
+   <img src="https://trynext-react.envytheme.com/images/page-banner1.jpg" alt="img"/>
     </div>
-    <div className="overlay"></div>
       <div className="contact" id="contactus">
       <div className="contactDetails">
       <div className="contactCard">

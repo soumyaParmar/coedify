@@ -1,12 +1,21 @@
 .card {
   height: 250px;
+  box-shadow: 1px 3px 26px 0px rgba(0,0,0,25%);
+  border-radius: 10px;
   width: 30%;
   display: flex;
   border: none;
   flex-direction: column;
-  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  margin-top: 40px;
+}
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 1px 3px 26px 0px rgba(0,0,0,50%);
 }
 .card__title {
+  margin-left: 10px;
   font-size: 24px;
   transition: all 0.6s ease;
   cursor: pointer;
@@ -17,7 +26,9 @@
   color: #ff2c9c;
 }
 .card__logo img {
+  margin-left: 10px;
   width: 90px;
+  margin-top: 10px;
   object-fit: contain;
   height: 70px;
   line-height: 70px;
@@ -31,6 +42,7 @@
 .card__description p {
   letter-spacing: 1px;
   font-size: 15px;
+  margin-left: 10px;
 }
 @media screen and (max-width: 600px) {
   .card {

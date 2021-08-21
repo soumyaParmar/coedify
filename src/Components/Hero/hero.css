@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 .hero__left p {
-  color: #ff2c9c;
+  
   margin-bottom: 20px;
   font-size: 18px;
   display: block;
@@ -44,7 +44,7 @@
   position: relative;
   margin-left: 10px;
   cursor: pointer;
-  color: #ff2c9c;
+
   font-weight: 600;
   display: block;
   font-size: 20px;
@@ -94,7 +94,7 @@
   overflow: hidden;
 }
 .btn__getStarted:hover {
-  color: #ff2c9c;
+  color: black;
   cursor: pointer;
 }
 .btn__getStarted::before {
