@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import { ImCross } from "react-icons/im";
+import {AiOutlineClose} from "react-icons/ai"
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
 import {  NavLink } from "react-router-dom";
@@ -14,13 +15,15 @@ const Navbar = () => {
   return (
     <>
     <div className="alert alert-warning alert-dismissible fade show" role="alert">
-    
-      Checkout our Mentorship program
+      <div className="banner__left">
+        <span> Checkout our Mentorship program</span>
+      </div>
+     <div className="banner__right">
       <button className="register">
            <a href="https://www.coedify.com/" target="_"> <span>Learn More</span></a>
           </button>
-   
-  <span type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></span>
+          </div>
+  <span className="banner__btn" type="button" data-bs-dismiss="alert" aria-label="Close"><AiOutlineClose/></span>
 </div>
     <nav> 
       <div className="logo">

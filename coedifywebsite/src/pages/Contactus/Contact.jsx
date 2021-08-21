@@ -6,7 +6,12 @@ import "./Contact.css";
 function Contact() {
   return (
     <>
-    {/* backgroundImageHere */}
+    {/* backgroundImage :---STYLING IS LEFT */}
+    <div className="bgImg">
+    <div className="title">
+      <h1>Contact Us</h1></div>
+    </div>
+    <div className="overlay"></div>
       <div className="contact" id="contactus">
       <div className="contactDetails">
       <div className="contactCard">
