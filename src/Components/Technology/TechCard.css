@@ -1,0 +1,40 @@
+.techCard{
+    height: 130px;
+    width: 140px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10px;
+    box-shadow: 1px 3px 26px 0px rgba(0, 0, 0, 0.30);
+}
+.techCard:hover{
+    box-shadow: 1px 3px 26px 0px rgba(0, 0, 0, 0.50);
+}
+.techCard__logo{
+    margin-bottom: 15px;
+    height: 65px;
+    margin-top: 10px;
+}
+.techCard__logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.techCard__logo svg{
+    margin-top: 10px;
+    border-radius: 100%;
+    font-size: 60px;
+}
+.techCard__name{
+    width: 140px;
+    text-align: center;
+}
+.techCard__name p{
+    font-size: 20px;
+    font-weight: bold;
+}

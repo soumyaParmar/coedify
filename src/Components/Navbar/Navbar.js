@@ -39,7 +39,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <Link exact to="aboutUs" smooth={true} activeClassName="active">
+          <Link activeClass="active" exact to="aboutUs" smooth={true}>
             About us
           </Link>
         </li>
@@ -60,7 +60,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-            <NavLink exact to="technology"activeClass="active">Technology</NavLink>
+            <Link exact to="technology"activeClass="active" smooth={true}>Technology</Link>
         </li>
         <li>
           <NavLink exact to="/contactus" activeClassName="active">

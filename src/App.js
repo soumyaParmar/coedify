@@ -3,7 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import ScrollToTop from "./Components/ScrollToTop";
-import Technology from "./Components/Technology/Technology";
+import Technology from "./pages/Technology/Technology";
 import Home from "./pages/Home";
 import Contact from "./pages/Contactus/Contact";
 
@@ -17,9 +17,7 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/Technology" component={Technology}/>
-            
           <Route exact path="/contactus" component={Contact}/>
-           
         </Switch>
       </BrowserRouter>
       <ScrollToTop />
