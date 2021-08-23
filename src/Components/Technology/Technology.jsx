@@ -1,11 +1,8 @@
 import React from "react";
-import reactlogo from  "./download.png";
-import angular from "./angular.png"
-import {FiDatabase} from "react-icons/fi"
-import flutter from "./flutter.png"
+import {FiDatabase} from "react-icons/fi";
+import {Angular,Reactjs,Vue,Next,Nodejs,Express,Firebase,Graphql, Php, Laravel, SpringBoot, Dotnet, Django, Flutter, Native, Figma, Adobe, Jest, Cypress, Seleniun, Mysql, Mongodb, Postgress, Sqlserver } from "./logos/imports";
 import { Tabs, Tab, AppBar } from "@material-ui/core";
 import { ImMobile } from "react-icons/im";
-// import {DiReact} from "react-icons/di"
 import { SiMaterialdesign, SiNodeRed } from "react-icons/si";
 import { GoSettings } from "react-icons/go";
 import "./Technology.css";
@@ -13,7 +10,6 @@ import { BsCodeSlash } from "react-icons/bs";
 import TechCard from "./TechCard";
 function Technology() {
   const [selectedTab, setSelectedTab] = React.useState(0);
-
   const handleTab = (e, val) => {
     setSelectedTab(val);
   };
@@ -57,6 +53,7 @@ function Technology() {
     </div>
   );
 }
+
 function TabPanel(props) {
   const { children, value, index } = props;
   return <>{value === index && <>{children}</>}</>;
@@ -67,9 +64,10 @@ function FrontEnd(){
     return (
         <>
         <div className="technos">
-       <TechCard name="ReactJs" logo={reactlogo}/>
-       <TechCard name="Angular" logo={angular}/>
-       <TechCard name="VueJs" logo={flutter}/>
+       <TechCard name="ReactJs" logo={Reactjs}/>
+       <TechCard name="Angular" logo={Angular}/>
+       <TechCard name="VueJs" logo={Vue}/>
+       <TechCard name="NextJs" logo={Next}/>
        </div>
         </>
     )
@@ -79,10 +77,15 @@ function BackEnd(){
     return (
         <>
        <div className="technos">
-       <TechCard name="NodeJs" logo={reactlogo}/>
-       <TechCard name="Firebase" logo={angular}/>
-       <TechCard name="PHP" logo={flutter}/>
-       <TechCard name="Express" logo={flutter}/>
+       <TechCard name="NodeJs" logo={Nodejs}/>
+       <TechCard name="Express" logo={Express}/>
+       <TechCard name="Firebase" logo={Firebase}/>
+       <TechCard name="PHP" logo={Php}/>
+       <TechCard name="GraphQl" logo={Graphql}/>
+       <TechCard name="Laravel" logo={Laravel}/>
+       <TechCard name="Spring Boot" logo={SpringBoot}/>
+       <TechCard name=".net" logo={Dotnet}/>
+       <TechCard name="Django" logo={Django}/>
        </div>
         </>
     )
@@ -92,8 +95,8 @@ function Mobile(){
     return (
         <>
        <div className="technos">
-       <TechCard name="React Native" logo={reactlogo}/>
-       <TechCard name="Flutter" logo={flutter}/>
+       <TechCard name="React Native" logo={Native}/>
+       <TechCard name="Flutter" logo={Flutter}/>
        </div>
         </>
     )
@@ -103,9 +106,8 @@ function Design(){
     return (
         <>
        <div className="technos">
-       <TechCard name="ReactJs" logo={reactlogo}/>
-       <TechCard name="Angular" logo={angular}/>
-       <TechCard name="Flutter" logo={flutter}/>
+       <TechCard name="Figma" logo={Figma}/>
+       <TechCard name="Adobe XD" logo={Adobe}/>
        </div>
         </>
     )
@@ -116,20 +118,22 @@ function Testing(){
     return (
         <>
        <div className="technos">
-       <TechCard name="ReactJs" logo={reactlogo}/>
-       <TechCard name="Angular" logo={angular}/>
-       <TechCard name="Flutter" logo={flutter}/>
+       <TechCard name="Jest" logo={Jest}/>
+       <TechCard name="Cypress" logo={Cypress}/>
+       <TechCard name="Seleniun" logo={Seleniun}/>
        </div>
         </>
     )
 }
+
 function Database(){
     return (
         <>
        <div className="technos">
-       <TechCard name="ReactJs" logo={reactlogo}/>
-       <TechCard name="Angular" logo={angular}/>
-       <TechCard name="Flutter" logo={flutter}/>
+       <TechCard name="MySql" logo={Mysql}/>
+       <TechCard name="MongoDb" logo={Mongodb}/>
+       <TechCard name="Postgress Sql" logo={Postgress}/>
+       <TechCard name="Sql Server" logo={Sqlserver}/>
        </div>
         </>
     )
