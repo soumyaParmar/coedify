@@ -1,28 +1,59 @@
 import React from "react";
+import img from "./hero__img.jpg";
+import certificate from "./certificate.png";
+import logooo from "./logooo.png"
+import fire from "./fireball.png"
 import "./hero.css";
+import contact from "./contact.png"
 function Hero() {
   return (
-    <section className="hero">
-      <section className="hero__left">
-        <p>A Digital Agency</p>
-        <h1>We're A Full-Range Digital Agency.</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <div className="hero__buttons">
-          <span className="btn__getStarted">Get Started</span>
-          <span className="btn__howItWork">How it Works</span>
+    <>
+      <div className="hero">
+        <div className="hero__left">
+          <h1>Get the Top Developers with us</h1>
+          <span>
+            Although precise definitions of each engineering type may be hard to
+            come by, we explain each engineering track based on our technical
+            screening. As companies
+          </span>
+          <div className="buttons">
+            <button className="btn__getDeveloper">Get Developers</button>
+            <button className="btn__apply">Apply for Jobs</button>
+          </div>
         </div>
-      </section>
-      <section className="hero__right">
-        <img
-          src="https://images.unsplash.com/photo-1573495628363-04667cedc587?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-          alt="img"
-        />
-      </section>
-    </section>
+        <div className="hero__right">
+          <img src={img} alt="img" />
+        </div>
+      </div>
+      <h1 className="heading">On Demand Amazing Developers</h1>
+      <div className="hero2">
+        <div className="hero2__left">
+          <div className="boxes1">
+            <Box url={fire} desc="Hire for proven skills train by us, rated by us" />
+            <Box url={certificate} desc="Every candidate you hire is a level above from others" />
+          </div>
+          <div className="boxes2">
+            <Box url={contact} desc="Meet the right fit for your company here" />
+            <Box url={logooo} desc="Access the diverse pool of talents here" />
+          </div>
+        </div>
+        <div className="hero2__right"></div>
+      </div>
+    </>
   );
 }
 
 export default Hero;
+
+function Box(props) {
+  return (
+    <div className="box">
+      <div className="box__logo">
+        <img src={props.url} alt="logo" />
+      </div>
+      <div className="description">
+        <p>{props.desc}</p>
+      </div>
+    </div>
+  );
+}
