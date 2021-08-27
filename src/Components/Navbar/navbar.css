@@ -225,6 +225,12 @@ p{
 }
 
 @media screen and (max-width: 600px) {
+  .menu-list li a:hover::after,.Dropdown-control:hover::after {
+    opacity: 1;
+    transform: scaleX(0.8);
+    background-color: #023E8A;
+  }
+  
   .menu-icon {
     display: block;
   }
@@ -259,6 +265,7 @@ p{
   .menu-list li a,
   .menu-list li:last-child a {
     display: block;
+    font-size: 38px;
     margin: auto;
   }
 

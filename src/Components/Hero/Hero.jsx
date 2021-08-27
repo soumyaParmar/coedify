@@ -1,5 +1,6 @@
 import React from "react";
 import img from "./hero__img.jpg";
+import wave from "./wave.png";
 import certificate from "./certificate.png";
 import logooo from "./logooo.png"
 import fire from "./fireball.png"
@@ -7,11 +8,11 @@ import "./hero.css";
 import contact from "./contact.png"
 function Hero() {
   return (
-    <div className="wave">
-    
+    <>
+    <img className="wave" src = {wave} alt="wave"/>
       <div className="hero">
         <div className="hero__left">
-          <h1>Get the Top Developers with us</h1>
+          <h1 className="hero__heading">Get the Top Developers </h1>
           <span className="hero__desc">
             Although precise definitions of each engineering type may be hard to
             come by, we explain each engineering track based on our technical
@@ -40,7 +41,7 @@ function Hero() {
         </div>
         <div className="hero2__right"></div>
       </div>
-    </div>
+    </>
   
   );
 }
