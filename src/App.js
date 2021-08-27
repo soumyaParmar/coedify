@@ -7,6 +7,7 @@ import Technology from "./pages/Technology/Technology";
 import Home from "./pages/Home";
 import Contact from "./pages/Contactus/Contact";
 
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
       </BrowserRouter>
       <ScrollToTop />
       <Footer />
+  
     </div>
   );
 }

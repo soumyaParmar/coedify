@@ -239,7 +239,10 @@ p{
     position: absolute;
     padding: 20px;
     right: 0;
-    top: 64px;
+    top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
     transition: all 0.5s ease-in-out;
   }
 
@@ -270,6 +273,10 @@ p{
   .alert-warning{
     font-size: 15px;
   } 
+  svg{
+    background-color: transparent;
+    color: white;
+  }
   .register{
     letter-spacing: normal;
     margin-top: 10px;

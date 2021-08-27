@@ -7,18 +7,19 @@ import "./hero.css";
 import contact from "./contact.png"
 function Hero() {
   return (
-    <>
+    <div className="wave">
+    
       <div className="hero">
         <div className="hero__left">
           <h1>Get the Top Developers with us</h1>
-          <span>
+          <span className="hero__desc">
             Although precise definitions of each engineering type may be hard to
             come by, we explain each engineering track based on our technical
             screening. As companies
           </span>
           <div className="buttons">
-            <button className="btn__getDeveloper">Get Developers</button>
-            <button className="btn__apply">Apply for Jobs</button>
+            <span className="btn__getDeveloper">Get Developers</span>
+            <span className="btn__apply">Apply for Jobs</span>
           </div>
         </div>
         <div className="hero__right">
@@ -39,7 +40,8 @@ function Hero() {
         </div>
         <div className="hero2__right"></div>
       </div>
-    </>
+    </div>
+  
   );
 }
 
