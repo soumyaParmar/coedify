@@ -93,6 +93,7 @@ svg {
 .menu-list {
   list-style-type: none;
   margin-right: 50px;
+  margin-top: 20px;
   font-family: 'Saira', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -122,7 +123,7 @@ p{
   text-transform: capitalize;
   position: relative;
   border: none;
-  font-size: 17px;
+  font-size: 20px;
   text-decoration: none;
   font-weight: 600;
   padding: 5px 10px;
@@ -158,6 +159,7 @@ p{
 .menu-list li, .menu-list a{
   color: white;
 }
+
 .menu-list li a::after,.Dropdown-control::after {
   content: "";
   height: 2px;
@@ -203,7 +205,7 @@ p{
 
 .register:hover {
   padding-right: 24px;
-  padding-left: 8px;
+  padding-left: 8px; 
 }
 .register span{
   color: white;
@@ -213,10 +215,18 @@ p{
   opacity: 1;
   right: 10px;
 }
-
+.btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
 @media screen and (max-width: 800px) {
   .logo {
     font-size: 20px;
+  }
+  .btns{
+    display: none;
   }
   .menu-list li a {
     font-size: 14px;

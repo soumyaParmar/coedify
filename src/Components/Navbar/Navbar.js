@@ -27,58 +27,36 @@ const Navbar = () => {
   <span className="banner__btn" type="button" data-bs-dismiss="alert" aria-label="Close"><AiOutlineClose/></span>
 </div> */}
       {/* <div className="navbar"> */}
-        <nav>
-          <div className="logo">
-            <img src={logo} alt="logo" />
+      <nav>
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="menu-icon" onClick={handleClick}>
+          {clicked ? <ImCross /> : <GiHamburgerMenu />}
+        </div>
+        <ul className={clicked ? "menu-list" : "menu-list close"}>
+          <li>
+            <Link exact to="/" activeClassName="active">
+              Why us?
+            </Link>
+          </li>
+          <li>
+            <Link activeClass="active" exact to="aboutUs" smooth={true}>
+              How We Work?
+            </Link>
+          </li>
+          <li>
+            <Link exact to="service" smooth={true} activeClassName="active">
+              Tech Stack
+            </Link>
+          </li>
+        </ul>
+        
+        <div className="btns">
+            <span className="btn__getDeveloper">Hire Developers</span>
+            <span className="btn__apply">Apply as a Developer</span>
           </div>
-          <div className="menu-icon" onClick={handleClick}>
-            {clicked ? <ImCross /> : <GiHamburgerMenu />}
-          </div>
-          <ul className={clicked ? "menu-list" : "menu-list close"}>
-            <li>
-              <Link exact to="/" activeClassName="active">
-                Why us?
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" exact to="aboutUs" smooth={true}>
-                How We Work?
-              </Link>
-            </li>
-            <li>
-              <Link exact to="service" smooth={true} activeClassName="active">
-                Our Talent
-              </Link>
-            </li>
-
-            <li>
-              <Link exact to="/" activeClassName="active">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                exact
-                to="testimonial"
-                smooth={true}
-                activeClassName="active"
-              >
-                About Us
-              </Link>
-            </li>
-            {/* <li>
-              <Link exact to="technology" activeClass="active" smooth={true}>
-                Technology
-              </Link>
-            </li>
-            <li>
-              <NavLink exact to="/contactus" activeClassName="active">
-                Contact Us
-              </NavLink>
-            </li> */}
-          </ul>
-        </nav>
-      {/* </div> */}
+      </nav>
     </>
   );
 };

@@ -1,16 +1,17 @@
 .hero,.hero2{
-  margin: 50px 5% 50px 5%;
-  width: 90%;
+  margin: 50px 10% 50px 10%;
+  width: 80%;
   display: flex;
 }
 .hero{
-  margin-top: -600px;
+  margin-top: -550px;
+  text-align: center;
 }
 .wave{
   width: 100vw;
-  height: 85vh;
+  height: 75vh;
 }
-.hero__left,.hero2__left{
+.hero2__left{
   width: 45%;
 }
 
@@ -24,6 +25,7 @@ line-height: 91px;
 }
 .hero__desc{
   font-family: Open Sans;
+  margin-bottom: 20px;
   color: white;
 font-style: normal;
 font-weight: normal;
@@ -31,11 +33,14 @@ font-size: 26px;
 line-height: 35px;
 }
 .buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
   
-  margin:50px auto;
 }
 .btn__getDeveloper{
   border-radius: 5px;
+  margin-bottom: 15px;
   margin-right: 10px;
   border:1px solid #29BB89;
   color: #fff;
@@ -57,23 +62,17 @@ line-height: 35px;
   background-color: #fff;
   left: 0;
   color:#fff;
-  /* z-index: -8881; */
   border-radius: 5px;
   transition: all 0.4s ease-in;
   transform: translateX(-50%);
   transform: translateY(-50%);
   color: #29BB89;
 }
-/* .btn__getDeveloper:hover{
-  color: #29BB89;
-} */
-/* .btn__getDeveloper:hover::before{
-  width: 100%;
-  color: #29BB89;
-} */
+
 .btn__apply{
   border-radius: 5px;
   margin-right: 10px;
+  margin-bottom: 15px;
   border:1px solid #fff;
   color: #fff;
   font-weight: bold;
@@ -124,15 +123,22 @@ line-height: 35px;
   object-fit: contain;
   border-radius: 20px;
 }
+.hero2__right img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
  .heading{
   text-align: center;
   font-weight: 500;
+  margin-top: 150px;
 font-size: 64px;
 line-height: 81px;
 }
                                            /* BOX STYLING */
 .box{
   height: 150px;
+  margin-right:20px ;
   width: 150px;
   border-radius: 10px;
   transition: all 0.6s ease;
@@ -163,7 +169,7 @@ line-height: 81px;
   text-align: center;
   font-size: 17px;
   font-weight: 700;
-}
+} 
 
 .hero2__left{
   display: flex;
@@ -176,16 +182,36 @@ line-height: 81px;
   display: flex;
   justify-content: space-around;
 }
+                                  /* Ingenious Devs */
+.ings__heading{
+  font-family: Dosis;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 91px;
+  font-size: 72px;
+}
+.igns{
+  margin: 50px 5% 50px 5%;
+}
+.igns h3{
+  margin: 30px 0;
+}
+.dev__sections{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
                                       /* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
   .hero{
     flex-direction: column;
     margin-top: 0;
+    text-align: left;
   }
-
-  .hero__left{
-    width: 100%;
-  }
+   .buttons{
+     flex-direction: column;
+   }
   .hero2__left h1{
     color: black;
   }
