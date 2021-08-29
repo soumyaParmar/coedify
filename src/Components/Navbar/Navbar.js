@@ -53,8 +53,8 @@ const Navbar = () => {
         </ul>
         
         <div className="btns">
-            <span className="btn__getDeveloper">Hire Developers</span>
-            <span className="btn__apply">Apply as a Developer</span>
+            <span className="btn__hire">Hire Developers</span>
+            <span className="btn__applyDev">Apply as a Developer</span>
           </div>
       </nav>
     </>

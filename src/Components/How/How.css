@@ -1,0 +1,54 @@
+.how{
+    margin: 50px 10% 50px 10%;
+}
+.how__mainHeading{
+     text-align: center;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 81px;
+}
+.how1__right img,.how2__left img,.how3__right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 55px;
+}
+.how1,.how2,.how3{
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+    width: 80%;
+}
+.how1 p,.how2 p,.how3 p{
+    font-size: 20px;
+}
+.how1__left,.how1__right,.how2__left,.how2__right,.how3__left,.how3__right{
+    width: 40%;
+    text-align: left;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .how2{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .how1__left,.how1__right,.how2__left,.how2__right,.how3__left,.how3__right{
+        width: 100%;
+    }
+    .how1,.how3{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

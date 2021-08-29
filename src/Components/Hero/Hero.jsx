@@ -1,7 +1,7 @@
 import React from "react";
 import wave from "./wave.png";
 import "./hero.css";
-
+// import How from "../How/How";
 function Hero() {
   return (
     <>
@@ -9,13 +9,9 @@ function Hero() {
 
       <div className="hero">
         <div className="hero__left">
-          <h1 className="hero__heading">Get the Top Developers </h1>
+          <h1 className="hero__heading">Expand your team quickly, hire vetted developers.  </h1>
           <span className="hero__desc">
-            Although precise definitions of each engineering type may be hard to
-            come by, we explain each engineering track based on our technical
-            screening. As companies.Although precise definitions of each
-            engineering type may be hard to come by, we explain each engineering
-            track based on our technical screening. As companies
+          We are engineers, we know the pain of hiring tech talents that fits the job requirement. Accelerate your hiring process, reduce recruitment and training costs by onboarding pre-screened trained and tested developers specific to your needs.   
           </span>
           <div className="buttons">
             <span className="btn__getDeveloper">Hire Developers</span>

@@ -25,8 +25,15 @@ const Section4 = () => {
               item2={item2}
               item3={item3}
             />
+
           );
         })}
+      </div>
+      <div className="grad">
+     
+        <h1 className="grad__heading">Meet the best developers on CoEdify as per your requirements</h1>
+        <button className="btn__getDeveloperGrad">Hire Developers</button>
+     
       </div>
     </div>
   );

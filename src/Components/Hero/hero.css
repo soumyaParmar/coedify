@@ -4,12 +4,13 @@
   display: flex;
 }
 .hero{
-  margin-top: -550px;
+  margin-top: -570px;
   text-align: center;
+  height: 65vh;
 }
 .wave{
   width: 100vw;
-  height: 75vh;
+  height: 85vh;
 }
 .hero2__left{
   width: 45%;
@@ -20,8 +21,7 @@
   color: white;
 font-style: normal;
 font-weight: bold;
-font-size: 72px;
-line-height: 91px;
+font-size: 60px;
 }
 .hero__desc{
   font-family: Open Sans;
@@ -29,13 +29,13 @@ line-height: 91px;
   color: white;
 font-style: normal;
 font-weight: normal;
-font-size: 26px; 
+font-size: 20px; 
 line-height: 35px;
 }
 .buttons{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
   
 }
 .btn__getDeveloper{
@@ -51,23 +51,6 @@ line-height: 35px;
   cursor: pointer;
   position: relative;
 }
-.btn__getDeveloper::before{
-  content: "";
-  position: absolute;
-  height: 100%;
-  margin: 0 auto;
-  width: 0%;
-  top: 24px;
-  right: 0;
-  background-color: #fff;
-  left: 0;
-  color:#fff;
-  border-radius: 5px;
-  transition: all 0.4s ease-in;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
-  color: #29BB89;
-}
 
 .btn__apply{
   border-radius: 5px;
@@ -81,31 +64,9 @@ line-height: 35px;
   cursor: pointer;
   position: relative;
 }
-.btn__apply::before{
-  content: "";
-  position: absolute;
-  height: 100%;
-  margin: 0 auto;
-  width: 0%;
-  top: 0;
-  right: 0;
-  background-color: #2D46B9;
-  left: 0;
-  border-radius: 5px;
-  transition: all 0.4s ease-in;
-  color: white;
-  z-index: -1;
-}
-.btn__apply:hover{
-  color: white;
-}
-.btn__apply:hover::before{
-  width: 100%;
-  color:white;
-}
+
 .hero__right{
   margin-top: -50px;
-  /* border-radius: 10px; */
 }
 .hero__right,.hero2__right{
   width: 45%;
@@ -135,7 +96,32 @@ line-height: 35px;
 font-size: 64px;
 line-height: 81px;
 }
-                                           /* BOX STYLING */
+.grad{
+  margin: 50px -10%;
+  height: 200px;
+  background: linear-gradient(135deg, hsla(229, 61%, 45%, 1) 0%, hsla(159, 64%, 45%, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn__getDeveloperGrad{
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-left: 35px;
+  border:1px solid #29BB89;
+  color: #fff;
+  font-weight: bold;
+  background-color: #2D46B9;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.grad__heading{
+  font-size: 50px;
+  color: white;
+}
+                                /* BOX STYLING */
 .box{
   height: 150px;
   margin-right:20px ;
@@ -203,11 +189,64 @@ line-height: 81px;
   flex-wrap: wrap;
 }
                                       /* MEDIA QUERIES */
+
+ 
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 766px) {
+ .hero{
+  margin-top: -756px;
+  height: 75vh;
+ }
+ 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .hero{
+    margin-top: -950px;
+    
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
 @media screen and (max-width: 600px) {
   .hero{
     flex-direction: column;
     margin-top: 0;
     text-align: left;
+    height: 75vh;
+  }
+  .grad{
+    flex-direction: column;
+    height: 400px;
+  }
+  .btn__getDeveloperGrad{
+    margin: auto;
+  }
+  .grad__heading{
+    text-align: center;
+    margin-top: 25px;
+
+  }
+  .hero__heading{
+    font-size: 50px;
+  }
+  .logo img{
+    width: 75%;
   }
    .buttons{
      flex-direction: column;
