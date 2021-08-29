@@ -1,13 +1,13 @@
 
 nav {
-  padding:20px 50px 10px 50px;
+  padding:0px 50px 0px 50px;
   display: flex;
-  background: #2D46B9;
+  background: #016EEA;
   align-items: center;
-  /* justify-content: space-between; */
   z-index: 10; 
   color: white;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   color: #18181b;
 }
 .title h1{
@@ -217,7 +217,9 @@ svg {
     transform: scaleX(0.8);
     background-color: #023E8A;
   }
-  
+  nav{
+    padding:10px 50px 10px 50px;
+  }
   .menu-icon {
     display: block;
   }
@@ -232,10 +234,10 @@ svg {
     position: absolute;
     padding: 20px;
     right: 0;
-    top: 90px;
+    top: 75px;
     display: flex;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 92vh;
     transition: all 0.5s ease-in-out;
   }
 

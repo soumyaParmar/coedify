@@ -34,7 +34,7 @@ const Section4 = () => {
         <button className="btn__getDeveloperGrad">Hire Developers</button>
       </div>
       <div className="dev__sections">
-      {list1.splice(0,3)}
+      {list1.splice(0,)}
       </div>
     </div>
   );
