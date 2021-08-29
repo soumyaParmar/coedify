@@ -1,20 +1,16 @@
-import React from 'react'
-// import About from '../Components/About us/About'
-import Hero from '../Components/Hero/Hero'
-// import Services from '../Components/Services/Services'
-// import Testimonial from '../Components/Testimonials/Testimonial'
-// import Technology from '../Components/Technology/Technology'
+import React from "react";
+import Hero from "../Components/Hero/Hero";
+import Section2 from "../Components/Section2/Section2";
+import Section4 from "./../Components/Section4/Section4";
 
 const Home = () => {
-    return (
-        <div>
-            <Hero/>
-            {/* <About/> */}
-            {/* <Services/> */}
-            {/* <Testimonial/> */}
-            {/* <Technology/> */}
-        </div>
-    )
-}
+  return (
+    <div>
+      <Hero />
+      <Section2 />
+      <Section4 />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
