@@ -13,6 +13,8 @@
 }
 .hero__left{
   width: 60%;
+  text-align: left;
+  margin-right: 150px;
 }
 .wave{
   width: 100vw;
@@ -27,7 +29,7 @@
   color: white;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
 }
 .hero__desc{
   font-family: Open Sans;
@@ -35,12 +37,12 @@
   color: white;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px; 
-  line-height: 35px;
+  font-size: 15px; 
+  line-height: 20px;
 }
 .buttons{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 30px;
   
 }
@@ -115,9 +117,9 @@
 }
                                 /* BOX STYLING */
 .box{
-  height: 150px;
+  height: 170px;
   margin-right:20px ;
-  width: 150px;
+  width: 160px;
   border-radius: 10px;
   transition: all 0.6s ease;
   cursor: pointer;
@@ -234,7 +236,7 @@
     font-size: 50px;
   }
   .logo img{
-    width: 75%;
+    width: 60%;
   }
    .buttons{
      flex-direction: column;

@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleClick}>
           {clicked ? <ImCross /> : <GiHamburgerMenu />}
         </div>
-        <ul className={clicked ? "menu-list" : "menu-list close"}>
+        <ul className={clicked ? "menu-list active" : "menu-list close"}>
           <li>
             <Link exact to="/" activeClassName="active">
               Why us?
