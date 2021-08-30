@@ -194,9 +194,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 766px) {
-.hero__cover{
-  background-color: white;
-}
+
 .hero__left{
   width: 100%;
 }
@@ -261,14 +259,10 @@
     width: 100%;
   }
   .hero__heading{
-    color: black;
     margin-bottom: 20px;
   }
   .hero2__right{
     width: 100%;
-  }
-  .hero__desc{
-    color: black;
   }
   .hero__right img{
     margin: auto;
