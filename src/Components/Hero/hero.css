@@ -1,5 +1,10 @@
-.hero,.hero2{
+.hero{
   margin: 10% 5% 50px 5%;
+  width: 90%;
+  display: flex;
+}
+.hero2{
+  margin: 5% 5% 50px 5%;
   width: 90%;
   display: flex;
 }
@@ -86,38 +91,18 @@
  .heading{
   text-align: center;
   font-weight: 500;
-  margin-top: 200px;
+  letter-spacing: 1px;
+  line-height: 60px;
+  margin-bottom: 50px;
+  margin-top: 150px;
   font-size: 64px;
-  line-height: 81px;
 }
-.grad{
-  margin: 50px -10%;
-  height: 200px;
-  background: linear-gradient(135deg, hsla(229, 61%, 45%, 1) 0%, hsla(159, 64%, 45%, 1) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn__getDeveloperGrad{
-  border-radius: 5px;
-  margin-bottom: 15px;
-  margin-left: 35px;
-  border:1px solid #29BB89;
-  color: #fff;
-  font-weight: bold;
-  background-color: #2D46B9;
-  font-size: 25px;
-  padding: 10px;
-  cursor: pointer;
-  position: relative;
-}
-.grad__heading{
-  font-size: 50px;
-  color: white;
-}
+
+
+
                                 /* BOX STYLING */
 .box{
-  height: 170px;
+  height: 160px;
   margin-right:20px ;
   width: 160px;
   border-radius: 10px;
@@ -213,25 +198,8 @@
 
 }
 
-
 @media screen and (max-width: 600px) {
-  .hero{
-    flex-direction: column;
-    margin-top: 25%;
-    text-align: left;
-  }
-  .grad{
-    flex-direction: column;
-    height: 400px;
-  }
-  .btn__getDeveloperGrad{
-    margin: auto;
-  }
-  .grad__heading{
-    text-align: center;
-    margin-top: 25px;
 
-  }
   .hero__heading{
     font-size: 50px;
   }
@@ -249,7 +217,7 @@
     display: none;
   }
   .btn__apply{
-    background-color: #2D46B9;
+    background-color: #016EEA;;
   }
   .hero__right{
     width: 100%;

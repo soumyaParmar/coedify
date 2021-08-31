@@ -1,20 +1,21 @@
 import React from "react";
+import Gradient from "../Gradient/Gradient";
 import DevCard from "./DevCard";
 import { DevList } from "./DevList";
 
 const Section4 = () => {
-  const list1 = DevList.map(({id, url, title, item1, item2, item3})=>{
+  const list1 = DevList.map(({ id, url, title, item1, item2, item3 }) => {
     return (
       <DevCard
-              index={id}
-              url={url}
-              title={title}
-              item1={item1}
-              item2={item2}
-              item3={item3}
-            />
-    )
-  })
+        index={id}
+        url={url}
+        title={title}
+        item1={item1}
+        item2={item2}
+        item3={item3}
+      />
+    );
+  });
   return (
     <div className="igns">
       <h1 className="ings__heading">Our Ingenious Developers</h1>
@@ -26,16 +27,9 @@ const Section4 = () => {
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation{" "}
       </p>
-      <div className="dev__sections">
-      {list1.splice(0,3)}
-      </div>
-      <div className="grad">
-        <h1 className="grad__heading">Meet the best developers on CoEdify as per your requirements</h1>
-        <button className="btn__getDeveloperGrad">Hire Developers</button>
-      </div>
-      <div className="dev__sections">
-      {list1.splice(0,)}
-      </div>
+      <div className="dev__sections">{list1.splice(0, 3)}</div>
+      <Gradient />
+      <div className="dev__sections">{list1.splice(0)}</div>
     </div>
   );
 };

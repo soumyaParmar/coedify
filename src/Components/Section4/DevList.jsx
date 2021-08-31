@@ -1,50 +1,56 @@
+import fullstack from "./fullstack.png";
+import frontend from "./frontend.png";
+// import backend from "./back.png";
+// import db from "./db.png";
+// import native from "./native.png";
+// import devops from "./devopss.png";
 export const DevList = [
-    {
-        id:1,
-        url:"https://miro.medium.com/max/1000/1*1n5PmMFrZKSj05PmqEE9yQ.png",
-        title:"FullStack Developer",
-        item1:"Strong CS foundation",
-        item2:"Project Experience",
-        item3:"Worked with different frameworks",
-    },
-    {
-        id:2,
-        url:"https://miro.medium.com/max/1000/1*1n5PmMFrZKSj05PmqEE9yQ.png",
-        title:"FullStack Developer",
-        item1:"Strong CS foundation",
-        item2:"Project Experience",
-        item3:"Worked with different frameworks",
-    },
-    {
-        id:3,
-        url:"https://miro.medium.com/max/1000/1*1n5PmMFrZKSj05PmqEE9yQ.png",
-        title:"FullStack Developer",
-        item1:"Strong CS foundation",
-        item2:"Project Experience",
-        item3:"Worked with different frameworks",
-    },
-    {
-        id:4,
-        url:"https://miro.medium.com/max/1000/1*1n5PmMFrZKSj05PmqEE9yQ.png",
-        title:"FullStack Developer",
-        item1:"Strong CS foundation",
-        item2:"Project Experience",
-        item3:"Worked with different frameworks",
-    },
-    {
-        id:5,
-        url:"https://miro.medium.com/max/1000/1*1n5PmMFrZKSj05PmqEE9yQ.png",
-        title:"FullStack Developer",
-        item1:"Strong CS foundation",
-        item2:"Project Experience",
-        item3:"Worked with different frameworks",
-    },
-    {
-        id:6,
-        url:"https://miro.medium.com/max/1000/1*1n5PmMFrZKSj05PmqEE9yQ.png",
-        title:"FullStack Developer",
-        item1:"Strong CS foundation",
-        item2:"Project Experience",
-        item3:"Worked with different frameworks",
-    },
-]
+  {
+    id: 1,
+    url: fullstack,
+    title: "FullStack",
+    item1: "Strong CS foundation",
+    item2: "Project Experience",
+    item3: "Worked with different frameworks",
+  },
+  {
+    id: 2,
+    url: frontend,
+    title: "Front-End",
+    item1: "Strong CS foundation",
+    item2: "Project Experience",
+    item3: "Worked with different frameworks",
+  },
+  {
+    id: 3,
+    url: frontend,
+    title: "Back-End",
+    item1: "Strong CS foundation",
+    item2: "Project Experience",
+    item3: "Worked with different frameworks",
+  },
+  {
+    id: 4,
+    url: fullstack,
+    title: "Native Mobile",
+    item1: "Strong CS foundation",
+    item2: "Project Experience",
+    item3: "Worked with different frameworks",
+  },
+  {
+    id: 5,
+    url: frontend,
+    title: "DevOps",
+    item1: "Strong CS foundation",
+    item2: "Project Experience",
+    item3: "Worked with different frameworks",
+  },
+  {
+    id: 6,
+    url: fullstack,
+    title: "SQL Tuning",
+    item1: "Strong CS foundation",
+    item2: "Project Experience",
+    item3: "Worked with different frameworks",
+  },
+];
