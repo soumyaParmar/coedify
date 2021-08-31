@@ -182,6 +182,7 @@ select {
   margin-bottom: 21px;
   margin-right: 10px;
   border: 1px solid #29bb89;
+  box-shadow: 1px 2px 26px -3px rgba(0, 0, 0, 0.49);
   color: #fff;
   font-weight: bold;
   background-color: #29bb89;
@@ -197,7 +198,6 @@ select {
   margin-right: 10px;
   margin-bottom: 20px;
   margin-top: 0px;
-  border: 1px solid #fff;
   color: #fff;
   background-color: #016EEA;;
   font-weight: bold;
@@ -205,7 +205,13 @@ select {
   padding: 5px;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
+
+.btn__applyDev:hover {
+  margin-top: -3px;
+}
+
 .li_btn {
   display: none;
 }
@@ -256,10 +262,10 @@ select {
     top: 75px;
     display: flex;
     justify-content: flex-start;
-    height: 92vh; 
+    height: 92vh;
     transition: all 0.5s ease-in-out;
   }
- 
+
   .menu-list li {
     margin-bottom: 60px;
     color: black;
@@ -272,7 +278,7 @@ select {
     color: white;
     padding: 0;
   }
-  .menu-list li:nth-child(4){
+  .menu-list li:nth-child(4) {
     color: white;
     width: 210px;
     padding: 0;
@@ -283,29 +289,29 @@ select {
     font-size: 22px;
     margin: auto;
   }
-  .menu-list li{
+  .menu-list li {
     opacity: 0;
   }
-   .menu-list.active li{
+  .menu-list.active li {
     opacity: 1;
-    transform: translate(0,0);
-    transition: all .6s ease-in 0s;
-   }
-   .menu-list.active li:nth-child(1){
-     transition-delay: .4s;
-   }
-   .menu-list.active li:nth-child(2){
-    transition-delay: .6s;
-   }
-   .menu-list.active li:nth-child(3){
-    transition-delay: .8s;
-   }
-   .menu-list.active li:nth-child(4){
-    transition-delay: .9s;
-   }
-   .menu-list.active li:nth-child(5){
-    transition-delay: .9s;
-   }
+    transform: translate(0, 0);
+    transition: all 0.6s ease-in 0s;
+  }
+  .menu-list.active li:nth-child(1) {
+    transition-delay: 0.4s;
+  }
+  .menu-list.active li:nth-child(2) {
+    transition-delay: 0.6s;
+  }
+  .menu-list.active li:nth-child(3) {
+    transition-delay: 0.8s;
+  }
+  .menu-list.active li:nth-child(4) {
+    transition-delay: 0.9s;
+  }
+  .menu-list.active li:nth-child(5) {
+    transition-delay: 0.9s;
+  }
   .menu-list.close {
     top: -1000%;
     transition: all 0.5s ease-in-out;

@@ -91,7 +91,7 @@ function Footer() {
               <i>
                 <FaInbox />
               </i>
-              <span>coedify@gmail.com</span>
+              <span>contact@coedify.com</span>
             </li>
           </ul>
         </div>
