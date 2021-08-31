@@ -46,16 +46,21 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link exact to="/" activeClassName="active">
+              Vetting Process
+            </Link>
+          </li>
+          <li>
             <Link exact to="service" smooth={true} activeClassName="active">
               Tech Stack
             </Link>
           </li>
         </ul>
-        
+
         <div className="btns">
-            <span className="btn__hire">Hire Developers</span>
-            <span className="btn__applyDev">Apply as a Developer</span>
-          </div>
+          <span className="btn__hire">Hire Developers</span>
+          <span className="btn__applyDev">Apply as a Developer</span>
+        </div>
       </nav>
     </>
   );
