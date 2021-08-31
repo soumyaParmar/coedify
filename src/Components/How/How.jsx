@@ -21,6 +21,9 @@ function How() {
             details, our tech expert will review and get in touch with you to
             find out more details to better understand your hiring need.
           </p>
+          <div className="how__hirebutton">
+            <span className="btn__getDeveloper">Hire Developers</span>
+          </div>
         </div>
         <div className="how1__right">
           <img src={First} alt="imag" />
@@ -90,6 +93,9 @@ function How() {
             our CoEdified candidates, we will sign-off the contracts and they
             are ready to be integrated in your team like your in-house employee.
           </p>
+          <div className="how__hirebutton">
+            <span className="btn__getDeveloper">Hire Developers</span>
+          </div>
         </div>
       </div>
     </div>
