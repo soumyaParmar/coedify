@@ -1,12 +1,20 @@
 .hero,.hero2{
-  margin: 50px 10% 50px 10%;
-  width: 80%;
+  margin: 10% 5% 50px 5%;
+  width: 90%;
   display: flex;
 }
+.hero__cover{
+  background-color: #016EEA;
+  padding-top: 10px;
+}
 .hero{
-  margin-top: -570px;
   text-align: center;
-  height: 65vh;
+  
+}
+.hero__left{
+  width: 60%;
+  text-align: left;
+  margin-right: 150px;
 }
 .wave{
   width: 100vw;
@@ -19,23 +27,23 @@
 .hero__heading{
   font-family: Dosis;
   color: white;
-font-style: normal;
-font-weight: bold;
-font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
 }
 .hero__desc{
   font-family: Open Sans;
   margin-bottom: 20px;
   color: white;
-font-style: normal;
-font-weight: normal;
-font-size: 20px; 
-line-height: 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px; 
+  line-height: 20px;
 }
 .buttons{
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  justify-content: flex-start;
+  margin-top: 30px;
   
 }
 .btn__getDeveloper{
@@ -64,37 +72,23 @@ line-height: 35px;
   cursor: pointer;
   position: relative;
 }
-
-.hero__right{
-  margin-top: -50px;
-}
-.hero__right,.hero2__right{
-  width: 45%;
-  margin: auto;
-}
-.hero__right{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero__right img{
-  width: 80%;
-  margin-top: -30px;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 20px;
+.hero2__right{
+  width: 45%; 
 }
 .hero2__right img{
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
+.hero__right{
+  width: 40%;
+}
  .heading{
   text-align: center;
   font-weight: 500;
-  margin-top: 150px;
-font-size: 64px;
-line-height: 81px;
+  margin-top: 200px;
+  font-size: 64px;
+  line-height: 81px;
 }
 .grad{
   margin: 50px -10%;
@@ -123,9 +117,9 @@ line-height: 81px;
 }
                                 /* BOX STYLING */
 .box{
-  height: 150px;
+  height: 170px;
   margin-right:20px ;
-  width: 150px;
+  width: 160px;
   border-radius: 10px;
   transition: all 0.6s ease;
   cursor: pointer;
@@ -202,19 +196,16 @@ line-height: 81px;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 766px) {
- .hero{
-  margin-top: -756px;
-  height: 75vh;
- }
+
+.hero__left{
+  width: 100%;
+}
  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-  .hero{
-    margin-top: -950px;
-    
-  }
+  
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -226,9 +217,8 @@ line-height: 81px;
 @media screen and (max-width: 600px) {
   .hero{
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 25%;
     text-align: left;
-    height: 75vh;
   }
   .grad{
     flex-direction: column;
@@ -246,10 +236,11 @@ line-height: 81px;
     font-size: 50px;
   }
   .logo img{
-    width: 75%;
+    width: 60%;
   }
    .buttons{
      flex-direction: column;
+     margin-bottom: 60px;
    }
   .hero2__left h1{
     color: black;
@@ -270,13 +261,10 @@ line-height: 81px;
     width: 100%;
   }
   .hero__heading{
-    color: black;
+    margin-bottom: 20px;
   }
   .hero2__right{
     width: 100%;
-  }
-  .hero__desc{
-    color: black;
   }
   .hero__right img{
     margin: auto;

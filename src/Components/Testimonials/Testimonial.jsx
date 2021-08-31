@@ -20,13 +20,13 @@ function Testimonial() {
         items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       700: {
-        items: 3,
+        items: 1,
       },
       1000: {
-        items: 3,
+        items: 1,
       },
     },
   };
@@ -45,15 +45,13 @@ function Testimonial() {
   });
 
   return (
-    <div className="test" id="testimonial">
+    
       <div className="testimonial">
-        <h1>What Clients Say About Us</h1>
-        <br />
         <OwlCarousel className="item" {...options}>
           {list}
         </OwlCarousel>
       </div>
-    </div>
+    
   );
 }
 

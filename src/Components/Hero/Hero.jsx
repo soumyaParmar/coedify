@@ -1,12 +1,9 @@
 import React from "react";
-import wave from "./wave.png";
+import Testimonial from "../Testimonials/Testimonial";
 import "./hero.css";
-// import How from "../How/How";
 function Hero() {
   return (
-    <>
-      <img className="wave" src={wave} alt="wave" />
-
+    <div className="hero__cover">
       <div className="hero">
         <div className="hero__left">
           <h1 className="hero__heading">Expand your team quickly, hire vetted developers.  </h1>
@@ -18,8 +15,11 @@ function Hero() {
             <span className="btn__apply">Apply as a Developer</span>
           </div>
         </div>
+        <div className="hero__right">
+          <Testimonial/>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

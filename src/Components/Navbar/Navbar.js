@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleClick}>
           {clicked ? <ImCross /> : <GiHamburgerMenu />}
         </div>
-        <ul className={clicked ? "menu-list" : "menu-list close"}>
+        <ul className={clicked ? "menu-list active" : "menu-list close"}>
           <li>
             <Link exact to="/" activeClassName="active">
               Why us?
@@ -53,6 +53,16 @@ const Navbar = () => {
           <li>
             <Link exact to="service" smooth={true} activeClassName="active">
               Tech Stack
+            </Link>
+          </li>
+          <li className="li_btn btn__hire">
+            <Link exact to="service" smooth={true} activeClassName="active">
+              Hire Developers
+            </Link>
+          </li>
+          <li className="li_btn btn__applyDev">
+            <Link exact to="service" smooth={true} activeClassName="active">
+              Apply as a Developer
             </Link>
           </li>
         </ul>

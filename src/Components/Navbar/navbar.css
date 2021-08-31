@@ -1,16 +1,15 @@
-
 nav {
-  padding:20px 50px 10px 50px;
+  padding: 0px 50px 0px 50px;
   display: flex;
-  background: #2D46B9;
+  background: #016eea;
   align-items: center;
-  /* justify-content: space-between; */
-  z-index: 10; 
+  z-index: 10;
   color: white;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   color: #18181b;
 }
-.title h1{
+.title h1 {
   color: transparent;
   font-size: 50px;
   font-weight: bolder;
@@ -18,8 +17,8 @@ nav {
   background-clip: text;
 }
 
-.alert-warning{
-  background-color: #0096C7;
+.alert-warning {
+  background-color: #0096c7;
   font-weight: bold;
   letter-spacing: 1px;
   color: white;
@@ -30,20 +29,20 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-a{
+a {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
-.banner__left{
+.banner__left {
   width: 50%;
 }
-.banner__right{
+.banner__right {
   width: 0%;
 }
-.banner{
+.banner {
   font-weight: bold;
-  background-color: #48CAE4;
+  background-color: #48cae4;
   color: white;
   text-align: center;
   padding: 5px;
@@ -52,7 +51,7 @@ a{
 .register {
   cursor: pointer;
   width: 180px;
-  background-color: #023E8A;
+  background-color: #023e8a;
   font-size: 20px;
   font-weight: bold;
   padding: 5px;
@@ -66,7 +65,7 @@ svg {
   border-color: rgba(0, 0, 0, 0.1);
   font-size: 50px;
   border: none;
-  background: #eee ;
+  background: #eee;
   padding: 10px;
   border-radius: 0;
 }
@@ -74,7 +73,8 @@ svg {
   display: none;
   font-size: 20px;
 }
-.Dropdown-arrow,.is-open {
+.Dropdown-arrow,
+.is-open {
   right: -2px;
   border-color: blue;
   border-color: blue transparent transparent;
@@ -97,7 +97,8 @@ svg {
   justify-content: space-between;
   align-items: center;
 }
- .menu-list li a,select {
+.menu-list li a,
+select {
   color: white;
   text-transform: capitalize;
   position: relative;
@@ -109,11 +110,13 @@ svg {
   margin-left: 20px;
 }
 
-.menu-list li, .menu-list a{
+.menu-list li,
+.menu-list a {
   color: white;
 }
 
-.menu-list li a::after,.Dropdown-control::after {
+.menu-list li a::after,
+.Dropdown-control::after {
   content: "";
   height: 2px;
   background: white;
@@ -126,7 +129,8 @@ svg {
   left: 10px;
   right: 0;
 }
-.menu-list li a:hover::after,.Dropdown-control:hover::after {
+.menu-list li a:hover::after,
+.Dropdown-control:hover::after {
   opacity: 1;
   transform: scaleX(0.8);
 }
@@ -146,20 +150,19 @@ svg {
   right: -20px;
   transition: 0.5s;
 }
-.banner__btn svg{
+.banner__btn svg {
   background-color: transparent;
   color: white;
   position: absolute;
   top: 0;
   right: 0;
-
 }
 
 .register:hover {
   padding-right: 24px;
-  padding-left: 8px; 
+  padding-left: 8px;
 }
-.register span{
+.register span {
   color: white;
 }
 
@@ -167,42 +170,47 @@ svg {
   opacity: 1;
   right: 10px;
 }
-.btns{
+.btns {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  font-size: 15px; 
+  font-size: 15px;
 }
-.btn__hire{
+.btn__hire {
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 21px;
   margin-right: 10px;
-  border:1px solid #29BB89;
+  border: 1px solid #29bb89;
   color: #fff;
   font-weight: bold;
-  background-color: #29BB89;
+  background-color: #29bb89;
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
   position: relative;
 }
-.btn__applyDev{
+.btn__applyDev {
   border-radius: 5px;
   margin-right: 10px;
-  margin-bottom: 15px;
-  border:1px solid #fff;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  border: 1px solid #fff;
   color: #fff;
+  background-color: #b000e5;
   font-weight: bold;
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
   position: relative;
+}
+.li_btn {
+  display: none;
 }
 @media screen and (max-width: 800px) {
   .logo {
     font-size: 20px;
   }
-  .btns{
+  .btns {
     display: none;
   }
   .menu-list li a {
@@ -212,16 +220,26 @@ svg {
 }
 
 @media screen and (max-width: 600px) {
-  .menu-list li a:hover::after,.Dropdown-control:hover::after {
+  .menu-list li a:hover::after,
+  .Dropdown-control:hover::after {
     opacity: 1;
     transform: scaleX(0.8);
-    background-color: #023E8A;
+    background-color: #023e8a;
   }
-  
+  .li_btn {
+    display: block;
+  }
+  .btn__hire {
+    padding: 5px;
+    color: white;
+  }
+  nav {
+    padding: 7px 20px 10px 20px;
+  }
   .menu-icon {
     display: block;
   }
-  .menu-list li a{
+  .menu-list li a {
     color: black;
   }
   .menu-list {
@@ -232,56 +250,85 @@ svg {
     position: absolute;
     padding: 20px;
     right: 0;
-    top: 90px;
+    top: 75px;
     display: flex;
-    justify-content: space-evenly;
-    height: 90vh;
+    justify-content: flex-start;
+    height: 92vh; 
     transition: all 0.5s ease-in-out;
   }
-
+ 
   .menu-list li {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     color: black;
     width: 100%;
     text-align: center;
   }
   .menu-list li:last-child {
     margin-bottom: 0px;
+    width: 260px;
+    color: white;
+    padding: 0;
   }
-
+  .menu-list li:nth-child(4){
+    color: white;
+    width: 210px;
+    padding: 0;
+  }
   .menu-list li a,
   .menu-list li:last-child a {
     display: block;
-    font-size: 38px;
+    font-size: 22px;
     margin: auto;
   }
-
+  .menu-list li{
+    opacity: 0;
+  }
+   .menu-list.active li{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all .6s ease-in 0s;
+   }
+   .menu-list.active li:nth-child(1){
+     transition-delay: .4s;
+   }
+   .menu-list.active li:nth-child(2){
+    transition-delay: .6s;
+   }
+   .menu-list.active li:nth-child(3){
+    transition-delay: .8s;
+   }
+   .menu-list.active li:nth-child(4){
+    transition-delay: .9s;
+   }
+   .menu-list.active li:nth-child(5){
+    transition-delay: .9s;
+   }
   .menu-list.close {
-    right: -100%;
+    top: -1000%;
     transition: all 0.5s ease-in-out;
   }
   .menu-list li a::after {
     left: 120px;
     right: 100px;
   }
-  .alert-warning{
+  .alert-warning {
     font-size: 15px;
-  } 
-  svg{
+  }
+  svg {
     background-color: transparent;
     color: white;
   }
-  .register{
+  .register {
     letter-spacing: normal;
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 15px;
-
   }
-  .alert-warning{
+  .alert-warning {
     flex-direction: column;
   }
-  .banner__left,.banner__right{
+  .banner__left,
+  .banner__right {
     width: 100%;
   }
 }

@@ -1,11 +1,16 @@
 .how{
-    margin: 50px 10% 50px 10%;
+    margin: 50px 5% 50px 5%;
 }
 .how__mainHeading{
      text-align: center;
     font-weight: 500;
     font-size: 64px;
     line-height: 81px;
+}
+.how__heading{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 .how1__right img,.how2__left img,.how3__right img{
     height: 100%;
@@ -17,10 +22,11 @@
     display: flex;
     margin: 30px auto;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 .how1 p,.how2 p,.how3 p{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 300;
 }
 .how1__left,.how1__right,.how2__left,.how2__right,.how3__left,.how3__right{
     width: 40%;
