@@ -1,8 +1,8 @@
 import React from "react";
 import "./How.css";
-import First from "./First__step.svg";
+import First from "./First__Step.jpg";
 import Second from "./Second__step.svg";
-import Third from "./Third__step.svg";
+import Third from "./Third__Step.png";
 import Fourth from "./Fourth__step.svg";
 
 function How() {
