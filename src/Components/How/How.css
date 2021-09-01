@@ -1,59 +1,108 @@
-.how{
-    margin: 50px 5% 50px 5%;
+.how {
+  margin: 50px 5% 50px 5%;
 }
-.how__mainHeading{
-     text-align: center;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 81px;
+.how__mainHeading {
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 64px;
+  color: #1f2937;
 }
-.how__heading{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.how__heading {
+  font-size: 40px;
+  font-weight: 500;
+  color: #1f2937;
 }
-.how1__right img,.how2__left img,.how3__right img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    border-radius: 55px;
+.how__para{
+  margin-bottom: 30px
 }
-.how1,.how2,.how3{
-    display: flex;
-    margin: 30px auto;
-    justify-content: space-between;
-    width: 90%;
+.how__hirebutton{
+  margin-bottom: 30px;
 }
-.how1 p,.how2 p,.how3 p{
-    font-size: 20px;
+.how1__right img,
+.how2__left img,
+.how3__right img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 55px;
 }
-.how1__left,.how1__right,.how2__left,.how2__right,.how3__left,.how3__right{
-    width: 40%;
-    text-align: left;
+.how1,
+.how2,
+.how3 {
+  display: flex;
+  margin: 30px auto;
+  justify-content: center;
+  width: 90%;
+}
+.how1 p,
+.how2 p,
+.how3 p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5a5f65;
+}
+
+.how1 ul,
+.how2 ul,
+.how3 ul {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5a5f65;
+}
+
+.how1__left,
+.how1__right,
+.how2__left,
+.how2__right,
+.how3__left,
+.how3__right {
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .how2{
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-    .how1__left,.how1__right,.how2__left,.how2__right,.how3__left,.how3__right{
-        width: 100%;
-    }
-    .how1,.how3{
-        flex-direction: column;
-        width: 100%;
-    }
+  .how2 {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .how1__left,
+  .how1__right,
+  .how2__left,
+  .how2__right,
+  .how3__left,
+  .how3__right {
+    width: 100%;
+  }
+  .how1,
+  .how3 {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (max-width: 600px) {
+ 
+ .how__mainHeading {
+    font-size: 40px;
+  }
+  .how__heading{
+    font-size: 30px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
