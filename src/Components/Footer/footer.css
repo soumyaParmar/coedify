@@ -117,7 +117,7 @@
   color: #045de9;
   transition: all 0.6s ease;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
   }

@@ -4,7 +4,7 @@ import { ImCross } from "react-icons/im";
 // import {AiOutlineClose} from "react-icons/ai"
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
@@ -31,14 +31,15 @@ const Navbar = () => {
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
+
         <div className="menu-icon" onClick={handleClick}>
           {clicked ? <ImCross /> : <GiHamburgerMenu />}
         </div>
         <ul className={clicked ? "menu-list active" : "menu-list close"}>
           <li>
-            <Link exact to="/" activeClassName="active">
+            <NavLink exact to="/whyus" activeClassName="active">
               Why us?
-            </Link>
+            </NavLink>
           </li>
           <li>
             <Link activeClass="active" exact to="aboutUs" smooth={true}>

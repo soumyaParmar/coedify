@@ -228,7 +228,7 @@ select {
   }
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
 
  {
   .menu-list li a:hover::after,
@@ -326,7 +326,7 @@ select {
     color: white;
   }
   .menu-list.close {
-    top: -1000%;
+    top: -2000%;
     transition: all 0.5s ease-in-out;
   }
   .menu-list li a::after {

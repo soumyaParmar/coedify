@@ -1,0 +1,126 @@
+.whyus{
+    margin: 8% 5% 5% 5%;
+    display: flex;
+    width: 90%;
+}
+.whyus__left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.whyus__heading{
+    font-family: Dosis;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+}
+.whyus__span{
+    color: #29BB89;
+    font-weight: 700;
+    font-size: 25px;
+}
+.whyus__right{
+    width: 45%;
+}
+.whyus__img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.wave__section{
+    background-image: url("./waves.png");
+    background-size: cover;
+    margin-top: 150px;
+    padding: 30px;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+}
+.wave__box{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+}
+.whycodeify{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 5%;
+}
+.whycoedify1,.whycoedify2,.whycoedify3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.whycoedify1__left,.whycoedify1__right,.whycoedify2__left,.whycoedify2__right,.whycoedify3__left,.whycoedify3__right{
+    width: 45%;
+}
+.whycoedify1__right,.whycoedify2__left,.whycoedify3__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.whycoedify__img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.whycoedify__heading{
+    text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  font-size: 64px;
+}
+@media screen and (max-width:768px) {
+    .whyus{
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 25%;
+    }
+    .whyus__heading{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .whycoedify__heading{
+        font-size: 40px;
+    }
+    .whyus__button{
+        margin: 10px auto;
+    }
+    .whyus__span{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .whyus__left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .whyus__right{
+        width: 100%;
+    }
+    .wave__section{
+        height: 50vh;
+        flex-direction: column;
+    }
+    .wave__box{
+        margin-top: 30px;
+    }
+    .whycoedify1,.whycoedify2,.whycoedify3{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .whycoedify1__left,.whycoedify1__right,.whycoedify2__left,.whycoedify2__right,.whycoedify3__left,.whycoedify3__right{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .whycoedify2{
+        flex-direction: column-reverse;
+    }
+}

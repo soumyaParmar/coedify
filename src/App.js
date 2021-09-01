@@ -6,7 +6,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Technology from "./pages/Technology/Technology";
 import Home from "./pages/Home";
 import Contact from "./pages/Contactus/Contact";
-
+import WhyUs from "./pages/WhyUs/WhyUs";
 
 function App() {
   return (
@@ -17,13 +17,13 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/Technology" component={Technology}/>
-          <Route exact path="/contactus" component={Contact}/>
+          <Route exact path="/Technology" component={Technology} />
+          <Route exact path="/contactus" component={Contact} />
+          <Route exact path="/whyus" component={WhyUs} />
         </Switch>
       </BrowserRouter>
       <ScrollToTop />
       <Footer />
-  
     </div>
   );
 }

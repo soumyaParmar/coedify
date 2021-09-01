@@ -200,11 +200,14 @@
 @media only screen and (max-width: 992px) {
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px   and up) */
+@media only screen and (max-width: 1200px) {
+  /* .hero__heading{
+    font-size: 10px;
+  } */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
   .hero__heading{
     font-size: 30px;
@@ -259,6 +262,9 @@
   }
   .hero__heading {
     margin-bottom: 20px;
+  }
+  .hero__left{
+    margin: auto;
   }
   .hero2__right {
     width: 100%;
