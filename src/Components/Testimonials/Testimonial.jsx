@@ -45,13 +45,11 @@ function Testimonial() {
   });
 
   return (
-    
-      <div className="testimonial">
-        <OwlCarousel className="item" {...options}>
-          {list}
-        </OwlCarousel>
-      </div>
-    
+    <div className="testimonial">
+      <OwlCarousel className="item" {...options}>
+        {list}
+      </OwlCarousel>
+    </div>
   );
 }
 

@@ -2,17 +2,22 @@
   margin: 50px 5% 50px 5%;
 }
 .how__mainHeading {
+  letter-spacing: 1px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 64px;
-  line-height: 81px;
   color: #1f2937;
 }
 .how__heading {
   font-size: 40px;
   font-weight: 500;
-  letter-spacing: 1px;
   color: #1f2937;
+}
+.how__para{
+  margin-bottom: 30px
+}
+.how__hirebutton{
+  margin-bottom: 30px;
 }
 .how1__right img,
 .how2__left img,
@@ -27,7 +32,7 @@
 .how3 {
   display: flex;
   margin: 30px auto;
-  justify-content: space-between;
+  justify-content: center;
   width: 90%;
 }
 .how1 p,
@@ -80,7 +85,14 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+ 
+ .how__mainHeading {
+    font-size: 40px;
+  }
+  .how__heading{
+    font-size: 30px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

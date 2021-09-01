@@ -228,7 +228,9 @@ select {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px)
+
+ {
   .menu-list li a:hover::after,
   .Dropdown-control:hover::after {
     opacity: 1;
@@ -261,23 +263,23 @@ select {
     right: 0;
     top: 75px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: stretch;
     height: 92vh;
     transition: all 0.5s ease-in-out;
   }
 
   .menu-list li {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     color: black;
-    width: 100%;
     text-align: center;
   }
   .menu-list li:last-child {
     margin-bottom: 0px;
-    width: 260px;
+    width: 250px;
     color: white;
     padding: 0;
   }
+
   .menu-list li:nth-child(4) {
     color: white;
     width: 210px;
@@ -310,6 +312,11 @@ select {
     transition-delay: 0.7s;
     color: black;
   }
+  .li_btn{
+    width: 70%;
+    padding: 2px;
+  }
+
   .menu-list.active li:nth-child(5) {
     transition-delay: 0.8s;
     color: white;
@@ -329,10 +336,6 @@ select {
   .alert-warning {
     font-size: 15px;
   }
-  svg {
-    background-color: transparent;
-    color: white;
-  }
   .register {
     letter-spacing: normal;
     margin-top: 10px;
@@ -345,5 +348,10 @@ select {
   .banner__left,
   .banner__right {
     width: 100%;
+  }
+  .menu-icon svg{
+    color: white;
+    background-color: transparent;
+    font-size: 45px;
   }
 }

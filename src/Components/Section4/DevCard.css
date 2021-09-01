@@ -16,7 +16,7 @@
   }
   .dev__box{
     background:#ebf5fc;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(155, 119, 119, 20%);
     border-radius: 15px;
     display: flex;
     height: 450px;
@@ -39,10 +39,8 @@
   }
   
   .dev__box:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,50%);
     transform: translateY(-5px);
-    /* background: linear-gradient(135deg, hsla(229, 61%, 45%, 1) 0%, hsla(159, 64%, 45%, 1) 100%); */
-    /* color: white; */
   }
   .dev__img{
     border-radius: 10px;

@@ -15,7 +15,7 @@ function How() {
             Tell us what kind of specific tech stack and experience level you
             need?
           </h1>
-          <p>
+          <p className="how__para">
             Submit your technical job description via our interactive forms, the
             more details the better for us to find exact match. After we get the
             details, our tech expert will review and get in touch with you to
@@ -36,7 +36,7 @@ function How() {
         <div className="how2__right">
           <h1 className="how__heading">
             We will provide you status report concerning your request as quickly
-            as possible.{" "}
+            as possible.
           </h1>
           <ul>
             <li>
@@ -47,7 +47,7 @@ function How() {
             <li>
               We currently do not have pre-screened developer matching your
               exact tech requirements and we are in the process of screening the
-              candidates, we will work actively to find one.{" "}
+              candidates, we will work actively to find one.
             </li>
           </ul>
         </div>
@@ -65,16 +65,15 @@ function How() {
             </li>
             <li>
               Check the fitment and technical depth of the candidates and get
-              confident for long term commitments.{" "}
+              confident for long term commitments.
             </li>
             <li>
               After you decide which developer you want to go ahead and
-              integrate with your team, just like an in-house employee.{" "}
+              integrate with your team, just like an in-house employee.
             </li>
             <li>
-              {" "}
               If you are not satisfied for any reason, we will start all over
-              again to give you best candidates.{" "}
+              again to give you best candidates.
             </li>
           </ul>
         </div>
@@ -88,7 +87,7 @@ function How() {
         </div>
         <div className="how2__right">
           <h1 className="how__heading"> Integrate them at No-Risk </h1>
-          <p>
+          <p className="how__para">
             After the one week trail is over and if you are 100% satisfied with
             our CoEdified candidates, we will sign-off the contracts and they
             are ready to be integrated in your team like your in-house employee.

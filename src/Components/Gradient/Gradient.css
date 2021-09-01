@@ -24,11 +24,7 @@
     color: white;
   }
   @media screen and (max-width: 600px){
-    .hero{
-        flex-direction: column;
-        margin-top: 25%;
-        text-align: left;
-      }
+    
       .grad{
         flex-direction: column;
         height: 320px;
