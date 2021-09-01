@@ -7,10 +7,10 @@ import Section4 from "./../Components/Section4/Section4";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero />
       <Section2 />
-      <How/>
-      <Section4 />  
+      <How/> */}
+      <Section4 />
     </div>
   );
 };
