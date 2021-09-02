@@ -1,5 +1,6 @@
 .how {
-  margin: 50px 5% 50px 5%;
+  padding: 50px 5% 50px 5%;
+  background-color: #f5f8fd;;
 }
 .how__mainHeading {
   letter-spacing: 1px;

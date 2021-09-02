@@ -6,13 +6,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* ::-webkit-scrollbar{
- width: 25px;
-}
-::-webkit-scrollbar-track{
-  border: 7px solid #232943;
-
-} */
+/* #E9F1FF; */
+/* #f5f8fd; */
 h1,
 h2,
 h3,
@@ -20,11 +15,13 @@ h4,
 h5 {
   font-family: "Dosis", sans-serif;
 }
+
 p,
 span,
 ul,
 button,
 li {
+
   font-family: "Open Sans";
 }
 .App {

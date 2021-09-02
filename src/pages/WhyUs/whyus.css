@@ -1,25 +1,33 @@
+
 .whyus{
-    margin: 8% 5% 5% 5%;
+    padding: 8% 5% 5% 5%;
     display: flex;
+    justify-content: center;
+    margin: auto;
     width: 90%;
+}
+.why__main{
+    background-color: #f5f8fd;
 }
 .whyus__left{
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .whyus__heading{
     font-family: Dosis;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
 }
 .whyus__span{
     color: #29BB89;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
 }
 .whyus__right{
     width: 45%;
@@ -31,10 +39,9 @@
 }
 .wave__section{
     background-image: url("./waves.png");
-    background-size: cover;
     margin-top: 150px;
     padding: 30px;
-    height: 30vh;
+    background-size: 100% 100%;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
@@ -59,14 +66,23 @@
 .whycoedify1__left,.whycoedify1__right,.whycoedify2__left,.whycoedify2__right,.whycoedify3__left,.whycoedify3__right{
     width: 45%;
 }
+.banner__grad{
+    margin-top: -300px;
+}
 .whycoedify1__right,.whycoedify2__left,.whycoedify3__right{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 50px;
 }
 .whycoedify__img{
     height: 100%;
     width: 100%;
+    object-fit: contain;
+}
+.whycoedify__img2{
+    width: 100%;
+    height: 50%;
     object-fit: contain;
 }
 .whycoedify__heading{
@@ -77,16 +93,20 @@
   font-size: 64px;
 }
 @media screen and (max-width:768px) {
+
     .whyus{
         flex-direction: column;
         justify-content: space-evenly;
         margin-top: 25%;
     }
     .whyus__heading{
-        font-size: 30px;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
+        font-size: 30px;
+    }
+    .banner__grad{
+        margin-top: 0px;
     }
     .whycoedify__heading{
         font-size: 40px;
@@ -106,7 +126,6 @@
         width: 100%;
     }
     .wave__section{
-        height: 50vh;
         flex-direction: column;
     }
     .wave__box{

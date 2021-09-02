@@ -8,6 +8,7 @@ nav {
   width: 100%;
   position: fixed;
   color: #18181b;
+  justify-content: space-evenly;
 }
 .title h1 {
   color: transparent;
@@ -81,17 +82,16 @@ svg {
 }
 .logo {
   height: 60px;
-  display: flex;
-  flex-grow: 1;
+  /* display: flex; */
 }
 .logo img {
   height: 100%;
-  width: 40%;
+  width: 100%;
   object-fit: contain;
 }
 .menu-list {
   list-style-type: none;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -114,7 +114,9 @@ select {
 .menu-list a {
   color: white;
 }
-
+a{
+  width: 100%;
+}
 .menu-list li a::after,
 .Dropdown-control::after {
   content: "";

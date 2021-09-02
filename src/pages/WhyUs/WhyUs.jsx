@@ -2,7 +2,7 @@ import React from "react";
 import Hirebutton from "../../Components/Buttons/Hirebutton";
 import "./whyus.css";
 import img1 from "./whyus_1.svg";
-import img2 from "./whyus_2.svg";
+import img2 from "./whyus_2.png";
 import img3 from "./whyus_3.svg";
 import Gradient from "../../Components/Gradient/Gradient";
 
@@ -10,7 +10,7 @@ import HeaderImg from "./whyus-header-image.svg";
 
 function WhyUs() {
   return (
-    <>
+    <div className="why__main">
       <div className="whyus">
         <div className="whyus__left">
           <span className="whyus__span">Why Us</span>
@@ -65,15 +65,14 @@ function WhyUs() {
             </p>
           </div>
           <div className="whycoedify2__right">
-            <img className="whycoedify__img" src={img2} alt="img1" />
+            <img className="whycoedify__img" src={img3} alt="img1" />
           </div>
         </div>
         <div className="whycoedify3">
           <div className="whycoedify3__left">
-            <img className="whycoedify__img" src={img3} alt="img1" />
+            <img className="whycoedify__img2" src={img2} alt="img1" />
           </div>
           <div className="whycoedify3__right">
-            {" "}
             <h1>Heading 3</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
@@ -85,8 +84,10 @@ function WhyUs() {
           </div>
         </div>
       </div>
-      <Gradient />
-    </>
+      <div className="banner__grad">
+        <Gradient />
+      </div>
+    </div>
   );
 }
 

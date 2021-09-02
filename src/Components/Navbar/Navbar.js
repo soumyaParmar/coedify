@@ -12,6 +12,9 @@ const Navbar = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
+  const handleClose = () => {
+    setClicked(false);
+  };
   return (
     <>
       {/* <div className="alert alert-warning alert-dismissible fade show" role="alert">
@@ -29,39 +32,41 @@ const Navbar = () => {
       {/* <div className="navbar"> */}
       <nav>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <NavLink exact to="/" activeClassName="active">
+            <img onClick={handleClose} src={logo} alt="logo" />
+          </NavLink>
         </div>
 
         <div className="menu-icon" onClick={handleClick}>
           {clicked ? <ImCross /> : <GiHamburgerMenu />}
         </div>
         <ul className={clicked ? "menu-list active" : "menu-list close"}>
-          <li>
+          <li onClick={handleClose}>
             <NavLink exact to="/whyus" activeClassName="active">
               Why us?
             </NavLink>
           </li>
-          <li>
+          <li onClick={handleClose}>
             <Link activeClass="active" exact to="aboutUs" smooth={true}>
               How We Work?
             </Link>
           </li>
-          <li>
+          <li onClick={handleClose}>
             <Link exact to="/" activeClassName="active">
               Vetting Process
             </Link>
           </li>
-          <li>
+          <li onClick={handleClose}>
             <Link exact to="service" smooth={true} activeClassName="active">
               Tech Stack
             </Link>
           </li>
-          <li className="li_btn btn__hire">
+          <li onClick={handleClose} className="li_btn btn__hire">
             <Link exact to="service" smooth={true} activeClassName="active">
               Hire Developers
             </Link>
           </li>
-          <li className="li_btn btn__applyDev">
+          <li onClick={handleClose} className="li_btn btn__applyDev">
             <Link exact to="service" smooth={true} activeClassName="active">
               Apply as a Developer
             </Link>
