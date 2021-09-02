@@ -1,24 +1,31 @@
 
 .whyus{
-    margin: 8% 5% 5% 5%;
+    padding: 8% 5% 5% 5%;
     display: flex;
+    justify-content: center;
+    margin: auto;
     width: 90%;
+}
+.why__main{
+    background-color: #f5f8fd;
 }
 .whyus__left{
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .whyus__heading{
     font-family: Dosis;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
 }
 .whyus__span{
     color: #29BB89;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 30px;
 }

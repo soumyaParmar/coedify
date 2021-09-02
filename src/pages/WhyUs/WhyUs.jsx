@@ -10,7 +10,7 @@ import HeaderImg from "./whyus-header-image.svg";
 
 function WhyUs() {
   return (
-    <>
+    <div className="why__main">
       <div className="whyus">
         <div className="whyus__left">
           <span className="whyus__span">Why Us</span>
@@ -87,7 +87,7 @@ function WhyUs() {
       <div className="banner__grad">
         <Gradient />
       </div>
-    </>
+    </div>
   );
 }
 

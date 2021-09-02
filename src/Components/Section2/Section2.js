@@ -4,10 +4,11 @@ import certificate from "./certificate.png";
 import logooo from "./logooo.png";
 import fire from "./fireball.png";
 import contact from "./contact.png";
+import "./section2.css";
 
 const Section2 = () => {
   return (
-    <div>
+    <div className="sec2">
       <h1 className="heading">On Demand Amazing Developers</h1>
       <div className="hero2">
         <div className="hero2__left">
