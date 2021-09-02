@@ -235,6 +235,9 @@
   }
   .btn__apply{
     background-color: #016EEA;
+    width: 60%;
+    color: white;
+    margin: 15px auto;
     font-size: 18px;
   }
   .btn__getDeveloper{
