@@ -114,7 +114,9 @@ select {
 .menu-list a {
   color: white;
 }
-
+a{
+  width: 100%;
+}
 .menu-list li a::after,
 .Dropdown-control::after {
   content: "";
