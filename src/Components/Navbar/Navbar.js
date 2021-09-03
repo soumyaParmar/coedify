@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./CoEdify-logo.png";
 import { ImCross } from "react-icons/im";
-// import {AiOutlineClose} from "react-icons/ai"
+import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
 import { NavLink } from "react-router-dom";
@@ -12,9 +12,18 @@ const Navbar = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
+
   const handleClose = () => {
     setClicked(false);
   };
+
+  const { y: pageYOffset } = useWindowScroll();
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (pageYOffset > 400) setVisible(true);
+    else setVisible(false);
+  }, [pageYOffset]);
+
   return (
     <>
       {/* <div className="alert alert-warning alert-dismissible fade show" role="alert">
@@ -30,7 +39,7 @@ const Navbar = () => {
   <span className="banner__btn" type="button" data-bs-dismiss="alert" aria-label="Close"><AiOutlineClose/></span>
 </div> */}
       {/* <div className="navbar"> */}
-      <nav>
+      <nav className={visible ? "navSecondary" : "nav"}>
         <div className="logo">
           <NavLink exact to="/" activeClassName="active">
             <img onClick={handleClose} src={logo} alt="logo" />
@@ -47,9 +56,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <Link activeClass="active" exact to="aboutUs" smooth={true}>
+            <NavLink activeClass="active" exact to="aboutUs" smooth={true}>
               How We Work?
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleClose}>
             <NavLink exact to="/vettingprocess" activeClassName="active">
@@ -57,9 +66,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <Link exact to="service" smooth={true} activeClassName="active">
+            <NavLink exact to="service" smooth={true} activeClassName="active">
               Tech Stack
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
             <Link exact to="service" smooth={true} activeClassName="active">

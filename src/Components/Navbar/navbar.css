@@ -1,4 +1,16 @@
-nav {
+.nav {
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  /* background: #016eea; */
+  align-items: center;
+  z-index: 10;
+  color: white;
+  width: 100%;
+  position: fixed;
+  color: #18181b;
+  justify-content: space-evenly;
+}
+.navSecondary{
   padding: 0px 50px 0px 50px;
   display: flex;
   background: #016eea;
@@ -32,7 +44,8 @@ nav {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: black;
+  width: 100%;
   cursor: pointer;
 }
 .banner__left {
@@ -99,7 +112,6 @@ svg {
 }
 .menu-list li a,
 select {
-  color: white;
   text-transform: capitalize;
   position: relative;
   border: none;
@@ -110,13 +122,6 @@ select {
   margin-left: 20px;
 }
 
-.menu-list li,
-.menu-list a {
-  color: white;
-}
-a{
-  width: 100%;
-}
 .menu-list li a::after,
 .Dropdown-control::after {
   content: "";
@@ -246,7 +251,7 @@ a{
     padding: 5px;
     color: white;
   }
-  nav {
+  .nav {
     padding: 7px 20px 10px 20px;
   }
   .menu-icon {

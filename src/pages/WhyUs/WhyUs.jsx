@@ -2,7 +2,7 @@ import React from "react";
 import Hirebutton from "../../Components/Buttons/Hirebutton";
 import "./whyus.css";
 import img1 from "./whyus_1.svg";
-import img2 from "./whyus_2.png";
+import img2 from "./undraw.png";
 import img3 from "./whyus_3.svg";
 import Gradient from "../../Components/Gradient/Gradient";
 
