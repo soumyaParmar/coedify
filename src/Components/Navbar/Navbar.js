@@ -51,22 +51,44 @@ const Navbar = () => {
         </div>
         <ul className={clicked ? "menu-list active" : "menu-list close"}>
           <li onClick={handleClose}>
-            <NavLink exact to="/whyus" activeClassName="active">
+            <NavLink
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="/whyus"
+              activeClassName="active"
+            >
               Why us?
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <NavLink activeClass="active" exact to="aboutUs" smooth={true}>
+            <NavLink
+              activeClass="active"
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="aboutUs"
+              smooth={true}
+            >
               How We Work?
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <NavLink exact to="/vettingprocess" activeClassName="active">
+            <NavLink
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="/vettingprocess"
+              activeClassName="active"
+            >
               Vetting Process
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <NavLink exact to="service" smooth={true} activeClassName="active">
+            <NavLink
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="service"
+              smooth={true}
+              activeClassName="active"
+            >
               Tech Stack
             </NavLink>
           </li>
