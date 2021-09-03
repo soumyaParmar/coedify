@@ -6,10 +6,10 @@ import Section4 from "./../Components/Section4/Section4";
 
 const Home = () => {
   return (
-    <div>
-      {/* <Hero />
+    <div className="home">
+      <Hero />
       <Section2 />
-      <How/> */}
+      <How />
       <Section4 />
     </div>
   );

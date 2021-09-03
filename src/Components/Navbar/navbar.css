@@ -1,4 +1,16 @@
-nav {
+.nav {
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  /* background: #016eea; */
+  align-items: center;
+  z-index: 10;
+  color: white;
+  width: 100%;
+  position: fixed;
+  color: #18181b;
+  justify-content: space-evenly;
+}
+.navSecondary{
   padding: 0px 50px 0px 50px;
   display: flex;
   background: #016eea;
@@ -8,6 +20,7 @@ nav {
   width: 100%;
   position: fixed;
   color: #18181b;
+  justify-content: space-evenly;
 }
 .title h1 {
   color: transparent;
@@ -29,9 +42,16 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-a {
+.anchor {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  cursor: pointer;
+}
+.anchorActive{
   text-decoration: none;
   color: white;
+  width: 100%;
   cursor: pointer;
 }
 .banner__left {
@@ -81,17 +101,16 @@ svg {
 }
 .logo {
   height: 60px;
-  display: flex;
-  flex-grow: 1;
+  /* display: flex; */
 }
 .logo img {
   height: 100%;
-  width: 40%;
+  width: 100%;
   object-fit: contain;
 }
 .menu-list {
   list-style-type: none;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -99,7 +118,6 @@ svg {
 }
 .menu-list li a,
 select {
-  color: white;
   text-transform: capitalize;
   position: relative;
   border: none;
@@ -108,11 +126,6 @@ select {
   font-weight: 600;
   padding: 5px 10px;
   margin-left: 20px;
-}
-
-.menu-list li,
-.menu-list a {
-  color: white;
 }
 
 .menu-list li a::after,
@@ -228,7 +241,7 @@ select {
   }
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
 
  {
   .menu-list li a:hover::after,
@@ -244,7 +257,7 @@ select {
     padding: 5px;
     color: white;
   }
-  nav {
+  .nav {
     padding: 7px 20px 10px 20px;
   }
   .menu-icon {
@@ -326,7 +339,7 @@ select {
     color: white;
   }
   .menu-list.close {
-    top: -1000%;
+    top: -2000%;
     transition: all 0.5s ease-in-out;
   }
   .menu-list li a::after {

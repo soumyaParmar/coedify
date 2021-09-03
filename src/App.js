@@ -4,9 +4,10 @@ import "./App.css";
 // import ScrollToTop from "./Components/ScrollToTop";
 // import Technology from "./pages/Technology/Technology";
 import Home from "./pages/Home";
-// import Contact from "./pages/Contactus/Contact";
-import Section from "./pages/Section-2/Section";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Contact from "./pages/Contactus/Contact";
+import WhyUs from "./pages/WhyUs/WhyUs";
+import Vetted from "./pages/Vetted/Vetted";
+
 function App() {
   return (
     <div className="App">
@@ -17,12 +18,14 @@ function App() {
           <Route exact path="/">
             {/* <Home /> */}
           </Route>
-          {/* <Route exact path="/Technology" component={Technology} /> */}
-          {/* <Route exact path="/contactus" component={Contact} /> */}
+          <Route exact path="/Technology" component={Technology} />
+          <Route exact path="/contactus" component={Contact} />
+          <Route exact path="/whyus" component={WhyUs} />
+          <Route exact path="/vettingprocess" component={Vetted} />
         </Switch>
       </BrowserRouter>
-      {/* <ScrollToTop /> */}
-      {/* <Footer /> */}
+      <ScrollToTop />
+      <Footer />
     </div>
   );
 }

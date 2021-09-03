@@ -1,10 +1,11 @@
 .hero{
-  margin: 10% 5% 15% 5%;
+  margin: 13% 5% 10% 5%;
   width: 90%;
   display: flex;
-  /* height: 55vh; */
-
-  padding-bottom: 30px;
+  padding-bottom: 15%;
+}
+.home{
+  background-color: #f5f8fd;
 }
 .hero2{
   margin: 5% 5% 50px 5%;
@@ -12,7 +13,8 @@
   display: flex;
 }
 .hero__cover{
-  background-color: #016EEA;
+  /* background-color: #016EEA; */
+  background-color: #E9F1FF;
   padding-top: 5px;
 }
 .hero {
@@ -33,7 +35,8 @@
 
 .hero__heading {
   font-family: Dosis;
-  color: white;
+  /* color: white; */
+  color: black;
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
@@ -42,11 +45,12 @@
 .hero__desc {
   font-family: Open Sans;
   margin-bottom: 20px;
-  color: white;
+  /* color: white; */
+  color: black;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 40px;
+  font-size: 17px;
+  line-height: 30px;
 }
 .buttons {
   display: flex;
@@ -68,7 +72,9 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 }
-
+.sec{
+  background-color: #f5f8fd;;
+}
 .btn__getDeveloper:hover {
   background-color: #0e9767;
 }
@@ -77,7 +83,8 @@
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 15px;
-  color: #fff;
+  /* color: #fff; */
+  color: #2D46B9;
   font-weight: bold;
   font-size: 18px;
   padding: 10px;
@@ -87,7 +94,7 @@
 }
 
 .btn__apply:hover {
-  margin-top: -3px;
+  transform: translateY(-3px);
 }
 
 .hero2__right {
@@ -168,7 +175,8 @@
   font-size: 64px;
 }
 .igns {
-  margin: 50px 5% 50px 5%;
+  padding: 50px 5% 50px 5%;
+  background-color: #f5f8fd;;
 }
 .igns h3 {
   margin: 30px 0;
@@ -200,11 +208,14 @@
 @media only screen and (max-width: 992px) {
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px   and up) */
+@media only screen and (max-width: 1200px) {
+  /* .hero__heading{
+    font-size: 10px;
+  } */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
   .hero__heading{
     font-size: 30px;
@@ -223,7 +234,9 @@
     color: black;
   }
   .btn__apply{
-    background-color: #016EEA;
+    width: 81%;
+    color: #016EEA;
+    margin: 15px auto;
     font-size: 18px;
   }
   .btn__getDeveloper{
@@ -259,6 +272,9 @@
   }
   .hero__heading {
     margin-bottom: 20px;
+  }
+  .hero__left{
+    margin: auto;
   }
   .hero2__right {
     width: 100%;

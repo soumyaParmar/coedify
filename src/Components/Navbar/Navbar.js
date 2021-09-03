@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./CoEdify-logo.png";
 import { ImCross } from "react-icons/im";
-// import {AiOutlineClose} from "react-icons/ai"
+import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
@@ -12,6 +12,18 @@ const Navbar = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
+
+  const handleClose = () => {
+    setClicked(false);
+  };
+
+  const { y: pageYOffset } = useWindowScroll();
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (pageYOffset > 400) setVisible(true);
+    else setVisible(false);
+  }, [pageYOffset]);
+
   return (
     <>
       {/* <div className="alert alert-warning alert-dismissible fade show" role="alert">
@@ -27,40 +39,65 @@ const Navbar = () => {
   <span className="banner__btn" type="button" data-bs-dismiss="alert" aria-label="Close"><AiOutlineClose/></span>
 </div> */}
       {/* <div className="navbar"> */}
-      <nav>
+      <nav className={visible ? "navSecondary" : "nav"}>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <NavLink exact to="/" activeClassName="active">
+            <img onClick={handleClose} src={logo} alt="logo" />
+          </NavLink>
         </div>
+
         <div className="menu-icon" onClick={handleClick}>
           {clicked ? <ImCross /> : <GiHamburgerMenu />}
         </div>
         <ul className={clicked ? "menu-list active" : "menu-list close"}>
-          <li>
-            <Link exact to="/" activeClassName="active">
+          <li onClick={handleClose}>
+            <NavLink
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="/whyus"
+              activeClassName="active"
+            >
               Why us?
-            </Link>
+            </NavLink>
           </li>
-          <li>
-            <Link activeClass="active" exact to="aboutUs" smooth={true}>
+          <li onClick={handleClose}>
+            <NavLink
+              activeClass="active"
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="aboutUs"
+              smooth={true}
+            >
               How We Work?
-            </Link>
+            </NavLink>
           </li>
-          <li>
-            <Link exact to="/" activeClassName="active">
+          <li onClick={handleClose}>
+            <NavLink
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="/vettingprocess"
+              activeClassName="active"
+            >
               Vetting Process
-            </Link>
+            </NavLink>
           </li>
-          <li>
-            <Link exact to="service" smooth={true} activeClassName="active">
+          <li onClick={handleClose}>
+            <NavLink
+              className={visible ? "anchorActive" : "anchor"}
+              exact
+              to="service"
+              smooth={true}
+              activeClassName="active"
+            >
               Tech Stack
-            </Link>
+            </NavLink>
           </li>
-          <li className="li_btn btn__hire">
+          <li onClick={handleClose} className="li_btn btn__hire">
             <Link exact to="service" smooth={true} activeClassName="active">
               Hire Developers
             </Link>
           </li>
-          <li className="li_btn btn__applyDev">
+          <li onClick={handleClose} className="li_btn btn__applyDev">
             <Link exact to="service" smooth={true} activeClassName="active">
               Apply as a Developer
             </Link>
