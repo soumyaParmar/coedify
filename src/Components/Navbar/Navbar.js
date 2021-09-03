@@ -52,9 +52,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={handleClose}>
-            <Link exact to="/" activeClassName="active">
+            <NavLink exact to="/vettingprocess" activeClassName="active">
               Vetting Process
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleClose}>
             <Link exact to="service" smooth={true} activeClassName="active">

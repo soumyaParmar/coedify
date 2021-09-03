@@ -94,7 +94,7 @@
 }
 
 .btn__apply:hover {
-  margin-top: -3px;
+  transform: translateY(-3px);
 }
 
 .hero2__right {
@@ -234,9 +234,8 @@
     color: black;
   }
   .btn__apply{
-    background-color: #016EEA;
-    width: 60%;
-    color: white;
+    width: 81%;
+    color: #016EEA;
     margin: 15px auto;
     font-size: 18px;
   }

@@ -7,6 +7,7 @@ import Technology from "./pages/Technology/Technology";
 import Home from "./pages/Home";
 import Contact from "./pages/Contactus/Contact";
 import WhyUs from "./pages/WhyUs/WhyUs";
+import Vetted from "./pages/Vetted/Vetted";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/Technology" component={Technology} />
           <Route exact path="/contactus" component={Contact} />
           <Route exact path="/whyus" component={WhyUs} />
+          <Route exact path="/vettingprocess" component={Vetted} />
         </Switch>
       </BrowserRouter>
       <ScrollToTop />

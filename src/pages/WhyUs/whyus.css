@@ -1,7 +1,8 @@
 
 .whyus{
-    padding: 8% 5% 5% 5%;
+    padding: 8% 0% 5% 0%;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: auto;
     width: 90%;
@@ -61,7 +62,7 @@
 }
 .whycoedify1,.whycoedify2,.whycoedify3{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .whycoedify1__left,.whycoedify1__right,.whycoedify2__left,.whycoedify2__right,.whycoedify3__left,.whycoedify3__right{
     width: 45%;
@@ -99,6 +100,9 @@
         justify-content: space-evenly;
         margin-top: 25%;
     }
+    .vet__grad{
+        margin: 0px 20px;
+    }
     .whyus__heading{
         text-align: center;
         margin-top: 10px;
@@ -106,7 +110,7 @@
         font-size: 30px;
     }
     .banner__grad{
-        margin-top: 0px;
+        margin: 0px 20px;
     }
     .whycoedify__heading{
         font-size: 40px;
