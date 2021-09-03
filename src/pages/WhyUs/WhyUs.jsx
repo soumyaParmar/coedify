@@ -38,30 +38,33 @@ function WhyUs() {
       </div>
       <div className="whycodeify">
         <h1 className="whycoedify__heading">Why CoEdify</h1>
+        <p className="whycoedify_desc">
+          CoEdify helps companies expand their team quickly. Tech hiring is
+          tough, time consuming and expensive. Most of the tech hirings are
+          severely flawed and the cost of hiring bad resource is way too high.
+          Our innovative way of screening talents minimizes all those risk in a
+          cost effective seamless way.{" "}
+        </p>
         <div className="whycoedify1">
           <div className="whycoedify1__left">
             <img className="whycoedify__img" src={img1} alt="img1" />
           </div>
           <div className="whycoedify1__right">
-            <h1>Heading 1</h1>
+            <h1>Right Talent</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-              diam ridiculus nec quisque. Nisl, orci aliquam ultricies integer
-              duis dis. Viverra turpis eget neque, vel ornare non nec,
-              sollicitudin. Condimentum neque sit odio faucibus nisl natoque
-              egestas. Vulputate fermentum nam vulputate vestibulum.
+              We find exact match with your job requirements in our pool of
+              talents. We give high weightage on problem solving ability rather
+              than the laundry list of tech stack mentioned in resume. Our
+              filtering process guarantee to eliminate wrong candidates.
             </p>
           </div>
         </div>
         <div className="whycoedify2">
           <div className="whycoedify2__left">
-            <h1>Heading 2</h1>
+            <h1>Time to Hire</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-              diam ridiculus nec quisque. Nisl, orci aliquam ultricies integer
-              duis dis. Viverra turpis eget neque, vel ornare non nec,
-              sollicitudin. Condimentum neque sit odio faucibus nisl natoque
-              egestas. Vulputate fermentum nam vulputate vestibulum.
+              We make sure our vetted resources joins you within one months of
+              your approval and majority will join within 15 days of selection.
             </p>
           </div>
           <div className="whycoedify2__right">
@@ -73,13 +76,39 @@ function WhyUs() {
             <img className="whycoedify__img2" src={img2} alt="img1" />
           </div>
           <div className="whycoedify3__right">
-            <h1>Heading 3</h1>
+            <h1>Specific Technical Stack/ Niche Tech Stack</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-              diam ridiculus nec quisque. Nisl, orci aliquam ultricies integer
-              duis dis. Viverra turpis eget neque, vel ornare non nec,
-              sollicitudin. Condimentum neque sit odio faucibus nisl natoque
-              egestas. Vulputate fermentum nam vulputate vestibulum.
+              We don’t deal with all the technologies that exists today, we
+              focus only on niche technical stack and finding top talents in
+              niche area is extremely challenging, we are helping you to get
+              that skill set your project demands.
+            </p>
+          </div>
+        </div>
+        <div className="whycoedify4">
+          <div className="whycoedify4__left">
+            <h1>Attitude/Aptitude/Soft Skill/ Passion</h1>
+            <p>
+              No matter what is the experience level, we carefully screen
+              talents on non-technical aspect as well. We believe attitude and
+              soft skill plays major role in executing a successful projects.
+            </p>
+          </div>
+          <div className="whycoedify4__right">
+            <img className="whycoedify__img2" src={img2} alt="img1" />
+          </div>
+        </div>
+        <div className="whycoedify5">
+          <div className="whycoedify5__left">
+            <img className="whycoedify__img2" src={img2} alt="img1" />
+          </div>
+          <div className="whycoedify5__right">
+            <h1>Best-in-Class Service</h1>
+            <p>
+              We are not general IT manpower and staffing companies. We are here
+              to solve the technical hiring in a unique way by finding the right
+              person for the right job. Our aim is to carefully strike the
+              balance between the expectation set by employers and job seekers.
             </p>
           </div>
         </div>

@@ -1,149 +1,181 @@
+.whyus {
+  padding: 8% 5% 5% 5%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+.why__main {
+  background-color: #f5f8fd;
+}
+.whyus__left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.whyus__heading {
+  font-family: Dosis;
+  margin-bottom: 70px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+}
+.whyus__span {
+  color: #29bb89;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.whyus__right {
+  width: 45%;
+}
+.whyus__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.wave__section {
+  background-image: url("./waves.png");
+  margin-top: 150px;
+  padding: 30px;
+  background-size: 100% 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  background-repeat: no-repeat;
+}
+.wave__box {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+}
+.whycodeify {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 5%;
+}
 
-.whyus{
-    padding: 8% 0% 5% 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 90%;
+.whycodeify p {
+  color: #5a5f65;
 }
-.why__main{
-    background-color: #f5f8fd;
+
+.whycoedify1,
+.whycoedify2,
+.whycoedify3,
+.whycoedify4,
+.whycoedify5 {
+  display: flex;
+  justify-content: space-evenly;
 }
-.whyus__left{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.whycoedify1__left,
+.whycoedify1__right,
+.whycoedify2__left,
+.whycoedify2__right,
+.whycoedify3__left,
+.whycoedify3__right,
+.whycoedify4__left,
+.whycoedify4__right,
+.whycoedify5__left,
+.whycoedify5__right {
+  width: 45%;
 }
-.whyus__heading{
-    font-family: Dosis;
-    margin-bottom: 70px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
+.banner__grad {
+  margin-top: -300px;
 }
-.whyus__span{
-    color: #29BB89;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 30px;
+.whycoedify1__right,
+.whycoedify2__left,
+.whycoedify3__right,
+.whycoedify4__left,
+.whycoedify5__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 50px;
 }
-.whyus__right{
-    width: 45%;
+.whycoedify__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
-.whyus__img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.whycoedify__img2 {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
 }
-.wave__section{
-    background-image: url("./waves.png");
-    margin-top: 150px;
-    padding: 30px;
-    background-size: 100% 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    background-repeat: no-repeat;
-}
-.wave__box{
-    text-align: center;
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 10px;
-}
-.whycodeify{
-    display: flex;
-    flex-direction: column;
-    margin: 50px 5%;
-}
-.whycoedify1,.whycoedify2,.whycoedify3{
-    display: flex;
-    justify-content: center;
-}
-.whycoedify1__left,.whycoedify1__right,.whycoedify2__left,.whycoedify2__right,.whycoedify3__left,.whycoedify3__right{
-    width: 45%;
-}
-.banner__grad{
-    margin-top: -300px;
-}
-.whycoedify1__right,.whycoedify2__left,.whycoedify3__right{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 50px;
-}
-.whycoedify__img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-.whycoedify__img2{
-    width: 100%;
-    height: 50%;
-    object-fit: contain;
-}
-.whycoedify__heading{
-    text-align: center;
+.whycoedify__heading {
+  text-align: center;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 50px;
   font-size: 64px;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
+  .whyus {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 25%;
+  }
+  .whyus__heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .banner__grad {
+    margin-top: 0px;
+  }
+  .whycoedify__heading {
+    font-size: 40px;
+  }
+  .whyus__button {
+    margin: 10px auto;
+  }
+  .whyus__span {
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .whyus__left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .whyus__right {
+    width: 100%;
+  }
+  .wave__section {
+    flex-direction: column;
+  }
+  .wave__box {
+    margin-top: 30px;
+  }
 
-    .whyus{
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 25%;
-    }
-    .vet__grad{
-        margin: 0px 20px;
-    }
-    .whyus__heading{
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        font-size: 30px;
-    }
-    .banner__grad{
-        margin: 0px 20px;
-    }
-    .whycoedify__heading{
-        font-size: 40px;
-    }
-    .whyus__button{
-        margin: 10px auto;
-    }
-    .whyus__span{
-        text-align: center;
-        margin: 10px 0px;
-    }
-    .whyus__left{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .whyus__right{
-        width: 100%;
-    }
-    .wave__section{
-        flex-direction: column;
-    }
-    .wave__box{
-        margin-top: 30px;
-    }
-    .whycoedify1,.whycoedify2,.whycoedify3{
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-    .whycoedify1__left,.whycoedify1__right,.whycoedify2__left,.whycoedify2__right,.whycoedify3__left,.whycoedify3__right{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .whycoedify2{
-        flex-direction: column-reverse;
-    }
+  .whycoedify1,
+  .whycoedify2,
+  .whycoedify3,
+  .whycoedify4,
+  .whycoedify5 {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .whycoedify1__left,
+  .whycoedify1__right,
+  .whycoedify2__left,
+  .whycoedify2__right,
+  .whycoedify3__left,
+  .whycoedify3__right,
+  .whycoedify4__left,
+  .whycoedify4__right,
+  .whycoedify5__left,
+  .whycoedify5__right {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .whycoedify2 {
+    flex-direction: column-reverse;
+  }
 }
