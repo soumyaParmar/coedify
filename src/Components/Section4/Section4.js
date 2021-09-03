@@ -1,7 +1,7 @@
 import React from "react";
+import Section from "../../pages/Section-2/Section";
 import Gradient from "../Gradient/Gradient";
 import DevCard from "./DevCard";
-import Section from "../../pages/Section-2/Section";
 import { DevList } from "./DevList";
 
 const Section4 = () => {

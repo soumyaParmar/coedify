@@ -1,6 +1,6 @@
 import React from "react";
 import "./DevCard.css";
-function DevCard({ url, title, item1, item2, item3 }) {
+function DevCard({ index, url, title, item1, item2, item3 }) {
   return (
     <>
       <div className="dev__box">
@@ -15,7 +15,7 @@ function DevCard({ url, title, item1, item2, item3 }) {
           <li>{item3}</li>
         </ul>
 
-        <button className="dev__btn">Learn More</button>
+        {/* <button className="dev__btn">Learn More</button> */}
       </div>
     </>
   );

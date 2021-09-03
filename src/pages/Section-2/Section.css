@@ -1,37 +1,37 @@
-.devCard {
-  width: 293px;
-  height: 368px;
-  background-color: #ebeced;
-
-  margin-top: 40px;
-
-  border-radius: 10px;
+.card-body {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
-  cursor: pointer;
+  width: 100%;
 }
-.devCard:hover {
-  box-shadow: 1px 5px 5px 5px rgba(228, 15, 15, 0.918);
+section {
+  padding: 30px;
 }
-.dev__title {
-  font-weight: 600;
+.other__heading {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
 }
-.dev__img img {
-  width: 96px;
-  height: 96px;
-  border-radius: 10px;
-  object-fit: contain;
+.dev__boxx {
+  /* display: flex; */
+  /* height: 368px;
+    width: 293px; */
+  height: 450px;
+  width: 400px;
+  text-align: center;
+  /* border: 2px solid black; */
+  margin-bottom: 50px;
 }
-.dev__ul {
-  list-style: none;
+.other__ul {
+  list-style-type: none;
 }
-.dev__ul li {
-  margin-top: 2px;
-  font-size: 13px;
+.other__ul li {
+  margin-top: 30px;
+  font-size: 20px;
 }
-.dev__ul li::before {
-  content: "\00BB";
+.other__span {
+  background: #cee5ff;
+  padding: 10px;
+  border-radius: 5px;
 }
