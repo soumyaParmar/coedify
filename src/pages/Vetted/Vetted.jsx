@@ -1,6 +1,6 @@
 import React from "react";
 import "./vetted.css";
-import HeaderImg from "../WhyUs/whyus-header-image.svg";
+import HeaderImg from "./vetting.svg";
 import Gradient from "../../Components/Gradient/Gradient";
 import img1 from "../WhyUs/whyus_1.svg";
 import img2 from "../WhyUs/whyus_3.svg";

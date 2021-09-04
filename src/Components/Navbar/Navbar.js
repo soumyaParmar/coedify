@@ -86,7 +86,6 @@ const Navbar = () => {
               className={visible ? "anchorActive" : "anchor"}
               exact
               to="service"
-              smooth={true}
               activeClassName="active"
             >
               Tech Stack
@@ -98,9 +97,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={handleClose} className="li_btn btn__applyDev">
-            <Link exact to="service" smooth={true} activeClassName="active">
+            <NavLink exact to="applyasdev" activeClassName="active">
               Apply as a Developer
-            </Link>
+            </NavLink>
           </li>
         </ul>
 
