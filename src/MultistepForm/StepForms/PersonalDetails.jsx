@@ -1,35 +1,67 @@
-import React from "react";
-
-function PersonalDetails({ formData, setForm, navigation }) {
-  const { name, email, number } = formData;
+import React from "react-hook-form";
+import logo from "./CoEdify-logo.png";
+import "./personaldetail.css";
+import Button from "../../Components/Buttons/Hirebutton";
+function PersonalDetails({ defaultData, register, handleSubmit, navigation }) {
+  const onSubmit = (data) => {
+    defaultData = { ...data };
+    console.log(defaultData);
+    navigation.next();
+  };
 
   return (
-    <div style={{ padding: "10%" }}>
-      PersonalDetails
-      <input
-        type="text"
-        placeholder="name"
-        name="name"
-        value={name}
-        onChange={setForm}
-      />
-      <input
-        type="email"
-        placeholder="email"
-        name="email"
-        value={email}
-        onChange={setForm}
-      />
-      <input
-        type="number"
-        placeholder="number"
-        name="number"
-        value={number}
-        onChange={setForm}
-      />
-      <button onClick={() => navigation.next()}>Next</button>
+    <div className="form1">
+      <div className="step1">
+        <div className="step1__left">
+          <img className="form__logo" src={logo} alt="logo" />
+          <div className="form__section">
+            <h1 className="form__heading">Personal Details</h1>
+            <form onSubmit={handleSubmit(onSubmit)} className="form">
+              <div className="name form__box">
+                <label>Name*</label>
+                <input
+                  className="input"
+                  {...register("name")}
+                  type="name"
+                  name="name"
+                />
+              </div>
+              <div className="email form__box">
+                <label>Email*</label>
+                <input
+                  className="input"
+                  type="email"
+                  {...register("email")}
+                  name="email"
+                />
+              </div>
+              <div className="number form__box">
+                <label>Phone Number*</label>
+                <input
+                  className="input"
+                  type="number"
+                  {...register("number")}
+                  name="number"
+                />
+              </div>
+              <div className="navigation__btns">
+                <button
+                  className="next__btn"
+                  onClick={() => navigation.next()}
+                  type="submit"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="step1__right">
+          <h1 className="stepheading">Do you want to hire developers?</h1>
+          <Button />
+        </div>
+      </div>
     </div>
   );
 }
-
 export default PersonalDetails;

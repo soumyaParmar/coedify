@@ -1,5 +1,6 @@
 import React from "react";
-import { useForm, useStep } from "react-hooks-helper";
+import { useForm } from "react-hook-form";
+import { useStep } from "react-hooks-helper";
 import Experience from "./StepForms/Experience";
 import PersonalDetails from "./StepForms/PersonalDetails";
 import POF from "./StepForms/POF";
@@ -8,21 +9,7 @@ import Review from "./StepForms/Review";
 import Skillset from "./StepForms/Skillset";
 import Submit from "./StepForms/Submit";
 function MultiStepForm() {
-  const defaultData = {
-    name: "",
-    email: "",
-    number: "",
-    Experience: "",
-    status: "",
-    salary: "",
-    primaryskill: "",
-    secondaryskill: "",
-    githublink: "",
-    linkedinlink: "",
-    bestproject: "",
-    explaintech: "",
-    heardaboutus: "",
-  };
+  const defaultData = {};
   const steps = [
     { id: "personalDetails" },
     { id: "experience" },
@@ -32,14 +19,14 @@ function MultiStepForm() {
     { id: "review" },
     { id: "submit" },
   ];
-  const [formData, setForm] = useForm(defaultData);
+  const { register, handleSubmit } = useForm();
+
   const { step, navigation } = useStep({
     steps,
     initialStep: 0,
   });
-  console.log(navigation);
-  const props = { formData, setForm, navigation };
-
+  const props = { defaultData, register, handleSubmit, navigation };
+  // console.log(navigation);
   switch (step.id) {
     case "personalDetails":
       return <PersonalDetails {...props} />;
