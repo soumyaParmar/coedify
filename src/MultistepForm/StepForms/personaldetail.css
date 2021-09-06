@@ -12,13 +12,14 @@
     padding: 40px;
     background-color: #fff;
     border-radius: 20px;
+    margin: auto;
 }
 .form__heading{
     text-align: center;
 }
 .form__logo{
     width: 20rem;
-    height: 10rem;
+    height: 5rem;
     object-fit: contain;
 }
 .step1__right{
@@ -36,6 +37,7 @@
 }
 .step1__left{
     width: 70%;
+    /* height: 80vh; */
     display: flex;
     margin: 10px 5%;
     align-items: center;
@@ -45,17 +47,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 580px;
+    min-width: 580px;
 }
 ::-webkit-inner-spin-button{
     display: none;
 }
-span{
-    text-align: left;
-}
+
 .navigation__btns{
     text-align: right;
-    position: 2;
+    position: relative;
 }
 .form__box{
     margin-top: 30px;
@@ -84,6 +84,10 @@ span{
     position: relative;
     transition: all .6s ease-in-out;
 }
+label{
+    font-size: 20px;
+    font-weight: 400;
+}
 .next__btn::after{
     content: "»";
     transition: all .6s ease-in-out;
@@ -110,5 +114,9 @@ span{
     .step1__right{
         width: 100%;
         height: 20vh;
+    }
+    .form{
+        max-width: 580px;
+        min-width: 0px;
     }
 }

@@ -4,7 +4,7 @@ import { ImCross } from "react-icons/im";
 import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
@@ -24,6 +24,7 @@ const Navbar = () => {
     else setVisible(false);
   }, [pageYOffset]);
 
+  const history = useHistory();
   return (
     <>
       {/* <div className="alert alert-warning alert-dismissible fade show" role="alert">
@@ -97,15 +98,25 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={handleClose} className="li_btn btn__applyDev">
-            <NavLink exact to="applyasdev" activeClassName="active">
+            <Link
+              exact
+              to="applyasdev"
+              onClick={() => history.push("./applyasdev")}
+              activeClassName="active"
+            >
               Apply as a Developer
-            </NavLink>
+            </Link>
           </li>
         </ul>
 
         <div className="btns">
           <span className="btn__hire">Hire Developers</span>
-          <span className="btn__applyDev">Apply as a Developer</span>
+          <span
+            className="btn__applyDev"
+            onClick={() => history.push("./applyasdev")}
+          >
+            Apply as a Developer
+          </span>
         </div>
       </nav>
     </>

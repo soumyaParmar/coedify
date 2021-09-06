@@ -5,7 +5,7 @@ import Experience from "./StepForms/Experience";
 import PersonalDetails from "./StepForms/PersonalDetails";
 import POF from "./StepForms/POF";
 import Resume from "./StepForms/Resume";
-import Review from "./StepForms/Review";
+// import Review from "./StepForms/Review";
 import Skillset from "./StepForms/Skillset";
 import Submit from "./StepForms/Submit";
 function MultiStepForm() {
@@ -16,7 +16,7 @@ function MultiStepForm() {
     { id: "skillset" },
     { id: "resume" },
     { id: "pof" },
-    { id: "review" },
+    // { id: "review" },
     { id: "submit" },
   ];
   const { register, handleSubmit } = useForm();
@@ -38,10 +38,10 @@ function MultiStepForm() {
       return <Resume {...props} />;
     case "pof":
       return <POF {...props} />;
-    case "review":
-      return <Review {...props} />;
+    // case "review":
+    //   return <Review {...props} />;
     case "submit":
-      return <Submit />;
+      return <Submit {...props} />;
     default:
       console.log("default");
   }

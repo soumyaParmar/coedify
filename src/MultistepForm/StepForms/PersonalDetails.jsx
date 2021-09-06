@@ -16,7 +16,11 @@ function PersonalDetails({ defaultData, register, handleSubmit, navigation }) {
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <h1 className="form__heading">Personal Details</h1>
-            <form onSubmit={handleSubmit(onSubmit)} className="form">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="form"
+              autoComplete="off"
+            >
               <div className="name form__box">
                 <label>Name*</label>
                 <input
