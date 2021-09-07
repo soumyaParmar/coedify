@@ -2,10 +2,10 @@ import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 import "./skillset.css";
-function Resume({ defaultData, register, handleSubmit, navigation }) {
+function Resume({ defaultData, register, handleSubmit, errors, navigation }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
+
     navigation.next();
   };
   return (
@@ -20,10 +20,12 @@ function Resume({ defaultData, register, handleSubmit, navigation }) {
 
                 <input
                   className="input"
-                  {...register("skill")}
-                  type="name"
-                  name="skill"
+                  {...register("resume", { required: true })}
+                  type="file"
+                  name="resume"
                 />
+                {errors.resume?.type === "required" &&
+                  "This field is required "}
               </div>
               <div className="email form__box">
                 <label>LinkedIN URL*</label>
@@ -31,9 +33,24 @@ function Resume({ defaultData, register, handleSubmit, navigation }) {
                 <input
                   className="input"
                   type="text"
-                  {...register("topskill")}
-                  name="topskill"
+                  {...register("linkedinurl", {
+                    required: true,
+                    pattern: {
+                      value:
+                        /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/,
+                      message: "Enter a valid Link",
+                    },
+                  })}
+                  name="linkedinurl"
                 />
+                <small>
+                  {errors.linkedinurl?.type === "required" &&
+                    "This field is required "}
+                </small>
+                <small>
+                  {errors.linkedinurl?.type === "pattern" &&
+                    errors.linkedinurl?.message}
+                </small>
               </div>
               <div className="email form__box">
                 <label>Github URL*</label>
@@ -41,9 +58,11 @@ function Resume({ defaultData, register, handleSubmit, navigation }) {
                 <input
                   className="input"
                   type="text"
-                  {...register("topskill")}
-                  name="topskill"
+                  {...register("githuburl", { required: true })}
+                  name="githuburl"
                 />
+                {errors.githuburl?.type === "required" &&
+                  "This field is required "}
               </div>
               <div className="email form__box">
                 <label>Personal Portfolio URL (If any)</label>
@@ -51,8 +70,8 @@ function Resume({ defaultData, register, handleSubmit, navigation }) {
                 <input
                   className="input"
                   type="text"
-                  {...register("topskill")}
-                  name="topskill"
+                  {...register("portfoliourl")}
+                  name="portfoliourl"
                 />
               </div>
 

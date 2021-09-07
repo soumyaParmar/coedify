@@ -42,7 +42,7 @@ const Navbar = () => {
       {/* <div className="navbar"> */}
       <nav className={visible ? "navSecondary" : "nav"}>
         <div className="logo">
-          <NavLink exact to="/" activeClassName="active">
+          <NavLink exact to="/" activeclassname="active">
             <img onClick={handleClose} src={logo} alt="logo" />
           </NavLink>
         </div>
@@ -56,18 +56,17 @@ const Navbar = () => {
               className={visible ? "anchorActive" : "anchor"}
               exact
               to="/whyus"
-              activeClassName="active"
+              activeclassname="active"
             >
               Why us?
             </NavLink>
           </li>
           <li onClick={handleClose}>
             <NavLink
-              activeClass="active"
+              activeclass="active"
               className={visible ? "anchorActive" : "anchor"}
               exact
               to="aboutUs"
-              smooth={true}
             >
               How We Work?
             </NavLink>
@@ -77,7 +76,7 @@ const Navbar = () => {
               className={visible ? "anchorActive" : "anchor"}
               exact
               to="/vettingprocess"
-              activeClassName="active"
+              activeclassname="active"
             >
               Vetting Process
             </NavLink>
@@ -87,13 +86,13 @@ const Navbar = () => {
               className={visible ? "anchorActive" : "anchor"}
               exact
               to="service"
-              activeClassName="active"
+              activeclassname="active"
             >
               Tech Stack
             </NavLink>
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
-            <Link exact to="service" smooth={true} activeClassName="active">
+            <Link exact to="service" activeclassname="active">
               Hire Developers
             </Link>
           </li>
@@ -102,7 +101,7 @@ const Navbar = () => {
               exact
               to="applyasdev"
               onClick={() => history.push("./applyasdev")}
-              activeClassName="active"
+              activeclassname="active"
             >
               Apply as a Developer
             </Link>

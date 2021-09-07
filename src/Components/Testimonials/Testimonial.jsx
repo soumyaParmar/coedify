@@ -30,10 +30,11 @@ function Testimonial() {
       },
     },
   };
-  const list = List.map((val) => {
+  const list = List.map((index, val) => {
     return (
       <div className="item">
         <TestimonialCard
+          key={index}
           description={val.description}
           url={val.url}
           title={val.title}

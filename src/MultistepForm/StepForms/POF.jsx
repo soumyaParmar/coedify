@@ -2,7 +2,7 @@ import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 import "./skillset.css";
-function POF({ defaultData, register, handleSubmit, navigation }) {
+function POF({ defaultData, register, handleSubmit, errors, navigation }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
     console.log(defaultData);
@@ -22,10 +22,14 @@ function POF({ defaultData, register, handleSubmit, navigation }) {
                 </span>
                 <input
                   className="input"
-                  {...register("skill")}
-                  type="name"
-                  name="skill"
+                  {...register("bestproject", { required: true })}
+                  type="text"
+                  name="bestproject"
                 />
+                <small>
+                  {errors.bestproject?.type === "required" &&
+                    "This field is required "}
+                </small>
               </div>
               <div className="email form__box">
                 <label>
@@ -37,9 +41,13 @@ function POF({ defaultData, register, handleSubmit, navigation }) {
                 <input
                   className="input"
                   type="text"
-                  {...register("topskill")}
-                  name="topskill"
+                  {...register("explaintech", { required: true })}
+                  name="explaintech"
                 />
+                <small>
+                  {errors.explaintech?.type === "required" &&
+                    "This field is required "}
+                </small>
               </div>
               <div className="email form__box">
                 <label>Where did you hear about CoEdify ? *</label>
@@ -47,9 +55,13 @@ function POF({ defaultData, register, handleSubmit, navigation }) {
                 <input
                   className="input"
                   type="text"
-                  {...register("topskill")}
-                  name="topskill"
+                  {...register("heardAboutUs", { required: true })}
+                  name="heardAboutUs"
                 />
+                <small>
+                  {errors.heardAboutUs?.type === "required" &&
+                    "This field is required "}
+                </small>
               </div>
 
               <div className="navigation__btns">

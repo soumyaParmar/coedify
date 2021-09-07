@@ -3,10 +3,15 @@ import logo from "./CoEdify-logo.png";
 import "./Experience.css";
 import "./personaldetail.css";
 // import Button from "../../Components/Buttons/Hirebutton";
-function Experience({ defaultData, register, handleSubmit, navigation }) {
+function Experience({
+  defaultData,
+  register,
+  handleSubmit,
+  errors,
+  navigation,
+}) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
     navigation.next();
   };
   return (
@@ -22,31 +27,53 @@ function Experience({ defaultData, register, handleSubmit, navigation }) {
             >
               <div className="name form__box">
                 <label>Experience*</label>
-                <input
-                  className="input"
-                  {...register("exp")}
-                  type="name"
-                  name="exp"
-                />
+                <select
+                  class="input"
+                  name="experience"
+                  {...register("experience", { required: true })}
+                >
+                  <option value="" selected>
+                    Experience*
+                  </option>
+                  <option value="0-3years">0-3 years</option>
+                  <option value="3-5years">3-5 years</option>
+                  <option value="morethan5">More than 5</option>
+                </select>
+                <small>{errors.experience && "This field is required"}</small>
               </div>
               <div className="email form__box">
                 <label>Current Status*</label>
-                <input
-                  className="input"
-                  type="text"
-                  {...register("any")}
-                  name="any"
-                />
+                <select
+                  class="input"
+                  name="status"
+                  {...register("status", { required: true })}
+                >
+                  <option value="" selected>
+                    Current Status*
+                  </option>
+                  <option value="employed">Employed</option>
+                  <option value="unemployed">Unemployed</option>
+                </select>
+                <small>{errors.status && "This field is required"}</small>
               </div>
               <div className="number form__box">
-                <label>Salary Expectations(PA)*</label>
-                <input
-                  className="input"
-                  type="number"
-                  {...register("salary")}
+                <label>Salary Expectations(LPA)*</label>
+                <select
+                  class="input"
                   name="salary"
-                />
+                  {...register("salary", { required: true })}
+                >
+                  <option value="" selected>
+                    Salary Expectations(LPA)*
+                  </option>
+                  <option value="0-3years">3-5 lakh</option>
+                  <option value="5-7lakh">5-7 lakh</option>
+                  <option value="7-9lakh">7-9 lakh</option>
+                  <option value="morethan10">More than 10 lakh</option>
+                </select>
+                <small>{errors.salary && "This field is required"}</small>
               </div>
+
               <div className="navigation__btns">
                 <button
                   className="back__btn"
@@ -63,7 +90,6 @@ function Experience({ defaultData, register, handleSubmit, navigation }) {
         </div>
         <div className="step1__right">
           <h1 className="stepheading">Availibility and Expectation</h1>
-          {/* <Button /> */}
         </div>
       </div>
     </div>

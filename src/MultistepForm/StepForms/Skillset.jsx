@@ -5,7 +5,6 @@ import "./skillset.css";
 function Skillset({ defaultData, register, handleSubmit, navigation }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
     navigation.next();
   };
   return (
@@ -23,9 +22,9 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
                 </span>
                 <input
                   className="input"
-                  {...register("skill")}
-                  type="name"
-                  name="skill"
+                  {...register("primary-skill")}
+                  type="text"
+                  name="primary-skill"
                 />
               </div>
               <div className="email form__box">
@@ -38,8 +37,8 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
                 <input
                   className="input"
                   type="text"
-                  {...register("topskill")}
-                  name="topskill"
+                  {...register("secondary-skill")}
+                  name="secondary-skill"
                 />
               </div>
 

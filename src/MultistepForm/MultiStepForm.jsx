@@ -19,13 +19,20 @@ function MultiStepForm() {
     // { id: "review" },
     { id: "submit" },
   ];
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    mode: "onChange",
+  });
 
+  // console.log(errors);
   const { step, navigation } = useStep({
     steps,
     initialStep: 0,
   });
-  const props = { defaultData, register, handleSubmit, navigation };
+  const props = { defaultData, register, handleSubmit, errors, navigation };
   // console.log(navigation);
   switch (step.id) {
     case "personalDetails":

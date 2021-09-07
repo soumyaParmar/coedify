@@ -2,10 +2,15 @@ import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 import Button from "../../Components/Buttons/Hirebutton";
-function PersonalDetails({ defaultData, register, handleSubmit, navigation }) {
+function PersonalDetails({
+  defaultData,
+  register,
+  handleSubmit,
+  errors,
+  navigation,
+}) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
     navigation.next();
   };
 
@@ -16,44 +21,74 @@ function PersonalDetails({ defaultData, register, handleSubmit, navigation }) {
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <h1 className="form__heading">Personal Details</h1>
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className="form"
-              autoComplete="off"
-            >
+            <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
                 <label>Name*</label>
                 <input
                   className="input"
-                  {...register("name")}
-                  type="name"
-                  name="name"
+                  {...register("name", {
+                    required: true,
+                    pattern: {
+                      value: /^[A-Za-z0-9 ]+$/,
+                      message: "Enter valid name",
+                    },
+                  })}
                 />
+                <small>
+                  {errors.name?.type === "required" &&
+                    "This field is required "}
+                </small>
+                <small>
+                  {errors.name?.type === "pattern" && errors.name?.message}
+                </small>
               </div>
               <div className="email form__box">
                 <label>Email*</label>
                 <input
                   className="input"
                   type="email"
-                  {...register("email")}
+                  {...register("email", {
+                    required: true,
+                    pattern: {
+                      value:
+                        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                      message: "Enter a valid email",
+                    },
+                  })}
                   name="email"
                 />
+                <small>
+                  {errors.email?.type === "required" &&
+                    "This field is required "}
+                </small>
+                <small>
+                  {errors.email?.type === "pattern" && errors.email?.message}
+                </small>
               </div>
               <div className="number form__box">
                 <label>Phone Number*</label>
                 <input
                   className="input"
                   type="number"
-                  {...register("number")}
+                  {...register("number", {
+                    required: true,
+                    pattern: {
+                      value: /^(\+\d{1,3}[- ]?)?\d{10}$/,
+                      message: "Enter a valid phone number",
+                    },
+                  })}
                   name="number"
                 />
+                <small>
+                  {errors.number?.type === "required" &&
+                    "This field is required "}
+                </small>
+                <small>
+                  {errors.number?.type === "pattern" && errors.number?.message}
+                </small>
               </div>
               <div className="navigation__btns">
-                <button
-                  className="next__btn"
-                  onClick={() => navigation.next()}
-                  type="submit"
-                >
+                <button className="next__btn" type="submit">
                   Next
                 </button>
               </div>

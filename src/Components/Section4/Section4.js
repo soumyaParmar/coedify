@@ -7,7 +7,7 @@ const Section4 = () => {
   const list1 = DevList.map(({ id, url, title, item1, item2, item3 }) => {
     return (
       <DevCard
-        index={id}
+        key={id}
         url={url}
         title={title}
         item1={item1}
