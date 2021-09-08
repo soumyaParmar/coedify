@@ -8,6 +8,7 @@ function Experience({
   register,
   handleSubmit,
   errors,
+  classNames,
   navigation,
 }) {
   const onSubmit = (data) => {
@@ -26,9 +27,11 @@ function Experience({
               autoComplete="off"
             >
               <div className="name form__box">
-                <label>Experience*</label>
+                <label className="dropdown__label">Experience*</label>
                 <select
-                  class="input"
+                  className={classNames("form-control", {
+                    "is-invalid": errors.experience,
+                  })}
                   name="experience"
                   {...register("experience", { required: true })}
                 >
@@ -39,12 +42,16 @@ function Experience({
                   <option value="3-5years">3-5 years</option>
                   <option value="morethan5">More than 5</option>
                 </select>
-                <small>{errors.experience && "This field is required"}</small>
+                <div className="invalid-feedback">
+                  {errors.experience && "This field is required"}
+                </div>
               </div>
               <div className="email form__box">
-                <label>Current Status*</label>
+                <label className="dropdown__label">Current Status*</label>
                 <select
-                  class="input"
+                  className={classNames("form-control", {
+                    "is-invalid": errors.status,
+                  })}
                   name="status"
                   {...register("status", { required: true })}
                 >
@@ -54,12 +61,18 @@ function Experience({
                   <option value="employed">Employed</option>
                   <option value="unemployed">Unemployed</option>
                 </select>
-                <small>{errors.status && "This field is required"}</small>
+                <div className="invalid-feedback">
+                  {errors.status && "This field is required"}
+                </div>
               </div>
               <div className="number form__box">
-                <label>Salary Expectations(LPA)*</label>
+                <label className="dropdown__label">
+                  Salary Expectations(LPA)*
+                </label>
                 <select
-                  class="input"
+                  className={classNames("form-control", {
+                    "is-invalid": errors.salary,
+                  })}
                   name="salary"
                   {...register("salary", { required: true })}
                 >
@@ -71,7 +84,9 @@ function Experience({
                   <option value="7-9lakh">7-9 lakh</option>
                   <option value="morethan10">More than 10 lakh</option>
                 </select>
-                <small>{errors.salary && "This field is required"}</small>
+                <div className="invalid-feedback">
+                  {errors.salary && "This field is required"}
+                </div>
               </div>
 
               <div className="navigation__btns">

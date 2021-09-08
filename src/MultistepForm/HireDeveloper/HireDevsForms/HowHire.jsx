@@ -1,0 +1,80 @@
+import React from "react-hook-form";
+import logo from "./CoEdify-logo.png";
+import "../../StepForms/personaldetail.css";
+import Button from "../../../Components/Buttons/Hirebutton";
+
+function Role({
+  defaultData,
+  register,
+  handleSubmit,
+  errors,
+  classNames,
+  navigation,
+}) {
+  const onSubmit = (data) => {
+    console.log(data);
+    defaultData = { ...data };
+    navigation.next();
+  };
+
+  return (
+    <div className="form1">
+      <div className="step1">
+        <div className="step1__left">
+          <img className="form__logo" src={logo} alt="logo" />
+          <div className="form__section">
+            <h1 className="form__heading2">
+              How would you like to hire developer?
+            </h1>
+            <form onSubmit={handleSubmit(onSubmit)} className="form">
+              <div className="name form__box">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="permanent"
+                    value="permanent"
+                    {...register("type", { required: true })}
+                    name="type"
+                  />
+                  <label class="form-check-label" for="permanentbased">
+                    Permanent Based
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="contract"
+                    name="type"
+                    {...register("type", { required: true })}
+                    value="contract"
+                  />
+                  <label class="form-check-label" for=" ContractualBased">
+                    Contractual Based
+                  </label>
+                </div>
+                <div className="invalid-feedback">
+                  {errors.type?.type === "required" &&
+                    "This field is required "}
+                </div>
+              </div>
+
+              <div className="navigation__btns">
+                <button className="next__btn" type="submit">
+                  Next
+                </button>
+                <button className="back__btn">Back</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="step1__right">
+          <h1 className="stepheading">Do you want to apply as a developer ?</h1>
+          <Button title="Apply as a Developer" />
+        </div>
+      </div>
+    </div>
+  );
+}
+export default Role;

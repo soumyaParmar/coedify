@@ -92,7 +92,12 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
-            <Link exact to="service" activeclassname="active">
+            <Link
+              exact
+              to="service"
+              onClick={() => history.push("./hiredev")}
+              activeclassname="active"
+            >
               Hire Developers
             </Link>
           </li>
@@ -109,7 +114,9 @@ const Navbar = () => {
         </ul>
 
         <div className="btns">
-          <span className="btn__hire">Hire Developers</span>
+          <span className="btn__hire" onClick={() => history.push("./hiredev")}>
+            Hire Developers
+          </span>
           <span
             className="btn__applyDev"
             onClick={() => history.push("./applyasdev")}

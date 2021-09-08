@@ -6,6 +6,8 @@ import "./submit.css";
 
 function Submit({ defaultData, register, handleSubmit, navigation }) {
   let history = useHistory();
+  console.log(defaultData);
+
   return (
     <div className="form1">
       <div className="step1">
@@ -15,12 +17,13 @@ function Submit({ defaultData, register, handleSubmit, navigation }) {
           <span className="submit__subheading">
             Someone from our team contact you shortly
           </span>
+
           <button className="backtohome__btn" onClick={() => history.push("/")}>
             Back to Home
           </button>
         </div>
         <div className="step1__right">
-          <h1 className="stepheading">Resume & Personal Profiles</h1>
+          {/* <h1 className="stepheading">Resume & Personal Profiles</h1> */}
         </div>
       </div>
     </div>

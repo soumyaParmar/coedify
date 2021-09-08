@@ -18,7 +18,12 @@ function Hero() {
             and tested developers specific to your needs.
           </span>
           <div className="buttons">
-            <span className="btn__getDeveloper">Hire Developers</span>
+            <span
+              className="btn__getDeveloper"
+              onClick={() => history.push("./hiredev")}
+            >
+              Hire Developers
+            </span>
             <span
               className="btn__apply"
               onClick={() => history.push("./applyasdev")}

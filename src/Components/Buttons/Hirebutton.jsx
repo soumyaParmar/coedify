@@ -1,9 +1,9 @@
 import React from "react";
 
-function Hirebutton() {
+function Hirebutton(props) {
   return (
     <div>
-      <span className="btn__getDeveloper">Hire Developers</span>
+      <span className="btn__getDeveloper">{props.title}</span>
     </div>
   );
 }

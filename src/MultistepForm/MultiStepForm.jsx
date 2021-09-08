@@ -1,13 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useStep } from "react-hooks-helper";
+import classNames from "classnames";
 import Experience from "./StepForms/Experience";
 import PersonalDetails from "./StepForms/PersonalDetails";
 import POF from "./StepForms/POF";
 import Resume from "./StepForms/Resume";
-// import Review from "./StepForms/Review";
 import Skillset from "./StepForms/Skillset";
-import Submit from "./StepForms/Submit";
+
 function MultiStepForm() {
   const defaultData = {};
   const steps = [
@@ -27,12 +27,18 @@ function MultiStepForm() {
     mode: "onChange",
   });
 
-  // console.log(errors);
   const { step, navigation } = useStep({
     steps,
     initialStep: 0,
   });
-  const props = { defaultData, register, handleSubmit, errors, navigation };
+  const props = {
+    defaultData,
+    register,
+    handleSubmit,
+    errors,
+    classNames,
+    navigation,
+  };
   // console.log(navigation);
   switch (step.id) {
     case "personalDetails":
@@ -45,10 +51,7 @@ function MultiStepForm() {
       return <Resume {...props} />;
     case "pof":
       return <POF {...props} />;
-    // case "review":
-    //   return <Review {...props} />;
-    case "submit":
-      return <Submit {...props} />;
+
     default:
       console.log("default");
   }

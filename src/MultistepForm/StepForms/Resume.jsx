@@ -2,7 +2,14 @@ import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 import "./skillset.css";
-function Resume({ defaultData, register, handleSubmit, errors, navigation }) {
+function Resume({
+  defaultData,
+  register,
+  handleSubmit,
+  errors,
+  classNames,
+  navigation,
+}) {
   const onSubmit = (data) => {
     defaultData = { ...data };
 
@@ -19,19 +26,24 @@ function Resume({ defaultData, register, handleSubmit, errors, navigation }) {
                 <label>Upload your CV*</label>
 
                 <input
-                  className="input"
+                  className={classNames("form-control", {
+                    "is-invalid": errors.resume,
+                  })}
                   {...register("resume", { required: true })}
                   type="file"
                   name="resume"
                 />
-                {errors.resume?.type === "required" &&
-                  "This field is required "}
+                <div className="invalid-feedback">
+                  {errors.resume?.type === "required" &&
+                    "This field is required "}
+                </div>
               </div>
               <div className="email form__box">
                 <label>LinkedIN URL*</label>
-
                 <input
-                  className="input"
+                  className={classNames("form-control", {
+                    "is-invalid": errors.resume,
+                  })}
                   type="text"
                   {...register("linkedinurl", {
                     required: true,
@@ -43,26 +55,30 @@ function Resume({ defaultData, register, handleSubmit, errors, navigation }) {
                   })}
                   name="linkedinurl"
                 />
-                <small>
+                <div className="invalid-feedback">
                   {errors.linkedinurl?.type === "required" &&
                     "This field is required "}
-                </small>
-                <small>
+                </div>
+                <div className="invalid-feedback">
                   {errors.linkedinurl?.type === "pattern" &&
                     errors.linkedinurl?.message}
-                </small>
+                </div>
               </div>
               <div className="email form__box">
                 <label>Github URL*</label>
 
                 <input
-                  className="input"
+                  className={classNames("form-control", {
+                    "is-invalid": errors.githuburl,
+                  })}
                   type="text"
                   {...register("githuburl", { required: true })}
                   name="githuburl"
                 />
-                {errors.githuburl?.type === "required" &&
-                  "This field is required "}
+                <div className="invalid-feedback">
+                  {errors.githuburl?.type === "required" &&
+                    "This field is required "}
+                </div>
               </div>
               <div className="email form__box">
                 <label>Personal Portfolio URL (If any)</label>

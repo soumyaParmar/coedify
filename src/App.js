@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import HireDevsForm from "./MultistepForm/HireDeveloper/HireDevForm";
 import "./App.css";
 import ScrollToTop from "./Components/ScrollToTop";
 import Home from "./pages/Home";
@@ -29,6 +30,7 @@ function App() {
             <Footer />
           </Route>
           <Route exact path="/applyasdev" component={MultiStepForm} />
+          <Route exact path="/hiredev" component={HireDevsForm} />
         </Switch>
       </BrowserRouter>
       <ScrollToTop />

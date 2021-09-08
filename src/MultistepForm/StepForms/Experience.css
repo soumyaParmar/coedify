@@ -24,7 +24,17 @@
     padding-right: 8px;
     padding-left: 24px;
 }
+.drop{
+    margin-left: -20px;
+}
 .back__btn:hover::after{
     opacity: 1;
     left: 20px;
+}
+label{
+    margin-bottom: 10px;
+}
+.dropdown__label{
+margin-left: 20px;
+margin-bottom: 10px;
 }
