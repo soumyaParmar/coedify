@@ -19,7 +19,7 @@ function Vetted() {
             dictum tincidunt vel amet, vel aliquam.
           </p>
           <div className="vet1__btn">
-            <Button />
+            <Button title="Hire Developers" />
           </div>
         </div>
         <div className="vet1__right">

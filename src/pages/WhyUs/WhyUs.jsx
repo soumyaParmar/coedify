@@ -18,7 +18,7 @@ function WhyUs() {
             Hire tech talents that fits the job requirements
           </h1>
           <div className="whyus__button">
-            <Hirebutton />
+            <Hirebutton title="Hire Developers" />
           </div>
         </div>
         <div className="whyus__right">
