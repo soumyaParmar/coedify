@@ -11,7 +11,6 @@ import HowHire from "./HireDevsForms/HowHire";
 import NumOfDevs from "./HireDevsForms/NumOfDevs";
 import Role from "./HireDevsForms/Role";
 import Skills from "./HireDevsForms/Skills";
-import Submit from "./HireDevsForms/Submit";
 import WhenToJoin from "./HireDevsForms/WhenToJoin";
 function HireDevForm() {
   const defaultData = {};
@@ -68,8 +67,7 @@ function HireDevForm() {
       return <Budget {...props} />;
     case "contactInfo":
       return <ContactInfo {...props} />;
-    case "submit":
-      return <Submit />;
+
     default:
       console.log("default");
   }

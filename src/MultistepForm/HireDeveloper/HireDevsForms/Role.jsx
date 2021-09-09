@@ -16,7 +16,7 @@ function Role({
     defaultData = { ...data };
     navigation.next();
   };
-
+  console.log(errors);
   return (
     <div className="form1">
       <div className="step1">
@@ -36,18 +36,11 @@ function Role({
                   })}
                   {...register("role", {
                     required: true,
-                    pattern: {
-                      value: /^[A-Za-z0-9 ]+$/,
-                      message: "Enter valid name",
-                    },
                   })}
                 />
                 <div className="invalid-feedback">
                   {errors.role?.type === "required" &&
                     "This field is required "}
-                </div>
-                <div className="invalid-feedback">
-                  {errors.role?.type === "pattern" && errors.role?.message}
                 </div>
               </div>
 

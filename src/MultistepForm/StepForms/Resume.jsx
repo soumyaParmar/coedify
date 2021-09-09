@@ -44,7 +44,7 @@ function Resume({
                   className={classNames("form-control", {
                     "is-invalid": errors.resume,
                   })}
-                  type="text"
+                  type="url"
                   {...register("linkedinurl", {
                     required: true,
                     pattern: {
@@ -71,7 +71,7 @@ function Resume({
                   className={classNames("form-control", {
                     "is-invalid": errors.githuburl,
                   })}
-                  type="text"
+                  type="url"
                   {...register("githuburl", { required: true })}
                   name="githuburl"
                 />
@@ -85,7 +85,7 @@ function Resume({
 
                 <input
                   className="input"
-                  type="text"
+                  type="url"
                   {...register("portfoliourl")}
                   name="portfoliourl"
                 />

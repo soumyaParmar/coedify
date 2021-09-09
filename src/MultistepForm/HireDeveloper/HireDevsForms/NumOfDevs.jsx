@@ -99,7 +99,12 @@ function Role({
                 <button className="next__btn" type="submit">
                   Next
                 </button>
-                <button className="back__btn">Back</button>
+                <button
+                  className="back__btn"
+                  onClick={() => navigation.previous()}
+                >
+                  Back
+                </button>
               </div>
             </form>
           </div>

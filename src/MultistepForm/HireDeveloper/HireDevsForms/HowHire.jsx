@@ -28,7 +28,7 @@ function Role({
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -37,20 +37,23 @@ function Role({
                     {...register("type", { required: true })}
                     name="type"
                   />
-                  <label class="form-check-label" for="permanentbased">
+                  <label className="form-check-label" htmlfor="permanentbased">
                     Permanent Based
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     id="contract"
                     name="type"
                     {...register("type", { required: true })}
                     value="contract"
                   />
-                  <label class="form-check-label" for=" ContractualBased">
+                  <label
+                    className="form-check-label"
+                    htmlfor=" ContractualBased"
+                  >
                     Contractual Based
                   </label>
                 </div>
@@ -64,7 +67,12 @@ function Role({
                 <button className="next__btn" type="submit">
                   Next
                 </button>
-                <button className="back__btn">Back</button>
+                <button
+                  className="back__btn"
+                  onClick={() => navigation.previous()}
+                >
+                  Back
+                </button>
               </div>
             </form>
           </div>

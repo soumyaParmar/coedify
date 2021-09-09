@@ -16,6 +16,7 @@ function POF({
   const history = useHistory();
   const onSubmit = (data) => {
     defaultData = { ...data };
+    successAlert();
     console.log(defaultData);
   };
   const successAlert = () => {
@@ -26,6 +27,7 @@ function POF({
       icon: "success",
     });
   };
+
   return (
     <div className="form1">
       <div className="step1">
@@ -33,12 +35,12 @@ function POF({
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
-              <div className="name form__box">
+              <div className="form__box">
                 <label>What is the best project you have worked on? *</label>
                 <span className="subhead">
                   *Write the details in description in minimum 100 words
                 </span>
-                <input
+                <textarea
                   className={classNames("form-control", {
                     "is-invalid": errors.bestproject,
                   })}
@@ -65,7 +67,7 @@ function POF({
                 <span className="subhead">
                   *Write honestly in minimum 100 words
                 </span>
-                <input
+                <textarea
                   className={classNames("form-control", {
                     "is-invalid": errors.explaintech,
                   })}
@@ -121,11 +123,7 @@ function POF({
                 >
                   Back
                 </button>
-                <button
-                  className="submit__btn"
-                  type="submit"
-                  onClick={successAlert}
-                >
+                <button className="submit__btn" type="submit">
                   Submit
                 </button>
               </div>
