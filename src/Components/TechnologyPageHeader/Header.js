@@ -8,11 +8,10 @@ const Header = ({ title, description }) => {
     <div className="header-parent-container">
       <div className="header-left-container">
         <h1>Hiring {title} Developer on CoEdify</h1>
-
         <p>{description}</p>
-        <p className="mybtn">
-          <Hirebutton />
-        </p>
+        <div className="mybtn">
+          <Hirebutton title="Hire Developers" />
+        </div>
       </div>
 
       <div className="header-right-container">

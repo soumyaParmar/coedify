@@ -4,18 +4,21 @@ import DevCard from "./DevCard";
 import { DevList } from "./DevList";
 
 const Section4 = () => {
-  const list1 = DevList.map(({ id, url, title, item1, item2, item3 }) => {
-    return (
-      <DevCard
-        key={id}
-        url={url}
-        title={title}
-        item1={item1}
-        item2={item2}
-        item3={item3}
-      />
-    );
-  });
+  const list1 = DevList.map(
+    ({ id, url, title, item1, item2, item3, redirect }) => {
+      return (
+        <DevCard
+          key={id}
+          url={url}
+          title={title}
+          item1={item1}
+          item2={item2}
+          item3={item3}
+          redirect={redirect}
+        />
+      );
+    }
+  );
   return (
     <div className="igns" id="techStack">
       <h1 className="ings__heading">Our Ingenious Developers</h1>

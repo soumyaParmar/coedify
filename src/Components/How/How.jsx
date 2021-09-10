@@ -4,6 +4,7 @@ import First from "./First__Step.jpg";
 import Second from "./Second__step.svg";
 import Third from "./Third__Step.png";
 import Fourth from "./Fourth__step.svg";
+import Hirebutton from "../Buttons/Hirebutton";
 
 function How() {
   return (
@@ -25,7 +26,7 @@ function How() {
               need.
             </p>
             <div className="how__hirebutton">
-              <span className="btn__getDeveloper">Hire Developers</span>
+              <Hirebutton title="Hire Developers" />
             </div>
           </div>
           <div className="how1__right">
@@ -97,7 +98,7 @@ function How() {
               employee.
             </p>
             <div className="how__hirebutton">
-              <span className="btn__getDeveloper">Hire Developers</span>
+              <Hirebutton title="Hire Developers" />
             </div>
           </div>
         </div>

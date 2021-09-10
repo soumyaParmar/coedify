@@ -8,10 +8,11 @@ export const DevList = [
   {
     id: 1,
     url: fullstack,
-    title: "Mean Stack",
+    title: "Full Stack",
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",
+    redirect: "/technology/fullstack",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const DevList = [
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",
+    redirect: "/technology/frontend",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const DevList = [
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",
+    redirect: "/technology/backend",
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ export const DevList = [
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",
+    redirect: "/technology/nativemobile",
   },
   {
     id: 5,
@@ -44,6 +48,7 @@ export const DevList = [
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",
+    redirect: "/technology/devops",
   },
   {
     id: 6,
@@ -52,5 +57,6 @@ export const DevList = [
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",
+    redirect: "/technology/sqltunning",
   },
 ];

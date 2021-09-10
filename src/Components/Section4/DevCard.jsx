@@ -1,6 +1,9 @@
 import React from "react";
+import { useHistory } from "react-router";
 import "./DevCard.css";
-function DevCard({ index, url, title, item1, item2, item3 }) {
+function DevCard({ index, url, title, item1, item2, item3, redirect }) {
+  const history = useHistory();
+
   return (
     <>
       <div className="dev__box">
@@ -15,7 +18,9 @@ function DevCard({ index, url, title, item1, item2, item3 }) {
           <li>{item3}</li>
         </ul>
 
-        <button className="dev__btn">Learn More</button>
+        <button className="dev__btn" onClick={() => history.push(redirect)}>
+          Learn More
+        </button>
       </div>
     </>
   );
