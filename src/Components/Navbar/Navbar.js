@@ -62,14 +62,15 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <NavLink
+            <Link
+              onClick={handleClose}
               activeclass="active"
               className={visible ? "anchorActive" : "anchor"}
               exact
-              to="aboutUs"
+              to="howWeWork"
             >
               How We Work?
-            </NavLink>
+            </Link>
           </li>
           <li onClick={handleClose}>
             <NavLink
@@ -82,14 +83,15 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <NavLink
+            <Link
+              onClick={handleClose}
               className={visible ? "anchorActive" : "anchor"}
               exact
-              to="service"
+              to="techStack"
               activeclassname="active"
             >
               Tech Stack
-            </NavLink>
+            </Link>
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
             <Link
