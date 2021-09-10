@@ -8,7 +8,7 @@ export const DevList = [
   {
     id: 1,
     url: fullstack,
-    title: "FullStack",
+    title: "Mean Stack",
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",
@@ -48,7 +48,7 @@ export const DevList = [
   {
     id: 6,
     url: fullstack,
-    title: "SQL Tuning",
+    title: "SQl Tuning Enginer ",
     item1: "Strong CS foundation",
     item2: "Project Experience",
     item3: "Worked with different frameworks",

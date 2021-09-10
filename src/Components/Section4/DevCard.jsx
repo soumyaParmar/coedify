@@ -1,6 +1,6 @@
 import React from "react";
 import "./DevCard.css";
-function DevCard({ url, title, item1, item2, item3 }) {
+function DevCard({ index, url, title, item1, item2, item3 }) {
   return (
     <>
       <div className="dev__box">
