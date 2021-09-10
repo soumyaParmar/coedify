@@ -1,0 +1,129 @@
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+.top__heading {
+  margin-top: 80px;
+}
+.h1__heading {
+  font-family: "Dosis";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.other__heading {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.dev__boxx {
+  /* display: flex; */
+  height: 350px;
+  width: 310px;
+  text-align: center;
+  /* border: 2px solid black; */
+  margin-bottom: 50px;
+}
+.other__ul {
+  list-style-type: none;
+}
+.other__ul li {
+  margin-top: 30px;
+  font-size: 12px;
+}
+.other__span {
+  background: #cee5ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.h3__heading {
+  font-family: "Dosis";
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+  font-style: normal;
+}
+.dev__card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgb(0, 0, 0, 0.05),
+    -5px -5px 5px rgba(202, 77, 77, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+.sec__ul {
+  list-style-image: url("./arrow.png");
+  margin-left: 28px;
+}
+.sec__ul li {
+  margin-top: 39px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.sec__box {
+  background: #ebeced;
+  box-shadow: 0 10px 20px rgba(155, 119, 119, 20%);
+  border-radius: 15px;
+  display: flex;
+  /* height: 368px;
+  width: 293px; */
+  height: 350px;
+  width: 310px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sec__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+/* .sec__span {
+  background: #2d46b9;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+} */
+
+.sec__box:hover {
+  box-shadow: 1px 5px 10px 8px #0a73ebec;
+  transform: translateY(-5px);
+}
+.sec__img {
+  border-radius: 10px;
+  object-fit: contain;
+  height: 90px;
+}
+
+@media screen and (max-width: 400px) {
+  .dev__card {
+    margin: 20px 0px;
+  }
+  .sec__heading {
+    margin-bottom: 100px;
+    color: blue;
+  }
+  .sec__box {
+    margin-bottom: 80px;
+  }
+  .sec__img {
+    width: 100%;
+  }
+  .sec__ul {
+    margin-bottom: 250px;
+    margin-top: 0px;
+  }
+  .sec__box {
+    height: 500px;
+    width: 100%;
+  }
+}
