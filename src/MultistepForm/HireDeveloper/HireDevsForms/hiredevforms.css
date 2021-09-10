@@ -1,0 +1,31 @@
+.getStarted__btn{
+    margin-top: 10px;
+    width: 150px;
+    position: absolute;
+    font-weight: 500;
+    background-color: #2D46B9;
+    color: white;
+    font-size: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    transition: all .6s ease-in-out;
+}
+.getStarted__btn::after{
+    content: "»";
+    transition: all .6s ease-in-out;
+    position: absolute;
+    top: 1px;
+    opacity: 0;
+    right: 3px;
+}
+.getStarted__btn:hover{
+    padding-right: 24px;
+    padding-left: 8px;
+}
+.getStarted__btn:hover:after{
+    opacity: 1;
+    right: 10px;
+}

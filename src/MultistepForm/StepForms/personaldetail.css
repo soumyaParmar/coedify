@@ -1,0 +1,125 @@
+.form1{
+    background-color: #f5f8fd;
+}
+.step1{
+    display: flex;
+}
+.stepheading{
+    margin-bottom: 40px;
+    color: white;
+}
+.form__section{
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+}
+.form__heading{
+    text-align: center;
+}
+.form__logo{
+    width: 20rem;
+    height: 5rem;
+    object-fit: contain;
+}
+.step1__right{
+    background-image: url("./gradient.png");
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+}
+.step1__left{
+    width: 70%;
+    /* height: 80vh; */
+    display: flex;
+    margin: 10px 5%;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 580px;
+}
+::-webkit-inner-spin-button{
+    display: none;
+}
+
+.navigation__btns{
+    text-align: right;
+    position: relative;
+}
+.form__box{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    border-radius: 5px;
+    border: none;
+    background: #eeeeee;
+    padding: 13px;
+    padding-left: 10px;
+}
+.input:focus{
+    outline: none;
+}
+.next__btn{
+    margin-top: 10px;
+    width: 100px;
+    position: absolute;
+    font-weight: 500;
+    background-color: #2D46B9;
+    color: white;
+    font-size: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    transition: all .6s ease-in-out;
+}
+label{
+    font-size: 20px;
+    font-weight: 400;
+}
+.next__btn::after{
+    content: "»";
+    transition: all .6s ease-in-out;
+    position: absolute;
+    top: 1  px;
+    opacity: 0;
+    right: 10px;
+}
+.next__btn:hover{
+    padding-right: 24px;
+    padding-left: 8px;
+}
+.next__btn:hover:after{
+    opacity: 1;
+    right: 15px;
+}
+@media screen and (max-width:786px){
+    .step1{
+        flex-direction: column-reverse;
+    }
+    .step1__left{
+        width: 90%;
+    }
+    .step1__right{
+        width: 100%;
+        height: 20vh;
+    }
+    .form{
+        max-width: 580px;
+        min-width: 0px;
+    }
+}

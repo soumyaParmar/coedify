@@ -1,8 +1,8 @@
 import React from "react";
 import Hirebutton from "../../Components/Buttons/Hirebutton";
 import "./whyus.css";
-import img1 from "./whyus_1.svg";
-import img2 from "./undraw.png";
+import img1 from "./whyus2.png";
+import img2 from "./whyus_1.svg";
 import img3 from "./whyus_3.svg";
 import Gradient from "../../Components/Gradient/Gradient";
 
@@ -18,7 +18,7 @@ function WhyUs() {
             Hire tech talents that fits the job requirements
           </h1>
           <div className="whyus__button">
-            <Hirebutton />
+            <Hirebutton title="Hire Developers" />
           </div>
         </div>
         <div className="whyus__right">
@@ -73,7 +73,7 @@ function WhyUs() {
         </div>
         <div className="whycoedify3">
           <div className="whycoedify3__left">
-            <img className="whycoedify__img2" src={img2} alt="img1" />
+            <img className="whycoedify__img3" src={img2} alt="img1" />
           </div>
           <div className="whycoedify3__right">
             <h1>Specific Technical Stack/ Niche Tech Stack</h1>
@@ -95,12 +95,12 @@ function WhyUs() {
             </p>
           </div>
           <div className="whycoedify4__right">
-            <img className="whycoedify__img2" src={img2} alt="img1" />
+            <img className="whycoedify__img" src={img2} alt="img1" />
           </div>
         </div>
         <div className="whycoedify5">
           <div className="whycoedify5__left">
-            <img className="whycoedify__img2" src={img2} alt="img1" />
+            <img className="whycoedify__img" src={img2} alt="img1" />
           </div>
           <div className="whycoedify5__right">
             <h1>Best-in-Class Service</h1>

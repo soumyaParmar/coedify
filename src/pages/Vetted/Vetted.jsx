@@ -1,6 +1,6 @@
 import React from "react";
 import "./vetted.css";
-import HeaderImg from "../WhyUs/whyus-header-image.svg";
+import HeaderImg from "./vetting.svg";
 import Gradient from "../../Components/Gradient/Gradient";
 import img1 from "../WhyUs/whyus_1.svg";
 import img2 from "../WhyUs/whyus_3.svg";
@@ -19,7 +19,7 @@ function Vetted() {
             dictum tincidunt vel amet, vel aliquam.
           </p>
           <div className="vet1__btn">
-            <Button />
+            <Button title="Hire Developers" />
           </div>
         </div>
         <div className="vet1__right">

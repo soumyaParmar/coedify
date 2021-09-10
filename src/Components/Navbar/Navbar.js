@@ -4,7 +4,7 @@ import { ImCross } from "react-icons/im";
 import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
@@ -24,6 +24,7 @@ const Navbar = () => {
     else setVisible(false);
   }, [pageYOffset]);
 
+  const history = useHistory();
   return (
     <>
       {/* <div className="alert alert-warning alert-dismissible fade show" role="alert">
@@ -41,7 +42,7 @@ const Navbar = () => {
       {/* <div className="navbar"> */}
       <nav className={visible ? "navSecondary" : "nav"}>
         <div className="logo">
-          <NavLink exact to="/" activeClassName="active">
+          <NavLink exact to="/" activeclassname="active">
             <img onClick={handleClose} src={logo} alt="logo" />
           </NavLink>
         </div>
@@ -55,58 +56,75 @@ const Navbar = () => {
               className={visible ? "anchorActive" : "anchor"}
               exact
               to="/whyus"
-              activeClassName="active"
+              activeclassname="active"
             >
               Why us?
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <NavLink
-              activeClass="active"
+            <Link
+              onClick={handleClose}
+              activeclass="active"
               className={visible ? "anchorActive" : "anchor"}
               exact
-              to="aboutUs"
-              smooth={true}
+              to="howWeWork"
             >
               How We Work?
-            </NavLink>
+            </Link>
           </li>
           <li onClick={handleClose}>
             <NavLink
               className={visible ? "anchorActive" : "anchor"}
               exact
               to="/vettingprocess"
-              activeClassName="active"
+              activeclassname="active"
             >
               Vetting Process
             </NavLink>
           </li>
           <li onClick={handleClose}>
-            <NavLink
+            <Link
+              onClick={handleClose}
               className={visible ? "anchorActive" : "anchor"}
               exact
-              to="service"
-              smooth={true}
-              activeClassName="active"
+              to="techStack"
+              activeclassname="active"
             >
               Tech Stack
-            </NavLink>
+            </Link>
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
-            <Link exact to="service" smooth={true} activeClassName="active">
+            <Link
+              exact
+              to="service"
+              onClick={() => history.push("./hiredev")}
+              activeclassname="active"
+            >
               Hire Developers
             </Link>
           </li>
           <li onClick={handleClose} className="li_btn btn__applyDev">
-            <Link exact to="service" smooth={true} activeClassName="active">
+            <Link
+              exact
+              to="applyasdev"
+              onClick={() => history.push("./applyasdev")}
+              activeclassname="active"
+            >
               Apply as a Developer
             </Link>
           </li>
         </ul>
 
         <div className="btns">
-          <span className="btn__hire">Hire Developers</span>
-          <span className="btn__applyDev">Apply as a Developer</span>
+          <span className="btn__hire" onClick={() => history.push("./hiredev")}>
+            Hire Developers
+          </span>
+          <span
+            className="btn__applyDev"
+            onClick={() => history.push("./applyasdev")}
+          >
+            Apply as a Developer
+          </span>
         </div>
       </nav>
     </>

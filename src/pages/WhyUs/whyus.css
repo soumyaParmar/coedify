@@ -56,7 +56,7 @@
 .whycodeify {
   display: flex;
   flex-direction: column;
-  margin: 50px 5%;
+  margin: 50px 10%;
 }
 
 .whycodeify p {
@@ -70,6 +70,8 @@
 .whycoedify5 {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
 }
 .whycoedify1__left,
 .whycoedify1__right,
@@ -82,10 +84,10 @@
 .whycoedify5__left,
 .whycoedify5__right {
   width: 45%;
+  display: flex;
+  justify-content: center;
 }
-.banner__grad {
-  margin-top: -300px;
-}
+
 .whycoedify1__right,
 .whycoedify2__left,
 .whycoedify3__right,
@@ -97,13 +99,13 @@
   margin-top: 50px;
 }
 .whycoedify__img {
-  height: 100%;
-  width: 100%;
+  border-radius: 20px;
+  width: 20rem;
   object-fit: contain;
 }
-.whycoedify__img2 {
+.whycoedify__img3 {
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: contain;
 }
 .whycoedify__heading {
@@ -155,12 +157,13 @@
   .whycoedify1,
   .whycoedify2,
   .whycoedify3,
-  .whycoedify4,
   .whycoedify5 {
     flex-direction: column;
     margin-bottom: 50px;
   }
-
+  .whycoedify4{
+    flex-direction: column-reverse;
+  }
   .whycoedify1__left,
   .whycoedify1__right,
   .whycoedify2__left,

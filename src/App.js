@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
+import HireDevsForm from "./MultistepForm/HireDeveloper/HireDevForm";
 import "./App.css";
 import ScrollToTop from "./Components/ScrollToTop";
-import Technology from "./pages/Technology/Technology";
 import Home from "./pages/Home";
 import WhyUs from "./pages/WhyUs/WhyUs";
 import Vetted from "./pages/Vetted/Vetted";
@@ -19,10 +18,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
         <Switch>
           <Route exact path="/">
+            <Navbar />
             <Home />
+            <Footer />
           </Route>
           <Route exact path="/Technology/backend" component={BackendPage} />
           <Route exact path="/Technology/meanstack" component={MeanStack} />
@@ -47,7 +47,6 @@ function App() {
         </Switch>
       </BrowserRouter>
       <ScrollToTop />
-      <Footer />
     </div>
   );
 }
