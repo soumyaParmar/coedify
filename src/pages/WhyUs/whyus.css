@@ -48,11 +48,18 @@
 }
 .wave__box {
   text-align: center;
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   background-color: white;
   border-radius: 10px;
 }
+
+.wave__box h1 {
+  padding: 10px;
+  font-size: 35px;
+  color: #0d855b;
+}
+
 .whycodeify {
   display: flex;
   flex-direction: column;
@@ -100,7 +107,7 @@
 }
 .whycoedify__img {
   border-radius: 20px;
-  width: 20rem;
+  width: 100%;
   object-fit: contain;
 }
 .whycoedify__img3 {
@@ -161,7 +168,7 @@
     flex-direction: column;
     margin-bottom: 50px;
   }
-  .whycoedify4{
+  .whycoedify4 {
     flex-direction: column-reverse;
   }
   .whycoedify1__left,

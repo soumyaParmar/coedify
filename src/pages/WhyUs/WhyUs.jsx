@@ -1,9 +1,13 @@
 import React from "react";
 import Hirebutton from "../../Components/Buttons/Hirebutton";
 import "./whyus.css";
-import img1 from "./whyus2.png";
-import img2 from "./whyus_1.svg";
+import img1 from "./whyus_1.svg";
+// import img1 from "./whyus_right.png";
+import img2 from "./whyus_2.svg";
 import img3 from "./whyus_3.svg";
+import img4 from "./whyus_4.svg";
+import img5 from "./whyus_5.svg";
+import img6 from "./whyus_6.svg";
 import Gradient from "../../Components/Gradient/Gradient";
 
 import HeaderImg from "./whyus-header-image.svg";
@@ -27,13 +31,13 @@ function WhyUs() {
       </div>
       <div className="wave__section">
         <div className="wave__box">
-          <h1>Some small content</h1>
+          <h1>Find Right Candidate</h1>
         </div>
         <div className="wave__box">
-          <h1>Some small content</h1>
+          <h1>Save Hiring Time</h1>
         </div>
         <div className="wave__box">
-          <h1>Some small content</h1>
+          <h1>Hire Niche Skills</h1>
         </div>
       </div>
       <div className="whycodeify">
@@ -45,7 +49,7 @@ function WhyUs() {
           Our innovative way of screening talents minimizes all those risk in a
           cost effective seamless way.{" "}
         </p>
-        <div className="whycoedify1">
+        <div className="whycoedify1" style={{ marginBottom: "110px" }}>
           <div className="whycoedify1__left">
             <img className="whycoedify__img" src={img1} alt="img1" />
           </div>
@@ -73,7 +77,7 @@ function WhyUs() {
         </div>
         <div className="whycoedify3">
           <div className="whycoedify3__left">
-            <img className="whycoedify__img3" src={img2} alt="img1" />
+            <img className="whycoedify__img3" src={img4} alt="img1" />
           </div>
           <div className="whycoedify3__right">
             <h1>Specific Technical Stack/ Niche Tech Stack</h1>
@@ -95,12 +99,12 @@ function WhyUs() {
             </p>
           </div>
           <div className="whycoedify4__right">
-            <img className="whycoedify__img" src={img2} alt="img1" />
+            <img className="whycoedify__img" src={img5} alt="img1" />
           </div>
         </div>
         <div className="whycoedify5">
           <div className="whycoedify5__left">
-            <img className="whycoedify__img" src={img2} alt="img1" />
+            <img className="whycoedify__img" src={img6} alt="img1" />
           </div>
           <div className="whycoedify5__right">
             <h1>Best-in-Class Service</h1>
