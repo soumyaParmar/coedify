@@ -9,13 +9,13 @@
   color: #18181b;
   justify-content: space-evenly;
 }
-.navSecondary{
+.navSecondary {
   padding: 0px 50px 0px 50px;
   display: flex;
-  background: #016eea;
+  background: #e9f1ff;
   align-items: center;
   z-index: 10;
-  color: white;
+  color: #18181b;
   width: 100%;
   position: fixed;
   color: #18181b;
@@ -47,17 +47,17 @@
   width: 100%;
   cursor: pointer;
 }
-.anchor:hover{
+.anchor:hover {
   color: #016eea;
 }
-.anchorActive{
+.anchorActive {
   text-decoration: none;
-  color: white;
+  color: #18181b;
   width: 100%;
   cursor: pointer;
 }
-.anchorActive:hover{
-  color: white;
+.anchorActive:hover {
+  color: #18181b;
 }
 .banner__left {
   width: 50%;
@@ -131,7 +131,7 @@ select {
   padding: 5px 10px;
   margin-left: 20px;
 }
-.anchor::after{
+.anchor::after {
   content: "";
   height: 2px;
   background: #016eea;
@@ -144,10 +144,10 @@ select {
   left: 10px;
   right: 0;
 }
-.anchorActive::after{
+.anchorActive::after {
   content: "";
   height: 2px;
-  background: white;
+  background: #016eea;
   position: absolute;
   bottom: 0px;
   opacity: 0;
@@ -205,7 +205,8 @@ select {
   font-size: 15px;
 }
 .btn__hire {
-  box-shadow: 0 2px 4px 0 rgb(136 144 195 / 50%), 0 5px 15px 0 rgb(37 44 97 / 21%);
+  box-shadow: 0 2px 4px 0 rgb(136 144 195 / 50%),
+    0 5px 15px 0 rgb(37 44 97 / 21%);
   border-radius: 5px;
   margin-bottom: 21px;
   margin-right: 10px;
@@ -226,8 +227,7 @@ select {
   margin-right: 10px;
   margin-bottom: 20px;
   margin-top: 0px;
-  color: #fff;
-  background-color: #016EEA;;
+  color: #18181b;
   font-weight: bold;
   font-size: 15px;
   padding: 5px;
@@ -256,16 +256,14 @@ select {
   }
 }
 
-@media screen and (max-width: 768px)
-
- {
+@media screen and (max-width: 768px) {
   .menu-list li a:hover::after,
   .Dropdown-control:hover::after {
     opacity: 1;
     transform: scaleX(0.8);
     background-color: #023e8a;
   }
-  .navSecondary{
+  .navSecondary {
     padding: 10px 50px 10px 50px;
   }
   .li_btn {
@@ -277,7 +275,7 @@ select {
   }
   .nav {
     padding: 7px 20px 10px 20px;
-    background-color: #016eea;
+    background-color: #e9f1ff;
   }
   .menu-icon {
     display: block;
@@ -344,7 +342,7 @@ select {
     transition-delay: 0.7s;
     color: black;
   }
-  .li_btn{
+  .li_btn {
     width: 70%;
     padding: 2px;
   }
@@ -381,7 +379,7 @@ select {
   .banner__right {
     width: 100%;
   }
-  .menu-icon svg{
+  .menu-icon svg {
     /* color: white; */
     background-color: transparent;
     font-size: 45px;

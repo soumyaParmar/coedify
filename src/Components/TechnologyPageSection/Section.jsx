@@ -17,14 +17,6 @@ function Section({ title }) {
             eum praesentium totam mollitia dolores. Atque temporibus ullam
             tempore dolorum quibusdam! Lorem, ipsum dolor sit amet consectetur
             adipisicing elit. Veniam vitae minus quidem, a ex, natus at sit
-            consequatur perspiciatis, unde aliquid enim dolorem autem mollitia
-            molestias tempore impedit porro earum? Maiores facilis distinctio
-            minima et culpa aspernatur. Corrupti nesciunt, nisi amet quo autem
-            reprehenderit, doloribus consequatur quidem repellendus enim hic!
-            Atque amet aperiam a dignissimos consequatur facilis? Dolor
-            similique ipsam corrupti nam repellendus aut, itaque dolore atque
-            sapiente quibusdam ipsa quaerat, nostrum nemo est aspernatur ullam
-            ducimus. Repellat, voluptates reprehenderit.
           </p>
         </div>
       </section>

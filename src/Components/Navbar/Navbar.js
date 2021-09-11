@@ -20,7 +20,7 @@ const Navbar = () => {
   const { y: pageYOffset } = useWindowScroll();
   const [visible, setVisible] = useState(false);
   useEffect(() => {
-    if (pageYOffset > 400) setVisible(true);
+    if (pageYOffset > 100) setVisible(true);
     else setVisible(false);
   }, [pageYOffset]);
 
