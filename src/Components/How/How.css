@@ -1,6 +1,6 @@
 .how {
   padding: 50px 5% 50px 5%;
-  background-color: #f5f8fd;;
+  background-color: #f5f8fd;
 }
 .how__mainHeading {
   letter-spacing: 1px;
@@ -14,10 +14,10 @@
   font-weight: 500;
   color: #1f2937;
 }
-.how__para{
-  margin-bottom: 30px
+.how__para {
+  margin-bottom: 30px;
 }
-.how__hirebutton{
+.how__hirebutton {
   margin-bottom: 30px;
 }
 .how1__right img,
@@ -36,6 +36,27 @@
   justify-content: center;
   width: 90%;
 }
+
+.how2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.how2 i {
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.how3 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.how3 i {
+  margin-right: 5px;
+  font-size: 25px;
+}
+
 .how1 p,
 .how2 p,
 .how3 p {
@@ -87,11 +108,10 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
- 
- .how__mainHeading {
+  .how__mainHeading {
     font-size: 40px;
   }
-  .how__heading{
+  .how__heading {
     font-size: 30px;
   }
 }

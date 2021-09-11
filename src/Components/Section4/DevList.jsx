@@ -1,9 +1,9 @@
-import fullstack from "./fullstack.png";
-import frontend from "./frontend.png";
-// import backend from "./back.png";
-// import db from "./db.png";
-// import native from "./native.png";
-// import devops from "./devopss.png";
+import fullstack from "./full-stack-dev-icon.png";
+import frontend from "./frontend-dev-icon.png";
+import backend from "./backend-dev-icon.png";
+import db from "./SQL.png";
+import native from "./native-mobile.png";
+import devops from "./devops.png";
 export const DevList = [
   {
     id: 1,
@@ -25,7 +25,7 @@ export const DevList = [
   },
   {
     id: 3,
-    url: frontend,
+    url: backend,
     title: "Back-End",
     item1: "Strong CS foundation",
     item2: "Project Experience",
@@ -34,7 +34,7 @@ export const DevList = [
   },
   {
     id: 4,
-    url: fullstack,
+    url: native,
     title: "Native Mobile",
     item1: "Strong CS foundation",
     item2: "Project Experience",
@@ -43,7 +43,7 @@ export const DevList = [
   },
   {
     id: 5,
-    url: frontend,
+    url: devops,
     title: "DevOps",
     item1: "Strong CS foundation",
     item2: "Project Experience",
@@ -52,7 +52,7 @@ export const DevList = [
   },
   {
     id: 6,
-    url: fullstack,
+    url: db,
     title: "SQl Tuning Enginer ",
     item1: "Strong CS foundation",
     item2: "Project Experience",
