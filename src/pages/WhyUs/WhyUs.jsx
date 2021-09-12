@@ -3,7 +3,6 @@ import Hirebutton from "../../Components/Buttons/Hirebutton";
 import "./whyus.css";
 import img1 from "./whyus_1.svg";
 // import img1 from "./whyus_right.png";
-import img2 from "./whyus_2.svg";
 import img3 from "./whyus_3.svg";
 import img4 from "./whyus_4.svg";
 import img5 from "./whyus_5.svg";

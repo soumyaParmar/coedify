@@ -125,7 +125,8 @@ function Vetted() {
                 The profile we share is tailor made by us with a clear and
                 objective insight giving you the empirical data on all necessary
                 key criteria that will help you to make an informed decisions.
-                Have a look at our <a href="#"> sample profiles </a>.
+                Have a look at our{" "}
+                <a href="https://www.coedify.com"> sample profiles </a>.
               </p>
             </div>
             <div className="vet2__6right">
