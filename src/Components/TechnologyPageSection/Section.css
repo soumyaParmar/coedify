@@ -57,10 +57,10 @@
   border-radius: 15px;
   margin: 30px;
 }
-.sec__ul {
+/* .sec__ul {
   list-style-image: url("./arrow.png");
   margin-left: 28px;
-}
+} */
 .sec__ul li {
   margin-top: 39px;
   font-size: 12px;

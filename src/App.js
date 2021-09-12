@@ -8,13 +8,7 @@ import HireDevsForm from "./MultistepForm/HireDeveloper/HireDevForm";
 import MultiStepForm from "./MultistepForm/MultiStepForm";
 import WhyUs from "./pages/WhyUs/WhyUs";
 import Vetted from "./pages/Vetted/Vetted";
-import FullStackPage from "./pages/FullStackPage/FullStackPage";
-import FrontendPage from "./pages/FrontendPage/FrontendPage";
-import BackendPage from "./pages/BackendPage/BackendPage";
-import MeanStack from "./pages/MeanStack/MeanStack";
-import NativeMobilePage from "./pages/NativeMobileDeveloper/NativeMobilePage";
-import DevOpsPage from "./pages/DevopsPage/DevOpsPage";
-import SqlTunningDeveloper from "./pages/SqlTunningDeveloperPage/SqlTunningDeveloper";
+import TechnologiesPage from "./pages/TechnologiesPage/TechnologiesPage";
 
 function App() {
   return (
@@ -36,39 +30,9 @@ function App() {
             <Vetted />
             <Footer />
           </Route>
-          <Route exact path="/technology/backend">
+          <Route exact path="/technology/:id">
             <Navbar />
-            <BackendPage />
-            <Footer />
-          </Route>
-          <Route exact path="/technology/meanstack">
-            <Navbar />
-            <MeanStack />
-            <Footer />
-          </Route>
-          <Route exact path="/technology/nativemobile">
-            <Navbar />
-            <NativeMobilePage />
-            <Footer />
-          </Route>
-          <Route exact path="/technology/sqltunning">
-            <Navbar />
-            <SqlTunningDeveloper />
-            <Footer />
-          </Route>
-          <Route exact path="/technology/devops">
-            <Navbar />
-            <DevOpsPage />
-            <Footer />
-          </Route>
-          <Route exact path="/technology/frontend">
-            <Navbar />
-            <FrontendPage />
-            <Footer />
-          </Route>
-          <Route exact path="/technology/fullstack">
-            <Navbar />
-            <FullStackPage />
+            <TechnologiesPage />
             <Footer />
           </Route>
           <Route exact path="/applyasdev" component={MultiStepForm} />

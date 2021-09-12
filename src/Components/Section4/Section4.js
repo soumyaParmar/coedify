@@ -9,6 +9,7 @@ const Section4 = () => {
       return (
         <DevCard
           key={id}
+          id={id}
           url={url}
           title={title}
           item1={item1}

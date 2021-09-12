@@ -1,13 +1,12 @@
 import React from "react";
-import pic1 from "./pic1.jpg";
 import "./Header.css";
 import Hirebutton from "../Buttons/Hirebutton";
 
-const Header = ({ title, description }) => {
+const Header = ({ title, description, image }) => {
   return (
     <div className="header-parent-container">
       <div className="header-left-container">
-        <h1>Hiring {title} Developer on CoEdify</h1>
+        <h1>Hiring {title} on CoEdify</h1>
         <p>{description}</p>
         <div className="mybtn">
           <Hirebutton title="Hire Developers" />
@@ -15,7 +14,7 @@ const Header = ({ title, description }) => {
       </div>
 
       <div className="header-right-container">
-        <img className="img" src={pic1} alt="logo here" />
+        <img className="img" src={image} alt="logo here" />
       </div>
     </div>
   );
