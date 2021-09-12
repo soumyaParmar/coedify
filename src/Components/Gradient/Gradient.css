@@ -1,6 +1,6 @@
 .grad {
   margin: 50px -10%;
-  height: 200px;
+  height: 190px;
   background: linear-gradient(
     135deg,
     hsla(229, 61%, 45%, 1) 0%,
@@ -24,20 +24,20 @@
   position: relative;
 }
 .grad__heading {
-  font-size: 50px;
+  font-size: 47px;
   color: white;
 }
 @media screen and (max-width: 768px) {
   .grad {
     flex-direction: column;
-    height: 320px;
+    height: 24rem;
   }
   .btn__getDeveloperGrad {
     margin-right: 35px;
   }
   .grad__heading {
     text-align: center;
-    margin: 15px 20px;
+    margin: 15px 38px;
   }
   .grad__heading {
     font-size: 45px;

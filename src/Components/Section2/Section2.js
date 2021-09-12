@@ -1,38 +1,18 @@
 import React from "react";
-import urban from "./urban-852.png";
-import certificate from "./certificate.png";
-import logooo from "./logooo.png";
-import fire from "./fireball.png";
-import contact from "./contact.png";
+// import logo from "./tick.png";
 import "./section2.css";
 
 const Section2 = () => {
   return (
     <div className="sec2">
       <h1 className="heading">On Demand Amazing Developers</h1>
-      <div className="hero2">
-        <div className="hero2__left">
-          <div className="boxes1">
-            <Box
-              url={fire}
-              desc="Hire for proven skills train by us, rated by us"
-            />
-            <Box
-              url={certificate}
-              desc="Every candidate you hire is a level above from others"
-            />
-          </div>
-          <div className="boxes2">
-            <Box
-              url={contact}
-              desc="Meet the right fit for your company here"
-            />
-            <Box url={logooo} desc="Access the diverse pool of talents here" />
-          </div>
-        </div>
-        <div className="hero2__right">
-          <img src={urban} alt="urban" />
-        </div>
+      <div className="section2">
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
       </div>
     </div>
   );
@@ -40,15 +20,28 @@ const Section2 = () => {
 
 export default Section2;
 
-function Box(props) {
+function Box() {
   return (
-    <div className="box">
-      <div className="box__logo">
-        <img src={props.url} alt="logo" />
-      </div>
-      <div className="description">
-        <p>{props.desc}</p>
-      </div>
-    </div>
+    <>
+      {/* <div className="sec2__Box">
+        <div className="sec2Box__logo">
+          <img className="sec2__img" src={logo} alt="logo" />
+        </div>
+        <div className="sec2Box__content">
+          <p className="sec2__para">
+            Hire for proven skills train by us, rated by us.
+          </p>
+        </div>
+      </div> */}
+      {/* <div class="card mx-5 my-3">
+        <img src={logo} class="card-img-top sec2__img" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div> */}
+    </>
   );
 }

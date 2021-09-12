@@ -32,7 +32,9 @@ const Section4 = () => {
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation{" "}
       </p>
       <div className="dev__sections">{list1.splice(0, 3)}</div>
-      <Gradient />
+      <div className="dev__gradient">
+        <Gradient />
+      </div>
       <div className="dev__sections">{list1.splice(0)}</div>
     </div>
   );

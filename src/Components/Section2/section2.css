@@ -2,3 +2,52 @@
     background-color: #f5f8fd;
     height: 100vh;
 }
+.section2{
+    background-image: url("./waves.png");
+    margin-top: 150px;
+    background-size: 100% 100%;
+    align-items: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+}
+.sec2__Box{
+    width: 200px;
+    height: 150px;
+    margin: 10px 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+.sec2Box__logo{
+    height: 50px;
+}
+.sec2Box__content{
+    height: 100px;
+    margin: 5px 10px;
+}
+.sec2__img{
+    height: 5rem;
+    width: 100%;
+    object-fit: contain;
+}
+.sec2__para{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card{
+    width: 18rem;
+}
+svg{
+    background-color: transparent;
+}
+@media screen and (max-width:786px) {
+    .sec2__Box{
+        margin: 25px 0px;
+        width: 170px;
+    }
+}
