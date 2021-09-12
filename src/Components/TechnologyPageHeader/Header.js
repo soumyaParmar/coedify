@@ -6,8 +6,8 @@ const Header = ({ title, description, image }) => {
   return (
     <div className="header-parent-container">
       <div className="header-left-container">
-        <h1>Hiring {title} on CoEdify</h1>
-        <p>{description}</p>
+        <h1 className="header-left-heading">Hiring {title} on CoEdify</h1>
+        <p className="header-left-desc">{description}</p>
         <div className="mybtn">
           <Hirebutton title="Hire Developers" />
         </div>

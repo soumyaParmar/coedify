@@ -10,9 +10,10 @@
 }
 .h1__heading {
   font-family: "Dosis";
-  font-size: 64px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
+  font-size: 50px;
 }
 
 .other__heading {
@@ -42,7 +43,7 @@
 }
 .h3__heading {
   font-family: "Dosis";
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 700;
   margin-top: 20px;
   font-style: normal;
