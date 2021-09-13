@@ -2,6 +2,7 @@ import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
 import Button from "../../../Components/Buttons/Hirebutton";
+import { useHistory } from "react-router";
 
 function Role({
   defaultData,
@@ -16,7 +17,8 @@ function Role({
     defaultData = { ...data };
     navigation.next();
   };
-  console.log(errors);
+  const history = useHistory();
+
   return (
     <div className="form1">
       <div className="step1">
@@ -54,7 +56,9 @@ function Role({
         </div>
         <div className="step1__right">
           <h1 className="stepheading">Do you want to apply as a developer ?</h1>
-          <Button title="Apply as a Developer" />
+          <div onClick={() => history.push("/applyasdev")}>
+            <Button title="Apply as a Developer" />
+          </div>
         </div>
       </div>
     </div>

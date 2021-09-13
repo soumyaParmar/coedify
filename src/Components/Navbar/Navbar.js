@@ -9,6 +9,7 @@ import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
+  const history = useHistory();
   const handleClick = () => {
     setClicked(!clicked);
   };
@@ -24,7 +25,6 @@ const Navbar = () => {
     else setVisible(false);
   }, [pageYOffset]);
 
-  const history = useHistory();
   return (
     <>
       {/* <div className="alert alert-warning alert-dismissible fade show" role="alert">
@@ -55,7 +55,7 @@ const Navbar = () => {
             <NavLink
               className={visible ? "anchorActive" : "anchor"}
               exact
-              to="/whyus"
+              to="whyus"
               activeclassname="active"
             >
               Why us?
