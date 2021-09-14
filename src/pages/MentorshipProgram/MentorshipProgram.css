@@ -1,0 +1,8 @@
+.page-body{
+    background: hsla(229, 61%, 45%, 1);
+    background: linear-gradient(180deg, hsla(229, 61%, 45%, 0.9) 0%, hsla(160, 58%, 37%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(229, 61%, 45%, 0.9) 0%, hsla(160, 58%, 37%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(229, 61%, 45%, 0.9) 0%, hsla(160, 58%, 37%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2D46B9", endColorstr="#289672", GradientType=1 );
+    /* height: 100vh; */
+}
