@@ -1,7 +1,8 @@
-import React from "react-hook-form";
+import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
 import Button from "../../../Components/Buttons/Hirebutton";
+import Select from "react-select";
 
 function Skills({
   defaultData,
@@ -16,7 +17,37 @@ function Skills({
     defaultData = { ...data };
     navigation.next();
   };
-
+  const skills = [
+    {
+      value: 1,
+      label: "HTMl",
+    },
+    {
+      value: 2,
+      label: "CSS",
+    },
+    {
+      value: 3,
+      label: "JS",
+    },
+    {
+      value: 4,
+      label: "ReactJs",
+    },
+    {
+      value: 5,
+      label: "NodeJs",
+    },
+    {
+      value: 6,
+      label: "VueJs",
+    },
+  ];
+  let [displaySkill, setSkill] = useState();
+  const handleChange = (e) => {
+    setSkill(Array.isArray(e) ? e.map((x) => x.label) : []);
+  };
+  console.log(displaySkill?.length);
   return (
     <div className="form1">
       <div className="step1">
@@ -28,20 +59,25 @@ function Skills({
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
-                <input
+                <Select
                   name="skills"
                   className={classNames("form-control", {
-                    "is-invalid": errors.skills,
+                    "is-invalid": errors.role,
                   })}
-                  placeholder="Areas of expertise (e.g. JavaScript, Python, Java, etc.)"
-                  {...register("skills", {
+                  {...register("role", {
                     required: true,
                   })}
-                />
+                  isMulti
+                  options={skills}
+                  onChange={handleChange}
+                ></Select>
                 <div className="invalid-feedback">
                   {errors.skills?.type === "required" &&
                     "This field is required "}
                 </div>
+                <center>
+                  <b>Selected Skills :- {displaySkill + " "}</b>
+                </center>
               </div>
 
               <div className="navigation__btns">

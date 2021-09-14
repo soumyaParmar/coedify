@@ -30,7 +30,9 @@ function HireDevForm() {
   ];
   const {
     register,
+    setValue,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm({
     mode: "onChange",
@@ -40,6 +42,8 @@ function HireDevForm() {
     initialStep: 0,
   });
   const props = {
+    setValue,
+    watch,
     defaultData,
     register,
     handleSubmit,

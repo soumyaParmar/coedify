@@ -53,6 +53,7 @@ export const TechnologyPageData = [
       },
     ],
     otherTypes: [
+      "FullStack",
       "Frontend",
       "Backend",
       "Native Mobile",

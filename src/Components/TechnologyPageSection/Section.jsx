@@ -1,9 +1,10 @@
 import React from "react";
 import "./Section.css";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import DevCard from "./../Section4/DevCard";
 
 function Section({ title, description, differentStacks, others }) {
+  const history = useHistory();
   return (
     <div className="container">
       <section>
@@ -32,11 +33,14 @@ function Section({ title, description, differentStacks, others }) {
           <h4 className="other__heading">See others types of Developers</h4>
 
           <ul className="other__ul">
-            {others.map((other) => (
+            {others.map((other, index) => (
               <li>
-                <Link to="/" style={{ textDecoration: "none" }}>
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => history.push(`/technology/${index + 1}`)}
+                >
                   <span className="other__span">{other}</span>
-                </Link>
+                </div>
               </li>
             ))}
           </ul>

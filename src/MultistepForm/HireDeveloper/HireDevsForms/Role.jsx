@@ -1,10 +1,13 @@
-import React from "react-hook-form";
+import React from "react";
 import logo from "./CoEdify-logo.png";
+import Select from "react-select";
 import "../../StepForms/personaldetail.css";
 import Button from "../../../Components/Buttons/Hirebutton";
 import { useHistory } from "react-router";
 
 function Role({
+  setValue,
+  watch,
   defaultData,
   register,
   handleSubmit,
@@ -18,6 +21,32 @@ function Role({
     navigation.next();
   };
   const history = useHistory();
+  const Roles = [
+    {
+      value: 1,
+      label: "HTML",
+    },
+    {
+      value: 2,
+      label: "JS",
+    },
+    {
+      value: 3,
+      label: "CSS",
+    },
+    {
+      value: 4,
+      label: "NodeJs",
+    },
+    {
+      value: 5,
+      label: "ReactJs",
+    },
+    {
+      value: 6,
+      label: "VueJs",
+    },
+  ];
 
   return (
     <div className="form1">
@@ -29,23 +58,14 @@ function Role({
               What role would you like to hire ?
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
-              <div className="name form__box">
-                <input
-                  name="role"
-                  placeholder="e.g. Full Stack, Frontend, Backend, etc"
-                  className={classNames("form-control", {
-                    "is-invalid": errors.role,
-                  })}
-                  {...register("role", {
-                    required: true,
-                  })}
-                />
-                <div className="invalid-feedback">
-                  {errors.role?.type === "required" &&
-                    "This field is required "}
-                </div>
-              </div>
-
+              <select multiple class="form-control" id="state">
+                <option value="">Select Your State</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Assam">Assam</option>
+                <option value="Goa">Goa</option>
+                <option value="Manipur">Manipur</option>
+              </select>
               <div className="navigation__btns">
                 <button className="getStarted__btn" type="submit">
                   Get Started
