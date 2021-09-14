@@ -1,11 +1,70 @@
 import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
+import Multiselect from "multiselect-react-dropdown";
 import "./skillset.css";
 function Skillset({ defaultData, register, handleSubmit, navigation }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
     navigation.next();
+  };
+  const primarySkills = [
+    {
+      value: 1,
+      label: "HTML",
+    },
+    {
+      value: 2,
+      label: "JS",
+    },
+    {
+      value: 3,
+      label: "CSS",
+    },
+    {
+      value: 4,
+      label: "NodeJs",
+    },
+    {
+      value: 5,
+      label: "ReactJs",
+    },
+    {
+      value: 6,
+      label: "VueJs",
+    },
+  ];
+  const secondarySkills = [
+    {
+      value: 1,
+      label: "HTML",
+    },
+    {
+      value: 2,
+      label: "JS",
+    },
+    {
+      value: 3,
+      label: "CSS",
+    },
+    {
+      value: 4,
+      label: "NodeJs",
+    },
+    {
+      value: 5,
+      label: "ReactJs",
+    },
+    {
+      value: 6,
+      label: "VueJs",
+    },
+  ];
+  const handlePrimary = (data) => {
+    console.log(data);
+  };
+  const handleSecondary = (data) => {
+    console.log(data);
   };
   return (
     <div className="form1">
@@ -20,11 +79,13 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
                   *Choose that skill in which you have hands on experience and
                   you are confident to give interview in that skill
                 </span>
-                <input
-                  className="input"
-                  {...register("primary-skill")}
-                  type="text"
-                  name="primary-skill"
+                <Multiselect
+                  options={primarySkills}
+                  displayValue="label"
+                  emptyRecordMsg="select"
+                  selectionLimit="2"
+                  placeholder="Select only two"
+                  onSelect={handlePrimary}
                 />
               </div>
               <div className="email form__box">
@@ -34,11 +95,13 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
                   project and you are comfortable with it if you have given
                   project on that skill
                 </span>
-                <input
-                  className="input"
-                  type="text"
-                  {...register("secondary-skill")}
-                  name="secondary-skill"
+                <Multiselect
+                  options={secondarySkills}
+                  displayValue="label"
+                  emptyRecordMsg="select"
+                  selectionLimit="2"
+                  placeholder="Select only two"
+                  onSelect={handleSecondary}
                 />
               </div>
 

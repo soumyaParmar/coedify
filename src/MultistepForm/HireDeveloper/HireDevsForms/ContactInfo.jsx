@@ -13,6 +13,7 @@ function PersonalDetails({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
+    console.log(defaultData);
     successAlert();
     history.push("/");
   };

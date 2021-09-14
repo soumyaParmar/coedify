@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Navbar/CoEdify-logo.png";
-// import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { Link } from "react-scroll";
 import {
   FaInstagram,
   FaInbox,
@@ -12,6 +13,7 @@ import {
 } from "react-icons/fa";
 import "./footer.css";
 function Footer() {
+  const history = useHistory();
   return (
     <div className="footer__main">
       <div className="footer">
@@ -25,29 +27,42 @@ function Footer() {
           </div>
           <div className="description__links">
             <FaInstagram />
-            <FaFacebook />
-            <FaLinkedinIn />
-            <FaTwitter />
+            <a target="blank" href="https://www.facebook.com/coedifytechnology">
+              <FaFacebook />
+            </a>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/company/coedify/mycompany/?viewAsMember=true"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a target="blank" href="https://twitter.com/CoEdifyTech">
+              <FaTwitter />
+            </a>
           </div>
         </div>
         <div className="footer__explore">
           <h3>Explore</h3>
           <ul>
-            <li>
+            <li onClick={() => history.push("/")}>
               <span>Home</span>
             </li>
-            <li>
-              <span>About</span>
+            <li onClick={() => history.push("/whyus")}>
+              <span>Why Us</span>
             </li>
-            <li>
-              <span>Services</span>
+            <Link activeclass="active" exact to="howWeWork">
+              <li>
+                <span>How We Work</span>
+              </li>
+            </Link>
+            <li onClick={() => history.push("/vettingprocess")}>
+              <span>Vetting Process</span>
             </li>
-            <li>
-              <span>Portfolio</span>
-            </li>
-            <li>
-              <span>Team</span>
-            </li>
+            <Link activeclass="active" exact to="techStack">
+              <li>
+                <span>Tech Stack</span>
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="footer__quicklinks">

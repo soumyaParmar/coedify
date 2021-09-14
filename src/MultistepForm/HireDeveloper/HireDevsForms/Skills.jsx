@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
 import Button from "../../../Components/Buttons/Hirebutton";
+import Multiselect from "multiselect-react-dropdown";
 import Select from "react-select";
 
 function Skills({
@@ -43,11 +44,10 @@ function Skills({
       label: "VueJs",
     },
   ];
-  let [displaySkill, setSkill] = useState();
-  const handleChange = (e) => {
-    setSkill(Array.isArray(e) ? e.map((x) => x.label) : []);
+  let [displaySkill, setSkill] = useState(skills);
+  const handleskill = (data) => {
+    console.log(data);
   };
-  console.log(displaySkill?.length);
   return (
     <div className="form1">
       <div className="step1">
@@ -59,25 +59,14 @@ function Skills({
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
-                <Select
-                  name="skills"
-                  className={classNames("form-control", {
-                    "is-invalid": errors.role,
-                  })}
-                  {...register("role", {
-                    required: true,
-                  })}
-                  isMulti
-                  options={skills}
-                  onChange={handleChange}
-                ></Select>
-                <div className="invalid-feedback">
-                  {errors.skills?.type === "required" &&
-                    "This field is required "}
-                </div>
-                <center>
-                  <b>Selected Skills :- {displaySkill + " "}</b>
-                </center>
+                <Multiselect
+                  options={displaySkill}
+                  displayValue="label"
+                  emptyRecordMsg="select"
+                  selectionLimit="2"
+                  placeholder="Select only two"
+                  onSelect={handleskill}
+                />
               </div>
 
               <div className="navigation__btns">

@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
-import Select from "react-select";
+// import Select from "react-select";
 import "../../StepForms/personaldetail.css";
 import Button from "../../../Components/Buttons/Hirebutton";
+import Multiselect from "multiselect-react-dropdown";
 import { useHistory } from "react-router";
+// import * as Yup from "yup"
 
 function Role({
-  setValue,
-  watch,
   defaultData,
   register,
   handleSubmit,
@@ -16,7 +16,7 @@ function Role({
   navigation,
 }) {
   const onSubmit = (data) => {
-    console.log(data);
+    console.log(defaultData);
     defaultData = { ...data };
     navigation.next();
   };
@@ -48,6 +48,10 @@ function Role({
     },
   ];
 
+  const [role, setRole] = useState(Roles);
+  const handleRole = (data) => {
+    defaultData = { ...data };
+  };
   return (
     <div className="form1">
       <div className="step1">
@@ -58,14 +62,14 @@ function Role({
               What role would you like to hire ?
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
-              <select multiple class="form-control" id="state">
-                <option value="">Select Your State</option>
-                <option value="Jharkhand">Jharkhand</option>
-                <option value="Bihar">Bihar</option>
-                <option value="Assam">Assam</option>
-                <option value="Goa">Goa</option>
-                <option value="Manipur">Manipur</option>
-              </select>
+              <Multiselect
+                options={role}
+                displayValue="label"
+                emptyRecordMsg="select"
+                selectionLimit="2"
+                placeholder="Select only two"
+                onSelect={handleRole}
+              />
               <div className="navigation__btns">
                 <button className="getStarted__btn" type="submit">
                   Get Started
