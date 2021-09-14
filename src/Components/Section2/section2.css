@@ -1,62 +1,61 @@
-.sec2{
-    background-color: #f5f8fd;
-   
+.sec2 {
+  background-color: #f5f8fd;
 }
-.section2{
-    background-image: url("./waves.png");
-    margin-top: 100px;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    padding:5rem 0px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-repeat: no-repeat;
+.section2 {
+  background-image: url("./waves.png");
+  margin-top: 100px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  padding: 5rem 0px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-repeat: no-repeat;
 }
-.sec2__Box{
-    width: 22rem;
-    height: 14rem;
-    margin: 10px 50px;
-    background-color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    transition: all 0.6s ease-in-out;
-    flex-direction: column;
-    justify-content: space-between;
+.sec2__Box {
+  width: 22rem;
+  height: 14rem;
+  margin: 10px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.6s ease-in-out;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.sec2__Box:hover{
-    transform: translateY(-5px);
+.sec2__Box:hover {
+  transform: translateY(-5px);
 }
 
-.sec2Box__content{
-    margin-left: 5px;
-    margin: auto;
+.sec2Box__content {
+  margin-left: 5px;
+  margin: auto;
 }
-.sec2__img{
-    height: 7rem;
-    width: 100%;
-    object-fit: contain;
+.sec2__img {
+  height: 7rem;
+  width: 100%;
+  object-fit: contain;
 }
-.sec2__para{
-    font-size: 1.7rem;
-    font-weight: 500;
-    padding: 1rem;
+.sec2__para {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1rem;
 }
-.card{
-    width: 18rem;
+.card {
+  width: 18rem;
 }
-svg{
-    background-color: transparent;
+svg {
+  /* background-color: transparent; */
 }
-@media screen and (max-width:786px) {
-    .sec2__Box{
-        margin: 25px 0px;
-        width: 21rem;
-    }
-    /* .sec2__para{
+@media screen and (max-width: 786px) {
+  .sec2__Box {
+    margin: 25px 0px;
+    width: 21rem;
+  }
+  /* .sec2__para{
         font-size: 1rem;
     } */
 }
