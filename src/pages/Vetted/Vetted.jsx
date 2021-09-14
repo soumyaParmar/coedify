@@ -2,8 +2,8 @@ import React from "react";
 import "./vetted.css";
 import HeaderImg from "./vetting.svg";
 import Gradient from "../../Components/Gradient/Gradient";
-import img1 from "../WhyUs/whyus_1.svg";
-import img2 from "../WhyUs/whyus_3.svg";
+import img1 from "./urban-852.png";
+import img2 from "./soft-skill.png";
 import img3 from "../WhyUs/whyus_2.svg";
 import Button from "../../Components/Buttons/Hirebutton";
 function Vetted() {

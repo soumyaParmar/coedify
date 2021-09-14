@@ -3,7 +3,7 @@ import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
 import Button from "../../../Components/Buttons/Hirebutton";
 import Multiselect from "multiselect-react-dropdown";
-import Select from "react-select";
+// import Select from "react-select";
 
 function Skills({
   defaultData,
@@ -44,7 +44,7 @@ function Skills({
       label: "VueJs",
     },
   ];
-  let [displaySkill, setSkill] = useState(skills);
+  let [displaySkill] = useState(skills);
   const handleskill = (data) => {
     console.log(data);
   };

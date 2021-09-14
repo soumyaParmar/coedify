@@ -48,7 +48,7 @@ function Role({
     },
   ];
 
-  const [role, setRole] = useState(Roles);
+  const [role] = useState(Roles);
   const handleRole = (data) => {
     defaultData = { ...data };
   };
