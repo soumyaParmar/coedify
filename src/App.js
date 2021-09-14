@@ -17,7 +17,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <ScrollToTop />
-        <MentorshipProgram/>
         <Switch>
           <Route exact path="/">
             <Navbar />
@@ -38,6 +37,11 @@ function App() {
             <Navbar />
             <TechnologiesPage />
             <Footer />
+          </Route>
+          <Route exact path='/programpage'>
+            <Navbar />
+            <MentorshipProgram/>
+            {/* <Footer /> */}
           </Route>
           <Route exact path="/applyasdev" component={MultiStepForm} />
           <Route exact path="/hiredev" component={HireDevsForm} />

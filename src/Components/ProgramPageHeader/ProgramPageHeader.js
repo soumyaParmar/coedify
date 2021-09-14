@@ -23,7 +23,7 @@ const ProgramPage = () => {
                 </div>
             </div>
             <div className="header-image">
-                <img src={headerImage} alt="studying student" />
+                <img className="student-image" src={headerImage} alt="studying student" />
             </div>
         </section>
     )
