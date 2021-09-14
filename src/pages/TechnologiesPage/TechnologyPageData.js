@@ -107,7 +107,8 @@ export const TechnologyPageData = [
       },
     ],
     otherTypes: [
-      "Full Stack",
+      "FullStack",
+      "Frontend",
       "Backend",
       "Native Mobile",
       "DevOps",
@@ -160,8 +161,9 @@ export const TechnologyPageData = [
       },
     ],
     otherTypes: [
-      "Full Stack",
+      "FullStack",
       "Frontend",
+      "Backend",
       "Native Mobile",
       "DevOps",
       "SQL Tuning",
@@ -191,7 +193,14 @@ export const TechnologyPageData = [
         item3: "Worked with different frameworks",
       },
     ],
-    otherTypes: ["Full Stack", "Frontend", "Backend", "DevOps", "SQL Tuning"],
+    otherTypes: [
+      "FullStack",
+      "Frontend",
+      "Backend",
+      "Native Mobile",
+      "DevOps",
+      "SQL Tuning",
+    ],
   },
   {
     id: 5,
@@ -239,10 +248,11 @@ export const TechnologyPageData = [
       },
     ],
     otherTypes: [
-      "Full Stack",
+      "FullStack",
       "Frontend",
       "Backend",
       "Native Mobile",
+      "DevOps",
       "SQL Tuning",
     ],
   },
@@ -292,11 +302,12 @@ export const TechnologyPageData = [
       },
     ],
     otherTypes: [
-      "Full Stack",
+      "FullStack",
       "Frontend",
       "Backend",
       "Native Mobile",
       "DevOps",
+      "SQL Tuning",
     ],
   },
 ];

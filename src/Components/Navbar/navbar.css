@@ -88,7 +88,7 @@
 svg {
   color: rgba(0, 0, 0, 0.55);
   border-color: rgba(0, 0, 0, 0.1);
-  font-size: 50px;
+  font-size: 35px;
   border: none;
   background: #eee;
   /* padding: 10px; */
@@ -382,6 +382,6 @@ select {
   .menu-icon svg {
     /* color: white; */
     background-color: transparent;
-    font-size: 45px;
+    font-size: 27px;
   }
 }
