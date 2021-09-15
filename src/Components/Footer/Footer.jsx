@@ -22,8 +22,11 @@ function Footer() {
             <img src={logo} alt="" />
           </div>
           <div className="description__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            CoEdify is a platform where technology companies can find and expand
+            their team by hiring vetted and highly skilled resources quickly. We
+            also help developers to update their skill to meet the trending job
+            markets. We aim to strike the balance between expectations set by
+            both developers and technology companies.
           </div>
         </div>
         <div className="footer__explore">
@@ -79,7 +82,12 @@ function Footer() {
         <div className="footer__quicklinks">
           <h3>Quick Links</h3>
           <div className="description__links">
-            <FaInstagram />
+            <a
+              target="blank"
+              href="https://www.instagram.com/coedifytechnology"
+            >
+              <FaInstagram />
+            </a>
             <a target="blank" href="https://www.facebook.com/coedifytechnology">
               <FaFacebook />
             </a>

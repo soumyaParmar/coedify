@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import Testimonial from "../Testimonials/Testimonial";
+// import Testimonial from "../Testimonials/Testimonial";
+import HeroImage from "./hero-image.svg";
 import "./hero.css";
 function Hero() {
   let history = useHistory();
@@ -33,7 +34,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero__right">
-          <Testimonial />
+          <img className="hero__img" src={HeroImage} alt="HeroImg" />
         </div>
       </div>
     </div>

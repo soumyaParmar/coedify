@@ -10,7 +10,7 @@ function Section({ title, description, differentStacks, others }) {
       <section>
         <div className="top__heading">
           <h1 className="h1__heading">Our {title} </h1>
-          <p>{description}</p>
+          <p style={{ color: "GrayText" }}>{description}</p>
         </div>
       </section>
 

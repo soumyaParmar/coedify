@@ -5,6 +5,9 @@ import Gradient from "../../Components/Gradient/Gradient";
 import img1 from "./urban-852.png";
 import img2 from "./soft-skill.png";
 import img3 from "../WhyUs/whyus_2.svg";
+import img4 from "./adaptablity.svg";
+import img5 from "./problem-solving.svg";
+import img6 from "./profile.svg";
 import Button from "../../Components/Buttons/Hirebutton";
 function Vetted() {
   return (
@@ -50,35 +53,45 @@ function Vetted() {
             <div className="vet2__2left">
               <h1 className="vet2__2heading">Test of Soft Skill </h1>
               <p className="vet2__2para">
-                We believe soft skill plays major role to become a productive
-                member of a team.
+                Tradition interviews fail miserably assessing candidate soft
+                skills and research shows soft skills are even more important
+                than technical skills to make a team productive and successful.
+                Assessing soft skills is even harder and we do not believing in
+                asking question to test this, we believe in practical
+                evaluation. By soft skills, we particularly checking
+                collaboration and communication. We usually test this by
+                assigning a technical task to group of developers with mixed
+                experience to solve and come out with an execution plan. We
+                evaluate everyone contribution and asses the results.
               </p>
             </div>
             <div className="vet2__2right">
-              <img className="vet2__img2" src={img2} alt="img1" />
+              <img className="vet2__img2" src={img3} alt="img1" />
             </div>
           </div>
           <div className="vet2__3">
             <div className="vet2__3left">
-              <img className="vet2__img3" src={img3} alt="img1" />
+              <img className="vet2__img3" src={img4} alt="img1" />
             </div>
             <div className="vet2__3right">
               <h1 className="vet2__3heading">
                 Test of Adaptability and Resiliency
               </h1>
               <p className="vet2__3para">
-                In today's constantly changing business and tech requirements,
-                adaptability is the key for survival. Technology companies needs
-                a team which can be adaptable and resilient to sudden changes in
-                project tech stack. We find it critically important and we have
-                unique way of figuring out this ability. Irrespective of what
-                tech stack candidate belongs, we evaluate candidates true
-                engineering skill by giving them problems which is not related
-                to their current tech stack. Candidate is free to use internet
-                and solve the task in a given time frame. This shows true
-                engineering skills and it proves candidate can deal whatever
-                challenges you throw at him. This will be clearly evident in the
-                candidate profile we share with you for your final judgements.
+                <i>
+                  {" "}
+                  In today's constantly changing business and tech requirements,
+                  adaptability is the key for survival.
+                </i>{" "}
+                Technology companies needs a team which can be adaptable and
+                resilient to sudden changes in project technical stack. We find
+                it critically important and we have unique way of figuring out
+                this ability. We evaluate candidates true engineering skill by
+                giving them problems which is not related to their current
+                technical skill set. Candidate is asked to use internet and
+                solve the task in a given time frame. This shows true
+                engineering skills and it proves candidate can deal future
+                challenges with ease.
               </p>
             </div>
           </div>
@@ -98,12 +111,12 @@ function Vetted() {
               </p>
             </div>
             <div className="vet2__4right">
-              <img className="vet2__img4" src={img2} alt="img1" />
+              <img className="vet2__img4" src={img5} alt="img1" />
             </div>
           </div>
           <div className="vet2__5">
             <div className="vet2__5left">
-              <img className="vet2__img5" src={img3} alt="img1" />
+              <img className="vet2__img5" src={img2} alt="img1" />
             </div>
             <div className="vet2__5right">
               <h1 className="vet2__5heading">Upskilling and Training</h1>
@@ -125,12 +138,12 @@ function Vetted() {
                 The profile we share is tailor made by us with a clear and
                 objective insight giving you the empirical data on all necessary
                 key criteria that will help you to make an informed decisions.
-                Have a look at our{" "}
-                <a href="https://www.coedify.com"> sample profiles </a>.
+                {/* Have a look at our{" "}
+                <a href="https://www.coedify.com"> sample profiles </a>. */}
               </p>
             </div>
             <div className="vet2__6right">
-              <img className="vet2__img6" src={img2} alt="img1" />
+              <img className="vet2__img6" src={img6} alt="img1" />
             </div>
           </div>
         </div>

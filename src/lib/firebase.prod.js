@@ -4,13 +4,13 @@ import "firebase/auth";
 
 // Config here
 const firebaseConfig = {
-  apiKey: "AIzaSyDk2jfEDvIxeSPBzTs_6LqNUJR5zAgnu6Q",
-  authDomain: "coedify-technology.firebaseapp.com",
-  projectId: "coedify-technology",
-  storageBucket: "coedify-technology.appspot.com",
-  messagingSenderId: "868533032762",
-  appId: "1:868533032762:web:fa996941737ec1b1296203",
-  measurementId: "G-PQYK3R793S",
+  apiKey: "AIzaSyC5dbuChJjI7cqbjIlsCOQpTH0oXPGXKe0",
+  authDomain: "coedify-website.firebaseapp.com",
+  projectId: "coedify-website",
+  storageBucket: "coedify-website.appspot.com",
+  messagingSenderId: "14832729740",
+  appId: "1:14832729740:web:011d5a7d493300893105a9",
+  measurementId: "G-TV27N8BE58",
 };
 
 const firebase = initializeApp(firebaseConfig);

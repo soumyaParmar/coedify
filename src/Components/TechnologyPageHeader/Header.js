@@ -9,7 +9,9 @@ const Header = ({ title, description, image }) => {
     <div className="header-parent-container">
       <div className="header-left-container">
         <h1 className="header-left-heading">Hiring {title} on CoEdify</h1>
-        <p className="header-left-desc">{description}</p>
+        <p className="header-left-desc" style={{ color: "GrayText" }}>
+          {description}
+        </p>
         <div onClick={() => history.push("/hiredev")} className="mybtn">
           <Hirebutton title="Hire Developers" />
         </div>

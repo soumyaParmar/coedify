@@ -24,12 +24,12 @@ const Section4 = () => {
     <div className="igns" id="techStack">
       <h1 className="ings__heading">Our Ingenious Developers</h1>
       <h3>Hiring CoEdify Developers</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitationLorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation{" "}
+      <p style={{ color: "GrayText" }}>
+        You always found highly skilled developers on CoEdify and our developers
+        are not only focused with one technology but they are so much resilient
+        that they can switch with any technology or framework anytime. We give
+        you developers with work experience in different technologies rigorously
+        trained by us.{" "}
       </p>
       <div className="dev__sections">{list1.splice(0, 3)}</div>
       <div className="dev__gradient">

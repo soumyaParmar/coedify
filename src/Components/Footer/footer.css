@@ -25,12 +25,11 @@
   display: flex;
   align-items: center;
 }
-.description__links{
- display: flex;
- flex-direction: column;
-
+.description__links {
+  display: flex;
+  flex-direction: column;
 }
-svg{
+svg {
   margin-top: 5px;
 }
 .description__logo img {
@@ -39,21 +38,26 @@ svg{
   object-fit: contain;
   margin-right: 250px;
 }
-.ul{
+.ul {
   padding-left: 0px;
 }
-.description__text{
+.description__text {
   margin-bottom: 80px;
 }
 .description__links svg {
   border-radius: 50px;
   margin-left: 10px;
   cursor: pointer;
+  padding: 8px;
 }
-.footer__explore h3,.footer__quicklinks h3,.footer__getintouch h3 {
+.footer__explore h3,
+.footer__quicklinks h3,
+.footer__getintouch h3 {
   position: relative;
 }
-.footer__explore h3::after,.footer__quicklinks h3::after,.footer__getintouch h3::after {
+.footer__explore h3::after,
+.footer__quicklinks h3::after,
+.footer__getintouch h3::after {
   content: "";
   position: absolute;
   left: 35px;
@@ -62,7 +66,9 @@ svg{
   background: #f6f9fc;
   width: 5px;
 }
-.footer__explore h3::before,.footer__quicklinks h3::before,.footer__getintouch h3::before {
+.footer__explore h3::before,
+.footer__quicklinks h3::before,
+.footer__getintouch h3::before {
   content: "";
   position: absolute;
   left: 0;
@@ -140,5 +146,4 @@ svg{
     margin: 10px 2% 10px 2%;
     width: 96%;
   }
- 
 }

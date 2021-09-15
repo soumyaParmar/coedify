@@ -108,6 +108,12 @@
 .hero__right {
   width: 40%;
 }
+
+.hero__right img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 .heading {
   text-align: center;
   font-weight: 600;
