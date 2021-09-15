@@ -25,25 +25,10 @@ function Footer() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
-          <div className="description__links">
-            <FaInstagram />
-            <a target="blank" href="https://www.facebook.com/coedifytechnology">
-              <FaFacebook />
-            </a>
-            <a
-              target="blank"
-              href="https://www.linkedin.com/company/coedify/mycompany/?viewAsMember=true"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a target="blank" href="https://twitter.com/CoEdifyTech">
-              <FaTwitter />
-            </a>
-          </div>
         </div>
         <div className="footer__explore">
           <h3>Explore</h3>
-          <ul>
+          <ul className="ul">
             <li onClick={() => history.push("/")}>
               <span>Home</span>
             </li>
@@ -65,29 +50,10 @@ function Footer() {
             </Link>
           </ul>
         </div>
-        <div className="footer__quicklinks">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>
-              <span>Contact Us</span>
-            </li>
-            <li>
-              <span>Pricing</span>
-            </li>
-            <li>
-              <span>Faq</span>
-            </li>
-            <li>
-              <span>Privacy Policy</span>
-            </li>
-            <li>
-              <span>Terms & Conditions</span>
-            </li>
-          </ul>
-        </div>
+
         <div className="footer__getintouch">
           <h3>Get in Touch</h3>
-          <ul>
+          <ul className="ul">
             <li>
               <i>
                 <FaHome />
@@ -109,6 +75,24 @@ function Footer() {
               <span>contact@coedify.com</span>
             </li>
           </ul>
+        </div>
+        <div className="footer__quicklinks">
+          <h3>Quick Links</h3>
+          <div className="description__links">
+            <FaInstagram />
+            <a target="blank" href="https://www.facebook.com/coedifytechnology">
+              <FaFacebook />
+            </a>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/company/coedify/mycompany/?viewAsMember=true"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a target="blank" href="https://twitter.com/CoEdifyTech">
+              <FaTwitter />
+            </a>
+          </div>
         </div>
       </div>
       <div className="footer__copyright">

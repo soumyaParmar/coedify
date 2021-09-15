@@ -24,27 +24,31 @@ function Role({
   const Roles = [
     {
       value: 1,
-      label: "HTML",
+      label: "MERN Stack",
     },
     {
       value: 2,
-      label: "JS",
+      label: "MEAN Stack",
     },
     {
       value: 3,
-      label: "CSS",
+      label: "React & Django",
     },
     {
       value: 4,
-      label: "NodeJs",
+      label: "Angular & .net",
     },
     {
       value: 5,
-      label: "ReactJs",
+      label: "React & Spring Boot",
     },
     {
       value: 6,
       label: "VueJs",
+    },
+    {
+      value: 6,
+      label: "NodeJs & Express",
     },
   ];
 

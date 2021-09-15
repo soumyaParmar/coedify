@@ -15,7 +15,7 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
     },
     {
       value: 2,
-      label: "JS",
+      label: "Javascript",
     },
     {
       value: 3,
@@ -37,19 +37,19 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
   const secondarySkills = [
     {
       value: 1,
-      label: "HTML",
+      label: "Java",
     },
     {
       value: 2,
-      label: "JS",
+      label: "Express",
     },
     {
       value: 3,
-      label: "CSS",
+      label: "React Native",
     },
     {
       value: 4,
-      label: "NodeJs",
+      label: "Testing",
     },
     {
       value: 5,
@@ -60,10 +60,40 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
       label: "VueJs",
     },
   ];
+  const goodToHaveSkills = [
+    {
+      value: 1,
+      label: "Firebase",
+    },
+    {
+      value: 2,
+      label: "MongoDb",
+    },
+    {
+      value: 3,
+      label: "Php",
+    },
+    {
+      value: 4,
+      label: "GraphQl",
+    },
+    {
+      value: 5,
+      label: "Flutter",
+    },
+    {
+      value: 6,
+      label: "Sql",
+    },
+  ];
+
   const handlePrimary = (data) => {
     console.log(data);
   };
   const handleSecondary = (data) => {
+    console.log(data);
+  };
+  const handleGoodToHaveSkills = (data) => {
     console.log(data);
   };
   return (
@@ -73,7 +103,7 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
-              <div className="name form__box">
+              <div className="form__box">
                 <label>Primary Skill*</label>
                 <span className="subhead">
                   *Choose that skill in which you have hands on experience and
@@ -82,13 +112,10 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
                 <Multiselect
                   options={primarySkills}
                   displayValue="label"
-                  emptyRecordMsg="select"
-                  selectionLimit="2"
-                  placeholder="Select only two"
                   onSelect={handlePrimary}
                 />
               </div>
-              <div className="email form__box">
+              <div className="form__box">
                 <label>Secondary Skills*</label>
                 <span className="subhead">
                   *Choose that skill in which you have written some code in some
@@ -98,10 +125,20 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
                 <Multiselect
                   options={secondarySkills}
                   displayValue="label"
-                  emptyRecordMsg="select"
-                  selectionLimit="2"
-                  placeholder="Select only two"
                   onSelect={handleSecondary}
+                />
+              </div>
+              <div className="form__box">
+                <label>Good to have Skills*</label>
+                <span className="subhead">
+                  *Choose that skill in which you have written some code in some
+                  project and you are comfortable with it if you have given
+                  project on that skill
+                </span>
+                <Multiselect
+                  options={goodToHaveSkills}
+                  displayValue="label"
+                  onSelect={handleGoodToHaveSkills}
                 />
               </div>
 
