@@ -3,6 +3,7 @@ import "./MentorshipProgram.css"
 import ProgramPageHeader from '../../Components/ProgramPageHeader/ProgramPageHeader'
 import ProgramPageSection from '../../Components/ProgramPageSection/ProgramPageSection'
 import ProgramPageImageSection from '../../Components/ProgramPageImageSection/ProgramPageImageSection'
+import ProgramPageTestimonialSection from '../../Components/ProgramPageTestimonialSection/ProgramPageTestimonialSection'
 
 const MentorshipProgram = () => {
     return (
@@ -10,6 +11,7 @@ const MentorshipProgram = () => {
             <ProgramPageHeader/>
             <ProgramPageSection/>
             <ProgramPageImageSection/>
+            <ProgramPageTestimonialSection/>
         </div>
     )
 }

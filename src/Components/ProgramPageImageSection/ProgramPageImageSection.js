@@ -16,7 +16,7 @@ const ProgramPageImageSection = () => {
                     <div className="content-box-list">
                         <ul className='box-list'>
                             <li className='box-list-item'>
-                                <i class="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
+                                <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
                             </li>
                             <li className='box-list-item'>
                                 <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
@@ -36,7 +36,7 @@ const ProgramPageImageSection = () => {
                     <div className="content-box-list">
                         <ul className='box-list'>
                             <li className='box-list-item'>
-                                <i class="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
+                                <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
                             </li>
                             <li className='box-list-item'>
                                 <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
@@ -58,7 +58,7 @@ const ProgramPageImageSection = () => {
                     <div className="content-box-list">
                         <ul className='box-list'>
                             <li className='box-list-item'>
-                                <i class="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
+                                <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
                             </li>
                             <li className='box-list-item'>
                                 <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
@@ -78,7 +78,7 @@ const ProgramPageImageSection = () => {
                     <div className="content-box-list">
                         <ul className='box-list'>
                             <li className='box-list-item'>
-                                <i class="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
+                                <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
                             </li>
                             <li className='box-list-item'>
                                 <i className="bi bi-check-circle-fill"></i>Lorem ipsum, dolor sit amet
