@@ -1,0 +1,103 @@
+.dev__card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+      inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgb(0, 0, 0, 0.05),
+      -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+  }
+  .dev__ul {
+    list-style-image: url("./arrow.png");
+  }
+  .dev__ul li {
+    margin-top: 10px;
+  }
+  .tech__box {
+    background: #ebf5fc;
+    cursor: pointer;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(155, 119, 119, 20%);
+    border-radius: 15px;
+    display: flex;
+    width: 320px;
+    height: 400px;
+    margin-right: 6rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .dev__content {
+    text-align: center;
+  }
+  .dev__heading {
+    font-size: 1.4rem;
+  }
+  .dev__span {
+    background: #2d46b9;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .tech__box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 50%);
+    transform: translateY(-5px);
+  }
+  .dev__img {
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  .dev__btn {
+    padding: 7px;
+    width: 55%;
+    font-size: 20px;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+      0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    border: none;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* margin: auto; */
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .dev__btn::after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .dev__btn:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+    background-color: #29bb89;
+    color: white;
+  }
+  .dev__btn:hover::after {
+    opacity: 1;
+    right: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .dev__card {
+      margin: 20px 0px;
+    }
+    .tech__box {
+      margin-bottom: 40px;
+      margin-right: 0px;
+    }
+    .dev__img {
+      height: 10rem;
+      width: 100%;
+    }
+    .tech__box {
+      height: 500px;
+      width: 100%;
+    }
+  }
+  
