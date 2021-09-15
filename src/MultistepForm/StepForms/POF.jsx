@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
@@ -5,6 +6,8 @@ import Swal from "sweetalert2";
 import "./submit.css";
 import "./skillset.css";
 import { useHistory } from "react-router";
+import { FirebaseContext } from "./../../context/firebase";
+
 function POF({
   defaultData,
   register,
@@ -14,11 +17,14 @@ function POF({
   navigation,
 }) {
   const history = useHistory();
+  const { firebase } = useContext(FirebaseContext);
+
   const onSubmit = (data) => {
     defaultData = { ...data };
+    firebase.firestore();
     successAlert();
-    console.log(defaultData);
   };
+
   const successAlert = () => {
     history.push("/");
     Swal.fire({
