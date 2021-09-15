@@ -1,7 +1,7 @@
 import React from "react";
 import "./Section.css";
 import { useHistory } from "react-router-dom";
-import DevCard from "./../Section4/DevCard";
+import TechCard from "../TechnologyPageSection/TechCard";
 
 function Section({ title, description, differentStacks, others }) {
   const history = useHistory();
@@ -19,7 +19,7 @@ function Section({ title, description, differentStacks, others }) {
       <div className="card-body">
         {differentStacks.map(({ index, url, title, item1, item2, item3 }) => {
           return (
-            <DevCard
+            <TechCard
               index={index + 1}
               url={url}
               title={title}
