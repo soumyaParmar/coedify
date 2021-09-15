@@ -8,6 +8,7 @@
     padding: 20px;
     /* color: white; */
     display: flex;
+    margin-bottom: 25px;
 }
 .header-content{
     padding: 20px;
@@ -57,27 +58,52 @@
 
 @media (max-width : 900px){
     .header-section{
-        height: 950px;
+        height: fit-content;
         flex-direction: column;
         align-items: flex-start;
     }
     .header-content{
-        margin: 10px auto;
+        margin-top: 20px;
+        /* border: 1px solid black; */
+        padding: 19px;
+        padding-bottom: 7px;
     }
     .header-heading{
-        font-size: 3em;
+        /* border: 1px solid black; */
+        font-size: 1.8em;
+        padding: 5px;
+        padding-top: 15px;
     }
     .header-text{
-        font-size: 1.2em;
-        margin-bottom: 40px;
-        padding-right: 20px;
+        font-size: 1.3em;
+        margin-bottom: 4px;
+        padding: 20px;
+        padding-left: 7px;
+        /* border: 1px solid black; */
+    }
+    .header-image{
+        flex: 1;
+        position: relative;
     }
     .student-image{
-        width: 350px;
-        height: 300px;
+        /* border: 1px solid black; */
+        width: 430px;
+        height: 390px;
         position: relative;
-        left: -20px;
-        top: 0px;
+        left: -65px;
+        top: -10px;
+    }
+    .button-title{
+        margin-left: 0px;
+        font-size: 23px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .material-icons{
+        font-size: 40px;
+        margin: 0px;
+        transform: translateY(14px);
     }
 
 }
