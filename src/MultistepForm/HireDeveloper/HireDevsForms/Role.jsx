@@ -24,31 +24,54 @@ function Role({
   const Roles = [
     {
       value: 1,
-      label: "MERN Stack",
+      label: "React JS front-end Developer ",
     },
     {
       value: 2,
-      label: "MEAN Stack",
+      label: "Angular.JS front-end Developer",
     },
     {
       value: 3,
-      label: "React & Django",
+      label: "Node.js back-end Developer",
     },
     {
       value: 4,
-      label: "Angular & .net",
+      label: "Python Developer",
     },
     {
       value: 5,
-      label: "React & Spring Boot",
+      label:
+        "Java full-stack Developer ( Core Java/ Spring Boot/ Hibernate/ React.JS Or Angular.JS)",
     },
     {
       value: 6,
-      label: "VueJs",
+      label:
+        ".NET full-stack Developer ( C# / ASP.Net Core/ React.JS Or Angular.JS)",
     },
     {
-      value: 6,
-      label: "NodeJs & Express",
+      value: 7,
+      label: "MEAN stack Developer",
+    },
+    {
+      value: 8,
+      label: "MERN stack Developer",
+    },
+    {
+      value: 9,
+      label:
+        "Python full-stack Developer (Python/ DJango/ React.JS Or Angular.JS) ",
+    },
+    {
+      value: 10,
+      label: "Golang Developer",
+    },
+    {
+      value: 11,
+      label: "Core Java Developer",
+    },
+    {
+      value: 12,
+      label: "Advanced SQL and Query Performance Tuning Expert",
     },
   ];
 
@@ -63,7 +86,7 @@ function Role({
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <h1 className="form__heading2">
-              What role would you like to hire ?
+              What technology stack you are hiring for ?
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <Multiselect

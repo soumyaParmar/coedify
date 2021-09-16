@@ -36,41 +36,6 @@ function PersonalDetails({
           <div className="form__section">
             <h1 className="form__heading">Personal Details</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
-              <div className="email form__box">
-                <label>Company Name*</label>
-                <input
-                  className={classNames("form-control", {
-                    "is-invalid": errors.company?.type === "required",
-                  })}
-                  type="text"
-                  {...register("company", { required: true })}
-                  name="company"
-                />
-                <div className="invalid-feedback">
-                  {errors.company?.type === "required" &&
-                    "This field is required "}
-                </div>
-              </div>
-              <div className="number form__box">
-                <label>Email*</label>
-                <input
-                  className={classNames("form-control", {
-                    "is-invalid": errors.email?.type,
-                  })}
-                  type="email"
-                  {...register("email", {
-                    required: true,
-                  })}
-                  name="email"
-                />
-                <div className="invalid-feedback">
-                  {errors.email?.type === "required" &&
-                    "This field is required "}
-                </div>
-                <div className="invalid-feedback">
-                  {errors.email?.type === "pattern" && errors.email?.message}
-                </div>
-              </div>
               <div className="name form__box">
                 <label>Name*</label>
                 <input
@@ -93,6 +58,67 @@ function PersonalDetails({
                   {errors.name?.type === "pattern" && errors.name?.message}
                 </div>
               </div>
+              <div className="email form__box">
+                <label>Company Name*</label>
+                <input
+                  className={classNames("form-control", {
+                    "is-invalid": errors.company?.type === "required",
+                  })}
+                  type="text"
+                  {...register("company", { required: true })}
+                  name="company"
+                />
+                <div className="invalid-feedback">
+                  {errors.company?.type === "required" &&
+                    "This field is required "}
+                </div>
+              </div>
+              <div className="number form__box">
+                <label>Company Email*</label>
+                <input
+                  className={classNames("form-control", {
+                    "is-invalid": errors.email?.type,
+                  })}
+                  type="email"
+                  {...register("email", {
+                    required: true,
+                  })}
+                  name="email"
+                />
+                <div className="invalid-feedback">
+                  {errors.email?.type === "required" &&
+                    "This field is required "}
+                </div>
+                <div className="invalid-feedback">
+                  {errors.email?.type === "pattern" && errors.email?.message}
+                </div>
+              </div>
+
+              <div className="number form__box">
+                <label>Phone Number*</label>
+                <input
+                  className={classNames("form-control", {
+                    "is-invalid": errors.phone,
+                  })}
+                  type="number"
+                  {...register("phone", {
+                    required: true,
+                    pattern: {
+                      value: /^(\+\d{1,3}[- ]?)?\d{10}$/,
+                      message: "Enter a valid phone number",
+                    },
+                  })}
+                  name="phone"
+                />
+                <div className="invalid-feedback">
+                  {errors.phone?.type === "required" &&
+                    "This field is required "}
+                </div>
+                <div className="invalid-feedback">
+                  {errors.phone?.type === "pattern" && errors.phone?.message}
+                </div>
+              </div>
+
               <div className="navigation__btns">
                 <button className="submit__btn" type="submit">
                   Submit

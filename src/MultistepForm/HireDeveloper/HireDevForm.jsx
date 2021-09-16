@@ -7,23 +7,21 @@ import Budget from "./HireDevsForms/Budget";
 import ContactInfo from "./HireDevsForms/ContactInfo";
 import Employee from "./HireDevsForms/Employee";
 import Experience from "./HireDevsForms/Experience";
-import HowHire from "./HireDevsForms/HowHire";
 import NumOfDevs from "./HireDevsForms/NumOfDevs";
+import HowLong from "./HireDevsForms/HowLong";
 import Role from "./HireDevsForms/Role";
-import Skills from "./HireDevsForms/Skills";
 import WhenToJoin from "./HireDevsForms/WhenToJoin";
 function HireDevForm() {
   const defaultData = {};
 
   const steps = [
     { id: "role" },
-    { id: "howHire" },
-    { id: "numOfDevs" },
-    { id: "skills" },
     { id: "experience" },
-    { id: "employees" },
+    { id: "numOfDevs" },
+    { id: "howlong" },
     { id: "whenToJoin" },
     { id: "budget" },
+    { id: "employees" },
     { id: "contactInfo" },
     { id: "review" },
     { id: "submit" },
@@ -55,14 +53,12 @@ function HireDevForm() {
   switch (step.id) {
     case "role":
       return <Role {...props} />;
-    case "howHire":
-      return <HowHire {...props} />;
-    case "numOfDevs":
-      return <NumOfDevs {...props} />;
-    case "skills":
-      return <Skills {...props} />;
     case "experience":
       return <Experience {...props} />;
+    case "numOfDevs":
+      return <NumOfDevs {...props} />;
+    case "howlong":
+      return <HowLong {...props} />;
     case "employees":
       return <Employee {...props} />;
     case "whenToJoin":

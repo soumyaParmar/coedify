@@ -23,7 +23,7 @@ function Role({
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <h1 className="form__heading2">
-              How many people are employed at your company?
+              How many people are currently employed in your company?
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
@@ -45,10 +45,10 @@ function Role({
                     type="radio"
                     name="numOfEmployee"
                     {...register("numOfEmployee", { required: true })}
-                    value="11-60"
+                    value="10-50"
                   />
                   <label class="form-check-label" for=" ContractualBased">
-                    11 - 60
+                    10-50
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -57,34 +57,10 @@ function Role({
                     type="radio"
                     name="numOfEmployee"
                     {...register("numOfEmployee", { required: true })}
-                    value="61-200"
+                    value="50+"
                   />
                   <label class="form-check-label" for=" ContractualBased">
-                    61 - 200
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="numOfEmployee"
-                    {...register("numOfEmployee", { required: true })}
-                    value="200-1000"
-                  />
-                  <label class="form-check-label" for=" ContractualBased">
-                    200 - 1000
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="numOfEmployee"
-                    {...register("numOfEmployee", { required: true })}
-                    value="morethan1000"
-                  />
-                  <label class="form-check-label" for=" ContractualBased">
-                    More than 1000
+                    50+
                   </label>
                 </div>
 

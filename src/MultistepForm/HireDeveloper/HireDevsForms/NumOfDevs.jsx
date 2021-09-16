@@ -23,7 +23,7 @@ function Role({
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <h1 className="form__heading2">
-              How many people are employed at your company?
+              How many resources you want to hire?
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
@@ -31,12 +31,12 @@ function Role({
                   <input
                     class="form-check-input"
                     type="radio"
-                    value="lessthan10"
+                    value="lessthan5"
                     {...register("numOfDevs", { required: true })}
                     name="numOfDevs"
                   />
                   <label class="form-check-label" for="permanentbased">
-                    Less than 10
+                    Less than 5
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -45,50 +45,13 @@ function Role({
                     type="radio"
                     name="numOfDevs"
                     {...register("numOfDevs", { required: true })}
-                    value="11-60"
+                    value="morethan5"
                   />
                   <label class="form-check-label" for=" ContractualBased">
-                    11 - 60
+                    More than 5
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="numOfDevs"
-                    {...register("numOfDevs", { required: true })}
-                    value="61-200"
-                  />
-                  <label class="form-check-label" for=" ContractualBased">
-                    61 - 200
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="numOfDevs"
-                    {...register("numOfDevs", { required: true })}
-                    value="200-1000"
-                  />
-                  <label class="form-check-label" for=" ContractualBased">
-                    200 - 1000
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="numOfDevs"
-                    {...register("numOfDevs", {
-                      required: "This field is required",
-                    })}
-                    value="morethan1000"
-                  />
-                  <label class="form-check-label" for=" ContractualBased">
-                    More than 1000
-                  </label>
-                </div>
+
                 <div className="invalid-feedback">
                   {errors.state && errors.state.message}
                 </div>

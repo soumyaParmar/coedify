@@ -23,7 +23,7 @@ function Role({
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <h1 className="form__heading2">
-              How would you like to hire developer?
+              For how long you require developers?
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
@@ -31,29 +31,26 @@ function Role({
                   <input
                     class="form-check-input"
                     type="radio"
-                    id="permanent"
-                    value="permanent"
-                    {...register("type", { required: true })}
-                    name="type"
+                    id="six12"
+                    value="6-12 months"
+                    {...register("howlong", { required: true })}
+                    name="howlong"
                   />
-                  <label className="form-check-label" htmlfor="permanentbased">
-                    Permanent Based
+                  <label className="form-check-label" htmlfor="six12">
+                    6 to 12 Months
                   </label>
                 </div>
                 <div className="form-check form-check-inline">
                   <input
                     className="form-check-input"
                     type="radio"
-                    id="contract"
-                    name="type"
-                    {...register("type", { required: true })}
-                    value="contract"
+                    id="twelve"
+                    name="howlong"
+                    {...register("howlong", { required: true })}
+                    value="12+months"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlfor=" ContractualBased"
-                  >
-                    Contractual Based
+                  <label className="form-check-label" htmlfor="Twelve">
+                    12+ Months
                   </label>
                 </div>
                 <div className="invalid-feedback">

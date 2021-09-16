@@ -36,7 +36,7 @@ function Role({
                     name="experience"
                   />
                   <label className="form-check-label" htmlfor="permanentbased">
-                    0 - 3 years
+                    6 Months to 3 Years
                   </label>
                 </div>
                 <div className="form-check form-check-inline">
@@ -51,7 +51,7 @@ function Role({
                     className="form-check-label"
                     htmlfor=" ContractualBased"
                   >
-                    3 - 6 years
+                    3 Years to 6 Years
                   </label>
                 </div>
                 <div className="form-check form-check-inline">
@@ -66,7 +66,7 @@ function Role({
                     className="form-check-label"
                     htmlfor=" ContractualBased"
                   >
-                    6+ years
+                    6+ Years
                   </label>
                 </div>
 

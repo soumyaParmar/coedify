@@ -23,19 +23,22 @@ function Role({
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
-            <h1 className="form__heading2">Budget</h1>
+            <h1 className="form__heading2">
+              {" "}
+              Please specify each developer's annual budget (INR).
+            </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
                 <div class="form-check form-check-inline">
                   <input
                     class="form-check-input"
                     type="radio"
-                    value="lessthan10"
+                    value="6to12LPA"
                     {...register("budget", { required: true })}
                     name="budget"
                   />
                   <label class="form-check-label" for="permanentbased">
-                    Less than 10
+                    6 to 12 LPA
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -44,10 +47,10 @@ function Role({
                     type="radio"
                     name="budget"
                     {...register("budget", { required: true })}
-                    value="11-60"
+                    value="12to24LPA"
                   />
                   <label class="form-check-label" for=" ContractualBased">
-                    11 - 60
+                    12-24 LPA
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -56,38 +59,13 @@ function Role({
                     type="radio"
                     name="budget"
                     {...register("budget", { required: true })}
-                    value="61-200"
+                    value="24+LPA"
                   />
                   <label class="form-check-label" for=" ContractualBased">
-                    61 - 200
+                    24+ LPA
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="budget"
-                    {...register("budget", { required: true })}
-                    value="200-1000"
-                  />
-                  <label class="form-check-label" for=" ContractualBased">
-                    200 - 1000
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="budget"
-                    {...register("budget", {
-                      required: "This field is required",
-                    })}
-                    value="morethan1000"
-                  />
-                  <label class="form-check-label" for=" ContractualBased">
-                    More than 1000
-                  </label>
-                </div>
+
                 <div className="invalid-feedback">
                   {errors.state && errors.state.message}
                 </div>
