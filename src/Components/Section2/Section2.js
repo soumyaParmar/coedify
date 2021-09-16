@@ -5,7 +5,7 @@ import logo3 from "./card3.png";
 import logo4 from "./card4.png";
 import logo5 from "./card5.png";
 import logo6 from "./card6.png";
-import logo1 from "./card2.png";
+import logo1 from "./icons8-ok.svg";
 
 const Section2 = () => {
   return (

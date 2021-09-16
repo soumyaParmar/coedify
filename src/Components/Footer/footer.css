@@ -30,12 +30,23 @@
   display: flex;
   flex-direction: column;
 }
+
+.description__links a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.description__links span {
+  margin-left: 15px;
+  color: #646464;
+}
+
 svg {
   margin-top: 5px;
 }
 .description__logo img {
   height: 5rem;
-  
+
   object-fit: contain;
   margin-right: 250px;
 }
@@ -44,7 +55,10 @@ svg {
 }
 .description__text {
   margin-bottom: 80px;
-  margin-top: 5px;
+  margin-top: 24px;
+  font-size: 14px;
+  color: gray;
+  text-align: justify;
 }
 .description__links svg {
   border-radius: 50px;
@@ -83,6 +97,9 @@ svg {
 .footer__quicklinks ul,
 .footer__getintouch ul {
   list-style: none;
+  font-size: 14px;
+  margin-left: 21px;
+  color: gray;
 }
 .footer__explore ul li,
 .footer__quicklinks ul li,

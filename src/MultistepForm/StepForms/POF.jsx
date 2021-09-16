@@ -17,8 +17,8 @@ function POF({
   navigation,
 }) {
   const history = useHistory();
-  // const { firebase } = useContext(FirebaseContext);
-
+  const { firebase } = useContext(FirebaseContext);
+  console.log(firebase);
   const onSubmit = (data) => {
     defaultData = { ...data };
     // firebase.firestore();
@@ -103,8 +103,8 @@ function POF({
                   className={classNames("form-control", {
                     "is-invalid": errors.experience,
                   })}
-                  name="experience"
-                  {...register("experience", { required: true })}
+                  name="heard"
+                  {...register("heard", { required: true })}
                 >
                   <option value="" selected>
                     Where did you hear about CoEdify ? *
@@ -119,7 +119,7 @@ function POF({
                   className="invalid-feedback"
                   style={{ marginLeft: "20px" }}
                 >
-                  {errors.experience && "This field is required"}
+                  {errors.heard && "This field is required"}
                 </div>
               </div>
 

@@ -87,18 +87,22 @@ function Footer() {
               href="https://www.instagram.com/coedifytechnology"
             >
               <FaInstagram />
+              <span>Follow us on Instagram</span>
             </a>
             <a target="blank" href="https://www.facebook.com/coedifytechnology">
               <FaFacebook />
+              <span>Like our Facebook Page</span>
             </a>
             <a
               target="blank"
               href="https://www.linkedin.com/company/coedify/mycompany/?viewAsMember=true"
             >
               <FaLinkedinIn />
+              <span>Checkout LinkedIn for more updates</span>
             </a>
             <a target="blank" href="https://twitter.com/CoEdifyTech">
               <FaTwitter />
+              <span>Follow on Twitter</span>
             </a>
           </div>
         </div>

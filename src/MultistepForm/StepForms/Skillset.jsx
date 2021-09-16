@@ -88,13 +88,18 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
   ];
 
   const handlePrimary = (data) => {
-    console.log(data);
+    const [primaryskill1, primaryskill2] = data;
+    // console.log(primaryskill1, primaryskill2);
+    defaultData = { ...primaryskill1, ...primaryskill2 };
+    console.log(defaultData);
   };
   const handleSecondary = (data) => {
-    console.log(data);
+    const [secondaryskill1, secondaryskill2] = data;
+    defaultData = { ...secondaryskill1, ...secondaryskill2 };
   };
   const handleGoodToHaveSkills = (data) => {
-    console.log(data);
+    const [thirdskill1, thirdskill2] = data;
+    defaultData = { ...thirdskill1, ...thirdskill2 };
   };
   return (
     <div className="form1">
