@@ -3,6 +3,7 @@ import "./App.css";
 import ScrollTo from "./Components/ScrollToTop";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import MentorshipProgram from './pages/MentorshipProgram/MentorshipProgram'
 import Home from "./pages/Home";
 import HireDevsForm from "./MultistepForm/HireDeveloper/HireDevForm";
 import MultiStepForm from "./MultistepForm/MultiStepForm";
@@ -28,7 +29,7 @@ function App() {
             <Footer />
           </Route>
           <Route exact path="/vettingprocess">
-            <Navbar />
+            <Navbar />  
             <Vetted />
             <Footer />
           </Route>
@@ -36,6 +37,11 @@ function App() {
             <Navbar />
             <TechnologiesPage />
             <Footer />
+          </Route>
+          <Route exact path='/programpage'>
+            <Navbar />
+            <MentorshipProgram/>
+            {/* <Footer /> */}
           </Route>
           <Route exact path="/applyasdev" component={MultiStepForm} />
           <Route exact path="/hiredev" component={HireDevsForm} />

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+.header-section{
+    /* font-family: 'Concert One', cursive; */
+    width: 100vw;
+    height: 667px;
+    margin: auto;
+    padding: 20px;
+    /* color: white; */
+    display: flex;
+    margin-bottom: 25px;
+}
+.header-content{
+    padding: 20px;
+    padding-right: 50px;
+    color: white;
+    margin: 50px auto;
+    flex: 2;
+}
+.header-heading{
+    padding: 10px;
+    padding-right: 0px;
+    font-size: 3.8em;
+}
+.button{
+    margin-left: 10px;
+}
+.header-text{
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    font-weight: lighter;
+}
+.header-image{
+    flex: 1;
+    position: relative;
+}
+.student-image{
+    width: 770px;
+    height: 660px;
+    position: absolute;
+    left: -237px;
+    top: -59px;
+}
+.button-title{
+    margin-left: 20px;
+    font-size: 23px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.material-icons{
+    font-size: 40px;
+    margin: auto 10px;
+    transform: translateY(14px);
+}
+
+@media (max-width : 900px){
+    .header-section{
+        height: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-content{
+        margin-top: 20px;
+        /* border: 1px solid black; */
+        padding: 19px;
+        padding-bottom: 7px;
+    }
+    .header-heading{
+        /* border: 1px solid black; */
+        font-size: 1.9em;
+        padding-left: 5px;
+        padding-top: 15px;
+    }
+    .header-text{
+        font-size: 1.2em;
+        margin-bottom: 4px;
+        padding: 20px;
+        padding-left: 7px;
+        /* border: 1px solid black; */
+    }
+    .header-image{
+        flex: 1;
+        position: relative;
+    }
+    .student-image{
+        /* border: 1px solid black; */
+        width: 430px;
+        height: 390px;
+        position: relative;
+        left: -65px;
+        top: -10px;
+    }
+    .button-title{
+        margin-left: 0px;
+        font-size: 23px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .material-icons{
+        font-size: 40px;
+        margin: 0px;
+        transform: translateY(14px);
+    }
+
+}
