@@ -1,7 +1,7 @@
 import fullstack from "./full-stack-dev-icon.png";
 import frontend from "./frontend-dev-icon.png";
 import backend from "./backend-dev-icon.png";
-import db from "./SQL.png";
+// import db from "./SQL.png";
 import native from "./native-mobile.png";
 import devops from "./devops.png";
 export const DevList = [
