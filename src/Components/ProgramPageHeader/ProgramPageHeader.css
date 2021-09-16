@@ -20,14 +20,14 @@
 .header-heading{
     padding: 10px;
     padding-right: 0px;
-    font-size: 4em;
+    font-size: 3.8em;
 }
 .button{
     margin-left: 10px;
 }
 .header-text{
     padding: 10px;
-    font-size: 1.55em;
+    font-size: 1.5em;
     text-align: left;
     margin-bottom: 20px;
     padding-right: 40px;
@@ -70,12 +70,12 @@
     }
     .header-heading{
         /* border: 1px solid black; */
-        font-size: 1.8em;
-        padding: 5px;
+        font-size: 1.9em;
+        padding-left: 5px;
         padding-top: 15px;
     }
     .header-text{
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-bottom: 4px;
         padding: 20px;
         padding-left: 7px;
