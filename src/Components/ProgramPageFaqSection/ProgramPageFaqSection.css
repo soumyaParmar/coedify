@@ -1,0 +1,38 @@
+.faq-section{
+    width: 90vw;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+.faq-section-header{
+    padding: 20px;
+    font-size: 3.4em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.down-arrow{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+@media (max-width : 900px){
+    .faq-section{
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .faq-section-header{
+        padding: 10px;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+    .down-arrow{
+        font-size: .8em;
+        font-weight: bolder;
+        margin-left: 0px;
+        transform: translateY(8px);
+    }
+}
