@@ -29,8 +29,10 @@
 .sec2__Box:hover {
   transform: translateY(-5px);
 }
-
-.sec2Box__content {
+.sec2Box__logo{
+  margin-top: 10px;
+}
+.sec2Box__content { 
   margin-left: 5px;
   margin: auto;
 }

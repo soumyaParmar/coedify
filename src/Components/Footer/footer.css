@@ -24,6 +24,7 @@
   height: 50px;
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 .description__links {
   display: flex;
@@ -34,7 +35,7 @@ svg {
 }
 .description__logo img {
   height: 5rem;
-  width: 100%;
+  
   object-fit: contain;
   margin-right: 250px;
 }
@@ -43,6 +44,7 @@ svg {
 }
 .description__text {
   margin-bottom: 80px;
+  margin-top: 5px;
 }
 .description__links svg {
   border-radius: 50px;
