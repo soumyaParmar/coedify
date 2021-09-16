@@ -13,17 +13,26 @@ const Section2 = () => {
       <h1 className="heading">On Demand Amazing Developers</h1>
       <div className="section2">
         <Box
-          title="Hire for proven skills train by us, rated by us."
+          title="Quickly hire developers with niche skill sets trained and evaluated by us."
           url={logo1}
         />
-        <Box title="Try out our developers for 1 week." url={logo2} />
         <Box
-          title="Every candidate you hire is a level above from others."
+          title="Get a free one-week trial with one of our developers of your choice."
+          url={logo2}
+        />
+        <Box
+          title="Every developer is a notch ahead of the majority."
           url={logo3}
         />
-        <Box title="Meet the right fit for your company here." url={logo4} />
-        <Box title="Meet the diverse pool of vetted talent here." url={logo5} />
-        <Box title="No Extra Charges required." url={logo6} />
+        <Box
+          title="Hire a developer who is highly adaptable to new technologies and is motivated to get projects happen."
+          url={logo4}
+        />
+        <Box
+          title="Meet the diverse pool of vetted professional developer."
+          url={logo5}
+        />
+        <Box title="At absolutely Zero hiring cost." url={logo6} />
       </div>
     </div>
   );

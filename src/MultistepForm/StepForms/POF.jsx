@@ -17,11 +17,12 @@ function POF({
   navigation,
 }) {
   const history = useHistory();
-  const { firebase } = useContext(FirebaseContext);
+  // const { firebase } = useContext(FirebaseContext);
 
   const onSubmit = (data) => {
     defaultData = { ...data };
-    firebase.firestore();
+    // firebase.firestore();
+    console.log(defaultData);
     successAlert();
   };
 
