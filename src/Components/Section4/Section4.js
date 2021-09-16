@@ -22,7 +22,7 @@ const Section4 = () => {
   );
   return (
     <div className="igns" id="techStack">
-      <h1 className="ings__heading">Our Ingenious Developers</h1>
+      <h1 className="ings__heading">Our Technology Stack</h1>
       <h3>Hiring CoEdify Developers</h3>
       <p style={{ color: "GrayText" }}>
         You always found highly skilled developers on CoEdify and our developers

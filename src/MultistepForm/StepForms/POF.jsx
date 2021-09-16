@@ -17,8 +17,8 @@ function POF({
   navigation,
 }) {
   const history = useHistory();
-  // const { firebase } = useContext(FirebaseContext);
-
+  const { firebase } = useContext(FirebaseContext);
+  console.log(firebase);
   const onSubmit = (data) => {
     defaultData = { ...data };
     // firebase.firestore();
