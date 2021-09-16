@@ -38,9 +38,10 @@ function Experience({
                   <option value="" selected>
                     Experience*
                   </option>
-                  <option value="0-3years">0-3 years</option>
-                  <option value="3-5years">3-5 years</option>
-                  <option value="morethan5">More than 5</option>
+                  <option value="freshers">Freshers</option>
+                  <option value="1-3 Years">1-3 Years</option>
+                  <option value="3-6 Years">3-6 Years</option>
+                  <option value="6+ Years">6+ Years</option>
                 </select>
                 <div className="invalid-feedback">
                   {errors.experience && "This field is required"}
@@ -79,10 +80,12 @@ function Experience({
                   <option value="" selected>
                     Salary Expectations(LPA)*
                   </option>
-                  <option value="0-3years">3-5 lakh</option>
-                  <option value="5-7lakh">5-7 lakh</option>
-                  <option value="7-9lakh">7-9 lakh</option>
-                  <option value="morethan10">More than 10 lakh</option>
+                  <option value="1-3 LPA">1-3 LPA</option>
+                  <option value="3-5 LPA">3-5 LPA</option>
+                  <option value="6-8 LPA">6-8 LPA</option>
+                  <option value="8-15 LPA">8-15 LPA</option>
+                  <option value="15-20 LPA">15-20 LPA</option>
+                  <option value="20+ LPA">20+ LPA</option>
                 </select>
                 <div className="invalid-feedback">
                   {errors.salary && "This field is required"}

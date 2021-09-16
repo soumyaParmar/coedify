@@ -34,7 +34,7 @@ function PersonalDetails({
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
-            <h1 className="form__heading">Personal Details</h1>
+            <h1 className="form__heading">Little more details about you.</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
                 <label>Name*</label>

@@ -1,106 +1,36 @@
 import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
-import Multiselect from "multiselect-react-dropdown";
+// import Multiselect from "multiselect-react-dropdown";
 import "./skillset.css";
-function Skillset({ defaultData, register, handleSubmit, navigation }) {
+function Skillset({
+  defaultData,
+  register,
+  handleSubmit,
+  errors,
+  classNames,
+  navigation,
+}) {
   const onSubmit = (data) => {
     defaultData = { ...data };
+    console.log(defaultData);
     navigation.next();
   };
-  const primarySkills = [
-    {
-      value: 1,
-      label: "HTML",
-    },
-    {
-      value: 2,
-      label: "Javascript",
-    },
-    {
-      value: 3,
-      label: "CSS",
-    },
-    {
-      value: 4,
-      label: "NodeJs",
-    },
-    {
-      value: 5,
-      label: "ReactJs",
-    },
-    {
-      value: 6,
-      label: "VueJs",
-    },
-  ];
-  const secondarySkills = [
-    {
-      value: 1,
-      label: "Java",
-    },
-    {
-      value: 2,
-      label: "Express",
-    },
-    {
-      value: 3,
-      label: "React Native",
-    },
-    {
-      value: 4,
-      label: "Testing",
-    },
-    {
-      value: 5,
-      label: "ReactJs",
-    },
-    {
-      value: 6,
-      label: "VueJs",
-    },
-  ];
-  const goodToHaveSkills = [
-    {
-      value: 1,
-      label: "Firebase",
-    },
-    {
-      value: 2,
-      label: "MongoDb",
-    },
-    {
-      value: 3,
-      label: "Php",
-    },
-    {
-      value: 4,
-      label: "GraphQl",
-    },
-    {
-      value: 5,
-      label: "Flutter",
-    },
-    {
-      value: 6,
-      label: "Sql",
-    },
-  ];
 
-  const handlePrimary = (data) => {
-    const [primaryskill1, primaryskill2] = data;
-    // console.log(primaryskill1, primaryskill2);
-    defaultData = { ...primaryskill1, ...primaryskill2 };
-    console.log(defaultData);
-  };
-  const handleSecondary = (data) => {
-    const [secondaryskill1, secondaryskill2] = data;
-    defaultData = { ...secondaryskill1, ...secondaryskill2 };
-  };
-  const handleGoodToHaveSkills = (data) => {
-    const [thirdskill1, thirdskill2] = data;
-    defaultData = { ...thirdskill1, ...thirdskill2 };
-  };
+  // const handlePrimary = (data) => {
+  //   const [primaryskill1, primaryskill2] = data;
+  //   // console.log(primaryskill1, primaryskill2);
+  //   defaultData = { ...primaryskill1, ...primaryskill2 };
+  //   console.log(defaultData);
+  // };
+  // const handleSecondary = (data) => {
+  //   const [secondaryskill1, secondaryskill2] = data;
+  //   defaultData = { ...secondaryskill1, ...secondaryskill2 };
+  // };
+  // const handleGoodToHaveSkills = (data) => {
+  //   const [thirdskill1, thirdskill2] = data;
+  //   defaultData = { ...thirdskill1, ...thirdskill2 };
+  // };
   return (
     <div className="form1">
       <div className="step1">
@@ -109,42 +39,42 @@ function Skillset({ defaultData, register, handleSubmit, navigation }) {
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form__box">
-                <label>Primary Skill*</label>
+                <label>Your Primary Skill *</label>
                 <span className="subhead">
-                  *Choose that skill in which you have hands on experience and
-                  you are confident to give interview in that skill
+                  *Choose the primary skill that you are confident in based on
+                  your project experience.
                 </span>
-                <Multiselect
-                  options={primarySkills}
-                  displayValue="label"
-                  onSelect={handlePrimary}
+                <textarea
+                  className={classNames("form-control", {
+                    "is-invalid": errors.primarySkill,
+                  })}
+                  {...register("primarySkill", {
+                    required: true,
+                  })}
+                  type="text"
+                  name="primaryskill"
                 />
+                <div className="invalid-feedback">
+                  {errors.primarySkill?.type === "required" &&
+                    "This field is required "}
+                </div>
               </div>
               <div className="form__box">
-                <label>Secondary Skills*</label>
-                <span className="subhead">
-                  *Choose that skill in which you have written some code in some
-                  project and you are comfortable with it if you have given
-                  project on that skill
-                </span>
-                <Multiselect
-                  options={secondarySkills}
-                  displayValue="label"
-                  onSelect={handleSecondary}
+                <label>And Your Secondary Skill *</label>
+                <textarea
+                  className={classNames("form-control", {
+                    "is-invalid": errors.secondarySkill,
+                  })}
+                  {...register("secondarySkill", {
+                    required: true,
+                  })}
+                  type="text"
+                  name="secondaryskill"
                 />
-              </div>
-              <div className="form__box">
-                <label>Good to have Skills*</label>
-                <span className="subhead">
-                  *Choose that skill in which you have written some code in some
-                  project and you are comfortable with it if you have given
-                  project on that skill
-                </span>
-                <Multiselect
-                  options={goodToHaveSkills}
-                  displayValue="label"
-                  onSelect={handleGoodToHaveSkills}
-                />
+                <div className="invalid-feedback">
+                  {errors.secondarySkill?.type === "required" &&
+                    "This field is required "}
+                </div>
               </div>
 
               <div className="navigation__btns">

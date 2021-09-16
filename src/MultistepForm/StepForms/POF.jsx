@@ -43,7 +43,12 @@ function POF({
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form__box">
-                <label>What is the best project you have worked on? *</label>
+                <label>
+                  {" "}
+                  Precisely explain your personality, professional experience
+                  and the technology stack you are interested to work in
+                  future?*
+                </label>
                 <span className="subhead">
                   *Write the details in description in minimum 100 words
                 </span>
@@ -65,33 +70,6 @@ function POF({
                 <div className="invalid-feedback">
                   {errors.bestproject?.type === "minLength" &&
                     "Enter atleast 100 words "}
-                </div>
-              </div>
-              <div className="form__box">
-                <label>
-                  How will you explain technology to a 12-year old ? *
-                </label>
-                <span className="subhead">
-                  *Write honestly in minimum 100 words
-                </span>
-                <textarea
-                  className={classNames("form-control", {
-                    "is-invalid": errors.explaintech,
-                  })}
-                  type="text"
-                  {...register("explaintech", {
-                    required: true,
-                    minLength: 100,
-                  })}
-                  name="explaintech"
-                />
-                <div className="invalid-feedback">
-                  {errors.explaintech?.type === "required" &&
-                    "This field is required "}
-                </div>
-                <div className="invalid-feedback">
-                  {errors.explaintech?.type === "minLength" &&
-                    "Enter atleast 100 words"}
                 </div>
               </div>
               <div className="drop form__box">
