@@ -44,7 +44,6 @@ function POF({
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form__box">
                 <label>
-                  {" "}
                   Precisely explain your personality, professional experience
                   and the technology stack you are interested to work in
                   future?*

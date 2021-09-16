@@ -46,33 +46,34 @@ function Skillset({
                 </span>
                 <textarea
                   className={classNames("form-control", {
-                    "is-invalid": errors.primarySkill,
+                    "is-invalid": errors.primarySkills,
                   })}
-                  {...register("primarySkill", {
+                  {...register("primarySkills", {
                     required: true,
                   })}
                   type="text"
-                  name="primaryskill"
+                  name="primarySkills"
                 />
                 <div className="invalid-feedback">
-                  {errors.primarySkill?.type === "required" &&
+                  {errors.primarySkills?.type === "required" &&
                     "This field is required "}
                 </div>
               </div>
               <div className="form__box">
                 <label>And Your Secondary Skill *</label>
+
                 <textarea
                   className={classNames("form-control", {
-                    "is-invalid": errors.secondarySkill,
+                    "is-invalid": errors.secondarySkills,
                   })}
-                  {...register("secondarySkill", {
+                  {...register("secondarySkills", {
                     required: true,
                   })}
                   type="text"
-                  name="secondaryskill"
+                  name="secondarySkills"
                 />
                 <div className="invalid-feedback">
-                  {errors.secondarySkill?.type === "required" &&
+                  {errors.secondarySkills?.type === "required" &&
                     "This field is required "}
                 </div>
               </div>
