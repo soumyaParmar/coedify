@@ -25,11 +25,12 @@ const Section4 = () => {
       <h1 className="ings__heading">Our Technology Stack</h1>
       <h3>Hiring CoEdify Developers</h3>
       <p style={{ color: "GrayText" }}>
-        You always found highly skilled developers on CoEdify and our developers
-        are not only focused with one technology but they are so much resilient
-        that they can switch with any technology or framework anytime. We give
-        you developers with work experience in different technologies rigorously
-        trained by us.{" "}
+        To suit the needs of both start-ups and established IT firms, we're
+        broadening our technology stack. Although precise definitions of these
+        technological stacks are difficult to articulate due to their extremely
+        contextual nature, We're largely talking about the core competencies
+        that each developer possesses, but they're also incredibly flexible to
+        new technologies and can swiftly ramp up to a new tech stack.
       </p>
       <div className="dev__sections">{list1.splice(0, 3)}</div>
       <div className="dev__gradient">
