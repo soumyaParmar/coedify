@@ -4,7 +4,7 @@ import { ImCross } from "react-icons/im";
 import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
-import { NavLink, useHistory } from "react-router-dom";
+import { Link as NavLink, useHistory, useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
@@ -24,22 +24,18 @@ const Navbar = () => {
     if (pageYOffset > 100) setVisible(true);
     else setVisible(false);
   }, [pageYOffset]);
+  const [isHome, setHome] = useState(false);
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    if (pathname === "/") {
+      setHome(true);
+    } else {
+      setHome(false);
+    }
+  }, [pathname]);
   return (
     <>
-      {/* <div className="alert alert-warning alert-dismissible fade show" role="alert">
-      <div className="banner__left">
-        <span> Checkout our Mentorship program</span>
-      </div>
-     <div className="banner__right">
-      <button className="register">
-           <a href="https://www.coedify.com/" target="_"> <span>Learn More</span></a>
-          </button>
-          </button>
-          </div>
-  <span className="banner__btn" type="button" data-bs-dismiss="alert" aria-label="Close"><AiOutlineClose/></span>
-</div> */}
-      {/* <div className="navbar"> */}
       <nav className={visible ? "navSecondary" : "nav"}>
         <div className="logo">
           <NavLink exact to="/" activeclassname="active">
@@ -61,16 +57,27 @@ const Navbar = () => {
               Why us?
             </NavLink>
           </li>
-          <li onClick={handleClose}>
-            <Link
-              onClick={handleClose}
-              activeclass="active"
-              className={visible ? "anchorActive" : "anchor"}
-              exact
-              to="howWeWork"
-            >
-              How We Work?
-            </Link>
+          <li>
+            {isHome ? (
+              <Link
+                onClick={handleClose}
+                activeclass="active"
+                className={visible ? "anchorActive" : "anchor"}
+                exact
+                to="howWeWork"
+              >
+                How We Work
+              </Link>
+            ) : (
+              <NavLink
+                onClick={handleClose}
+                exact
+                to="/"
+                activeclassname="active"
+              >
+                How We Work
+              </NavLink>
+            )}
           </li>
           <li onClick={handleClose}>
             <NavLink
@@ -82,16 +89,27 @@ const Navbar = () => {
               Vetting Process
             </NavLink>
           </li>
-          <li onClick={handleClose}>
-            <Link
-              onClick={handleClose}
-              className={visible ? "anchorActive" : "anchor"}
-              exact
-              to="techStack"
-              activeclassname="active"
-            >
-              Tech Stack
-            </Link>
+          <li>
+            {isHome ? (
+              <Link
+                onClick={handleClose}
+                activeclass="active"
+                className={visible ? "anchorActive" : "anchor"}
+                exact
+                to="howWeWork"
+              >
+                Teck Stack
+              </Link>
+            ) : (
+              <NavLink
+                onClick={handleClose}
+                exact
+                to={{ pathname: "/", state: { from: "techStack" } }}
+                activeclassname="active"
+              >
+                Tech Stack
+              </NavLink>
+            )}
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
             <Link
