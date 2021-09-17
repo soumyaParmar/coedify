@@ -6,7 +6,6 @@ import "./submit.css";
 
 function Submit({ defaultData, register, handleSubmit, navigation }) {
   let history = useHistory();
-  console.log(defaultData);
 
   return (
     <div className="form1">

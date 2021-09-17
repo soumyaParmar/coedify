@@ -13,7 +13,6 @@ function Skillset({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
     navigation.next();
   };
 

@@ -12,7 +12,6 @@ function Resume({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-
     navigation.next();
   };
   return (

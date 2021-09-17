@@ -98,7 +98,7 @@ const Navbar = () => {
                 exact
                 to="howWeWork"
               >
-                Teck Stack
+                Tech Stack
               </Link>
             ) : (
               <NavLink

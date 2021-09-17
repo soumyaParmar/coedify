@@ -1,12 +1,12 @@
-import { useContext } from "react";
 import React from "react-hook-form";
+import { db } from "../../lib/firebase-config";
+import { collection, addDoc } from "firebase/firestore";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 import Swal from "sweetalert2";
 import "./submit.css";
 import "./skillset.css";
 import { useHistory } from "react-router";
-import { FirebaseContext } from "./../../context/firebase";
 
 function POF({
   defaultData,
@@ -17,13 +17,26 @@ function POF({
   navigation,
 }) {
   const history = useHistory();
-  const { firebase } = useContext(FirebaseContext);
-  console.log(firebase);
   const onSubmit = (data) => {
     defaultData = { ...data };
-    // firebase.firestore();
-    console.log(defaultData);
-    successAlert();
+    addDoc(collection(db, "applyasdev"), {
+      techEssay: defaultData.bestproject,
+      email: defaultData.email,
+      experience: defaultData.experience,
+      githuburl: defaultData.githuburl,
+      heard: defaultData.heard,
+      linkedinurl: defaultData.linkedinurl,
+      name: defaultData.name,
+      number: defaultData.number,
+      portfoliourl: defaultData.portfoliourl,
+      primarySkills: defaultData.primarySkills,
+      resume: defaultData.resume[0].name,
+      salary: defaultData.salary,
+      secondarySkills: defaultData.secondarySkills,
+      status: defaultData.status,
+    })
+      .then(() => successAlert())
+      .catch((err) => console.log(err));
   };
 
   const successAlert = () => {

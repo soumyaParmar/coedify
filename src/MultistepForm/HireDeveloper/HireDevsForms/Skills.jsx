@@ -13,7 +13,6 @@ function Skills({
   navigation,
 }) {
   const onSubmit = (data) => {
-    console.log(data);
     defaultData = { ...data };
     navigation.next();
   };
@@ -44,9 +43,7 @@ function Skills({
     },
   ];
   let [displaySkill] = useState(skills);
-  const handleskill = (data) => {
-    console.log(data);
-  };
+  const handleskill = (data) => {};
   return (
     <div className="form1">
       <div className="step1">

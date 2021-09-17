@@ -1,4 +1,6 @@
 import React from "react-hook-form";
+import { db } from "../../../lib/firebase-config";
+import { collection, addDoc } from "firebase/firestore";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
 import { useHistory } from "react-router";
@@ -7,15 +9,31 @@ function PersonalDetails({
   defaultData,
   register,
   handleSubmit,
+  role,
   errors,
   classNames,
   navigation,
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
-    successAlert();
-    history.push("/");
+    addDoc(collection(db, "hiredevdata"), {
+      budget: defaultData.budget,
+      company: defaultData.company,
+      email: defaultData.email,
+      techStack: role,
+      experience: defaultData.experience,
+      howlong: defaultData.howlong,
+      name: defaultData.name,
+      numOfDevs: defaultData.numOfDevs,
+      numOfEmployee: defaultData.numOfEmployee,
+      phone: defaultData.name,
+      whenToJoin: defaultData.whenToJoin,
+    })
+      .then(() => {
+        successAlert();
+        history.push("/");
+      })
+      .catch((err) => console.log(err));
   };
 
   const successAlert = () => {

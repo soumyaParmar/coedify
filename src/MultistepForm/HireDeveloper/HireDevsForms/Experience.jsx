@@ -11,7 +11,6 @@ function Role({
   navigation,
 }) {
   const onSubmit = (data) => {
-    console.log(data);
     defaultData = { ...data };
     navigation.next();
   };

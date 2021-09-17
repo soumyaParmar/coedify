@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useStep } from "react-hooks-helper";
 import { useForm } from "react-hook-form";
 import classNames from "classnames";
@@ -12,8 +12,9 @@ import HowLong from "./HireDevsForms/HowLong";
 import Role from "./HireDevsForms/Role";
 import WhenToJoin from "./HireDevsForms/WhenToJoin";
 function HireDevForm() {
+  const [role, setRole] = useState([]);
+  // console.log(role);
   const defaultData = {};
-
   const steps = [
     { id: "role" },
     { id: "experience" },
@@ -43,6 +44,8 @@ function HireDevForm() {
     setValue,
     watch,
     defaultData,
+    role,
+    setRole,
     register,
     handleSubmit,
     classNames,

@@ -1,25 +1,22 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
+// import { firebase } from "../../../lib/firebase-config.js";
 import logo from "./CoEdify-logo.png";
 // import Select from "react-select";
 import "../../StepForms/personaldetail.css";
 import Button from "../../../Components/Buttons/Hirebutton";
 import Multiselect from "multiselect-react-dropdown";
-import { useHistory } from "react-router";
 // import * as Yup from "yup"
 
 function Role({
   defaultData,
   register,
+  setRole,
   handleSubmit,
   errors,
   classNames,
   navigation,
 }) {
-  const onSubmit = (data) => {
-    console.log(defaultData);
-    defaultData = { ...data };
-    navigation.next();
-  };
   const history = useHistory();
   const Roles = [
     {
@@ -76,9 +73,17 @@ function Role({
   ];
 
   const [role] = useState(Roles);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const selected = [];
   const handleRole = (data) => {
-    defaultData = { ...data };
+    data.forEach((ele) => selected.push(ele.label));
   };
+
+  const onSubmit = (data) => {
+    setRole([selected[1], selected[2]]);
+    navigation.next();
+  };
+
   return (
     <div className="form1">
       <div className="step1">
