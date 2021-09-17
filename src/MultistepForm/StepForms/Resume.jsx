@@ -12,6 +12,7 @@ function Resume({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
+    console.log(defaultData);
     navigation.next();
   };
   return (
@@ -21,22 +22,6 @@ function Resume({
           <img className="form__logo" src={logo} alt="logo" />
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
-              <div className="name form__box">
-                <label>Upload your CV*</label>
-
-                <input
-                  className={classNames("form-control", {
-                    "is-invalid": errors.resume,
-                  })}
-                  {...register("resume", { required: true })}
-                  type="file"
-                  name="resume"
-                />
-                <div className="invalid-feedback">
-                  {errors.resume?.type === "required" &&
-                    "This field is required "}
-                </div>
-              </div>
               <div className="email form__box">
                 <label>LinkedIN URL*</label>
                 <input
@@ -64,14 +49,14 @@ function Resume({
                 </div>
               </div>
               <div className="email form__box">
-                <label>Github URL*</label>
+                <label>Github URL</label>
 
                 <input
                   className={classNames("form-control", {
                     "is-invalid": errors.githuburl,
                   })}
                   type="url"
-                  {...register("githuburl", { required: true })}
+                  {...register("githuburl")}
                   name="githuburl"
                 />
                 <div className="invalid-feedback">
@@ -88,6 +73,38 @@ function Resume({
                   {...register("portfoliourl")}
                   name="portfoliourl"
                 />
+              </div>
+              <div className="name form__box">
+                <label>Your Resume Summary*</label>
+
+                <span className="subhead">
+                  *Please write your professional summary here in minimum 500
+                  words
+                </span>
+                <textarea
+                  className={classNames("form-control", {
+                    "is-invalid": errors.summary,
+                  })}
+                  {...register("summary", {
+                    required: true,
+                    minLength: 500,
+                    maxLength: 2000,
+                  })}
+                  type="text"
+                  name="summary"
+                />
+                <div className="invalid-feedback">
+                  {errors.summary?.type === "required" &&
+                    "This field is required "}
+                </div>
+                <div className="invalid-feedback">
+                  {errors.summary?.type === "minLength" &&
+                    "Enter atleast 500 words "}
+                </div>
+                <div className="invalid-feedback">
+                  {errors.summary?.type === "maxLength" &&
+                    "Exceeding word limit "}
+                </div>
               </div>
 
               <div className="navigation__btns">

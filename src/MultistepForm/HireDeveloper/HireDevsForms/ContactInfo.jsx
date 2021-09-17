@@ -26,7 +26,7 @@ function PersonalDetails({
       name: defaultData.name,
       numOfDevs: defaultData.numOfDevs,
       numOfEmployee: defaultData.numOfEmployee,
-      phone: defaultData.name,
+      phone: defaultData.phone,
       whenToJoin: defaultData.whenToJoin,
     })
       .then(() => {
