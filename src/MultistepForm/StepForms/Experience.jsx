@@ -80,12 +80,10 @@ function Experience({
                   <option value="" selected>
                     Salary Expectations(LPA)*
                   </option>
-                  <option value="1-3 LPA">1-3 LPA</option>
-                  <option value="3-5 LPA">3-5 LPA</option>
-                  <option value="6-8 LPA">6-8 LPA</option>
+                  <option value="3-5 LPA">Upto 5 LPA</option>
+                  <option value="6-8 LPA">5-8 LPA</option>
                   <option value="8-15 LPA">8-15 LPA</option>
-                  <option value="15-20 LPA">15-20 LPA</option>
-                  <option value="20+ LPA">20+ LPA</option>
+                  <option value="15-20 LPA">15+ LPA</option>
                 </select>
                 <div className="invalid-feedback">
                   {errors.salary && "This field is required"}
