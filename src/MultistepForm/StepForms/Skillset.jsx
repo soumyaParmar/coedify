@@ -49,6 +49,7 @@ function Skillset({
                   })}
                   {...register("primarySkills", {
                     required: true,
+                    maxLength: 1000,
                   })}
                   type="text"
                   name="primarySkills"
@@ -56,6 +57,10 @@ function Skillset({
                 <div className="invalid-feedback">
                   {errors.primarySkills?.type === "required" &&
                     "This field is required "}
+                </div>
+                <div className="invalid-feedback">
+                  {errors.primarySkills?.type === "maxLength" &&
+                    "Exceeding word limit "}
                 </div>
               </div>
               <div className="form__box">
@@ -67,6 +72,7 @@ function Skillset({
                   })}
                   {...register("secondarySkills", {
                     required: true,
+                    maxLength: 1000,
                   })}
                   type="text"
                   name="secondarySkills"
@@ -74,6 +80,10 @@ function Skillset({
                 <div className="invalid-feedback">
                   {errors.secondarySkills?.type === "required" &&
                     "This field is required "}
+                </div>
+                <div className="invalid-feedback">
+                  {errors.secondarySkills?.type === "maxLength" &&
+                    "Exceeding word limit "}
                 </div>
               </div>
 

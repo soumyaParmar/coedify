@@ -1,5 +1,6 @@
-import React from "react-hook-form";
+import React, { useState } from "react";
 import { db } from "../../lib/firebase-config";
+import { storage, storageRef, uploadBytes } from "../../lib/firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
@@ -16,9 +17,15 @@ function POF({
   classNames,
   navigation,
 }) {
+  const [resume, setResume] = useState("");
   const history = useHistory();
   const onSubmit = (data) => {
+    setResume(data.resume[0]);
     defaultData = { ...data };
+    if (resume === null) return;
+    const resumeRef = storageRef(storage, "resumes");
+    uploadBytes(resumeRef, resume).then((snapshot) => console.log("uploaded"));
+
     addDoc(collection(db, "applyasdev"), {
       techEssay: defaultData.bestproject,
       email: defaultData.email,
@@ -71,6 +78,7 @@ function POF({
                   {...register("bestproject", {
                     required: true,
                     minLength: 100,
+                    maxLength: 2000,
                   })}
                   type="text"
                   name="bestproject"
@@ -82,6 +90,10 @@ function POF({
                 <div className="invalid-feedback">
                   {errors.bestproject?.type === "minLength" &&
                     "Enter atleast 100 words "}
+                </div>
+                <div className="invalid-feedback">
+                  {errors.bestproject?.type === "maxLength" &&
+                    "Exceeding word limit "}
                 </div>
               </div>
               <div className="drop form__box">
