@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../../lib/firebase-config";
-import { storage, storageRef, uploadBytes } from "../../lib/firebase-config";
+import { storage, ref, uploadBytes } from "../../lib/firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
@@ -23,8 +23,9 @@ function POF({
     setResume(data.resume[0]);
     defaultData = { ...data };
     if (resume === null) return;
-    const resumeRef = storageRef(storage, "resumes");
-    uploadBytes(resumeRef, resume).then((snapshot) => console.log("uploaded"));
+    // const resumeRef = storageRef(storage, "resumes");
+    const spaceRef = ref(storage, `resumes`);
+    uploadBytes(spaceRef, resume).then((snapshot) => console.log("uploaded"));
 
     addDoc(collection(db, "applyasdev"), {
       techEssay: defaultData.bestproject,
