@@ -96,7 +96,7 @@ const Navbar = () => {
                 activeclass="active"
                 className={visible ? "anchorActive" : "anchor"}
                 exact
-                to="howWeWork"
+                to="techStack"
               >
                 Tech Stack
               </Link>

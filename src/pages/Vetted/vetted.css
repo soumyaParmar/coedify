@@ -16,6 +16,12 @@
   justify-content: flex-start;
 }
 
+.vet1__left p {
+  color: #5a5f65;
+  font-size: 16px;
+  text-align: justify;
+}
+
 .vet1__span {
   color: #29bb89;
   margin-top: 50px;
@@ -144,6 +150,11 @@
   .vet1__p {
     text-align: center;
   }
+
+  .vet1__span {
+    text-align: center;
+  }
+
   .vet1__right {
     width: 100%;
   }
