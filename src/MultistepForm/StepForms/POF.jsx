@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { db } from "../../lib/firebase-config";
-import { storage, ref, uploadBytes } from "../../lib/firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
@@ -17,14 +16,9 @@ function POF({
   classNames,
   navigation,
 }) {
-  const [resume, setResume] = useState("");
   const history = useHistory();
   const onSubmit = (data) => {
-    setResume(data.resume[0]);
     defaultData = { ...data };
-    if (resume === null) return;
-    const spaceRef = ref(storage, `resumes`);
-    uploadBytes(spaceRef, resume).then((snapshot) => console.log("uploaded"));
 
     addDoc(collection(db, "applyasdev"), {
       techEssay: defaultData.bestproject,
@@ -37,10 +31,10 @@ function POF({
       number: defaultData.number,
       portfoliourl: defaultData.portfoliourl,
       primarySkills: defaultData.primarySkills,
-      resume: defaultData.resume[0].name,
       salary: defaultData.salary,
       secondarySkills: defaultData.secondarySkills,
       status: defaultData.status,
+      summary: defaultData.summary,
     })
       .then(() => successAlert())
       .catch((err) => console.log(err));

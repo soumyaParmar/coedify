@@ -20,6 +20,13 @@ function WhyUs() {
           <h1 className="whyus__heading">
             Hire tech talents that fits the job requirements
           </h1>
+          <p className="whyus__p">
+            CoEdify helps companies expand their team quickly. Tech hiring is
+            tough, time consuming and expensive. Most of the tech hirings are
+            severely flawed and the cost of hiring bad resource is way too high.
+            Our innovative way of screening talents minimizes all those risk in
+            a cost effective seamless way.
+          </p>
           <div className="whyus__button">
             <Hirebutton title="Hire Developers" />
           </div>
@@ -41,13 +48,6 @@ function WhyUs() {
       </div>
       <div className="whycodeify">
         <h1 className="whycoedify__heading">Why CoEdify</h1>
-        <p className="whycoedify_desc">
-          CoEdify helps companies expand their team quickly. Tech hiring is
-          tough, time consuming and expensive. Most of the tech hirings are
-          severely flawed and the cost of hiring bad resource is way too high.
-          Our innovative way of screening talents minimizes all those risk in a
-          cost effective seamless way.{" "}
-        </p>
         <div className="whycoedify1" style={{ marginBottom: "110px" }}>
           <div className="whycoedify1__left">
             <img className="whycoedify__img" src={img1} alt="img1" />

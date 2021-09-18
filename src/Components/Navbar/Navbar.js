@@ -95,8 +95,8 @@ const Navbar = () => {
                 onClick={handleClose}
                 activeclass="active"
                 className={visible ? "anchorActive" : "anchor"}
-                exact="true"
-                to="howWeWork"
+                exact
+                to="techStack"
               >
                 Tech Stack
               </Link>
