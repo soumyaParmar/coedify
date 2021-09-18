@@ -1,6 +1,5 @@
 import React from "react-hook-form";
 import { useHistory } from "react-router";
-import FormBanner from "../../Components/FormBanner/FormBanner";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 
@@ -111,9 +110,7 @@ function PersonalDetails({
             </form>
           </div>
         </div>
-        <div className="step1__right">
-          <FormBanner />
-        </div>
+        <div className="step1__right">{/* <FormBanner /> */}</div>
       </div>
     </div>
   );
