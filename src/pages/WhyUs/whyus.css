@@ -1,7 +1,7 @@
 .whyus {
-  padding: 8% 5% 5% 5%;
+  padding: 8% 0% 5% 0%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
   width: 90%;
 }
@@ -63,7 +63,7 @@
 .whycodeify {
   display: flex;
   flex-direction: column;
-  margin: 50px 10%;
+  margin: 50px 5%;
 }
 
 .whycodeify p {
@@ -76,7 +76,7 @@
 .whycoedify4,
 .whycoedify5 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 30px;
 }

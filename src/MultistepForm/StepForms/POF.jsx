@@ -108,7 +108,7 @@ function POF({
                   name="heard"
                   {...register("heard", { required: true })}
                 >
-                  <option value="" selected>
+                  <option value="" defaultValue>
                     Where did you hear about CoEdify ? *
                   </option>
                   <option value="linkedin">LinkedIn</option>

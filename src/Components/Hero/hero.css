@@ -1,5 +1,5 @@
 .hero {
-  margin: 13% 5% 10% 5%;
+  margin: 13% 5% 5% 5%;
   width: 90%;
   display: flex;
   padding-bottom: 15%;
@@ -118,8 +118,6 @@
   text-align: center;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 50px;
-  margin-top: 175px;
   font-size: 64px;
 }
 
@@ -225,6 +223,7 @@
   }
   .heading {
     font-size: 40px;
+ 
   }
 
   .logo img {
@@ -240,11 +239,13 @@
     width: 81%;
     color: #016eea;
     margin: 15px auto;
+    text-align: center;
     font-size: 18px;
   }
   .btn__getDeveloper {
     font-size: 18px;
     width: 250px;
+    text-align: center;
     margin: auto;
   }
   .ings__heading {
@@ -266,7 +267,7 @@
   }
   .hero {
     flex-direction: column;
-    margin-top: 22%;
+    margin-top: 19%;
     text-align: left;
     /* height: 90vh; */
   }

@@ -20,6 +20,7 @@ function Section({ title, description, differentStacks, others }) {
         {differentStacks.map(({ index, url, title, item1, item2, item3 }) => {
           return (
             <TechCard
+              key={index}
               index={index + 1}
               url={url}
               title={title}
@@ -39,7 +40,9 @@ function Section({ title, description, differentStacks, others }) {
                   style={{ cursor: "pointer" }}
                   onClick={() => history.push(`/technology/${index + 1}`)}
                 >
-                  <span className="other__span">{other}</span>
+                  <span key={index} className="other__span">
+                    {other}
+                  </span>
                 </div>
               </li>
             ))}

@@ -3,7 +3,7 @@
 }
 .section2 {
   background-image: url("./waves.png");
-  margin-top: 100px;
+  margin-top: 5rem;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -49,9 +49,7 @@
 .card {
   width: 18rem;
 }
-svg {
-  /* background-color: transparent; */
-}
+
 @media screen and (max-width: 786px) {
   .sec2__Box {
     margin: 25px 0px;

@@ -28,14 +28,14 @@ function Role({
               <div className="name form__box">
                 <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     id="six12"
                     value="6-12 months"
                     {...register("howlong", { required: true })}
                     name="howlong"
                   />
-                  <label className="form-check-label" htmlfor="six12">
+                  <label className="form-check-label" htmlFor="six12">
                     6 to 12 Months
                   </label>
                 </div>
@@ -48,7 +48,7 @@ function Role({
                     {...register("howlong", { required: true })}
                     value="12+months"
                   />
-                  <label className="form-check-label" htmlfor="Twelve">
+                  <label className="form-check-label" htmlFor="Twelve">
                     12+ Months
                   </label>
                 </div>

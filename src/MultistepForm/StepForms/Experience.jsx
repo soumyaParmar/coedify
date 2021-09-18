@@ -35,7 +35,7 @@ function Experience({
                   name="experience"
                   {...register("experience", { required: true })}
                 >
-                  <option value="" selected>
+                  <option value="" defaultValue>
                     Experience*
                   </option>
                   <option value="freshers">Freshers</option>
@@ -56,7 +56,7 @@ function Experience({
                   name="status"
                   {...register("status", { required: true })}
                 >
-                  <option value="" selected>
+                  <option value="" defaultValue>
                     Current Status*
                   </option>
                   <option value="employed">Employed</option>
@@ -77,7 +77,7 @@ function Experience({
                   name="salary"
                   {...register("salary", { required: true })}
                 >
-                  <option value="" selected>
+                  <option value="" defaultValue>
                     Salary Expectations(LPA)*
                   </option>
                   <option value="3-5 LPA">Upto 5 LPA</option>

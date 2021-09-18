@@ -1,5 +1,5 @@
 .how {
-  padding: 5% 5% 5% 5%;
+  padding: 0% 0% 5% 0%;
   background-color: #f5f8fd;
 }
 .how__mainHeading {
@@ -34,7 +34,7 @@
 .how3 {
   display: flex;
   margin: 30px auto;
-  justify-content: center;
+  justify-content: space-between;
   width: 90%;
 }
 
@@ -90,7 +90,7 @@
 @media only screen and (max-width: 600px) {
   .how2 {
     flex-direction: column-reverse;
-    width: 100%;
+    width: 90%;
   }
   .how1__left,
   .how1__right,
@@ -103,14 +103,14 @@
   .how1,
   .how3 {
     flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
   .how__mainHeading {
-    font-size: 40px;
+    font-size: 38px;
   }
   .how__heading {
     font-size: 30px;

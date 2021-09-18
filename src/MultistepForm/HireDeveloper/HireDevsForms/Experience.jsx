@@ -34,7 +34,7 @@ function Role({
                     {...register("experience", { required: true })}
                     name="experience"
                   />
-                  <label className="form-check-label" htmlfor="permanentbased">
+                  <label className="form-check-label" htmlFor="permanentbased">
                     6 Months to 3 Years
                   </label>
                 </div>
@@ -48,7 +48,7 @@ function Role({
                   />
                   <label
                     className="form-check-label"
-                    htmlfor=" ContractualBased"
+                    htmlFor=" ContractualBased"
                   >
                     3 Years to 6 Years
                   </label>
@@ -63,7 +63,7 @@ function Role({
                   />
                   <label
                     className="form-check-label"
-                    htmlfor=" ContractualBased"
+                    htmlFor=" ContractualBased"
                   >
                     6+ Years
                   </label>

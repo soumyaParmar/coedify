@@ -38,7 +38,7 @@ const Navbar = () => {
     <>
       <nav className={visible ? "navSecondary" : "nav"}>
         <div className="logo">
-          <NavLink exact to="/" activeclassname="active">
+          <NavLink exact="true" to="/" activeclassname="active">
             <img onClick={handleClose} src={logo} alt="logo" />
           </NavLink>
         </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
           <li onClick={handleClose}>
             <NavLink
               className={visible ? "anchorActive" : "anchor"}
-              exact
+              exact="true"
               to="whyus"
               activeclassname="active"
             >
@@ -63,7 +63,7 @@ const Navbar = () => {
                 onClick={handleClose}
                 activeclass="active"
                 className={visible ? "anchorActive" : "anchor"}
-                exact
+                exact="true"
                 to="howWeWork"
               >
                 How We Work
@@ -71,7 +71,7 @@ const Navbar = () => {
             ) : (
               <NavLink
                 onClick={handleClose}
-                exact
+                exact="true"
                 to="/"
                 activeclassname="active"
               >
@@ -82,7 +82,7 @@ const Navbar = () => {
           <li onClick={handleClose}>
             <NavLink
               className={visible ? "anchorActive" : "anchor"}
-              exact
+              exact="true"
               to="/vettingprocess"
               activeclassname="active"
             >
@@ -95,7 +95,7 @@ const Navbar = () => {
                 onClick={handleClose}
                 activeclass="active"
                 className={visible ? "anchorActive" : "anchor"}
-                exact
+                exact="true"
                 to="howWeWork"
               >
                 Tech Stack
@@ -103,7 +103,7 @@ const Navbar = () => {
             ) : (
               <NavLink
                 onClick={handleClose}
-                exact
+                exact="true"
                 to={{ pathname: "/", state: { from: "techStack" } }}
                 activeclassname="active"
               >
@@ -113,7 +113,7 @@ const Navbar = () => {
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
             <Link
-              exact
+              exact="true"
               to="service"
               onClick={() => history.push("./hiredev")}
               activeclassname="active"
@@ -123,7 +123,7 @@ const Navbar = () => {
           </li>
           <li onClick={handleClose} className="li_btn btn__applyDev">
             <Link
-              exact
+              exact="true"
               to="applyasdev"
               onClick={() => history.push("./applyasdev")}
               activeclassname="active"

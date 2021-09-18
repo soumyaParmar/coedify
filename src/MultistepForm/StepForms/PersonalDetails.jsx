@@ -1,4 +1,6 @@
 import React from "react-hook-form";
+import { useHistory } from "react-router";
+import FormBanner from "../../Components/FormBanner/FormBanner";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 
@@ -15,11 +17,18 @@ function PersonalDetails({
     navigation.next();
   };
 
+  const history = useHistory();
   return (
     <div className="form1">
       <div className="step1">
         <div className="step1__left">
-          <img className="form__logo" src={logo} alt="logo" />
+          <img
+            style={{ cursor: "pointer" }}
+            className="form__logo"
+            onClick={() => history.push("/")}
+            src={logo}
+            alt="logo"
+          />
           <div className="form__section">
             <h1 className="form__heading">Personal Details</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
@@ -103,7 +112,7 @@ function PersonalDetails({
           </div>
         </div>
         <div className="step1__right">
-          <h1 className="stepheading">Let us Know you</h1>
+          <FormBanner />
         </div>
       </div>
     </div>

@@ -1,0 +1,12 @@
+.companies{
+    display: flex;
+    flex-direction: column;
+}
+.client-img{
+width: 10rem;
+height: 9rem;
+object-fit: contain;
+}
+.c1,.c2,.c3,.c4{
+    display: flex;
+}

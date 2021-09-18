@@ -44,13 +44,13 @@ function How() {
             </h1>
             <ul>
               <li>
-                <i class="bi bi-check-all"></i>
+                <i className="bi bi-check-all"></i>
                 We will handpick the suitable candidates for the job role from
                 our pool of pre-screened candidates, then will arrange interview
                 for you.
               </li>
               <li>
-                <i class="bi bi-check-all"></i>
+                <i className="bi bi-check-all"></i>
                 We currently do not have pre-screened developer matching your
                 exact tech requirements and we are in the process of screening
                 the candidates, we will work actively to find one.
@@ -66,22 +66,22 @@ function How() {
             </h1>
             <ul>
               <li>
-                <i class="bi bi-check-all"></i>
+                <i className="bi bi-check-all"></i>
                 Start the trail with the developer of your choice for one week
                 before giving any commitments.{" "}
               </li>
               <li>
-                <i class="bi bi-check-all"></i>
+                <i className="bi bi-check-all"></i>
                 Check the fitment and technical depth of the candidates and get
                 confident for long term commitments.
               </li>
               <li>
-                <i class="bi bi-check-all"></i>
+                <i className="bi bi-check-all"></i>
                 After you decide which developer you want to go ahead and
                 integrate with your team, just like an in-house employee.
               </li>
               <li>
-                <i class="bi bi-check-all"></i>
+                <i className="bi bi-check-all"></i>
                 If you are not satisfied for any reason, we will start all over
                 again to give you best candidates.
               </li>

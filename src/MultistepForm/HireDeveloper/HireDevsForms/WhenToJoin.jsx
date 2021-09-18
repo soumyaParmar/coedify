@@ -27,51 +27,60 @@ function Role({
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     value="immediately"
                     {...register("whenToJoin", { required: true })}
                     name="whenToJoin"
                   />
-                  <label class="form-check-label" for="permanentbased">
+                  <label className="form-check-label" htmlFor="permanentbased">
                     Immediately
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="whenToJoin"
                     {...register("whenToJoin", { required: true })}
                     value="1-2_Weeks"
                   />
-                  <label class="form-check-label" for=" ContractualBased">
+                  <label
+                    className="form-check-label"
+                    htmlFor=" ContractualBased"
+                  >
                     In 1-2 weeks
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="whenToJoin"
                     {...register("whenToJoin", { required: true })}
                     value="morethan2"
                   />
-                  <label class="form-check-label" for=" ContractualBased">
+                  <label
+                    className="form-check-label"
+                    htmlFor=" ContractualBased"
+                  >
                     More than 2 weeks
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="whenToJoin"
                     {...register("whenToJoin", { required: true })}
                     value="tellyoulater"
                   />
-                  <label class="form-check-label" for=" ContractualBased">
+                  <label
+                    className="form-check-label"
+                    htmlFor=" ContractualBased"
+                  >
                     I’ll tell you later
                   </label>
                 </div>

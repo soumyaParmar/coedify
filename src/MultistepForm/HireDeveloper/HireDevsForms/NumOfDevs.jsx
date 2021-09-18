@@ -26,27 +26,27 @@ function Role({
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     value="lessthan5"
                     {...register("numOfDevs", { required: true })}
                     name="numOfDevs"
                   />
-                  <label class="form-check-label" for="permanentbased">
+                  <label className="form-check-label" htmlFor="permanentbased">
                     Less than 5
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="numOfDevs"
                     {...register("numOfDevs", { required: true })}
                     value="morethan5"
                   />
-                  <label class="form-check-label" for=" ContractualBased">
+                  <label className="form-check-label" htmlFor=" ContractualBased">
                     More than 5
                   </label>
                 </div>

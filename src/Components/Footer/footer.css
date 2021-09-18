@@ -17,6 +17,9 @@
   justify-content: space-between;
   flex-direction: column;
 }
+.description__logo{
+  justify-content: center;
+}
 .description__logo,
 .footer__explore h3,
 .footer__quicklinks h3,
@@ -46,9 +49,9 @@ svg {
 }
 .description__logo img {
   height: 5rem;
-
+  margin-left: -25px;
   object-fit: contain;
-  margin-right: 250px;
+  margin-right: 8rem;
 }
 .ul {
   padding-left: 0px;

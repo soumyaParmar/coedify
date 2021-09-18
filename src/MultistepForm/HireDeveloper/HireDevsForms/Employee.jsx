@@ -26,39 +26,45 @@ function Role({
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="name form__box">
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     value="lessthan10"
                     {...register("numOfEmployee", { required: true })}
                     name="numOfEmployee"
                   />
-                  <label class="form-check-label" for="permanentbased">
+                  <label className="form-check-label" htmlFor="permanentbased">
                     Less than 10
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="numOfEmployee"
                     {...register("numOfEmployee", { required: true })}
                     value="10-50"
                   />
-                  <label class="form-check-label" for=" ContractualBased">
+                  <label
+                    className="form-check-label"
+                    htmlFor=" ContractualBased"
+                  >
                     10-50
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="numOfEmployee"
                     {...register("numOfEmployee", { required: true })}
                     value="50+"
                   />
-                  <label class="form-check-label" for=" ContractualBased">
+                  <label
+                    className="form-check-label"
+                    htmlFor=" ContractualBased"
+                  >
                     50+
                   </label>
                 </div>

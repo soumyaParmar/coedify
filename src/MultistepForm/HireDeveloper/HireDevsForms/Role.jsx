@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 import logo from "./CoEdify-logo.png";
 // import Select from "react-select";
 import "../../StepForms/personaldetail.css";
-import Button from "../../../Components/Buttons/Hirebutton";
+// import Button from "../../../Components/Buttons/Hirebutton";
 import Multiselect from "multiselect-react-dropdown";
 // import * as Yup from "yup"
 
@@ -88,7 +88,13 @@ function Role({
     <div className="form1">
       <div className="step1">
         <div className="step1__left">
-          <img className="form__logo" src={logo} alt="logo" />
+          <img
+            className="form__logo"
+            onClick={() => history.push("/")}
+            src={logo}
+            style={{ cursor: "pointer" }}
+            alt="logo"
+          />
           <div className="form__section">
             <h1 className="form__heading2">
               What technology stack you are hiring for ?
@@ -111,10 +117,10 @@ function Role({
           </div>
         </div>
         <div className="step1__right">
-          <h1 className="stepheading">Do you want to apply as a developer ?</h1>
+          {/* <h1 className="stepheading">Do you want to apply as a developer ?</h1>
           <div onClick={() => history.push("/applyasdev")}>
             <Button title="Apply as a Developer" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
