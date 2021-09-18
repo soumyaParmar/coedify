@@ -1,11 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import Gradient from "../Gradient/Gradient";
 import DevCard from "./DevCard";
 import { DevList } from "./DevList";
 
 const Section4 = () => {
-  const titleRef = useRef();
-  console.log(titleRef);
   const list1 = DevList.map(
     ({ id, url, title, item1, item2, item3, redirect }) => {
       return (

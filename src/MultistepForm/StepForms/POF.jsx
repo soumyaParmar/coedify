@@ -23,7 +23,6 @@ function POF({
     setResume(data.resume[0]);
     defaultData = { ...data };
     if (resume === null) return;
-    // const resumeRef = storageRef(storage, "resumes");
     const spaceRef = ref(storage, `resumes`);
     uploadBytes(spaceRef, resume).then((snapshot) => console.log("uploaded"));
 

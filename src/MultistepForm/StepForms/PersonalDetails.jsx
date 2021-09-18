@@ -1,8 +1,6 @@
 import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
-import Button from "../../Components/Buttons/Hirebutton";
-import { useHistory } from "react-router";
 
 function PersonalDetails({
   defaultData,
@@ -17,7 +15,6 @@ function PersonalDetails({
     navigation.next();
   };
 
-  const history = useHistory();
   return (
     <div className="form1">
       <div className="step1">
@@ -106,10 +103,7 @@ function PersonalDetails({
           </div>
         </div>
         <div className="step1__right">
-          <h1 className="stepheading">Do you want to hire developers?</h1>
-          <div onclick={() => history.push("./hiredev")}>
-            <Button title="Hire Developer" />
-          </div>
+          <h1 className="stepheading">Let us Know you</h1>
         </div>
       </div>
     </div>
