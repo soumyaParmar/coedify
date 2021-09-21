@@ -1,6 +1,7 @@
 import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
+import FormBanner from "../../../Components/FormBanner/FormBanner";
 
 function Role({
   defaultData,
@@ -88,7 +89,10 @@ function Role({
             </form>
           </div>
         </div>
-        <div className="step1__right"></div>
+        <div className="step1__right">
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
+        </div>
       </div>
     </div>
   );

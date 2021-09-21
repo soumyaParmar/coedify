@@ -6,12 +6,13 @@ import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
 // import Button from "../../../Components/Buttons/Hirebutton";
 import Multiselect from "multiselect-react-dropdown";
-// import * as Yup from "yup"
+import FormBanner from "../../../Components/FormBanner/FormBanner";
 
 function Role({
   defaultData,
   register,
   setRole,
+  role,
   handleSubmit,
   errors,
   classNames,
@@ -71,19 +72,22 @@ function Role({
       label: "Advanced SQL and Query Performance Tuning Expert",
     },
   ];
-
-  const [role] = useState(Roles);
+  const [count, setCount] = useState(0);
+  const [Role] = useState(Roles);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const selected = [];
   const handleRole = (data) => {
-    data.forEach((ele) => selected.push(ele.label));
+    data.forEach((ele) => {
+      selected.push(ele.label);
+      setCount(count + 1);
+    });
   };
 
   const onSubmit = (data) => {
     setRole([selected[1], selected[2]]);
-    navigation.next();
+    if (count === 2) navigation.next();
+    else return false;
   };
-
   return (
     <div className="form1">
       <div className="step1">
@@ -101,7 +105,7 @@ function Role({
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <Multiselect
-                options={role}
+                options={Role}
                 displayValue="label"
                 emptyRecordMsg="select"
                 selectionLimit="2"
@@ -117,10 +121,8 @@ function Role({
           </div>
         </div>
         <div className="step1__right">
-          {/* <h1 className="stepheading">Do you want to apply as a developer ?</h1>
-          <div onClick={() => history.push("/applyasdev")}>
-            <Button title="Apply as a Developer" />
-          </div> */}
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
         </div>
       </div>
     </div>

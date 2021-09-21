@@ -1,6 +1,7 @@
 import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
+import FormBanner from "../../../Components/FormBanner/FormBanner";
 
 function Role({
   defaultData,
@@ -46,7 +47,10 @@ function Role({
                     {...register("numOfDevs", { required: true })}
                     value="morethan5"
                   />
-                  <label className="form-check-label" htmlFor=" ContractualBased">
+                  <label
+                    className="form-check-label"
+                    htmlFor=" ContractualBased"
+                  >
                     More than 5
                   </label>
                 </div>
@@ -70,7 +74,10 @@ function Role({
             </form>
           </div>
         </div>
-        <div className="step1__right"></div>
+        <div className="step1__right">
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
+        </div>
       </div>
     </div>
   );

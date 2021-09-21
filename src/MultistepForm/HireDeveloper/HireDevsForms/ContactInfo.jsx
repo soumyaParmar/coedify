@@ -2,6 +2,7 @@ import React from "react-hook-form";
 import { db } from "../../../lib/firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 import logo from "./CoEdify-logo.png";
+import FormBanner from "../../../Components/FormBanner/FormBanner";
 import "../../StepForms/personaldetail.css";
 import { useHistory } from "react-router";
 import Swal from "sweetalert2";
@@ -145,7 +146,10 @@ function PersonalDetails({
             </form>
           </div>
         </div>
-        <div className="step1__right"></div>
+        <div className="step1__right">
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
+        </div>
       </div>
     </div>
   );

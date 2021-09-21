@@ -13,18 +13,26 @@ function FormBanner() {
     <div className="companies">
       <div className="c1">
         <img className="client-img" src={Client1} alt="c1" />
-        <img className="client-img" src={Client2} alt="c2" />
       </div>
       <div className="c2">
-        <img className="client-img" src={Client3} alt="c3" />
-        <img className="client-img" src={Client4} alt="c4" />
+        <img className="client-img" src={Client2} alt="c2" />
       </div>
       <div className="c3">
-        <img className="client-img" src={Client5} alt="c5" />
-        <img className="client-img" src={Client6} alt="c6" />
+        <img className="client-img" src={Client3} alt="c3" />
       </div>
       <div className="c4">
+        <img className="client-img" src={Client4} alt="c4" />
+      </div>
+      <div className="c5">
+        <img className="client-img" src={Client5} alt="c5" />
+      </div>
+      <div className="c6">
+        <img className="client-img" src={Client6} alt="c6" />
+      </div>
+      <div className="c7">
         <img className="client-img" src={Client7} alt="c7" />
+      </div>
+      <div className="c8">
         <img className="client-img" src={Client8} alt="c8" />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react-hook-form";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
+import FormBanner from "../../../Components/FormBanner/FormBanner";
 // import Button from "../../../Components/Buttons/Hirebutton";
 
 function Role({
@@ -105,8 +106,8 @@ function Role({
           </div>
         </div>
         <div className="step1__right">
-          {/* <h1 className="stepheading">Do you want to apply as a developer ?</h1>
-          <Button title="Apply as a Developer" /> */}
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
         </div>
       </div>
     </div>

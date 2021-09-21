@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
-
+  const style = { position: "absolute", top: "15px", right: "35px" };
   const handleClose = () => {
     setClicked(false);
   };
@@ -44,7 +44,11 @@ const Navbar = () => {
         </div>
 
         <div className="menu-icon" onClick={handleClick}>
-          {clicked ? <ImCross /> : <GiHamburgerMenu />}
+          {clicked ? (
+            <ImCross style={style} />
+          ) : (
+            <GiHamburgerMenu style={style} />
+          )}
         </div>
         <ul className={clicked ? "menu-list active" : "menu-list close"}>
           <li onClick={handleClose}>

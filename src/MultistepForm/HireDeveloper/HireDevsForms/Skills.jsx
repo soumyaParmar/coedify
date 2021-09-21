@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import "../../StepForms/personaldetail.css";
 import Multiselect from "multiselect-react-dropdown";
+import FormBanner from "../../../Components/FormBanner/FormBanner";
 // import Select from "react-select";
 
 function Skills({
@@ -79,7 +80,10 @@ function Skills({
             </form>
           </div>
         </div>
-        <div className="step1__right"></div>
+        <div className="step1__right">
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
+        </div>
       </div>
     </div>
   );

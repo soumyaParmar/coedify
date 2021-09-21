@@ -1,4 +1,5 @@
 import React from "react-hook-form";
+import FormBanner from "../../Components/FormBanner/FormBanner";
 import logo from "./CoEdify-logo.png";
 import "./Experience.css";
 import "./personaldetail.css";
@@ -105,7 +106,8 @@ function Experience({
           </div>
         </div>
         <div className="step1__right">
-          <h1 className="stepheading">Availibility and Expectation</h1>
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
         </div>
       </div>
     </div>

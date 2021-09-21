@@ -1,4 +1,5 @@
 import React from "react-hook-form";
+import FormBanner from "../../Components/FormBanner/FormBanner";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
 // import Multiselect from "multiselect-react-dropdown";
@@ -102,7 +103,8 @@ function Skillset({
           </div>
         </div>
         <div className="step1__right">
-          <h1 className="stepheading">Skillset</h1>
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
         </div>
       </div>
     </div>

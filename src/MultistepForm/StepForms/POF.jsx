@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 import "./submit.css";
 import "./skillset.css";
 import { useHistory } from "react-router";
+import FormBanner from "../../Components/FormBanner/FormBanner";
 
 function POF({
   defaultData,
@@ -134,7 +135,8 @@ function POF({
           </div>
         </div>
         <div className="step1__right">
-          <h1 className="stepheading">Proof of Work</h1>
+          <h2 className="form__banner">Trusted By</h2>
+          <FormBanner />
         </div>
       </div>
     </div>
