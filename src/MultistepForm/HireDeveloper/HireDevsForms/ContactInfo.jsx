@@ -17,6 +17,7 @@ function PersonalDetails({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
+    // console.log(defaultData);
     addDoc(collection(db, "hiredevdata"), {
       budget: defaultData.budget,
       company: defaultData.company,
@@ -147,7 +148,9 @@ function PersonalDetails({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">Trusted By</h2>
+          <h2 className="form__banner">
+            Leading Companies hire our developers
+          </h2>
           <FormBanner />
         </div>
       </div>
