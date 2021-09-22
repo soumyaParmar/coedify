@@ -112,7 +112,9 @@ function PersonalDetails({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">Trusted By</h2>
+          <h2 className="form__banner">
+            Leading Companies hire our developers
+          </h2>
           <FormBanner />
         </div>
       </div>
