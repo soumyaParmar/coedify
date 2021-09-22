@@ -7,7 +7,7 @@ import Client4 from "./client-4.png";
 import Client5 from "./client-5.png";
 import Client6 from "./client-6.png";
 import Client7 from "./client-7.png";
-import Client8 from "./client-8.png";
+import Client8 from "./client-8.svg";
 function FormBanner() {
   return (
     <div className="companies">

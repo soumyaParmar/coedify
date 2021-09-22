@@ -8,11 +8,11 @@ import Home from "./pages/Home";
 import HireDevsForm from "./MultistepForm/HireDeveloper/HireDevForm";
 import MultiStepForm from "./MultistepForm/MultiStepForm";
 import WhyUs from "./pages/WhyUs/WhyUs";
-import Login from "./Components/AdminLogin/Login";
+// import Login from "./Components/AdminLogin/Login";
 import Vetted from "./pages/Vetted/Vetted";
 import TechnologiesPage from "./pages/TechnologiesPage/TechnologiesPage";
 import ScrollToTop from "./Components/ScrollToTop/Scroll";
-import Dashboard from "./Components/AdminLogin/Dashboard";
+// import Dashboard from "./Components/AdminLogin/Dashboard";
 
 function App() {
   return (
