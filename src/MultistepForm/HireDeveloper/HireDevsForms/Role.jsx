@@ -72,22 +72,22 @@ function Role({
       label: "Advanced SQL and Query Performance Tuning Expert",
     },
   ];
-  const [count, setCount] = useState(0);
   const [Role] = useState(Roles);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   const selected = [];
   const handleRole = (data) => {
     data.forEach((ele) => {
       selected.push(ele.label);
-      setCount(count + 1);
     });
   };
 
   const onSubmit = (data) => {
     setRole([selected[1], selected[2]]);
-    if (count === 2) navigation.next();
-    else return false;
+    if (selected.length > 2) {
+      navigation.next();
+    }
   };
+
   return (
     <div className="form1">
       <div className="step1">

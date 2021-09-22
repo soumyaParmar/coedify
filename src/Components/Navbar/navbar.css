@@ -258,7 +258,7 @@ select {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .menu-list li a:hover::after,
   .Dropdown-control:hover::after {
     opacity: 1;
@@ -386,5 +386,23 @@ select {
     /* color: white; */
     background-color: transparent;
     font-size: 27px;
+  }
+}
+@media (max-width:1470px) and (min-width:830px) {
+  .btns{
+    margin-left: 0px;
+    width: 10rem;
+  }
+  .logo{
+    margin-left: -2rem;
+  }
+  .menu-list{
+    margin-left: -3rem;
+  }
+  .btn__hire{
+    margin-right: 20px;
+  }
+  .btn__applyDev{
+    margin-right: -2rem;
   }
 }
