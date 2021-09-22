@@ -30,6 +30,7 @@ function Experience({
               <div className="name form__box">
                 <label className="dropdown__label">Experience*</label>
                 <select
+                  style={{ margin: "auto" }}
                   className={classNames("form-control", {
                     "is-invalid": errors.experience,
                   })}
@@ -51,6 +52,7 @@ function Experience({
               <div className="email form__box">
                 <label className="dropdown__label">Current Status*</label>
                 <select
+                  style={{ margin: "auto" }}
                   className={classNames("form-control", {
                     "is-invalid": errors.status,
                   })}
@@ -72,6 +74,7 @@ function Experience({
                   Salary Expectations(LPA)*
                 </label>
                 <select
+                  style={{ margin: "auto" }}
                   className={classNames("form-control", {
                     "is-invalid": errors.salary,
                   })}

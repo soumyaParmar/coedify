@@ -16,7 +16,7 @@
     color: white;
 }
 .form__section{
-    padding: 5rem 1rem;
+    padding: 5rem 3rem;
     background-color: #fff;
     border-radius: 20px;
     margin: auto;
@@ -124,7 +124,6 @@ label{
     }
     .step1__left{
         width: 90%;
-        height: 35rem;
     }
     .step1__right{
         width: 100%;
@@ -133,6 +132,7 @@ label{
     }
     .form{
         max-width: 580px;
+        width: 16rem;
         min-width: 0px;
     }
 }

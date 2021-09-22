@@ -1,8 +1,6 @@
-import { auth } from "../../lib/firebase-config";
-import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useRef } from "react";
 import { Grid, Paper, Avatar, TextField, Button } from "@material-ui/core";
-import Dashboard from "./Dashboard";
+
 function Login() {
   const emailRef = useRef();
   const pswrdRef = useRef();
@@ -15,18 +13,6 @@ function Login() {
   const avatarStyle = { backgroundColor: "#1bbd7e" };
   const btnstyle = { margin: "8px 0" };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    signInWithEmailAndPassword(
-      auth,
-      emailRef.current.value,
-      pswrdRef.current.value
-    )
-      .then((userCredential) => {
-        <Dashboard />;
-      })
-      .catch((err) => console.log(err));
-  };
   return (
     <div>
       <Grid>
@@ -56,7 +42,6 @@ function Login() {
             color="primary"
             variant="contained"
             style={btnstyle}
-            onClick={handleSubmit}
             fullWidth
           >
             Sign in
