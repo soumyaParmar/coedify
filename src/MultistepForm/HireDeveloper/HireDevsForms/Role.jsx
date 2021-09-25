@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
-import "react-multiple-select-dropdown-lite/dist/index.css";
+// import "react-multiple-select-dropdown-lite/dist/index.css";
 // import { firebase } from "../../../lib/firebase-config.js";
 import logo from "./CoEdify-logo.png";
 // import Select from "react-select";
