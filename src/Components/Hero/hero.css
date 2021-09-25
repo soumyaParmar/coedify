@@ -23,7 +23,7 @@
 .hero__left {
   width: 50%;
   text-align: left;
- 
+ height: 60vh;
 }
 .wave {
   width: 100vw;

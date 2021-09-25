@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+import "react-multiple-select-dropdown-lite/dist/index.css";
 // import { firebase } from "../../../lib/firebase-config.js";
 import logo from "./CoEdify-logo.png";
 // import Select from "react-select";
@@ -72,22 +73,28 @@ function Role({
       label: "Advanced SQL and Query Performance Tuning Expert",
     },
   ];
+
   const [Role] = useState(Roles);
   const [err, seterr] = useState(false);
-  const selected = [];
+  // const selected = [];
+  const [selectedCourse, setSelectedCourse] = useState([]);
   const handleRole = (data) => {
+    const selectedSkills = [];
     data.forEach((ele) => {
-      selected.push(ele.label);
+      selectedSkills.push(ele.label);
     });
-    if (selected.length > 2) {
+    setSelectedCourse(selectedSkills);
+    if (selectedSkills.length === 2) {
       seterr(false);
     }
+    if (selectedSkills.length < 2) seterr(true);
   };
 
-  const onSubmit = (data) => {
-    setRole([selected[1], selected[2]]);
-    if (selected.length < 2) seterr(true);
-    if (selected.length > 2) {
+  const onSubmit = () => {
+    setRole(selectedCourse);
+
+    if (selectedCourse.length < 2) seterr(true);
+    if (selectedCourse.length === 2) {
       navigation.next();
     }
   };
