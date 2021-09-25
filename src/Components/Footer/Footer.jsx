@@ -80,7 +80,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer__quicklinks">
-          <h3>Quick Links</h3>
+          <h3 className="quick__heading">Quick Links</h3>
           <div className="description__links">
             <a
               target="blank"

@@ -73,7 +73,7 @@ function Role({
     },
   ];
   const [Role] = useState(Roles);
-
+  const [err, seterr] = useState(false);
   const selected = [];
   const handleRole = (data) => {
     data.forEach((ele) => {
@@ -83,6 +83,7 @@ function Role({
 
   const onSubmit = (data) => {
     setRole([selected[1], selected[2]]);
+    if (selected.length < 2) seterr(true);
     if (selected.length > 2) {
       navigation.next();
     }
@@ -99,6 +100,7 @@ function Role({
             style={{ cursor: "pointer" }}
             alt="logo"
           />
+          <h1 className="getyoustared">Lets get started</h1>
           <div className="form__section">
             <h1 className="form__heading2">
               What technology stack you are hiring for ?
@@ -107,11 +109,14 @@ function Role({
               <Multiselect
                 options={Role}
                 displayValue="label"
-                emptyRecordMsg="select"
+                emptyRecordMsg="No Options Available"
                 selectionLimit="2"
                 placeholder="Select only two"
                 onSelect={handleRole}
               />
+              <div className={err ? "err" : "noerr"}>
+                This field can't be empty
+              </div>
               <div className="navigation__btns">
                 <button className="getStarted__btn" type="submit">
                   Get Started

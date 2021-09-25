@@ -40,7 +40,7 @@
 }
 
 .description__links span {
-  margin-left: 15px;
+
   color: #646464;
 }
 
@@ -96,12 +96,20 @@ svg {
   height: 3px;
   background-color: #045de9;
 }
+.quick__heading{
+  margin-left: 1rem;
+}
+.footer__explore{
+  margin-left: 5rem;
+}
+.footer__getintouch{
+  margin-right: 4rem;
+}
 .footer__explore ul,
 .footer__quicklinks ul,
 .footer__getintouch ul {
   list-style: none;
   font-size: 14px;
-  margin-left: 21px;
   color: gray;
 }
 .footer__explore ul li,
@@ -167,5 +175,8 @@ svg {
   .footer__getintouch {
     margin: 10px 2% 10px 2%;
     width: 96%;
+  }
+  .footer__quicklinks{
+    margin-left: -1.5rem;
   }
 }

@@ -31,19 +31,20 @@
     height: 5rem;
     object-fit: contain;
 }
+.getyoustared{
+    font-weight: 100;
+    margin-top: 2rem;
+}
 .step1__right{
     background-image: url("./gradient.png");
     background-repeat:no-repeat;
-    
     background-size: cover;
-    padding-bottom: 6rem;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     align-items: center;
     width: 30%;
-    
 }
 .step1__left{
     width: 70%;

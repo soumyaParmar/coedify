@@ -1,8 +1,8 @@
 .hero {
-  margin: 13% 5% 5% 5%;
+  margin: 7% 5% 0% 5%;
   width: 90%;
   display: flex;
-  padding-bottom: 15%;
+  padding-bottom: 4%;
 }
 .home {
   background-color: #f5f8fd;
@@ -21,9 +21,9 @@
   text-align: center;
 }
 .hero__left {
-  width: 60%;
+  width: 50%;
   text-align: left;
-  margin-right: 150px;
+ 
 }
 .wave {
   width: 100vw;
@@ -96,7 +96,24 @@
 .btn__apply:hover {
   transform: translateY(-3px);
 }
-
+.comapnies{
+  display: flex;
+  margin: 2rem 5%;
+}
+.companies__carousel{
+  width: 80%;
+  margin-left: 1rem;
+}
+.trustedby{
+  width: 16%;
+  border-right: 1px solid;
+}
+.trust__heading{
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
 .hero2__right {
   width: 45%;
 }
@@ -106,7 +123,7 @@
   object-fit: contain;
 }
 .hero__right {
-  width: 40%;
+  width: 52%;
 }
 
 .hero__right img {
@@ -177,12 +194,13 @@
   font-size: 64px;
 }
 .igns {
-  padding: 50px 5% 50px 5%;
+  padding: 1rem 5% 50px 5%;
   background-color: #f5f8fd;
 }
 .igns h3 {
   margin: 30px 0;
 }
+
 .dev__sections {
   display: flex;
   justify-content: space-evenly;
@@ -223,9 +241,19 @@
   }
   .heading {
     font-size: 40px;
- 
   }
-
+  .comapnies{
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .trustedby{
+    width: 100%;
+    text-align: center;
+  }
+  .companies__carousel{
+    width: 100%;
+    margin: 0px;
+  }
   .logo img {
     width: 100%;
   }
@@ -234,6 +262,9 @@
   }
   .hero2__left h1 {
     color: black;
+  }
+  .trustedby{
+    border: none;
   }
   .btn__apply {
     width: 81%;
@@ -253,7 +284,7 @@
   }
   .hero__right {
     width: 100%;
-    height: 45vh;
+    height: 27vh;
   }
   .hero2 {
     flex-direction: column;

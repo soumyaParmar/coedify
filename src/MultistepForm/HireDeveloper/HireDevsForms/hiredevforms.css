@@ -21,7 +21,15 @@
     opacity: 0;
     right: 3px;
 }
-
+.noerr{
+    display: none;
+}
+.err{
+    display: block;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #dc3545;
+}
 .getStarted__btn:hover{
     padding-right: 24px;
     padding-left: 8px;

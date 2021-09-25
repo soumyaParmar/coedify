@@ -29,6 +29,9 @@ function PersonalDetails({
             src={logo}
             alt="logo"
           />
+          <h1 className="getyoustared">
+            Join the community of smart developers
+          </h1>
           <div className="form__section">
             <h1 className="form__heading">Personal Details</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
