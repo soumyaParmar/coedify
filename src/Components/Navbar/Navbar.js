@@ -73,14 +73,15 @@ const Navbar = () => {
                 How We Work
               </Link>
             ) : (
-              <NavLink
+              <a
+                href="#howWeWork"
                 onClick={handleClose}
                 exact="true"
                 to="/"
                 activeclassname="active"
               >
                 How We Work
-              </NavLink>
+              </a>
             )}
           </li>
           <li onClick={handleClose}>

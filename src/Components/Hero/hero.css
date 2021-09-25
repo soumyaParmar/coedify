@@ -98,7 +98,7 @@
 }
 .comapnies{
   display: flex;
-  margin: 2rem 5%;
+  margin: 2.5rem 5%;
 }
 .companies__carousel{
   width: 80%;
@@ -242,9 +242,17 @@
   .heading {
     font-size: 40px;
   }
+  .hero__right img {
+    height: 20vh;
+  }
+  
+  .hero{
+    padding-bottom: 0;
+  }
   .comapnies{
     flex-direction: column;
-    margin-top: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .trustedby{
     width: 100%;
@@ -306,7 +314,7 @@
     width: 100%;
   }
   .hero__heading {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .hero__left {
     margin: auto;

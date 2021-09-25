@@ -79,6 +79,9 @@ function Role({
     data.forEach((ele) => {
       selected.push(ele.label);
     });
+    if (selected.length > 2) {
+      seterr(false);
+    }
   };
 
   const onSubmit = (data) => {
