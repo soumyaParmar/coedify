@@ -100,7 +100,7 @@ const Navbar = () => {
                 onClick={handleClose}
                 activeclass="active"
                 className={visible ? "anchorActive" : "anchor"}
-                exact
+                exact="true"
                 to="techStack"
               >
                 Tech Stack
