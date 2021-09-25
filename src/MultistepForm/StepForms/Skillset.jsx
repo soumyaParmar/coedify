@@ -2,7 +2,7 @@ import React from "react-hook-form";
 import FormBanner from "../../Components/FormBanner/FormBanner";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
-// import Multiselect from "multiselect-react-dropdown";
+
 import "./skillset.css";
 function Skillset({
   defaultData,
@@ -103,9 +103,7 @@ function Skillset({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">
-            Leading Companies hire our developers
-          </h2>
+          <h2 className="form__banner">Our developers are working here</h2>
           <FormBanner />
         </div>
       </div>
