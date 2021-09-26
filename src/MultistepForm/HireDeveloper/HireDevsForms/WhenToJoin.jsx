@@ -35,8 +35,9 @@ function Role({
                     value="immediately"
                     {...register("whenToJoin", { required: true })}
                     name="whenToJoin"
+                    id="immediately"
                   />
-                  <label className="form-check-label" htmlFor="permanentbased">
+                  <label className="form-check-label" htmlFor="immediately">
                     Immediately
                   </label>
                 </div>
@@ -47,11 +48,9 @@ function Role({
                     name="whenToJoin"
                     {...register("whenToJoin", { required: true })}
                     value="1-2_Weeks"
+                    id="1-2_Weeks"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="1-2_Weeks">
                     In 1-2 weeks
                   </label>
                 </div>
@@ -62,11 +61,9 @@ function Role({
                     name="whenToJoin"
                     {...register("whenToJoin", { required: true })}
                     value="morethan2"
+                    id="morethan2"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="morethan2">
                     More than 2 weeks
                   </label>
                 </div>
@@ -77,11 +74,9 @@ function Role({
                     name="whenToJoin"
                     {...register("whenToJoin", { required: true })}
                     value="tellyoulater"
+                    id="tellyoulater"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="tellyoulater">
                     I’ll tell you later
                   </label>
                 </div>

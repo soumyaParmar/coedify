@@ -49,7 +49,7 @@ function Role({
                     {...register("howlong", { required: true })}
                     value="12+months"
                   />
-                  <label className="form-check-label" htmlFor="Twelve">
+                  <label className="form-check-label" htmlFor="twelve">
                     12+ Months
                   </label>
                 </div>

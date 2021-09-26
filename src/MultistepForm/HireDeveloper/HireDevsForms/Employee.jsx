@@ -13,7 +13,6 @@ function Role({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    // console.log(defaultData);
     navigation.next();
   };
 
@@ -33,10 +32,11 @@ function Role({
                     className="form-check-input"
                     type="radio"
                     value="lessthan10"
+                    id="lessthan10"
                     {...register("numOfEmployee", { required: true })}
                     name="numOfEmployee"
                   />
-                  <label className="form-check-label" htmlFor="permanentbased">
+                  <label className="form-check-label" htmlFor="lessthan10">
                     Less than 10
                   </label>
                 </div>
@@ -47,11 +47,9 @@ function Role({
                     name="numOfEmployee"
                     {...register("numOfEmployee", { required: true })}
                     value="10-50"
+                    id="10-50"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="10-50">
                     10-50
                   </label>
                 </div>
@@ -62,11 +60,9 @@ function Role({
                     name="numOfEmployee"
                     {...register("numOfEmployee", { required: true })}
                     value="50+"
+                    id="50+"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="50+">
                     50+
                   </label>
                 </div>

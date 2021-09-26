@@ -13,7 +13,7 @@ function Resume({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
+
     navigation.next();
   };
   return (
@@ -27,7 +27,7 @@ function Resume({
                 <label>LinkedIN URL*</label>
                 <input
                   className={classNames("form-control", {
-                    "is-invalid": errors.resume,
+                    "is-invalid": errors.linkedinurl,
                   })}
                   type="url"
                   {...register("linkedinurl", {
@@ -51,13 +51,12 @@ function Resume({
               </div>
               <div className="email form__box">
                 <label>Github URL</label>
-
                 <input
                   className={classNames("form-control", {
                     "is-invalid": errors.githuburl,
                   })}
                   type="url"
-                  {...register("githuburl")}
+                  {...register("githuburl", { required: true })}
                   name="githuburl"
                 />
                 <div className="invalid-feedback">

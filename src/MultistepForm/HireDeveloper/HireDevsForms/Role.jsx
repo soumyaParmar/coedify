@@ -89,14 +89,13 @@ function Role({
     }
     if (selectedSkills.length < 1) seterr(true);
   };
-  // console.log(selectedCourse);
   const handleRemove = (data, element) => {
     const newCourse = selectedCourse.filter((data) => {
       return element.label !== data;
     });
     setSelectedCourse(newCourse);
   };
-  console.log(selectedCourse);
+
   const onSubmit = () => {
     setRole(selectedCourse);
     if (selectedCourse.length < 1) seterr(true);

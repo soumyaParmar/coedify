@@ -195,7 +195,7 @@
   font-size: 64px;
 }
 .igns {
-  padding: 1rem 5% 50px 5%;
+  padding: 4rem 5% 50px 5%;
   background-color: #f5f8fd;
 }
 .igns h3 {
@@ -204,7 +204,7 @@
 
 .dev__sections {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-top: 50px;
   flex-wrap: wrap;
 }

@@ -17,7 +17,7 @@ function PersonalDetails({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    // console.log(defaultData);
+
     addDoc(collection(db, "hiredevdata"), {
       budget: defaultData.budget,
       company: defaultData.company,

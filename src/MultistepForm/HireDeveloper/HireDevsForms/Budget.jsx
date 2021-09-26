@@ -34,8 +34,9 @@ function Role({
                     value="6to12LPA"
                     {...register("budget", { required: true })}
                     name="budget"
+                    id="6to12LPA"
                   />
-                  <label className="form-check-label" htmlFor="permanentbased">
+                  <label className="form-check-label" htmlFor="6to12LPA">
                     6 to 12 LPA
                   </label>
                 </div>
@@ -46,11 +47,9 @@ function Role({
                     name="budget"
                     {...register("budget", { required: true })}
                     value="12to24LPA"
+                    id="12to24LPA"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="12to24LPA">
                     12-24 LPA
                   </label>
                 </div>
@@ -61,11 +60,9 @@ function Role({
                     name="budget"
                     {...register("budget", { required: true })}
                     value="24+LPA"
+                    id="24+LPA"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="24+LPA">
                     24+ LPA
                   </label>
                 </div>

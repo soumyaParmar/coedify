@@ -16,7 +16,6 @@ function MultiStepForm() {
     { id: "skillset" },
     { id: "resume" },
     { id: "pof" },
-    // { id: "review" },
     { id: "submit" },
   ];
   const {
@@ -39,7 +38,7 @@ function MultiStepForm() {
     classNames,
     navigation,
   };
-  // console.log(navigation);
+
   switch (step.id) {
     case "personalDetails":
       return <PersonalDetails {...props} />;

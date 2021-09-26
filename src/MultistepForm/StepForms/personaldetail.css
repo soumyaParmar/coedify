@@ -19,9 +19,12 @@
     padding: 5rem 3rem;
     background-color: #fff;
     border-radius: 20px;
-    margin: auto;
+   
 }
-
+.chip,.singleChip{
+    white-space: normal;
+    
+}
 .form__heading{
     text-align: center;
 

@@ -13,6 +13,9 @@
     position: relative;
     transition: all .6s ease-in-out;
 }
+.chip{
+    white-space: normal;
+}
 .getStarted__btn:after{
     content: "»";
     transition: all .6s ease-in-out;
