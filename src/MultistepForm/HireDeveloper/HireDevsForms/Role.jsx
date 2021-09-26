@@ -84,17 +84,23 @@ function Role({
       selectedSkills.push(ele.label);
     });
     setSelectedCourse(selectedSkills);
-    if (selectedSkills.length === 2) {
+    if (selectedSkills.length >= 1) {
       seterr(false);
     }
-    if (selectedSkills.length < 2) seterr(true);
+    if (selectedSkills.length < 1) seterr(true);
   };
-
+  // console.log(selectedCourse);
+  const handleRemove = (data, element) => {
+    const newCourse = selectedCourse.filter((data) => {
+      return element.label !== data;
+    });
+    setSelectedCourse(newCourse);
+  };
+  console.log(selectedCourse);
   const onSubmit = () => {
     setRole(selectedCourse);
-
-    if (selectedCourse.length < 2) seterr(true);
-    if (selectedCourse.length === 2) {
+    if (selectedCourse.length < 1) seterr(true);
+    if (selectedCourse.length >= 1) {
       navigation.next();
     }
   };
@@ -121,8 +127,9 @@ function Role({
                 displayValue="label"
                 emptyRecordMsg="No Options Available"
                 selectionLimit="2"
-                placeholder="Select only two"
+                placeholder="Select atleast two"
                 onSelect={handleRole}
+                onRemove={handleRemove}
               />
               <div className={err ? "err" : "noerr"}>
                 This field can't be empty

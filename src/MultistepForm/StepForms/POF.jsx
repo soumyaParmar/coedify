@@ -17,6 +17,9 @@ function POF({
   classNames,
   navigation,
 }) {
+  // const curr_date = new Date();
+  // const d = curr_date.getDate();
+  // const t = curr_date.getHours();
   const history = useHistory();
   const onSubmit = (data) => {
     defaultData = { ...data };

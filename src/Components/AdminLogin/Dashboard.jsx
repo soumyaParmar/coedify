@@ -38,7 +38,7 @@ function Dashboard() {
   useEffect(() => {
     FetchApplydata();
     FetchHireData();
-  });
+  }, []);
 
   console.log(applyasDevData);
   console.log(hireDevData);
@@ -64,6 +64,7 @@ function Dashboard() {
                 <TableCell>Tech Explain</TableCell>
                 <TableCell>Heard About US</TableCell>
                 <TableCell>portfoliourl</TableCell>
+                <TableCell>Date</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -84,6 +85,7 @@ function Dashboard() {
                     <TableCell>{user.techEssay}</TableCell>
                     <TableCell>{user.heard}</TableCell>
                     <TableCell>{user?.portfoliourl}</TableCell>
+                    <TableCell>{user?.date}</TableCell>
                   </TableRow>
                 );
               })}

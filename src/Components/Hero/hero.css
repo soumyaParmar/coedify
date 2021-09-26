@@ -23,7 +23,7 @@
 .hero__left {
   width: 50%;
   text-align: left;
- height: 60vh;
+ /* height: 60vh; */
 }
 .wave {
   width: 100vw;
@@ -124,6 +124,7 @@
 }
 .hero__right {
   width: 52%;
+  height: 439px;
 }
 
 .hero__right img {
@@ -243,7 +244,7 @@
     font-size: 40px;
   }
   .hero__right img {
-    height: 20vh;
+    height: 100%;
   }
   
   .hero{
@@ -273,6 +274,7 @@
   }
   .trustedby{
     border: none;
+    margin-top: 1rem;
   }
   .btn__apply {
     width: 81%;
