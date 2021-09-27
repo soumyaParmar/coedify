@@ -86,7 +86,7 @@
 .whycoedify4,
 .whycoedify5 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
 }

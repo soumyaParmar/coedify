@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./How.css";
 import First from "./First__Step.jpg";
 import Second from "./Second__step.svg";
 import Third from "./Third__Step.webp";
 import Fourth from "./Fourth__step.svg";
 import Hirebutton from "../Buttons/Hirebutton";
+import { useLocation } from "react-router-dom";
 
 function How() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
   return (
     <>
       <div id="howWeWork" style={{ height: "20px" }}></div>

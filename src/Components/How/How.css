@@ -34,7 +34,7 @@
 .how3 {
   display: flex;
   margin: 30px auto;
-  justify-content: space-between;
+  justify-content: center;
   width: 90%;
 }
 
