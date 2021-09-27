@@ -63,6 +63,7 @@ function POF({
       <div className="step1">
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
+          <h1 className="getyoustared">Proof of Work</h1>
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form__box">

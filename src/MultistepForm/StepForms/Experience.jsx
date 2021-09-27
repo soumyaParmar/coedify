@@ -21,6 +21,7 @@ function Experience({
       <div className="step1">
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
+          <h1 className="getyoustared">Availibility and Expectation</h1>
           <div className="form__section">
             <form
               onSubmit={handleSubmit(onSubmit)}

@@ -21,6 +21,7 @@ function Resume({
       <div className="step1">
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
+          <h1 className="getyoustared">Resume & Personal Profiles</h1>
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="email form__box">
