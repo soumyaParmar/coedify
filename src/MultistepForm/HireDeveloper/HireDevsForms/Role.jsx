@@ -126,7 +126,7 @@ function Role({
                 displayValue="label"
                 emptyRecordMsg="No Options Available"
                 selectionLimit="2"
-                placeholder="Select atleast two"
+                placeholder="Select atmost two"
                 onSelect={handleRole}
                 onRemove={handleRemove}
               />

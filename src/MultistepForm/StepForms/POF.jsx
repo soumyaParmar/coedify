@@ -19,7 +19,11 @@ function POF({
 }) {
   // const curr_date = new Date();
   // const d = curr_date.getDate();
-  // const t = curr_date.getHours();
+  // const m = curr_date.getMonth();
+  // const y = curr_date.getFullYear();
+  // let t = `${d}/${m}/${y}`;
+  // const new_date = curr_date.to
+
   const history = useHistory();
   const onSubmit = (data) => {
     defaultData = { ...data };
@@ -39,6 +43,7 @@ function POF({
       secondarySkills: defaultData.secondarySkills,
       status: defaultData.status,
       summary: defaultData.summary,
+      timeStamp: new Date().toLocaleString(),
     })
       .then(() => successAlert())
       .catch((err) => console.log(err));

@@ -10,6 +10,8 @@ import Client7 from "./client-7.png";
 import Client8 from "./client-8.svg";
 import Client9 from "./client-9.png";
 import Client10 from "./client-10.png";
+import Client12 from "./client-12.png";
+import Client13 from "./client-13.png";
 // import Client11 from "./client-11.svg";
 function FormBanner() {
   return (
@@ -44,9 +46,12 @@ function FormBanner() {
       <div className="c10">
         <img className="client-img" src={Client10} alt="c10" />
       </div>
-      {/* <div className="c11">
-        <img className="client-img" src={Client11} alt="c11" />
-      </div> */}
+      <div className="c11">
+        <img className="client-img" src={Client12} alt="c11" />
+      </div>
+      <div className="c11">
+        <img className="client-img" src={Client13} alt="c11" />
+      </div>
     </div>
   );
 }

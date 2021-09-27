@@ -2,7 +2,7 @@ import React from "react";
 import "./How.css";
 import First from "./First__Step.jpg";
 import Second from "./Second__step.svg";
-import Third from "./Third__Step.png";
+import Third from "./Third__Step.webp";
 import Fourth from "./Fourth__step.svg";
 import Hirebutton from "../Buttons/Hirebutton";
 

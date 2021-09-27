@@ -49,6 +49,7 @@ svg {
 }
 .description__logo img {
   height: 5rem;
+  width: 15rem;
   margin-left: -25px;
   object-fit: contain;
   margin-right: 8rem;

@@ -12,6 +12,7 @@
 .carousel {
   display: flex;
 }
+
 .slide img {
   width: 20rem;
   margin: 0 auto;
@@ -68,13 +69,25 @@
 }
 .client__image8,.client__image5,.client__image6,.client__image4,.client__image10{
   margin-top: 1rem;
+  height: 100%;
+  width: 100%;
 }
 .client__image3{
   margin-top: -1rem;
+  height: 100%;
+  width: 100%;
 }
 .client__image13{
   margin-top: 1.5rem;
+  height: 100%;
+  width: 100%;
 }
 .client__image12{
   margin-top: -2rem;
+  height: 100%;
+  width: 100%;
 }
+/* .client__image1,.client__image2,.client__image3,.client__image4,.client__image5{
+  height: 10vh;
+  width: 10vh;
+} */

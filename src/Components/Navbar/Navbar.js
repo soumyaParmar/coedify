@@ -73,7 +73,7 @@ const Navbar = () => {
                 How We Work
               </Link>
             ) : (
-              <a
+              <NavLink
                 href="#howWeWork"
                 onClick={handleClose}
                 exact="true"
@@ -81,7 +81,7 @@ const Navbar = () => {
                 activeclassname="active"
               >
                 How We Work
-              </a>
+              </NavLink>
             )}
           </li>
           <li onClick={handleClose}>

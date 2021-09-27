@@ -11,12 +11,12 @@ import img5 from "./5.png";
 import img6 from "./6.png";
 function Testimonial() {
   let slides = [
-    <img src={img4} alt="4" />,
-    <img src={img3} alt="3" />,
-    <img src={img2} alt="6" />,
-    <img src={img1} alt="5" />,
-    <img src={img5} alt="1" />,
-    <img src={img6} alt="2" />,
+    <img className="clientImgs" src={img4} alt="4" />,
+    <img className="clientImgs" src={img3} alt="3" />,
+    <img className="clientImgs" src={img2} alt="6" />,
+    <img className="clientImgs" src={img1} alt="5" />,
+    <img className="clientImgs" src={img5} alt="1" />,
+    <img className="clientImgs" src={img6} alt="2" />,
   ];
 
   return (

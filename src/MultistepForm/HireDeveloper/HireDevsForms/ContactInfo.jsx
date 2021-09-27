@@ -30,6 +30,7 @@ function PersonalDetails({
       numOfEmployee: defaultData.numOfEmployee,
       phone: defaultData.phone,
       whenToJoin: defaultData.whenToJoin,
+      timeStamp: new Date().toLocaleString(),
     })
       .then(() => {
         successAlert();
