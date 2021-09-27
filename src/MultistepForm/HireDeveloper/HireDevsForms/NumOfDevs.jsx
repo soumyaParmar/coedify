@@ -34,8 +34,9 @@ function Role({
                     value="lessthan5"
                     {...register("numOfDevs", { required: true })}
                     name="numOfDevs"
+                    id="lessthan5"
                   />
-                  <label className="form-check-label" htmlFor="permanentbased">
+                  <label className="form-check-label" htmlFor="lessthan5">
                     Less than 5
                   </label>
                 </div>
@@ -46,11 +47,9 @@ function Role({
                     name="numOfDevs"
                     {...register("numOfDevs", { required: true })}
                     value="morethan5"
+                    id="morethan5"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="morethan5">
                     More than 5
                   </label>
                 </div>
@@ -75,9 +74,7 @@ function Role({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">
-            Leading Companies hire our developers
-          </h2>
+          <h2 className="form__banner">Our developers are working here</h2>
           <FormBanner />
         </div>
       </div>

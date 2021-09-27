@@ -13,7 +13,7 @@ function Resume({
 }) {
   const onSubmit = (data) => {
     defaultData = { ...data };
-    console.log(defaultData);
+
     navigation.next();
   };
   return (
@@ -21,13 +21,14 @@ function Resume({
       <div className="step1">
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
+          <h1 className="getyoustared">Resume & Personal Profiles</h1>
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="email form__box">
                 <label>LinkedIN URL*</label>
                 <input
                   className={classNames("form-control", {
-                    "is-invalid": errors.resume,
+                    "is-invalid": errors.linkedinurl,
                   })}
                   type="url"
                   {...register("linkedinurl", {
@@ -51,13 +52,12 @@ function Resume({
               </div>
               <div className="email form__box">
                 <label>Github URL</label>
-
                 <input
                   className={classNames("form-control", {
                     "is-invalid": errors.githuburl,
                   })}
                   type="url"
-                  {...register("githuburl")}
+                  {...register("githuburl", { required: true })}
                   name="githuburl"
                 />
                 <div className="invalid-feedback">
@@ -123,9 +123,7 @@ function Resume({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">
-            Leading Companies hire our developers
-          </h2>
+          <h2 className="form__banner">Our developers are working here</h2>
           <FormBanner />
         </div>
       </div>

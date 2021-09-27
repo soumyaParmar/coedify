@@ -1,13 +1,93 @@
+
+
 .testimonial {
   /* padding: 10px; */
   /* margin: 50px 4% 50px 4%; */
   /* width: 92%; */
   display: flex;
   justify-content: center;
-  background-color: #E9F1FF;
   align-items: center;
   flex-direction: column;
 }
 .carousel {
   display: flex;
 }
+
+.slide img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.8;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: #fff;
+  
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+.test{
+  width: 50%;
+  margin: 10rem auto;
+  height: 570px;
+}
+.slide img{
+  width: 17rem;
+  height: 22rem;
+}
+.prev {
+  left: 0%;
+  top: 50%;
+}
+.react-3d-carousel .slider-container .slider-left > div{
+  border:none;
+}
+.react-3d-carousel .slider-container .slider-right > div{
+  border: none;
+}
+.client__image8,.client__image5,.client__image6,.client__image4,.client__image10{
+  margin-top: 1rem;
+  height: 100%;
+  width: 100%;
+}
+.client__image3{
+  margin-top: -1rem;
+  height: 100%;
+  width: 100%;
+}
+.client__image13{
+  margin-top: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+.client__image12{
+  margin-top: -2rem;
+  height: 100%;
+  width: 100%;
+}
+/* .client__image1,.client__image2,.client__image3,.client__image4,.client__image5{
+  height: 10vh;
+  width: 10vh;
+} */

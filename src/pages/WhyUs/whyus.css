@@ -7,6 +7,7 @@
 }
 .why__main {
   background-color: #f5f8fd;
+  padding-top: 1rem;
 }
 .whyus__left {
   width: 45%;
@@ -85,7 +86,7 @@
 .whycoedify4,
 .whycoedify5 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
@@ -135,7 +136,7 @@
   .whyus {
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 25%;
+    margin-top: 15%;
   }
   .whyus__heading {
     text-align: center;

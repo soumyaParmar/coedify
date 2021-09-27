@@ -2,7 +2,7 @@ import React from "react-hook-form";
 import FormBanner from "../../Components/FormBanner/FormBanner";
 import logo from "./CoEdify-logo.png";
 import "./personaldetail.css";
-// import Multiselect from "multiselect-react-dropdown";
+
 import "./skillset.css";
 function Skillset({
   defaultData,
@@ -17,25 +17,12 @@ function Skillset({
     navigation.next();
   };
 
-  // const handlePrimary = (data) => {
-  //   const [primaryskill1, primaryskill2] = data;
-  //   // console.log(primaryskill1, primaryskill2);
-  //   defaultData = { ...primaryskill1, ...primaryskill2 };
-  //   console.log(defaultData);
-  // };
-  // const handleSecondary = (data) => {
-  //   const [secondaryskill1, secondaryskill2] = data;
-  //   defaultData = { ...secondaryskill1, ...secondaryskill2 };
-  // };
-  // const handleGoodToHaveSkills = (data) => {
-  //   const [thirdskill1, thirdskill2] = data;
-  //   defaultData = { ...thirdskill1, ...thirdskill2 };
-  // };
   return (
     <div className="form1">
       <div className="step1">
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
+          <h1 className="getyoustared">SkillSet</h1>
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form__box">
@@ -103,9 +90,7 @@ function Skillset({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">
-            Leading Companies hire our developers
-          </h2>
+          <h2 className="form__banner">Our developers are working here</h2>
           <FormBanner />
         </div>
       </div>

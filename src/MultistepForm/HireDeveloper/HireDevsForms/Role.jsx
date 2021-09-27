@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+// import "react-multiple-select-dropdown-lite/dist/index.css";
 // import { firebase } from "../../../lib/firebase-config.js";
 import logo from "./CoEdify-logo.png";
 // import Select from "react-select";
@@ -72,18 +73,33 @@ function Role({
       label: "Advanced SQL and Query Performance Tuning Expert",
     },
   ];
-  const [Role] = useState(Roles);
 
-  const selected = [];
+  const [Role] = useState(Roles);
+  const [err, seterr] = useState(false);
+  // const selected = [];
+  const [selectedCourse, setSelectedCourse] = useState([]);
   const handleRole = (data) => {
+    const selectedSkills = [];
     data.forEach((ele) => {
-      selected.push(ele.label);
+      selectedSkills.push(ele.label);
     });
+    setSelectedCourse(selectedSkills);
+    if (selectedSkills.length >= 1) {
+      seterr(false);
+    }
+    if (selectedSkills.length < 1) seterr(true);
+  };
+  const handleRemove = (data, element) => {
+    const newCourse = selectedCourse.filter((data) => {
+      return element.label !== data;
+    });
+    setSelectedCourse(newCourse);
   };
 
-  const onSubmit = (data) => {
-    setRole([selected[1], selected[2]]);
-    if (selected.length > 2) {
+  const onSubmit = () => {
+    setRole(selectedCourse);
+    if (selectedCourse.length < 1) seterr(true);
+    if (selectedCourse.length >= 1) {
       navigation.next();
     }
   };
@@ -99,6 +115,7 @@ function Role({
             style={{ cursor: "pointer" }}
             alt="logo"
           />
+          <h1 className="getyoustared">Lets get started</h1>
           <div className="form__section">
             <h1 className="form__heading2">
               What technology stack you are hiring for ?
@@ -107,11 +124,15 @@ function Role({
               <Multiselect
                 options={Role}
                 displayValue="label"
-                emptyRecordMsg="select"
+                emptyRecordMsg="No Options Available"
                 selectionLimit="2"
-                placeholder="Select only two"
+                placeholder="Select atmost two"
                 onSelect={handleRole}
+                onRemove={handleRemove}
               />
+              <div className={err ? "err" : "noerr"}>
+                This field can't be empty
+              </div>
               <div className="navigation__btns">
                 <button className="getStarted__btn" type="submit">
                   Get Started
@@ -121,9 +142,7 @@ function Role({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">
-            Leading Companies hire our developers
-          </h2>
+          <h2 className="form__banner">Our developers are working here</h2>
           <FormBanner />
         </div>
       </div>

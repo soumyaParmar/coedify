@@ -62,7 +62,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            {isHome ? (
+            {/* {isHome ? (
               <Link
                 onClick={handleClose}
                 activeclass="active"
@@ -74,6 +74,7 @@ const Navbar = () => {
               </Link>
             ) : (
               <NavLink
+                href="howWeWork"
                 onClick={handleClose}
                 exact="true"
                 to="/"
@@ -81,7 +82,16 @@ const Navbar = () => {
               >
                 How We Work
               </NavLink>
-            )}
+            )} */}
+            <Link
+              href="howWeWork"
+              onClick={handleClose}
+              exact="true"
+              to="howWeWork"
+              activeclassname="active"
+            >
+              How We Work
+            </Link>
           </li>
           <li onClick={handleClose}>
             <NavLink
@@ -99,7 +109,7 @@ const Navbar = () => {
                 onClick={handleClose}
                 activeclass="active"
                 className={visible ? "anchorActive" : "anchor"}
-                exact
+                exact="true"
                 to="techStack"
               >
                 Tech Stack

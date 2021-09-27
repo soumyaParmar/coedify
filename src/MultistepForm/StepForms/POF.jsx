@@ -17,6 +17,13 @@ function POF({
   classNames,
   navigation,
 }) {
+  // const curr_date = new Date();
+  // const d = curr_date.getDate();
+  // const m = curr_date.getMonth();
+  // const y = curr_date.getFullYear();
+  // let t = `${d}/${m}/${y}`;
+  // const new_date = curr_date.to
+
   const history = useHistory();
   const onSubmit = (data) => {
     defaultData = { ...data };
@@ -36,6 +43,7 @@ function POF({
       secondarySkills: defaultData.secondarySkills,
       status: defaultData.status,
       summary: defaultData.summary,
+      timeStamp: new Date().toLocaleString(),
     })
       .then(() => successAlert())
       .catch((err) => console.log(err));
@@ -55,6 +63,7 @@ function POF({
       <div className="step1">
         <div className="step1__left">
           <img className="form__logo" src={logo} alt="logo" />
+          <h1 className="getyoustared">Proof of Work</h1>
           <div className="form__section">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form__box">
@@ -135,9 +144,7 @@ function POF({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">
-            Leading Companies hire our developers
-          </h2>
+          <h2 className="form__banner">Our developers are working here</h2>
           <FormBanner />
         </div>
       </div>

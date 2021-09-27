@@ -43,3 +43,8 @@
     font-size: 45px;
   }
 }
+@media (max-width:1470px) and (min-width:830px){
+  .grad__heading{
+    font-size: 28px;
+  }
+}

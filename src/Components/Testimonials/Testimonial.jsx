@@ -1,55 +1,27 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.min.css";
-import "owl.carousel/dist/assets/owl.theme.default.min.css";
+import { Carousel } from "3d-react-carousal";
 import "./Testimonial.css";
-import TestimonialCard from "./TestimonialCard";
-import { List } from "./TestimonialList";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import img1 from "./1.png";
+import img2 from "./2.png";
+import img3 from "./3.png";
+import img4 from "./4.png";
+import img5 from "./5.png";
+import img6 from "./6.png";
 function Testimonial() {
-  const options = {
-    autoplay: true,
-    margin: 30,
-    loop: true,
-    responsiveClass: true,
-    smartSpeed: 1000,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      700: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-    },
-  };
-  const list = List.map((index, val) => {
-    return (
-      <div className="item">
-        <TestimonialCard
-          key={index}
-          description={val.description}
-          url={val.url}
-          title={val.title}
-          name={val.name}
-          rating={val.rating}
-        />
-      </div>
-    );
-  });
+  let slides = [
+    <img className="clientImgs" src={img4} alt="4" />,
+    <img className="clientImgs" src={img3} alt="3" />,
+    <img className="clientImgs" src={img2} alt="6" />,
+    <img className="clientImgs" src={img1} alt="5" />,
+    <img className="clientImgs" src={img5} alt="1" />,
+    <img className="clientImgs" src={img6} alt="2" />,
+  ];
 
   return (
-    <div className="testimonial">
-      <OwlCarousel className="item" {...options}>
-        {list}
-      </OwlCarousel>
+    <div>
+      <Carousel slides={slides} />
     </div>
   );
 }

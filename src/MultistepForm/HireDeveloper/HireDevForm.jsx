@@ -13,7 +13,7 @@ import Role from "./HireDevsForms/Role";
 import WhenToJoin from "./HireDevsForms/WhenToJoin";
 function HireDevForm() {
   const [role, setRole] = useState([]);
-  // console.log(role);
+
   const defaultData = {};
   const steps = [
     { id: "role" },

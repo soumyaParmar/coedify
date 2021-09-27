@@ -1,7 +1,7 @@
 .companies{
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     flex-wrap: wrap;
 }
 .client-img{
@@ -9,10 +9,10 @@ width: 100%;
 height: 100%;
 object-fit: contain;
 }
-.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8{
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11{
     display: flex;
-    height: 7rem;
-    margin: 1rem;
+    height: 4rem;
+    margin: 1.23rem 2rem;
     padding: 10px;
     border: none;
     width: 7rem;

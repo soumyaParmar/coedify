@@ -17,10 +17,10 @@
 .sec2__Box {
   width: 18rem;
   height: 12rem;
-  margin: 10px 50px;
+  margin: 10px 70px;
   background-color: #fff;
   border-radius: 10px;
-  cursor: pointer;
+ 
   display: flex;
   transition: all 0.6s ease-in-out;
   flex-direction: column;
@@ -28,6 +28,7 @@
 }
 .sec2__Box:hover {
   transform: translateY(-5px);
+  
 }
 .sec2Box__logo{
   margin-top: 10px;

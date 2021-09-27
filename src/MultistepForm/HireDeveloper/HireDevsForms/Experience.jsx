@@ -34,8 +34,9 @@ function Role({
                     value="0-3"
                     {...register("experience", { required: true })}
                     name="experience"
+                    id="6-3"
                   />
-                  <label className="form-check-label" htmlFor="permanentbased">
+                  <label className="form-check-label" htmlFor="6-3">
                     6 Months to 3 Years
                   </label>
                 </div>
@@ -46,11 +47,9 @@ function Role({
                     name="experience"
                     {...register("experience", { required: true })}
                     value="3-6"
+                    id="3-6"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label className="form-check-label" htmlFor="3-6">
                     3 Years to 6 Years
                   </label>
                 </div>
@@ -61,11 +60,9 @@ function Role({
                     name="experience"
                     {...register("experience", { required: true })}
                     value="6+"
+                    id="6+"
                   />
-                  <label
-                    className="form-check-label"
-                    htmlFor=" ContractualBased"
-                  >
+                  <label htmlFor="6+" className="form-check-label">
                     6+ Years
                   </label>
                 </div>
@@ -90,9 +87,7 @@ function Role({
           </div>
         </div>
         <div className="step1__right">
-          <h2 className="form__banner">
-            Leading Companies hire our developers
-          </h2>
+          <h2 className="form__banner">Our developers are working here</h2>
           <FormBanner />
         </div>
       </div>
