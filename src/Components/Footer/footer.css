@@ -18,7 +18,7 @@
   flex-direction: column;
 }
 .description__logo{
-  justify-content: center;
+  justify-content: flex-start;
 }
 .description__logo,
 .footer__explore h3,
@@ -179,5 +179,19 @@ svg {
   }
   .footer__quicklinks{
     margin-left: -1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1200px){
+  .description__text{
+    margin-bottom: 0px;
+  }
+  .footer{
+    height: 24rem;
+  }
+  .footer__getintouch ul{
+    font-size: 12px;
+  }
+  .description__links a{
+    font-size: 12px;
   }
 }

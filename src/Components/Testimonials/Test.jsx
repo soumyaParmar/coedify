@@ -37,7 +37,7 @@ function Test() {
         items: 2,
       },
       700: {
-        items: 2,
+        items: 4,
       },
       1000: {
         items: 7,

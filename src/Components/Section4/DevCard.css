@@ -82,6 +82,13 @@
   opacity: 1;
   right: 10px;
 }
+@media screen and (min-width: 750px) and (max-width:1200px){
+  .dev__box{
+    margin: 1rem 4rem;
+    width: 320px;
+  }
+
+}
 @media screen and (max-width: 600px) {
   .dev__card {
     margin: 20px 0px;

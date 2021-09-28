@@ -48,7 +48,7 @@ function WhyUs() {
       </div>
       <div className="whycodeify">
         <h1 className="whycoedify__heading">Why CoEdify</h1>
-        <div className="whycoedify1" style={{ marginBottom: "110px" }}>
+        <div className="whycoedify1">
           <div className="whycoedify1__left">
             <img className="whycoedify__img" src={img1} alt="img1" />
           </div>

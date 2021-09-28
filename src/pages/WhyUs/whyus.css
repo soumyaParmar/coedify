@@ -132,7 +132,7 @@
   margin-bottom: 50px;
   font-size: 64px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .whyus {
     flex-direction: column;
     justify-content: space-evenly;
@@ -198,4 +198,19 @@
   .whycoedify2 {
     flex-direction: column-reverse;
   }
+}
+@media screen and (min-width: 600px) and (max-width:1020px){
+  .wave__section{
+    margin-top: 0px;
+  }
+  .whyus{
+    padding-top: 5%;
+  }
+  .whycodeify{
+    margin-top: 20px;
+  }
+  .whycoedify__heading{
+    margin-bottom: 0px;
+  }
+  
 }
