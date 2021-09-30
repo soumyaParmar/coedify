@@ -82,6 +82,12 @@
     opacity: 1;
     right: 10px;
   }
+  @media screen and (min-width: 601px) and (max-width:769px){
+    .tech__box{
+      width: 280px;
+      margin-right: 3rem;
+    }
+  }
   @media screen and (max-width: 600px) {
     .dev__card {
       margin: 20px 0px;

@@ -17,8 +17,7 @@ import Client13 from "./client-13.png";
 import Client14 from "./client-14.png";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import "./Testimonial.css";
-// import TestimonialCard from "./TestimonialCard";
-// import { List } from "./TestimonialList";
+
 function Test() {
   const options = {
     margin: 30,

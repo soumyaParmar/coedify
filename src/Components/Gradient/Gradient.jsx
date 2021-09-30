@@ -11,7 +11,7 @@ function Gradient() {
       </h1>
       <button
         className="btn__getDeveloperGrad"
-        onClick={() => history.push("./hiredev")}
+        onClick={() => history.push("/hiredev")}
       >
         Hire Developers
       </button>

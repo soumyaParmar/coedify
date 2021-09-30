@@ -6,9 +6,8 @@
     height: 667px;
     margin: auto;
     padding: 20px;
-    /* color: white; */
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 5rem;
 }
 .header-content{
     padding: 20px;

@@ -1,5 +1,5 @@
 .company-section{
-    width: 90vw;
+   
     /* border: 1px solid black; */
     margin: auto;
     padding: 20px auto;
@@ -12,19 +12,28 @@
     font-weight: bold;
     color: white;
 }
+.company__Client{
+    width: 150px;
+    height: 80px;
+    object-fit: contain;
+}
 .company-section-cards{
     /* border: 1px solid black; */
     padding: 0px;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .company-card{
-    height: 100px;
-    width: 280px;
+    height: 80px;
+    width: 200px;
+    margin-left: 1rem;
+    margin-right: 7rem;
     background-color: white;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     place-items: center;
     font-size: 1.5em;
     border-radius: 10px;
@@ -37,9 +46,15 @@
         font-size: 2.5em;
     }
     .company-card{
-        height: 90px;
-        width: 260px;
-        margin-left: 15px;
+        height: 60px;
+        width: 130px;
+        margin-left: 1rem;
+        margin-right: 0rem;
         margin-bottom: 20px;
+    }
+    .company__Client{
+        height: 80px;
+        width: 120px;
+        object-fit: contain;
     }
 }
