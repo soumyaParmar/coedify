@@ -27,7 +27,7 @@
   font-size: 45px;
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .grad {
     flex-direction: column;
     height: 24rem;
@@ -43,8 +43,24 @@
     font-size: 45px;
   }
 }
-@media (max-width:1470px) and (min-width:830px){
+@media screen and (min-width: 500px) and (max-width:768px){
   .grad__heading{
-    font-size: 28px;
+    font-size: 1.8rem;
+  }
+  .grad {
+    flex-direction: column;
+    height: 15rem;
+  }
+  .btn__getDeveloperGrad {
+    margin-right: 35px;
+  }
+  .grad__heading {
+    text-align: center;
+    margin: 15px 38px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1200px){
+  .grad__heading{
+    font-size: 30px;
   }
 }

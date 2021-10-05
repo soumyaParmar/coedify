@@ -141,6 +141,12 @@ function PersonalDetails({
               </div>
 
               <div className="navigation__btns">
+                <button
+                  className="back__btn"
+                  onClick={() => navigation.previous()}
+                >
+                  Back
+                </button>
                 <button className="submit__btn" type="submit">
                   Submit
                 </button>

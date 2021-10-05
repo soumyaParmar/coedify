@@ -43,7 +43,7 @@ function App() {
           <Route exact path="/programpage">
             <Navbar />
             <MentorshipProgram />
-            {/* <Footer /> */}
+            <Footer />
           </Route>
           <Route exact path="/applyasdev" component={MultiStepForm} />
           <Route exact path="/hiredev" component={HireDevsForm} />

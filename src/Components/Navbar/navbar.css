@@ -408,3 +408,8 @@ select {
     margin-right: -2rem;
   }
 }
+@media screen and (min-width: 800px) and (max-width:1020){
+  .navSecondary{
+    padding: 7px 20px 10px 0px;
+  }
+}
