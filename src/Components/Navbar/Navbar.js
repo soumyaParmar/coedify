@@ -4,7 +4,7 @@ import { ImCross } from "react-icons/im";
 import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
-import { Link as NavLink, useHistory, useLocation } from "react-router-dom";
+import { Link as NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./navbar.css";
 const Navbar = () => {
@@ -24,16 +24,7 @@ const Navbar = () => {
     if (pageYOffset > 100) setVisible(true);
     else setVisible(false);
   }, [pageYOffset]);
-  const [isHome, setHome] = useState(false);
-  const { pathname } = useLocation();
 
-  useEffect(() => {
-    if (pathname === "/") {
-      setHome(true);
-    } else {
-      setHome(false);
-    }
-  }, [pathname]);
   return (
     <>
       <nav className={visible ? "navSecondary" : "nav"}>
@@ -62,27 +53,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            {isHome ? (
-              <Link
-                onClick={handleClose}
-                activeclass="active"
-                className={visible ? "anchorActive" : "anchor"}
-                exact="true"
-                to="howWeWork"
-              >
-                How We Work
-              </Link>
-            ) : (
-              <NavLink
-                href="howWeWork"
-                onClick={handleClose}
-                exact="true"
-                to="/"
-                activeclassname="active"
-              >
-                How We Work
-              </NavLink>
-            )}
+            <NavLink onClick={handleClose} exact="true" to="/#howWeWork">
+              How we work
+            </NavLink>
           </li>
           <li onClick={handleClose}>
             <NavLink
@@ -95,26 +68,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            {isHome ? (
-              <Link
-                onClick={handleClose}
-                activeclass="active"
-                className={visible ? "anchorActive" : "anchor"}
-                exact="true"
-                to="techStack"
-              >
-                Tech Stack
-              </Link>
-            ) : (
-              <NavLink
-                onClick={handleClose}
-                exact="true"
-                to={{ pathname: "/", state: { from: "techStack" } }}
-                activeclassname="active"
-              >
-                Tech Stack
-              </NavLink>
-            )}
+            <NavLink onClick={handleClose} exact="true" to="/#techStack">
+              Tech Stack
+            </NavLink>
           </li>
           <li onClick={handleClose} className="li_btn btn__hire">
             <Link

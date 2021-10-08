@@ -1,108 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-
 .header-section{
-    /* font-family: 'Concert One', cursive; */
-    width: 100vw;
-    height: 667px;
-    margin: auto;
-    padding: 20px;
     display: flex;
-    margin-bottom: 5rem;
+    margin: 10% 5% 5rem 5%;
+    width: 90%;
 }
-.header-content{
-    padding: 20px;
-    padding-right: 50px;
-    color: white;
-    margin: 50px auto;
-    flex: 2;
+.headerSection__left{
+    width: 50%;
 }
-.header-heading{
-    padding: 10px;
-    padding-right: 0px;
-    font-size: 3.8em;
-}
-.button{
-    margin-left: 10px;
-}
-.header-text{
-    padding: 10px;
-    font-size: 1.5em;
-    text-align: left;
-    margin-bottom: 20px;
-    padding-right: 40px;
-    font-weight: lighter;
-}
-.header-image{
-    flex: 1;
-    position: relative;
-}
-.student-image{
-    width: 770px;
-    height: 660px;
-    position: absolute;
-    left: -237px;
-    top: -59px;
-}
-.button-title{
-    margin-left: 20px;
-    font-size: 23px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.material-icons{
-    font-size: 40px;
-    margin: auto 10px;
-    transform: translateY(14px);
+.headerLeft__heading h1{
+    
+    font-family: Dosis;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
 }
 
-@media (max-width : 900px){
+.headerLeft__para{
+    margin-bottom: 3rem;
+}
+.headerSection__right{
+    width: 50%;
+}
+.headerRightImg{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width:480px) {
     .header-section{
-        height: fit-content;
         flex-direction: column;
-        align-items: flex-start;
+        margin-top: 20%;
     }
-    .header-content{
-        margin-top: 20px;
-        /* border: 1px solid black; */
-        padding: 19px;
-        padding-bottom: 7px;
+    .headerSection__left{
+        width: 100%;
+        margin-bottom: 2rem;
     }
-    .header-heading{
-        /* border: 1px solid black; */
-        font-size: 1.9em;
-        padding-left: 5px;
-        padding-top: 15px;
+    .headerSection__right{
+        width: 100%;
     }
-    .header-text{
-        font-size: 1.2em;
-        margin-bottom: 4px;
-        padding: 20px;
-        padding-left: 7px;
-        /* border: 1px solid black; */
+    .headerLeft__heading h1{
+        font-size: 30px;
+        margin-bottom: 20px;
     }
-    .header-image{
-        flex: 1;
-        position: relative;
-    }
-    .student-image{
-        /* border: 1px solid black; */
-        width: 430px;
-        height: 390px;
-        position: relative;
-        left: -65px;
-        top: -10px;
-    }
-    .button-title{
-        margin-left: 0px;
-        font-size: 23px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px;
-    }
-    .material-icons{
-        font-size: 40px;
-        margin: 0px;
-        transform: translateY(14px);
-    }
-
 }

@@ -2,16 +2,20 @@ import React from "react";
 import Hirebutton from "../../Components/Buttons/Hirebutton";
 import "./whyus.css";
 import img1 from "./whyus_1.svg";
-// import img1 from "./whyus_right.png";
 import img3 from "./whyus_3.svg";
 import img4 from "./whyus_4.svg";
 import img5 from "./whyus_5.svg";
 import img6 from "./whyus_6.svg";
+// import { useLocation } from "react-router-dom";
+
 import Gradient from "../../Components/Gradient/Gradient";
 
 import HeaderImg from "./whyus-header-image.svg";
 
 function WhyUs() {
+  // const path = useLocation();
+  // console.log(path);
+
   return (
     <div className="why__main">
       <div className="whyus">

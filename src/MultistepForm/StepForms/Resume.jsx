@@ -32,7 +32,6 @@ function Resume({
                   })}
                   type="url"
                   {...register("linkedinurl", {
-                    required: true,
                     pattern: {
                       value:
                         /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/,
@@ -41,10 +40,7 @@ function Resume({
                   })}
                   name="linkedinurl"
                 />
-                <div className="invalid-feedback">
-                  {errors.linkedinurl?.type === "required" &&
-                    "This field is required "}
-                </div>
+
                 <div className="invalid-feedback">
                   {errors.linkedinurl?.type === "pattern" &&
                     errors.linkedinurl?.message}
@@ -57,19 +53,17 @@ function Resume({
                     "is-invalid": errors.githuburl,
                   })}
                   type="url"
-                  {...register("githuburl", { required: true })}
+                  {...register("githuburl")}
                   name="githuburl"
                 />
-                <div className="invalid-feedback">
-                  {errors.githuburl?.type === "required" &&
-                    "This field is required "}
-                </div>
               </div>
               <div className="email form__box">
                 <label>Personal Portfolio URL (If any)</label>
 
                 <input
-                  className="input"
+                  className={classNames("form-control", {
+                    "is-invalid": errors.portfoliourl,
+                  })}
                   type="url"
                   {...register("portfoliourl")}
                   name="portfoliourl"

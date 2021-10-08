@@ -1,9 +1,14 @@
 import React from "react";
 import "./ProgramPageSection.css";
-import Hirebutton from "../Buttons/Hirebutton";
+// import Hirebutton from "../Buttons/Hirebutton";
 import book from "../../assets/book-black-bookmark.png";
-
+import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 const ProgramPageSection = () => {
+  const animation = useAnimation();
+
+  // const { ref, inView } = useInView();
   return (
     <section className="experience-section">
       <div className="experience-section-header">
@@ -29,13 +34,17 @@ const ProgramPageSection = () => {
             Start with fundamentals of computer science with practical use case.
           </div>
         </div>
-        <div className="section-card">
+        <motion.div
+          animate={animation}
+          className="section-card"
+          style={{ borderRight: "none" }}
+        >
           <img className="section-card-image" src={book} alt="black book" />
           <div className="section-card-content">
             Data Structures & Algorithms never been so fun here when you see use
             cases.
           </div>
-        </div>
+        </motion.div>
         <div className="section-card">
           <img className="section-card-image" src={book} alt="black book" />
           <div className="section-card-content">
@@ -48,7 +57,7 @@ const ProgramPageSection = () => {
             15+ small projects during your learning phase.
           </div>
         </div>
-        <div className="section-card">
+        <div className="section-card" style={{ borderRight: "none" }}>
           <img className="section-card-image" src={book} alt="black book" />
           <div className="section-card-content">
             Work on our live projects and get industry level experience.
@@ -56,16 +65,7 @@ const ProgramPageSection = () => {
         </div>
       </div>
       <div className="experience-section-button">
-        <Hirebutton
-          title={
-            true && (
-              <>
-                <span className="button-title">Apply Now</span>
-                <span className="material-icons">double_arrow</span>
-              </>
-            )
-          }
-        />
+        {/* <Hirebutton title="Hire Developer" /> */}
       </div>
     </section>
   );

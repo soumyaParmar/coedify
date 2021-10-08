@@ -1,32 +1,33 @@
-import React, { useState, useRef } from "react";
+import { useState } from "react";
+import { Faqs } from "../ProgramPageFaqSection/Faqs";
+import AccordionItem from "../ProgramPageFaqSection/AccordionItem";
 
-import "./Accordian.css";
+const Accordion = () => {
+  const [clicked, setClicked] = useState("0");
 
-function Accordion({heading, text}) {
-  const [setActive, setActiveState] = useState("");
-  const [setHeight, setHeightState] = useState("0px");
-
-  const content = useRef(null);
-
-  function toggleAccordion() {
-    setActiveState(setActive === "" ? "acc-active" : "");
-    setHeightState(setActive === "acc-active" ? "0px" : `${content.current.scrollHeight}px`);
-  }
-
+  const handleToggle = (index) => {
+    if (clicked === index) {
+      return setClicked("0");
+    }
+    setClicked(index);
+  };
+  console.log(Faqs);
   return (
-    <div className="accordion__section">
-      <div className={`accordion ${setActive}`} onClick={toggleAccordion}>
-        {heading}
-      </div>
-      <div
-        ref={content}
-        style={{ maxHeight: `${setHeight}` }}
-        className="accordion__content"
-      >
-          {text}
-      </div>
-    </div>
+    <>
+      <h1 className="faqHeading">Frequntly Ask Questions</h1>
+      <p className="faqsubheading">FAQ</p>
+      <ul className="faqSection">
+        {Faqs.map((faq, index) => (
+          <AccordionItem
+            onToggle={() => handleToggle(index)}
+            active={clicked === index}
+            key={index}
+            faq={faq}
+          />
+        ))}
+      </ul>
+    </>
   );
-}
+};
 
 export default Accordion;

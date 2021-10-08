@@ -1,8 +1,8 @@
 .image-section{
     /* border: 1px solid black; */
-    width: 90vw;
-    margin: 20px auto;
-    color: white;
+    
+    margin: 4rem auto;
+    /* color: white; */
 }
 .image-section-heading{
     /* border: 1px solid black; */
@@ -10,7 +10,18 @@
     text-align: center;
     font-size: 3.4em;
     font-weight: bold;
-    margin-bottom: 25px;
+}
+.imgSectionSubHeading{
+    font-size: 100px;
+    opacity: .1;
+    font-family: Monoton,cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+}
+.imgSectionHeading{
+    font-weight: 600;
 }
 .image-section-card{
     /* border: 1px solid black; */
@@ -51,6 +62,9 @@
 }
 
 @media (max-width : 900px){
+    .imgSectionSubHeading{
+        font-size: 4rem;
+    }
     .image-section-heading{
         padding: 10px;
         font-size: 2.7em;

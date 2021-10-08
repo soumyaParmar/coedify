@@ -1,22 +1,20 @@
 .experience-section{
     background-color: white;
-    height: 640px;
-    width: 85vw;
-    margin: auto;
+    margin: 1rem 5% 1rem 5%;
     border-radius: 15px;
-    padding: 30px;
+   padding: 3rem;
 }
 .experience-section-header{
-    /* border: 1px solid black; */
+ 
     text-align: center;
 }
 .experience-header-heading{
-    /* border: 1px solid black; */
+    
     font-size: 2.5em;
     font-weight: 700;
 }
 .experience-header-text{
-    /* border: 1px solid black; */
+   
     font-size: 1.3em;
     color: #63615a;
     font-weight: 500;
@@ -25,23 +23,30 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
+    /* justify-content: space-around; */
+
     /* border: 1px solid black; */
 }
 .section-card{
     /* border: 1px solid black; */
-    width: 300px;
-    height: 200px;
-    padding: 20px;
+    width: 410px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    /* margin: 0rem 4rem; */
+    /* height: 200px; */
+    
+    padding: 30px;
 }
 .section-card-content{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 300;
 }
 .section-card-image{
     height: 70px;
     width: 50px;
+    margin-right: 1rem;
 }
 .experience-section-button{
     margin: auto;
@@ -49,7 +54,7 @@
     transform: translateY(-15px);
 }
 
-@media (max-width:900px){
+@media (max-width:600px){
     .experience-section{
         height: fit-content;
     }
@@ -73,7 +78,7 @@
         width: 250px;
         height: fit-content;
         margin-bottom: 0px;
-        margin-left: -10px;
+        border-right:none;
     }
     .section-card-content{
         font-size: 1em;
@@ -90,4 +95,14 @@
     .button-title{
         margin-left: 10px;
     }
+}
+@media (max-width:829px) and (min-width:601px){
+    .section-card{
+        width: 280px;
+    }
+}
+@media (max-width:1470px) and (min-width:830px){
+ .section-card{
+     width: 400px;
+ }
 }
