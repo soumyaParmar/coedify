@@ -11,6 +11,9 @@
     margin-top: 2rem;
     font-size: 2rem;
 }
+.form__heading2{
+    margin-bottom: 3rem;
+}
 .stepheading{
     margin-bottom: 40px;
     color: white;
@@ -19,7 +22,7 @@
     padding: 1rem 1rem;
     background-color: #fff;
     border-radius: 20px;
-   
+    margin-top: 4rem;
 }
 .chip,.singleChip{
     white-space: normal;

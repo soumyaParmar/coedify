@@ -92,7 +92,7 @@ function PersonalDetails({
                   {...register("number", {
                     required: true,
                     pattern: {
-                      value: /^(\+\d{1,3}[- ]?)?\d{10}$/,
+                      value: /^(\+\d{1,3}[- ]?)?\d{11}$/,
                       message: "Enter a valid phone number",
                     },
                   })}

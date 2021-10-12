@@ -13,8 +13,13 @@ import Vetted from "./pages/Vetted/Vetted";
 import TechnologiesPage from "./pages/TechnologiesPage/TechnologiesPage";
 import ScrollToTop from "./Components/ScrollToTop/Scroll";
 // import Dashboard from "./Components/AdminLogin/Dashboard";
+// import { useLocation } from "react-router-dom";
+// import { useRef } from "react";
 
 function App() {
+  // const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  // const executeScroll = () => scrollToRef(Ref);
+  // const Ref = useRef();
   return (
     <div className="App">
       <BrowserRouter>

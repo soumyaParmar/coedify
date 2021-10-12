@@ -15,45 +15,103 @@ import Client13 from "./client-13.png";
 const ProgramPageCompanySection = () => {
   return (
     <section className="company-section">
-      <div className="company-section-header">
-        Companies hired our developers
-      </div>
-      <div className="company-section-cards">
-        <div className="company-card">
-          <img className="company__Client" src={Client1} alt="client1"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client2} alt="client2"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client3} alt="client3"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client4} alt="client4"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client5} alt="client5"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client6} alt="client6"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client7} alt="client7"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client8} alt="client8"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client9} alt="client9"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client10} alt="client10"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client12} alt="client12"></img>
-        </div>
-        <div className="company-card">
-          <img className="company__Client" src={Client13} alt="client13"></img>
+      <div class="content">
+        <div class="titleee">
+          <div class="dtable">
+            <div class="dtable-cells">
+              <div class="container">
+                <div className="company-section-header">
+                  Companies hired our developers
+                </div>
+                <div className="company-section-cards">
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client1}
+                      alt="client1"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client2}
+                      alt="client2"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client3}
+                      alt="client3"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client4}
+                      alt="client4"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client5}
+                      alt="client5"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client6}
+                      alt="client6"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client7}
+                      alt="client7"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client8}
+                      alt="client8"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client9}
+                      alt="client9"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client10}
+                      alt="client10"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client12}
+                      alt="client12"
+                    ></img>
+                  </div>
+                  <div className="company-card">
+                    <img
+                      className="company__Client"
+                      src={Client13}
+                      alt="client13"
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

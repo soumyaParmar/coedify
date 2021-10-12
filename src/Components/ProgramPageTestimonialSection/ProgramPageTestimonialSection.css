@@ -9,14 +9,26 @@
     padding: 20px;
     text-align: center;
     font-size: 3.4em;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 25px;
-    color: white;
+    /* color: white; */
 }
 .testimonial-cards{
     padding: 10px;
     display: flex;
     /* justify-content: space-around; */
+}
+.testimonialHeading{
+  font-weight: 600;
+}
+.testimonialSubHeading{
+     opacity: .1;
+    font-family: Monoton,cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+    font-size: 100px;
 }
 .testimonial-box{
     display: grid;
@@ -96,6 +108,10 @@
   @media (max-width:900px){
     .testimonial-section{
         margin-top: 18px;
+    }
+    .testimonialSubHeading{
+      font-size: 2rem;
+      margin-top: -6rem;
     }
     .testimonial-section-header{
         /* border: 1px solid black; */

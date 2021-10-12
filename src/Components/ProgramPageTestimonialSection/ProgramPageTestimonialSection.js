@@ -5,7 +5,10 @@ const ProgramPageTestimonialSection = () => {
   return (
     <section className="testimonial-section">
       <div className="testimonial-section-header">
-        What our developers say about us?
+        <h1 className="testimonialHeading">
+          What our developers say about us?
+        </h1>
+        <p className="testimonialSubHeading">Testimonials</p>
       </div>
       <ProgramPageCarousel />
     </section>
