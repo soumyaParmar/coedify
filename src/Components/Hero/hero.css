@@ -1,8 +1,19 @@
+.hero_back{
+  background-image: url("./video1.gif");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.hero_backcontainer{
+  backdrop-filter: blur(4px);
+}
 .hero {
   margin: 7% 5% 0% 5%;
   width: 90%;
   display: flex;
   padding-bottom: 4%;
+  justify-content: center;
+ 
 }
 .home {
   background-color: #f5f8fd;
@@ -14,14 +25,16 @@
 }
 .hero__cover {
   /* background-color: #016EEA; */
-  background-color: #e9f1ff;
-  padding-top: 5px;
+ padding: 6%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
 }
 .hero {
   text-align: center;
 }
 .hero__left {
-  width: 50%;
+  width: 70%;
   text-align: left;
  /* height: 60vh; */
 }
@@ -36,26 +49,29 @@
 .hero__heading {
   font-family: Dosis;
   /* color: white; */
-  color: black;
+  color:white;
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 80px;
+  text-align: center;
 }
 .hero__desc {
   font-family: Open Sans;
   margin-bottom: 20px;
   /* color: white; */
-  color: #5a5f65;
+  color:white;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
 }
 .buttons {
   display: flex;
-  /* justify-content: center; */
   margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 .btn__getDeveloper {
   border-radius: 3px;
@@ -96,24 +112,8 @@
 .btn__apply:hover {
   transform: translateY(-3px);
 }
-.comapnies{
-  display: flex;
-  margin: 2.5rem 5%;
-}
-.companies__carousel{
-  width: 80%;
-  margin-left: 1rem;
-}
-.trustedby{
-  width: 16%;
-  border-right: 1px solid;
-}
-.trust__heading{
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
+
+
 .hero2__right {
   width: 45%;
 }
@@ -238,14 +238,6 @@
   .buttons{
     width: 24rem;
   }
-  .comapnies{
-    flex-direction: column;
-  }
-  .trustedby{
-    width: 100%;
-    text-align: center;
-    border: none;
-  }
   .trust__heading{
     font-size: 2.5rem;
   }
@@ -265,15 +257,7 @@
   .hero{
     padding-bottom: 0;
   }
-  .comapnies{
-    flex-direction: column;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .trustedby{
-    width: 100%;
-    text-align: center;
-  }
+  
   .companies__carousel{
     width: 100%;
     margin: 0px;
@@ -287,10 +271,7 @@
   .hero2__left h1 {
     color: black;
   }
-  .trustedby{
-    border: none;
-    margin-top: 1rem;
-  }
+
   .btn__apply {
     width: 81%;
     color: #016eea;

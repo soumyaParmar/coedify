@@ -1,0 +1,29 @@
+.blogs{
+    background-color: #072d34;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;  
+}
+.blog_content{
+    height: 100%;
+}
+.blog_heading h1{
+    color: white;
+}
+.blog_heading{
+    margin-bottom: 80px;
+    border-bottom: 2px solid white;   
+}
+
+@media screen and (max-width: 880px) {
+    .blogs {
+        padding:100px 40px;
+    }
+  }
+  
+  @media screen and (min-width: 880px) {
+    .blogCard:hover .blog_detail {
+      width: 90%;
+    }
+  }
+

@@ -1,22 +1,26 @@
 .how {
  
-  background-color: #f5f8fd;
+  background-color: #072d34;
+}
+li{
+  color:white;
 }
 .how__mainHeading {
   letter-spacing: 1px;
   text-align: center;
   font-weight: 600;
   font-size: 64px;
-  margin: 4rem auto;
-  color: #1f2937;
+  color: white;
+  padding-top: 5%;
 }
 .how__heading {
   font-size: 40px;
   font-weight: 500;
-  color: #1f2937;
+  color: white;
 }
 .how__para {
   margin-bottom: 30px;
+  color: white;
 }
 .how__hirebutton {
   margin-bottom: 30px;
@@ -33,9 +37,11 @@
 .how2,
 .how3 {
   display: flex;
-  margin: 30px auto;
+  padding: 5%;
   justify-content: center;
   width: 90%;
+  justify-content: space-evenly;
+  margin-left: 5%;
 }
 
 .how2 ul {
@@ -63,7 +69,7 @@
 .how3 p {
   font-size: 16px;
   font-weight: 500;
-  color: #5a5f65;
+  color: #ffffff;
 }
 
 .how1 ul,

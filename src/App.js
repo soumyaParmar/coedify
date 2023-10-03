@@ -12,6 +12,11 @@ import WhyUs from "./pages/WhyUs/WhyUs";
 import Vetted from "./pages/Vetted/Vetted";
 import TechnologiesPage from "./pages/TechnologiesPage/TechnologiesPage";
 import ScrollToTop from "./Components/ScrollToTop/Scroll";
+import Background from "./Components/background/Background";
+import AboutUs from "./Components/aboutUs/AboutUS";
+import Blogs from "./Components/Blogs/Blogs";
+import MarkdownRenderer from "./Components/Blogs/MrkDown/MarkdownRenderer";
+import { AnimatePresence } from "framer-motion";
 // import Dashboard from "./Components/AdminLogin/Dashboard";
 // import { useLocation } from "react-router-dom";
 // import { useRef } from "react";
@@ -21,8 +26,9 @@ function App() {
   // const executeScroll = () => scrollToRef(Ref);
   // const Ref = useRef();
   return (
-    <div className="App">
-      <BrowserRouter>
+    <div className="App">     
+    <AnimatePresence exitBeforeEnter >     
+      <BrowserRouter scrollBehavior="instant">
         <ScrollToTop />
         <Switch>
           <Route exact path="/">
@@ -50,14 +56,31 @@ function App() {
             <MentorshipProgram />
             <Footer />
           </Route>
+          <Route exact path='/about'>
+            <Navbar/>
+            <AboutUs/>
+            <Footer/>
+          </Route>
+          <Route exact path='/blogs'>
+            <Navbar/>
+            <Blogs/>
+            <Footer/>
+          </Route>
+          <Route exact path='/blog1'>
+            <Navbar/>
+            <MarkdownRenderer />
+            <Footer/>
+          </Route>
           <Route exact path="/applyasdev" component={MultiStepForm} />
           <Route exact path="/hiredev" component={HireDevsForm} />
           {/* <Route exact path="/login" component={Login} /> */}
           {/* <Route exact path="/dashboard" component={Dashboard} /> */}
         </Switch>
       </BrowserRouter>
+      </AnimatePresence> 
       <ScrollTo />
     </div>
+    
   );
 }
 

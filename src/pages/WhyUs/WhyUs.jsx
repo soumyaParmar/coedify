@@ -11,43 +11,32 @@ import img6 from "./whyus_6.svg";
 import Gradient from "../../Components/Gradient/Gradient";
 
 import HeaderImg from "./whyus-header-image.svg";
+import Transition from "../../Components/Tranistion/Transition";
 
 function WhyUs() {
   // const path = useLocation();
   // console.log(path);
 
   return (
+    <Transition>
     <div className="why__main">
       <div className="whyus">
         <div className="whyus__left">
-          <span className="whyus__span">Why Us</span>
+          <span className="whyus__span">Why Choose Us?</span>
           <h1 className="whyus__heading">
-            Hire tech talents that fits the job requirements
+          Empowering Your Vision through CoEdify
           </h1>
           <p className="whyus__p">
-            CoEdify helps companies expand their team quickly. Tech hiring is
-            tough, time consuming and expensive. Most of the tech hirings are
-            severely flawed and the cost of hiring bad resource is way too high.
-            Our innovative way of screening talents minimizes all those risk in
-            a cost effective seamless way.
+          At CoEdify, we take immense pride in being your trusted partner in achieving 
+          your goals and exceeding your expectations. Our unwavering commitment to 
+          excellence is reflected in every facet of our services
           </p>
           <div className="whyus__button">
-            <Hirebutton title="Hire Developers" />
+            <Hirebutton title="Contact Us" />
           </div>
         </div>
         <div className="whyus__right">
           <img className="whyus__img" src={HeaderImg} alt="headerImg" />
-        </div>
-      </div>
-      <div className="wave__section">
-        <div className="wave__box">
-          <h1>Find Right Candidate</h1>
-        </div>
-        <div className="wave__box">
-          <h1>Save Hiring Time</h1>
-        </div>
-        <div className="wave__box">
-          <h1>Hire Niche Skills</h1>
         </div>
       </div>
       <div className="whycodeify">
@@ -57,21 +46,21 @@ function WhyUs() {
             <img className="whycoedify__img" src={img1} alt="img1" />
           </div>
           <div className="whycoedify1__right">
-            <h1>Right Talent</h1>
+            <h1>Transparent and Client-Centric Approach</h1>
             <p>
-              We find exact match with your job requirements in our pool of
-              talents. We give high weightage on problem solving ability rather
-              than the laundry list of tech stack mentioned in resume. Our
-              filtering process guarantee to eliminate wrong candidates.
+            We prioritize transparency in all aspects of our work, from billing 
+            to project timelines. Our client-centric approach means that your goals 
+            and needs are at the forefront of every solution we provide.
             </p>
           </div>
         </div>
         <div className="whycoedify2">
           <div className="whycoedify2__left">
-            <h1>Time to Hire</h1>
+            <h1>Proven Track Record</h1>
             <p>
-              We make sure our vetted resources joins you within one months of
-              your approval and majority will join within 15 days of selection.
+            With a track record of successfully resolving complex engineering 
+            challenges and optimizing software systems, we have a history of 
+            delivering measurable results to our clients. 
             </p>
           </div>
           <div className="whycoedify2__right">
@@ -83,22 +72,21 @@ function WhyUs() {
             <img className="whycoedify__img3" src={img4} alt="img1" />
           </div>
           <div className="whycoedify3__right">
-            <h1>Specific Technical Stack/ Niche Tech Stack</h1>
+            <h1>Expertise in Cloud Optimization</h1>
             <p>
-              We don’t deal with all the technologies that exists today, we
-              focus only on niche technical stack and finding top talents in
-              niche area is extremely challenging, we are helping you to get
-              that skill set your project demands.
+            Our expertise in cloud and infrastructure cost optimization sets 
+            us apart. We've helped numerous clients reduce their cloud expenses 
+            while maintaining or improving system performance. 
             </p>
           </div>
         </div>
         <div className="whycoedify4">
           <div className="whycoedify4__left">
-            <h1>Attitude/Aptitude/Soft Skill/ Passion</h1>
+            <h1>Customized Solutions</h1>
             <p>
-              No matter what is the experience level, we carefully screen
-              talents on non-technical aspect as well. We believe attitude and
-              soft skill plays major role in executing a successful projects.
+            Every client's needs are unique. We provide tailored solutions 
+            that address your specific challenges and goals, ensuring you 
+            receive the most effective and efficient services. 
             </p>
           </div>
           <div className="whycoedify4__right">
@@ -110,20 +98,17 @@ function WhyUs() {
             <img className="whycoedify__img" src={img6} alt="img1" />
           </div>
           <div className="whycoedify5__right">
-            <h1>Best-in-Class Service</h1>
+            <h1>Complimentary Service Period</h1>
             <p>
-              We are not general IT manpower and staffing companies. We are here
-              to solve the technical hiring in a unique way by finding the right
-              person for the right job. Our aim is to carefully strike the
-              balance between the expectation set by employers and job seekers.
+            We stand by our abilities, offering a complimentary service period 
+            during which we demonstrate our value with tangible improvements to 
+            your software and infrastructure. 
             </p>
           </div>
         </div>
       </div>
-      <div className="banner__grad">
-        <Gradient />
-      </div>
     </div>
+    </Transition>
   );
 }
 
