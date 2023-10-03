@@ -35,10 +35,11 @@
     font-size: 1.4rem;
   }
   .dev__span {
-    background: #2d46b9;
+    background: #115966;
     color: white;
     border-radius: 10px;
     padding: 5px;
+    width: 100px;
   }
   
   .tech__box:hover {

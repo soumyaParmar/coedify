@@ -12,8 +12,12 @@
     cursor: pointer;
     position: relative;
     transition: all 0.2s ease-in-out;
+    
   }
   
   .btn__getDeveloper:hover {
     background-color: #0e9767;
+  }
+  a{
+    text-decoration: none;
   }

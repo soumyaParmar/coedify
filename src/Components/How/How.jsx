@@ -1,32 +1,29 @@
 import React from "react";
 import "./How.css";
-import First from "./First__Step.jpg";
+import First from "./first.svg";
 import Second from "./Second__step.svg";
-import Third from "./Third__Step.webp";
+import Third from "./bytheroad.svg";
 import Fourth from "./Fourth__step.svg";
 import Hirebutton from "../Buttons/Hirebutton";
 
 function How() {
   return (
     <>
-      <div id="howWeWork" style={{ height: "20px" }}></div>
+      <div id="howWeWork" ></div>
       <div className="how">
-        <h1 className="how__mainHeading">This is How We Work?</h1>
+        <h1 className="how__mainHeading">How We Work?</h1>
         <div className="how1">
           <div className="how1__left">
             <h1 className="how__heading">
-              Tell us what kind of specific tech stack and experience level you
-              need?
+            Collaborative Exploration of Requirements            
             </h1>
             <p className="how__para">
-              Submit your technical job description via our interactive forms,
-              the more details the better for us to find exact match. After we
-              get the details, our tech expert will review and get in touch with
-              you to find out more details to better understand your hiring
-              need.
+            Understanding Your Vision: We start by engaging in detailed discussions 
+            with our clients to comprehend their specific requirements, objectives, 
+            and challenges.
             </p>
             <div className="how__hirebutton">
-              <Hirebutton title="Hire Developers" />
+              <Hirebutton title="Contact Us" />
             </div>
           </div>
           <div className="how1__right">
@@ -39,21 +36,14 @@ function How() {
           </div>
           <div className="how2__right">
             <h1 className="how__heading">
-              We will provide you status report concerning your request as
-              quickly as possible.
+            In-Depth Research and Development
             </h1>
             <ul>
               <li>
                 <i className="bi bi-check-all"></i>
-                We will handpick the suitable candidates for the job role from
-                our pool of pre-screened candidates, then will arrange interview
-                for you.
-              </li>
-              <li>
-                <i className="bi bi-check-all"></i>
-                We currently do not have pre-screened developer matching your
-                exact tech requirements and we are in the process of screening
-                the candidates, we will work actively to find one.
+                We leverage our technical expertise to conduct rigorous research 
+                and development (R&D) to understand the engineering challenges faced 
+                by your product.
               </li>
             </ul>
           </div>
@@ -61,29 +51,13 @@ function How() {
         <div className="how3">
           <div className="how3__left">
             <h1 className="how__heading">
-              They become part of team, assess the candidates by giving real
-              work task.
+            Tailored Roadmap
             </h1>
             <ul>
               <li>
-                <i className="bi bi-check-all"></i>
-                Start the trail with the developer of your choice for one week
-                before giving any commitments.{" "}
-              </li>
-              <li>
-                <i className="bi bi-check-all"></i>
-                Check the fitment and technical depth of the candidates and get
-                confident for long term commitments.
-              </li>
-              <li>
-                <i className="bi bi-check-all"></i>
-                After you decide which developer you want to go ahead and
-                integrate with your team, just like an in-house employee.
-              </li>
-              <li>
-                <i className="bi bi-check-all"></i>
-                If you are not satisfied for any reason, we will start all over
-                again to give you best candidates.
+              Based on our research and analysis, we provide you with a 
+              detailed roadmap outlining step-by-step solutions and strategies 
+              to overcome bugs and issues.
               </li>
             </ul>
           </div>
@@ -96,16 +70,14 @@ function How() {
             <img src={Fourth} alt="img4" />
           </div>
           <div className="how2__right">
-            <h1 className="how__heading"> Integrate them at No-Risk </h1>
+            <h1 className="how__heading"> Scalability and Future-Proofing </h1>
             <p className="how__para">
-              After the one week trail is over and if you are 100% satisfied
-              with our CoEdified candidates, we will sign-off the contracts and
-              they are ready to be integrated in your team like your in-house
-              employee.
+            Our solutions are designed with scalability and future enhancements 
+            in mind, ensuring your IT systems remain adaptable and efficient.
             </p>
             {/* <button onClick={executeScroll}>sample</button> */}
             <div className="how__hirebutton">
-              <Hirebutton title="Hire Developers" />
+              <Hirebutton title="Contact Us" />
             </div>
           </div>
         </div>

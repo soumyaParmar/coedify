@@ -1,0 +1,7 @@
+.blog_1{
+    padding: 10%;
+    background-color: #072d34;
+}
+.blog_1, h1, p, h2{
+   color: white;
+}

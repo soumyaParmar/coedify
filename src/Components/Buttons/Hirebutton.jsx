@@ -1,16 +1,16 @@
 import React from "react";
 import { useHistory } from "react-router";
+import "./hirebutton.css";
 
 function Hirebutton(props) {
   const history = useHistory();
   return (
     <div>
-      <span
+      <a href="mailto:contact@coedify.com" target="_blank" className="attri"><span
         className="btn__getDeveloper"
-        onClick={() => history.push("./hiredev")}
       >
         {props.title}
-      </span>
+      </span></a>
     </div>
   );
 }

@@ -1,0 +1,295 @@
+.whyus {
+    padding: 8% 0% 10% 0%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+  }
+  .whycoedify1__right h1{
+    color:#29bb89;
+  }
+  .whycoedify2__left h1{
+    color:#29bb89;
+  }
+  .whycoedify3__right h1{
+    color:#29bb89;
+  }
+  .whycoedify4__left h1{
+    color:#29bb89;
+  }
+  .whycoedify5__right h1{
+    color:#29bb89;
+  }
+  
+  .why__main {
+    background-color: #072d34;
+    padding-top: 1rem;
+  }
+  .whyus__left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .whyus__left p {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  .whyus__heading {
+    font-family: Dosis;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    color: white;
+  }
+  
+  .whyus__span {
+    color: #29bb89;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .whyus__right {
+    width: 45%;
+  }
+  .whyus__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .wave__section {
+    /* background-image: url("./waves.png"); */
+    margin-top: 150px;
+    padding: 30px;
+    background-size: 100% 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+  }
+  .wave__box {
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .wave__box h1 {
+    padding: 10px;
+    font-size: 35px;
+    color: #0d855b;
+  }
+  
+  .whycodeify {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 0px 50px;
+  }
+  
+  .whycodeify p {
+    color: #ffffff;
+  }
+  
+  .whycoedify1,
+  .whycoedify2,
+  .whycoedify3,
+  .whycoedify4,
+  .whycoedify5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .whycoedify1__left,
+  .whycoedify1__right,
+  .whycoedify2__left,
+  .whycoedify2__right,
+  .whycoedify3__left,
+  .whycoedify3__right,
+  .whycoedify4__left,
+  .whycoedify4__right,
+  .whycoedify5__left,
+  .whycoedify5__right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .whycoedify1__right,
+  .whycoedify2__left,
+  .whycoedify3__right,
+  .whycoedify4__left,
+  .whycoedify5__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+  .whycoedify__img {
+    border-radius: 20px;
+    width: 79%;
+    object-fit: contain;
+  }
+  .whycoedify__img3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .whycoedify__heading {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-size: 64px;
+    color: white;
+  }
+  .ceo_img_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .ceo_image{
+    width: 200px;
+  }
+  .ceo_info{
+    color: white;
+    text-align: center;
+    /* font-family: Dosis; */
+    font-weight: 600;
+    bottom:0px;
+    left: 0;
+    width: 100%;
+    
+    /* height: 50px; */
+  }
+  .ceo_info_name{
+    font-size: 20px;
+  }
+  .ceo_info_designation{
+    color: rgb(188, 186, 186);
+  }
+  @media screen and (max-width: 600px) {
+
+    .comapnies {
+    flex-direction: column;
+    padding: 0px; 
+    }
+  .ceo_img_container{
+    justify-content: center;
+    align-items: center;
+  }
+  .trust__heading{
+    text-align: center;
+    padding-top: 10px;
+  }
+  .companies__carousel p{
+    text-align: center;
+    padding-top: 10px;
+  }
+  .ceo_image{
+    padding-top: 20px;
+  }
+    .whyus {
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 15%;
+    }
+    .whyus__heading {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .banner__grad {
+      margin-top: 0px;
+    }
+    .whycoedify__heading {
+      font-size: 40px;
+    }
+    .whyus__button {
+      margin: 10px auto;
+    }
+    .whyus__span {
+      text-align: center;
+      margin: 10px 0px;
+    }
+    .whyus__left {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .whyus__right {
+      width: 100%;
+    }
+    .wave__section {
+      flex-direction: column;
+    }
+    .wave__box {
+      margin-top: 30px;
+    }
+  
+    .whycoedify1,
+    .whycoedify2,
+    .whycoedify3,
+    .whycoedify5 {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+    .whycoedify4 {
+      flex-direction: column-reverse;
+    }
+    .whycoedify1__left,
+    .whycoedify1__right,
+    .whycoedify2__left,
+    .whycoedify2__right,
+    .whycoedify3__left,
+    .whycoedify3__right,
+    .whycoedify4__left,
+    .whycoedify4__right,
+    .whycoedify5__left,
+    .whycoedify5__right {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  
+    .whycoedify2 {
+      flex-direction: column-reverse;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width:1020px){
+    .wave__section{
+      margin-top: 0px;
+    }
+    .whyus{
+      padding-top: 5%;
+    }
+    .whycodeify{
+      margin-top: 20px;
+    }
+    .whycoedify__heading{
+      margin-bottom: 0px;
+    }
+    
+  }
+  @media screen and (min-width: 430px) and (max-width:770px){
+    .ceo_info{
+      text-align: start;
+    }
+    .companies__carousel{
+      margin-left: 0;
+    }
+  }
+  .handles{
+
+  }
+  .handles img{
+    height: 100px;
+    width: 100px;
+  }

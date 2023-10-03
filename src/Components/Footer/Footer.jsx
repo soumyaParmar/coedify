@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer__explore">
-          <h3>Explore</h3>
+          <h3 style={{color:"wheat"}}>Explore</h3>
           <ul className="ul">
             <li onClick={() => history.push("/")}>
               <span>Home</span>
@@ -55,7 +55,7 @@ function Footer() {
         </div>
 
         <div className="footer__getintouch">
-          <h3>Get in Touch</h3>
+          <h3 style={{color:"wheat"}}>Get in Touch</h3>
           <ul className="ul">
             <li>
               <i>
@@ -80,7 +80,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer__quicklinks">
-          <h3 className="quick__heading">Quick Links</h3>
+          <h3 className="quick__heading" style={{color:"wheat"}}>Quick Links</h3>
           <div className="description__links">
             <a
               target="blank"
@@ -98,7 +98,7 @@ function Footer() {
               href="https://www.linkedin.com/company/coedify/mycompany/?viewAsMember=true"
             >
               <FaLinkedinIn />
-              <span>Checkout LinkedIn for more updates</span>
+              <span>Connect on LinkedIn</span>
             </a>
             <a target="blank" href="https://twitter.com/CoEdifyTech">
               <FaTwitter />

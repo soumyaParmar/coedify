@@ -1,5 +1,6 @@
+
 .vet__cover {
-  background-color: #f5f8fd;
+  background-color: #072d34;
 }
 .vet__section1 {
   padding: 8% 0% 10% 0%;
@@ -17,7 +18,7 @@
 }
 
 .vet1__left p {
-  color: #5a5f65;
+  color: #ffffff;
   font-size: 16px;
   text-align: justify;
 }
@@ -36,6 +37,22 @@
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
+  color: white;
+}
+.vet2__1 h1{
+  color: #29bb89;
+}
+.vet2__2 h1{
+  color: #29bb89;
+}
+.vet2__3 h1{
+  color: #29bb89;
+}
+.vet2__4 h1{
+  color: #29bb89;
+}
+.vet2__5 h1{
+  color: #29bb89;
 }
 .vet1__p {
   margin-bottom: 20px;
@@ -43,6 +60,7 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 30px;
+  color: white;
 }
 .vet1__btn {
   margin-top: 30px;
@@ -61,15 +79,16 @@
   letter-spacing: 1px;
   margin-bottom: 50px;
   font-size: 64px;
+  color: white;
 }
 .vet2 {
   display: flex;
   flex-direction: column;
-  margin: 50px 5%;
+  margin: 50px 5% 0;
 }
 
 .vet2 p {
-  color: #5a5f65;
+  color: white;
 }
 
 .vet2__1,
@@ -79,7 +98,7 @@
 .vet2__5,
 .vet2__6 {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 25px auto;
 }
 .vet2__1left,
@@ -111,13 +130,13 @@
 }
 
 .vet2__img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 99%;
   object-fit: contain;
 }
 .vet2__img2 {
-  width: 80%;
-  height: 80%;
+  width: 92%;
+  height: 94%;
 }
 .vet2__img3 {
   width: 100%;
