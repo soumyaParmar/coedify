@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./DevCard.css";
 function DevCard({ id, url, title, item1, item2, item3 }) {
   return (

@@ -1,13 +1,11 @@
 import React from "react";
 import "./vetted.css";
 import HeaderImg from "./second.svg";
-import Gradient from "../../Components/Gradient/Gradient";
 import img1 from "./third.svg";
 import img2 from "./soft-skill.png";
 import img3 from "./fourth.svg";
 import img4 from "./adaptablity.svg";
 import img5 from "./problem-solving.svg";
-import img6 from "./profile.svg";
 import Button from "../../Components/Buttons/Hirebutton";
 import Transition from "../../Components/Tranistion/Transition";
 function Vetted() {

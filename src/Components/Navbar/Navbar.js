@@ -4,12 +4,11 @@ import { ImCross } from "react-icons/im";
 import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
-import { Link as NavLink, useHistory } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link as NavLink } from "react-router-dom";
 import "./navbar.css";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
-  const history = useHistory();
+  // const history = useHistory();
   const handleClick = () => {
     setClicked(!clicked);
   };
@@ -85,7 +84,7 @@ const Navbar = () => {
         </ul>
 
         <div className="btns">
-          <a href="mailto:contact@coedify.com" target="_blank" style={{textDecoration:"none" , paddingBottom:"5%"}}>
+          <a href="mailto:contact@coedify.com" target="_blank" rel="noreferrer" style={{textDecoration:"none" , paddingBottom:"5%"}}>
               <span className="btn__hire">
               Contact Us
               </span>

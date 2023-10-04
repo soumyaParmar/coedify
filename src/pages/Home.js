@@ -4,7 +4,6 @@ import How from "../Components/How/How";
 import Section2 from "../Components/Section2/Section2";
 import Section4 from "./../Components/Section4/Section4";
 import { useLocation } from "react-router";
-import Background from "../Components/background/Background";
 
 const Home = () => {
   const location = useLocation();

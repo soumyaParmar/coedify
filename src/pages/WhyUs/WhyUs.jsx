@@ -8,8 +8,6 @@ import img5 from "./whyus_5.svg";
 import img6 from "./whyus_6.svg";
 // import { useLocation } from "react-router-dom";
 
-import Gradient from "../../Components/Gradient/Gradient";
-
 import HeaderImg from "./whyus-header-image.svg";
 import Transition from "../../Components/Tranistion/Transition";
 

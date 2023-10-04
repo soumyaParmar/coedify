@@ -12,7 +12,6 @@ import WhyUs from "./pages/WhyUs/WhyUs";
 import Vetted from "./pages/Vetted/Vetted";
 import TechnologiesPage from "./pages/TechnologiesPage/TechnologiesPage";
 import ScrollToTop from "./Components/ScrollToTop/Scroll";
-import Background from "./Components/background/Background";
 import AboutUs from "./Components/aboutUs/AboutUS";
 import Blogs from "./Components/Blogs/Blogs";
 import MarkdownRenderer from "./Components/Blogs/MrkDown/MarkdownRenderer";

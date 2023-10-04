@@ -6,10 +6,6 @@ import img3 from "./cost.svg";
 import img4 from "./software.svg";
 import img5 from "./security.svg";
 import img6 from "./complex.svg";
-import img7 from "./insta.png";
-import img8 from "./linkedin.png";
-import img9 from "./twitter.png";
-import Test from "../Testimonials/Test";
 import ceo from "./ceo-modified.png";
 
 
@@ -58,7 +54,7 @@ function AboutUs() {
       <div className="comapnies">
         <div className="trustedby">
           <div className="ceo_img_container">
-            <img className="ceo_image" src={ceo}/>
+            <img className="ceo_image" src={ceo} alt="ceoimage"/>
             <div className="ceo_info">
               
               <span className="ceo_info_name">MD Nadeem</span>

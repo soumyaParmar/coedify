@@ -1,15 +1,10 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 // import Testimonial from "../Testimonials/Testimonial";
 // import HeroImage from "./hero-image.svg";
 // import Testimonial from "../Testimonials/Testimonial";
 import "./hero.css";
-import Background from "../background/Background";
-import Testimonial from "../Testimonials/Testimonial";
-import Test from "../Testimonials/Test";
 
 function Hero() {
-  let history = useHistory();
   return (
     <div className="hero_back"> 
     <div className="hero_backcontainer"> 
@@ -28,7 +23,7 @@ function Hero() {
                and cost savings.
             </p>
             <div className="buttons">
-            <a href="mailto:contact@coedify.com" target="_blank">
+            <a href="mailto:contact@coedify.com" target="_blank" rel="noreferrer">
               <span className="btn__getDeveloper">
               Contact Us
               </span>

@@ -1,5 +1,4 @@
 import React from "react";
-import Gradient from "../Gradient/Gradient";
 import DevCard from "./DevCard";
 import { DevList } from "./DevList";
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const linearEasing = [0.4, 0, 0.2, 1];
+// const linearEasing = [0.4, 0, 0.2, 1];
 const animationConfiguration = {
     
         initial: { x: "-10%" }, 

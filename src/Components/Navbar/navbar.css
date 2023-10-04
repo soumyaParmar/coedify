@@ -211,7 +211,7 @@ select {
 .btns {
   display: flex;
   flex-grow: 1;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 25px;
 }
 .btn__hire {
