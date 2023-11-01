@@ -38,13 +38,8 @@ function Footer() {
             <li onClick={() => history.push("/whyus")}>
               <span>Why Us</span>
             </li>
-            <Link activeclass="active" exact="true" to="howWeWork">
-              <li>
-                <span>How We Work</span>
-              </li>
-            </Link>
             <li onClick={() => history.push("/vettingprocess")}>
-              <span>Vetting Process</span>
+              <span>Services</span>
             </li>
             <Link activeclass="active" exact="true" to="techStack">
               <li>

@@ -283,7 +283,7 @@
 }
 @media screen and (min-width: 430px) and (max-width: 770px) {
   .ceo_info {
-    text-align: start;
+    text-align: center;
   }
   .companies__carousel {
     margin-left: 0;
@@ -294,4 +294,9 @@
 .handles img {
   height: 100px;
   width: 100px;
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .ceo_info {
+    text-align: start;
+  }
 }
