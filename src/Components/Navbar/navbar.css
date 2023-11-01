@@ -1,6 +1,5 @@
-
-.l2{
- color: white;
+.l2 {
+  color: white;
 }
 .nav {
   padding: 0px 50px 10px 50px;
@@ -33,7 +32,7 @@
   text-align: center;
   background-clip: text;
 }
-a{
+a {
   color: black;
 }
 .alert-warning {
@@ -49,7 +48,6 @@ a{
   align-items: center;
 }
 .anchor {
-
   text-decoration: none;
   color: white;
   width: 100%;
@@ -397,26 +395,26 @@ select {
     font-size: 27px;
   }
 }
-@media (max-width:1470px) and (min-width:1128px) {
-  .btns{
+@media (max-width: 1470px) and (min-width: 1128px) {
+  .btns {
     margin-left: 0px;
     width: 10rem;
   }
-  .logo{
+  .logo {
     margin-left: -2rem;
   }
-  .menu-list{
+  .menu-list {
     margin-left: -3rem;
   }
-  .btn__hire{
+  .btn__hire {
     margin-right: 20px;
   }
-  .btn__applyDev{
+  .btn__applyDev {
     margin-right: -2rem;
   }
 }
-@media screen and (min-width: 800px) and (max-width:1020){
-  .navSecondary{
+@media screen and (min-width: 800px) and (max-width: 1020) {
+  .navSecondary {
     padding: 7px 20px 10px 0px;
   }
 }

@@ -15,7 +15,7 @@ import "./footer.css";
 function Footer() {
   const history = useHistory();
   return (
-    <div className="footer__main">
+    <div className="footer__main" id="foot">
       <div className="footer">
         <div className="footer__description">
           <div className="description__logo">
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer__explore">
-          <h3 style={{color:"wheat"}}>Explore</h3>
+          <h3 style={{ color: "wheat" }}>Explore</h3>
           <ul className="ul">
             <li onClick={() => history.push("/")}>
               <span>Home</span>
@@ -55,14 +55,14 @@ function Footer() {
         </div>
 
         <div className="footer__getintouch">
-          <h3 style={{color:"wheat"}}>Get in Touch</h3>
+          <h3 style={{ color: "wheat" }}>Get in Touch</h3>
           <ul className="ul">
             <li>
               <i>
                 <FaHome />
               </i>
               <span>
-                C-89 , Third Floor Sector-2 , Noida , 201301 Uttar Pradesh
+                C-89 , Second Floor Sector-2 , Noida , 201301 Uttar Pradesh
               </span>
             </li>
             <li>
@@ -80,7 +80,9 @@ function Footer() {
           </ul>
         </div>
         <div className="footer__quicklinks">
-          <h3 className="quick__heading" style={{color:"wheat"}}>Quick Links</h3>
+          <h3 className="quick__heading" style={{ color: "wheat" }}>
+            Quick Links
+          </h3>
           <div className="description__links">
             <a
               target="blank"

@@ -1,0 +1,13 @@
+.gal_sec{
+    height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gal_back{
+    padding: 60px;
+    height: 100%;
+    width: 100%;
+}

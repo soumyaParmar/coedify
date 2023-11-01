@@ -1,6 +1,6 @@
-
 .vet__cover {
   background-color: #072d34;
+  padding: 80px;
 }
 .vet__section1 {
   padding: 8% 0% 10% 0%;
@@ -22,6 +22,9 @@
   font-size: 16px;
   text-align: justify;
 }
+.vet2__6heading {
+  color: #29bb89;
+}
 
 .vet1__span {
   color: #29bb89;
@@ -39,19 +42,19 @@
   font-size: 50px;
   color: white;
 }
-.vet2__1 h1{
+.vet2__1 h1 {
   color: #29bb89;
 }
-.vet2__2 h1{
+.vet2__2 h1 {
   color: #29bb89;
 }
-.vet2__3 h1{
+.vet2__3 h1 {
   color: #29bb89;
 }
-.vet2__4 h1{
+.vet2__4 h1 {
   color: #29bb89;
 }
-.vet2__5 h1{
+.vet2__5 h1 {
   color: #29bb89;
 }
 .vet1__p {
@@ -155,8 +158,48 @@
   width: 100%;
   height: 100%;
 }
-
+.hero_contact1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  margin-left: 5rem;
+  padding-bottom: 60px;
+  margin-top: 2rem;
+}
+.hero_contact1 p {
+  color: #32e5a6;
+  margin: 0;
+  padding-right: 5px;
+  font-size: 1.3rem;
+  transition: 0.5s;
+  font-weight: 700;
+}
+.hero_contact1 svg {
+  color: #32e5a6;
+  background: transparent;
+}
+.hero_contact1 p:hover {
+  color: #32e5a6;
+  padding-left: 50px;
+  padding-right: 5px;
+}
 @media screen and (max-width: 768px) {
+  .hero_contact1 {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .hero_contact1 p {
+    font-size: 1.2rem;
+  }
+  .hero_contact1 svg {
+    height: 30px;
+    width: 30px;
+  }
+  .vet__cover {
+    padding: 10px;
+    padding-top: 80px;
+  }
   .vet__section1 {
     flex-direction: column;
     /* margin-top: 10%; */
@@ -165,6 +208,9 @@
   .vet1__left {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .vet1__left p {
+    text-align: center;
   }
   .vet1__p {
     text-align: center;
@@ -184,6 +230,7 @@
   .vet2__5,
   .vet2__6 {
     flex-direction: column;
+    padding-bottom: 80px;
   }
   .vet2__1left,
   .vet2__1right,
@@ -198,6 +245,7 @@
   .vet2__6left,
   .vet2__6right {
     width: 100%;
+    text-align: center;
   }
   .vet2__2,
   .vet2__4,
@@ -216,5 +264,10 @@
   }
   .vet__grad {
     margin: 0px 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero_contact1 {
+    margin-left: 6rem;
   }
 }

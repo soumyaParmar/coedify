@@ -8,11 +8,15 @@ import { Link as NavLink } from "react-router-dom";
 import "./navbar.css";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
-  // const history = useHistory();
   const handleClick = () => {
     setClicked(!clicked);
   };
-  const style = { position: "absolute", top: "15px", right: "35px", color: "white" };
+  const style = {
+    position: "absolute",
+    top: "15px",
+    right: "35px",
+    color: "white",
+  };
   const handleClose = () => {
     setClicked(false);
   };
@@ -41,7 +45,7 @@ const Navbar = () => {
           )}
         </div>
         <ul className={clicked ? "menu-list active" : "menu-list close"}>
-        <li className="l2">
+          <li className="l2">
             <NavLink onClick={handleClose} exact="true" to="/#howWeWork">
               How we work
             </NavLink>
@@ -61,7 +65,7 @@ const Navbar = () => {
               Our Team
             </NavLink>
           </li> */}
-          <li onClick={handleClose} className="l2">
+          {/* <li onClick={handleClose} className="l2">
             <NavLink
               className={visible ? "anchorActive" : "anchor"}
               exact="true"
@@ -70,25 +74,23 @@ const Navbar = () => {
             >
               Why Choose Us
             </NavLink>
-          </li>   
+          </li> */}
           <li className="l2">
             <NavLink onClick={handleClose} exact="true" to="/about">
               About Us
             </NavLink>
           </li>
-          <li className="l2">
+          {/* <li className="l2">
             <NavLink onClick={handleClose} exact="true" to="/blogs">
               Case Studies
             </NavLink>
-          </li>     
+          </li> */}
         </ul>
 
         <div className="btns">
-          <a href="mailto:contact@coedify.com" target="_blank" rel="noreferrer" style={{textDecoration:"none" , paddingBottom:"5%"}}>
-              <span className="btn__hire">
-              Contact Us
-              </span>
-          </a>
+          <NavLink to="/#foot">
+            <span className="btn__hire">Contact Us</span>
+          </NavLink>
         </div>
       </nav>
     </>

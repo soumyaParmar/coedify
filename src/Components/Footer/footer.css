@@ -6,7 +6,7 @@
   padding: 20px 0px 20px 0px;
 }
 .footer__main {
-  background-color: #363637;
+  background-color: #000000;
 }
 .footer__description,
 .footer__explore,
@@ -18,7 +18,7 @@
   justify-content: space-between;
   flex-direction: column;
 }
-.description__logo{
+.description__logo {
   justify-content: flex-start;
 }
 .description__logo,
@@ -43,7 +43,6 @@
 }
 
 .description__links span {
-
   color: #f7f7f7;
 }
 
@@ -101,13 +100,13 @@ svg {
   height: 3px;
   background-color: #83f777;
 }
-.quick__heading{
+.quick__heading {
   margin-left: 1rem;
 }
-.footer__explore{
+.footer__explore {
   margin-left: 5rem;
 }
-.footer__getintouch{
+.footer__getintouch {
   margin-right: 4rem;
 }
 .footer__explore ul,
@@ -181,21 +180,21 @@ svg {
     margin: 10px 2% 10px 2%;
     width: 96%;
   }
-  .footer__quicklinks{
+  .footer__quicklinks {
     margin-left: -1.5rem;
   }
 }
-@media screen and (min-width: 770px) and (max-width:1200px){
-  .description__text{
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  .description__text {
     margin-bottom: 0px;
   }
-  .footer{
+  .footer {
     height: 24rem;
   }
-  .footer__getintouch ul{
+  .footer__getintouch ul {
     font-size: 12px;
   }
-  .description__links a{
+  .description__links a {
     font-size: 12px;
   }
 }

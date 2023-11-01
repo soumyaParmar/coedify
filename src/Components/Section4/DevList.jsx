@@ -1,13 +1,13 @@
-import fullstack from "./banking.jpg";
-import frontend from "./health.jpg";
-import backend from "./insurance.jpg";
- import db from "./sql.jpg";
-import native from "./stock.jpg";
+import banking from "./banking.jpg";
+import healthcare from "./healthcare.jpg";
+import insurance from "./insurance.jpg";
+import sql from "./sql.jpg";
+import trading from "./trading.jpg";
 import devops from "./devops.jpg";
 export const DevList = [
   {
     id: 1,
-    url: fullstack,
+    url: banking,
     title: "Banking and Finance",
     // item1: "Strong CS foundation",
     // item2: "Manage Frontend, Backend & Deployment",
@@ -16,7 +16,7 @@ export const DevList = [
   },
   {
     id: 2,
-    url: frontend,
+    url: healthcare,
     title: "Health Care",
     // item1: "Can code beautiful UIs",
     // item2: "Can Create Design Systems",
@@ -25,7 +25,7 @@ export const DevList = [
   },
   {
     id: 3,
-    url: backend,
+    url: insurance,
     title: "Insurance",
     // item1: "Core Computer Science Skills",
     // item2: "Can write optimised server code",
@@ -34,7 +34,7 @@ export const DevList = [
   },
   {
     id: 4,
-    url: native,
+    url: trading,
     title: "Stock And Crypto Trading",
     // item1: "Core Android & iOS Platform Skills",
     // item2: "Created many Industry Level Apps",
@@ -52,7 +52,7 @@ export const DevList = [
   },
   {
     id: 6,
-     url: db,
+    url: sql,
     title: "SQl Tuning Engineer ",
     // item1: "Strong CS foundation",
     // item2: "Project Experience",

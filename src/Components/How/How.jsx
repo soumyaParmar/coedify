@@ -1,30 +1,25 @@
 import React from "react";
 import "./How.css";
-import First from "./first.svg";
-import Second from "./Second__step.svg";
-import Third from "./bytheroad.svg";
-import Fourth from "./Fourth__step.svg";
-import Hirebutton from "../Buttons/Hirebutton";
+import First from "./UnderstandingRequirements.svg";
+import Second from "./ProposedSolution.svg";
+import Third from "./Collaboration.svg";
 
 function How() {
   return (
     <>
-      <div id="howWeWork" ></div>
+      <div id="howWeWork"></div>
       <div className="how">
         <h1 className="how__mainHeading">How We Work?</h1>
         <div className="how1">
           <div className="how1__left">
-            <h1 className="how__heading">
-            Collaborative Exploration of Requirements            
-            </h1>
+            <h1 className="how__heading">Understanding Your Unique Needs</h1>
             <p className="how__para">
-            Understanding Your Vision: We start by engaging in detailed discussions 
-            with our clients to comprehend their specific requirements, objectives, 
-            and challenges.
+              At CoEdify, our process commences by understanding your specific
+              requirements and objectives. We engage in thorough discussions to
+              gain deep insights into your needs. Our approach combines
+              comprehensive analysis and in-depth research to ensure that our
+              solutions are precisely tailored to meet your demands.
             </p>
-            <div className="how__hirebutton">
-              <Hirebutton title="Contact Us" />
-            </div>
           </div>
           <div className="how1__right">
             <img src={First} alt="imag" />
@@ -35,50 +30,34 @@ function How() {
             <img src={Second} alt="img2" />
           </div>
           <div className="how2__right">
-            <h1 className="how__heading">
-            In-Depth Research and Development
-            </h1>
+            <h1 className="how__heading">The Proposed Solution</h1>
             <ul>
               <li>
-                <i className="bi bi-check-all"></i>
-                We leverage our technical expertise to conduct rigorous research 
-                and development (R&D) to understand the engineering challenges faced 
-                by your product.
+                Building upon our insights, we provide customized solutions. Be
+                it software redesign, greenfield development, or any other
+                service, we engineer cost-effective and robust solutions. We
+                present a clear timeline and a comprehensive solution, providing
+                you with full insight into the scope and cost.
               </li>
             </ul>
           </div>
         </div>
         <div className="how3">
           <div className="how3__left">
-            <h1 className="how__heading">
-            Tailored Roadmap
-            </h1>
+            <h1 className="how__heading">Integration and Collaboration</h1>
             <ul>
               <li>
-              Based on our research and analysis, we provide you with a 
-              detailed roadmap outlining step-by-step solutions and strategies 
-              to overcome bugs and issues.
+                Collaboration is a core principle of our approach. We work
+                closely with our clients, ensuring that you're an integral part
+                of the process. You'll have full insight into the project at
+                every stage, from inception to delivery, as we demonstrate
+                technical expertise and deliver value throughout the project's
+                journey.
               </li>
             </ul>
           </div>
           <div className="how3__right">
             <img src={Third} alt="img3" />
-          </div>
-        </div>
-        <div className="how2">
-          <div className="how2__left">
-            <img src={Fourth} alt="img4" />
-          </div>
-          <div className="how2__right">
-            <h1 className="how__heading"> Scalability and Future-Proofing </h1>
-            <p className="how__para">
-            Our solutions are designed with scalability and future enhancements 
-            in mind, ensuring your IT systems remain adaptable and efficient.
-            </p>
-            {/* <button onClick={executeScroll}>sample</button> */}
-            <div className="how__hirebutton">
-              <Hirebutton title="Contact Us" />
-            </div>
           </div>
         </div>
       </div>

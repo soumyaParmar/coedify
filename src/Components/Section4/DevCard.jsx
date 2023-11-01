@@ -3,10 +3,14 @@ import "./DevCard.css";
 function DevCard({ id, url, title, item1, item2, item3 }) {
   return (
     <>
-      <div className="dev__box">
+      <div
+        className="dev__box"
+        style={{ background: `url(${url}) `, backgroundSize: "cover" }}
+      >
         {/* <div className="dev__content"> */}
-        <img className="dev__img1" src={url} alt="fullstack" />
-        <div className="dev__spa" >{title}</div>
+        {/* <img className="dev__img1" src={url} alt="fullstack" loading="lazy"/> */}
+        <div className="black_layer"></div>
+        <div className="dev__spa">{title}</div>
         {/* <ul className="dev__ul">
           <li>{item1}</li>
           <li>{item2}</li>

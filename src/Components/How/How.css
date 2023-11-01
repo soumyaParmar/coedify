@@ -1,9 +1,8 @@
 .how {
- 
   background-color: #072d34;
 }
-li{
-  color:white;
+li {
+  color: white;
 }
 .how__mainHeading {
   letter-spacing: 1px;
@@ -94,6 +93,11 @@ li{
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .how1,
+  .how2,
+  .how3 {
+    padding-bottom: 80px;
+  }
   .how2 {
     flex-direction: column-reverse;
     width: 90%;
@@ -120,6 +124,11 @@ li{
   }
   .how__heading {
     font-size: 30px;
+  }
+  .how1__left,
+  .how2__right,
+  .how3__left {
+    text-align: center;
   }
 }
 
