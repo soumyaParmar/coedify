@@ -38,7 +38,7 @@ function App() {
             <WhyUs />
             <Footer />
           </Route>
-          <Route exact path="/vettingprocess">
+          <Route exact path="/services">
             <Navbar />
             <Vetted />
             <Footer />

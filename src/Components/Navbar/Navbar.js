@@ -51,12 +51,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li onClick={handleClose} className="l2">
-            <NavLink
-              className={visible ? "anchorActive" : "anchor"}
-              exact="true"
-              to="/vettingprocess"
-              activeclassname="active"
-            >
+            <NavLink exact="true" to="/services" activeclassname="active">
               Services
             </NavLink>
           </li>

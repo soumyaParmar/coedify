@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../Navbar/CoEdify-logo.png";
 import { useHistory } from "react-router-dom";
-import { Link } from "react-scroll";
 import {
   FaInstagram,
   FaInbox,
@@ -22,11 +21,11 @@ function Footer() {
             <img src={logo} alt="" />
           </div>
           <div className="description__text">
-            CoEdify is a platform where technology companies can find and expand
-            their team by hiring vetted and highly skilled resources quickly. We
-            also help developers to update their skill to meet the trending job
-            markets. We aim to strike the balance between expectations set by
-            both developers and technology companies.
+            At CoEdify, we take immense pride in being your trusted partner in
+            achieving your goals and exceeding your expectations. Our unwavering
+            commitment to excellence is reflected in every facet of our
+            services. With a track record of successfully resolving complex
+            engineering challenges and optimizing software systems.
           </div>
         </div>
         <div className="footer__explore">
@@ -35,17 +34,15 @@ function Footer() {
             <li onClick={() => history.push("/")}>
               <span>Home</span>
             </li>
-            <li onClick={() => history.push("/whyus")}>
-              <span>Why Us</span>
+            <li onClick={() => history.push("/about")}>
+              <span>About Us</span>
             </li>
-            <li onClick={() => history.push("/vettingprocess")}>
+            <li onClick={() => history.push("/services")}>
               <span>Services</span>
             </li>
-            <Link activeclass="active" exact="true" to="techStack">
-              <li>
-                <span>Tech Stack</span>
-              </li>
-            </Link>
+            <li onClick={() => history.push("/#howWeWork")}>
+              <span>How We Work</span>
+            </li>
           </ul>
         </div>
 
@@ -64,7 +61,7 @@ function Footer() {
               <i>
                 <FaBlenderPhone />
               </i>
-              <span>+91 9258433304</span>
+              <span>+91 7834906274</span>
             </li>
             <li>
               <i>
