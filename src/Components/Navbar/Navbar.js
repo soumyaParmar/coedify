@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from "./CoEdify-logo.png";
 import { ImCross } from "react-icons/im";
-import { useWindowScroll } from "react-use";
+// import { useWindowScroll } from "react-use";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "react-dropdown/style.css";
 import { Link as NavLink } from "react-router-dom";
@@ -21,16 +21,16 @@ const Navbar = () => {
     setClicked(false);
   };
 
-  const { y: pageYOffset } = useWindowScroll();
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    if (pageYOffset > 50) setVisible(true);
-    else setVisible(false);
-  }, [pageYOffset]);
+  // const { y: pageYOffset } = useWindowScroll();
+  // const [visible, setVisible] = useState(false);
+  // useEffect(() => {
+  //   if (pageYOffset > 50) setVisible(true);
+  //   else setVisible(false);
+  // }, [pageYOffset]);
 
   return (
     <>
-      <nav className={visible ? "navSecondary" : "nav"}>
+      <nav className={"nav"}>
         <div className="logo">
           <NavLink exact="true" to="/" activeclassname="active">
             <img onClick={handleClose} src={logo} alt="logo" />
