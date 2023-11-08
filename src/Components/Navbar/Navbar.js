@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={"nav"}>
+      <nav className="nav">
         <div className="logo">
           <NavLink exact="true" to="/" activeclassname="active">
             <img onClick={handleClose} src={logo} alt="logo" />
