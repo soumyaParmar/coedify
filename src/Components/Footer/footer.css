@@ -33,6 +33,7 @@
 .description__links {
   display: flex;
   flex-direction: column;
+  padding-left: 15px;
 }
 
 .description__links a {
@@ -65,7 +66,7 @@ svg {
   margin-top: 24px;
   font-size: 14px;
   color: rgb(255, 255, 255);
-  text-align: justify;
+  text-align: left;
 }
 .description__links svg {
   border-radius: 50px;
@@ -179,9 +180,13 @@ svg {
   .footer__getintouch {
     margin: 10px 2% 10px 2%;
     width: 96%;
+    height: 210px;
   }
   .footer__quicklinks {
     margin-left: -1.5rem;
+  }
+  .footer__explore h3 {
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: 770px) and (max-width: 1200px) {

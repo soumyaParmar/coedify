@@ -215,9 +215,10 @@
   font-weight: 600;
   font-style: normal;
   font-size: 64px;
+  margin-bottom: 30px;
 }
 .igns {
-  padding: 4rem 5% 50px 5%;
+  padding: 3rem 5% 50px 5%;
   background-color: #f5f8fd;
 }
 .igns h3 {

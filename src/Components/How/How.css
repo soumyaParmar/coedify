@@ -10,7 +10,7 @@ li {
   font-weight: 600;
   font-size: 64px;
   color: white;
-  padding-top: 5%;
+  padding-top: 6%;
 }
 .how__heading {
   font-size: 40px;
@@ -121,6 +121,7 @@ li {
 @media only screen and (max-width: 768px) {
   .how__mainHeading {
     font-size: 38px;
+    padding-top: 20%;
   }
   .how__heading {
     font-size: 30px;
