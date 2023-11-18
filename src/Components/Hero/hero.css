@@ -11,7 +11,7 @@
   background-size: cover;
 }
 .hero_backcontainer {
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(20px);
 }
 .hero {
   margin: 7% 5% 0% 5%;
