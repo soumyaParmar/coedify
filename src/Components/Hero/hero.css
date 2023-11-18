@@ -1,9 +1,15 @@
-/* .hero_back {
-  background-image: url("./video1.gif");
+.hero_back {
+  background-image: url("./video11.gif");
   height: 100%;
   background-position: center;
   background-size: cover;
-} */
+}
+.hero_back2 {
+  background-image: url("./placeholder.jpeg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
 .hero_backcontainer {
   backdrop-filter: blur(40px);
 }

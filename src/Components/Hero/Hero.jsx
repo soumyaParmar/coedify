@@ -2,14 +2,8 @@ import "./hero.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function Hero() {
-  const componentStyles = {
-    backgroundImage: 'url("./video11.gif")',
-    height: "100%",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-  };
   return (
-    <div style={componentStyles}>
+    <div className="hero_back">
       <div className="hero_backcontainer">
         <div className="hero__cover">
           <div className="hero">
