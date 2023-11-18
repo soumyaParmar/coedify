@@ -5,13 +5,13 @@ import { getStorage, ref, uploadBytes } from "firebase/storage";
 import "firebase/storage";
 // Config here
 const firebaseConfig = {
-  apiKey: "AIzaSyC5dbuChJjI7cqbjIlsCOQpTH0oXPGXKe0",
-  authDomain: "coedify-website.firebaseapp.com",
-  projectId: "coedify-website",
-  storageBucket: "coedify-website.appspot.com",
-  messagingSenderId: "14832729740",
-  appId: "1:14832729740:web:011d5a7d493300893105a9",
-  measurementId: "G-TV27N8BE58",
+  apiKey: "AIzaSyD6D5el9b7b6GBTdI5LO-NBJ44wbG1tSMY",
+  authDomain: "coedify-tech.firebaseapp.com",
+  projectId: "coedify-tech",
+  storageBucket: "coedify-tech.appspot.com",
+  messagingSenderId: "167707086855",
+  appId: "1:167707086855:web:247bb4933d8f7393e29aa2",
+  measurementId: "G-MT68WB8G2Z",
 };
 
 const firebase = initializeApp(firebaseConfig);
