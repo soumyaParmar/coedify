@@ -1,9 +1,9 @@
-.hero_back {
+/* .hero_back {
   background-image: url("./video1.gif");
   height: 100%;
   background-position: center;
   background-size: cover;
-}
+} */
 .hero_backcontainer {
   backdrop-filter: blur(40px);
 }
